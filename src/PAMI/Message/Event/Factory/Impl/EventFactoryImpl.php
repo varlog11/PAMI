@@ -33,6 +33,7 @@ namespace PAMI\Message\Event\Factory\Impl;
 use PAMI\Message\Event\EventMessage;
 use PAMI\Message\Event\UnknownEvent;
 use PAMI\Message\Message;
+use PAMI\Exception\PAMIException;
 
 /**
  * This factory knows which event to return according to a given raw message
@@ -49,6 +50,8 @@ use PAMI\Message\Message;
  */
 class EventFactoryImpl
 {
+	private $_logger;
+
     /**
      * This is our factory method.
      *
@@ -56,7 +59,8 @@ class EventFactoryImpl
      *
      * @return EventMessage
      */
-    public static function createFromRaw($message)
+//    public static function createFromRaw($message)
+    public function createFromRaw($message)
     {
         $eventStart = strpos($message, 'Event: ') + 7;
         $eventEnd = strpos($message, Message::EOL, $eventStart);
@@ -82,7 +86,9 @@ class EventFactoryImpl
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($logger)
     {
+		$this->_logger = $logger ? $logger : \Logger::getLogger(__CLASS__);
+		if ($this->_logger->isDebugEnabled()) $this->_logger->debug('------ Event Factory Created: ------ ' . "\n");
     }
 }

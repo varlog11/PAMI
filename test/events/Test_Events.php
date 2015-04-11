@@ -42,7 +42,7 @@ namespace PAMI\Client\Impl {
  */
 class Test_Events extends \PHPUnit_Framework_TestCase
 {
-    private $_properties = array();
+	private $_properties = array();
 
     public function setUp()
     {
