@@ -44,40 +44,49 @@ use PAMI\Exception\PAMIException;
 abstract class OutgoingMessage extends Message
 {
     /**
-     * String of the Class name to handle the Reponse to this Message
+     * String of the Class name to handle the Response to this Message
      *
      * @var string
      */
-    private $_responseHandler;
+    private $_responseHandler = null;
 
     /**
-     * Returns '_responseHandler'.
-     * @return string
+     * Returns the class name of the response handler.
+     *
+     * @return string|null
      */
     public function getResponseHandler()
     {
-        $res = "";
-        if (strlen($this->_responseHandler) > 0) {
-            $res = (string)$this->_responseHandler;
-        }
-        return $res;
+        return $this->_responseHandler;
     }
 
     /**
-     * Set '_responseHandler'.
+     * Set the response handler.
+     *
+     * @param string $responseHandler
      *
      * @return void
+     * @throws PAMIException
      */
     public function setResponseHandler($responseHandler)
     {
         if (0 == strlen($responseHandler)) {
             throw new PAMIException('ResponseHandler cannot be empty.');
         }
+
+        if (class_exists($responseHandler) && is_a($responseHandler, '\PAMI\Message\Response\ResponseMessage', true)) {
+            $this->_responseHandler = $responseHandler;
+
+            return;
+        }
+
         $className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
         if (class_exists($className, true)) {
-            $this->_responseHandler = $responseHandler;
-        } else {
-            throw new PAMIException('ResponseHandler could not be found.');
+            $this->_responseHandler = $className;
+
+            return;
         }
+
+        throw new PAMIException('ResponseHandler '.$className.' could not be found. Please provide a fully qualified class name.');
     }
 }

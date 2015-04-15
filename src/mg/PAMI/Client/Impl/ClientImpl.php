@@ -35,6 +35,7 @@ use PAMI\Message\Message;
 use PAMI\Message\IncomingMessage;
 use PAMI\Message\Action\LoginAction;
 use PAMI\Message\Action\LogoffAction;
+use PAMI\Message\Response\Factory\IResponseFactory;
 use PAMI\Message\Response\ResponseMessage;
 use PAMI\Message\Event\EventMessage;
 use PAMI\Message\Event\Factory\Impl\EventFactoryImpl;
@@ -456,8 +457,6 @@ class ClientImpl implements IClient
 	 * Constructor.
 	 *
 	 * @param string[] $options Options for ami client.
-	 *
-	 * @return void
 	 */
 	public function __construct(array $options)
 	{
@@ -474,8 +473,13 @@ class ClientImpl implements IClient
 		$this->_scheme = isset($options['scheme']) ? $options['scheme'] : 'tcp://';
 		$this->_eventListeners = array();
 		$this->_eventFactory = new EventFactoryImpl();
-		$this->_responseFactory = new ResponseFactoryImpl(\Logger::getLogger('ResponseFactory'));
 		$this->_incomingQueue = array();
 		$this->_lastActionId = false;
+
+		if (isset($options['response_factory']) && $options['response_factory'] instanceof IResponseFactory) {
+			$this->_responseFactory = $options['response_factory'];
+		} else {
+			$this->_responseFactory = new ResponseFactoryImpl(\Logger::getLogger('ResponseFactory'));
+		}
 	}
 }
