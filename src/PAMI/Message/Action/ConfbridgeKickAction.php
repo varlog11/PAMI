@@ -41,16 +41,17 @@ namespace PAMI\Message\Action;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class ConfBridgeListAction extends ActionMessage
+class ConfBridgeKickAction extends ActionMessage
 {
     /**
      * Constructor.
      *
      * @return void
      */
-    public function __construct( $conference )
+    public function __construct( $conference, $channel )
     {
-        parent::__construct('ConfbridgeList');
-        $this->setKey('Conference', $conference);
+        parent::__construct('ConfbridgeKick');
+	$this->setKey('Conference', $conference);
+	$this->setKey('Channel', $channel);
     }
 }

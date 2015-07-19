@@ -1,6 +1,6 @@
 <?php
 /**
- * Event triggered when a channel leaves a confbridge.
+ * Event triggered when .. ?
  *
  * PHP Version 5
  *
@@ -29,8 +29,10 @@
  */
 namespace PAMI\Message\Event;
 
+use PAMI\Message\Event\EventMessage;
+
 /**
- * Event triggered when a channel leaves a confbridge.
+ * Event triggered when .. ?
  *
  * PHP Version 5
  *
@@ -54,76 +56,6 @@ class ConfbridgeLeaveEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Conference'.
-     *
-     * @return string
-     */
-    public function getConference()
-    {
-        return $this->getKey('Conference');
-    }
-
-    /**
-     * Returns key: 'BridgeUniqueid'.
-     *
-     * @return string
-     */
-    public function getBridgeUniqueid()
-    {
-        return $this->getKey('BridgeUniqueid');
-    }
-
-    /**
-     * Returns key: 'BridgeType'.
-     *
-     * @return string
-     */
-    public function getBridgeType()
-    {
-        return $this->getKey('BridgeType');
-    }
-
-    /**
-     * Returns key: 'BridgeTechnology'.
-     *
-     * @return string
-     */
-    public function getBridgeTechnology()
-    {
-        return $this->getKey('BridgeTechnology');
-    }
-
-    /**
-     * Returns key: 'BridgeCreator'.
-     *
-     * @return string
-     */
-    public function getBridgeCreator()
-    {
-        return $this->getKey('BridgeCreator');
-    }
-
-    /**
-     * Returns key: 'BridgeName'.
-     *
-     * @return string
-     */
-    public function getBridgeName()
-    {
-        return $this->getKey('BridgeName');
-    }
-
-    /**
-     * Returns key: 'BridgeNumChannels'.
-     *
-     * @return string
-     */
-    public function getBridgeNumChannels()
-    {
-        return $this->getKey('BridgeNumChannels');
-    }
-
-    /**
      * Returns key: 'Channel'.
      *
      * @return string
@@ -131,106 +63,6 @@ class ConfbridgeLeaveEvent extends EventMessage
     public function getChannel()
     {
         return $this->getKey('Channel');
-    }
-
-    /**
-     * Returns key: 'ChannelState'.
-     *
-     * @return string
-     */
-    public function getChannelState()
-    {
-        return $this->getKey('ChannelState');
-    }
-
-    /**
-     * Returns key: 'ChannelStateDesc'.
-     *
-     * @return string
-     */
-    public function getChannelStateDesc()
-    {
-        return $this->getKey('ChannelStateDesc');
-    }
-
-    /**
-     * Returns key: 'CallerIDNum'.
-     *
-     * @return string
-     */
-    public function getCallerIDNum()
-    {
-        return $this->getKey('CallerIDNum');
-    }
-
-    /**
-     * Returns key: 'CallerIDName'.
-     *
-     * @return string
-     */
-    public function getCallerIDName()
-    {
-        return $this->getKey('CallerIDName');
-    }
-
-    /**
-     * Returns key: 'ConnectedLineNum'.
-     *
-     * @return string
-     */
-    public function getConnectedLineNum()
-    {
-        return $this->getKey('ConnectedLineNum');
-    }
-
-    /**
-     * Returns key: 'ConnectedLineName'.
-     *
-     * @return string
-     */
-    public function getConnectedLineName()
-    {
-        return $this->getKey('ConnectedLineName');
-    }
-
-    /**
-     * Returns key: 'AccountCode'.
-     *
-     * @return string
-     */
-    public function getAccountCode()
-    {
-        return $this->getKey('AccountCode');
-    }
-
-    /**
-     * Returns key: 'Context'.
-     *
-     * @return string
-     */
-    public function getContext()
-    {
-        return $this->getKey('Context');
-    }
-
-    /**
-     * Returns key: 'Exten'.
-     *
-     * @return string
-     */
-    public function getExten()
-    {
-        return $this->getKey('Exten');
-    }
-
-    /**
-     * Returns key: 'Priority'.
-     *
-     * @return string
-     */
-    public function getPriority()
-    {
-        return $this->getKey('Priority');
     }
 
     /**
@@ -244,22 +76,33 @@ class ConfbridgeLeaveEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Linkedid'.
+     * Returns key: 'Conference'.
      *
      * @return string
      */
-    public function getLinkedid()
+    public function getConference()
     {
-        return $this->getKey('Linkedid');
+        return $this->getKey('Conference');
     }
 
     /**
-     * Returns key: 'Admin'.
+     * Returns key: 'CallerIDnum'.
      *
      * @return string
      */
-    public function getAdmin()
+    public function getCallerIDnum()
     {
-        return $this->getKey('Admin');
+        return $this->getKey('CallerIDnum');
     }
+
+    /**
+     * Returns key: 'CallerIDname'.
+     *
+     * @return string
+     */
+    public function getCallerIDname()
+    {
+        return $this->getKey('CallerIDname');
+    }
+
 }

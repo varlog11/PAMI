@@ -43,38 +43,8 @@ use PAMI\Message\Event\EventMessage;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class ConfbridgeJoinEvent extends EventMessage
+class ConfbridgeListRoomsEvent extends EventMessage
 {
-    /**
-     * Returns key: 'Privilege'.
-     *
-     * @return string
-     */
-    public function getPrivilege()
-    {
-        return $this->getKey('Privilege');
-    }
-
-    /**
-     * Returns key: 'Channel'.
-     *
-     * @return string
-     */
-    public function getChannel()
-    {
-        return $this->getKey('Channel');
-    }
-
-    /**
-     * Returns key: 'Uniqueid'.
-     *
-     * @return string
-     */
-    public function getUniqueid()
-    {
-        return $this->getKey('Uniqueid');
-    }
-
     /**
      * Returns key: 'Conference'.
      *
@@ -86,23 +56,33 @@ class ConfbridgeJoinEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'CallerIDnum'.
+     * Returns key: 'Parties'.
      *
      * @return string
      */
-    public function getCallerIDnum()
+    public function getParties()
     {
-        return $this->getKey('CallerIDnum');
+        return $this->getKey('Parties');
     }
 
     /**
-     * Returns key: 'CallerIDname'.
+     * Returns key: 'Marked'.
      *
      * @return string
      */
-    public function getCallerIDname()
+    public function getMarked()
     {
-        return $this->getKey('CallerIDname');
+        return $this->getKey('Marked');
+    }
+
+    /**
+     * Returns key: 'Locked'.
+     *
+     * @return string
+     */
+    public function getLocked()
+    {
+        return $this->getKey('Locked');
     }
 
 }
