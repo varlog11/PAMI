@@ -61,7 +61,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'Rename', 'RegistrationsComplete', 'RTPSenderStat', 'RTPReceiverStat',
             'RTCPSent', 'RTCPReceiverStat', 'RTCPReceived', 'QueueSummaryComplete',
             'QueueStatusComplete', 'DAHDIShowChannelsComplete', 'QueueSummary',
-            'QueueParams', 'QueueMemberStatus', 'QueueMemberRemoved',
+            'QueueParams', 'QueueEntry', 'QueueMemberStatus', 'QueueMemberRemoved',
             'QueueMemberPaused', 'QueueMember', 'QueueMemberAdded', 'PeerlistComplete',
             'PeerStatus', 'PeerEntry', 'OriginateResponse', 'Newstate', 'Newexten',
             'Newchannel', 'NewCallerid', 'NewAccountCode', 'MusicOnHold',
@@ -116,6 +116,9 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             ),
             'QueueMemberAdded' => array(
                 'Paused' => true
+            ),
+            'QueueEntry' => array(
+                'Position' => 0
             ),
         );
         $eventValues = array(
@@ -461,6 +464,16 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'ChannelType' => 'ChannelType',
                 'Peer' => 'Peer',
                 'PeerStatus' => 'PeerStatus'
+            ),
+            'QueueEntry' => array(
+                'Position' => 'Position',
+                'Channel' => 'Channel',
+                'Uniqueid' => 'Uniqueid',
+                'CallerIdNum' => 'CallerIdNum',
+                'CallerIdName' => 'CallerIdName',
+                'ConnectedLineNum' => 'ConnectedLineNum',
+                'ConnectedLineName' => 'ConnectedLineName',
+                'Wait' => 'Wait'
             ),
             'QueueMemberRemoved' => array(
                 'MemberName' => 'MemberName',
