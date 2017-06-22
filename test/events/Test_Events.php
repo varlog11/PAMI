@@ -73,6 +73,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'DongleNewUSSDBase64', 'DongleNewUSSD', 'DongleUSSDStatus', 'DongleNewCUSD',
             'DongleStatus', 'DNDState', 'CEL', 'JabberEvent', 'Registry', 'UserEvent',
             'ParkedCall', 'UnParkedCall', 'Link',
+            'DAHDIChannel', 'Reload', 'Success'
             'AGIExecStart',
             'AGIExecEnd',
             'AsyncAGIStart',
@@ -772,7 +773,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'ResultCode' => 'ResultCode'
         	),
             'VarSet' => array(
-                'Privilege' => 'Privilege',
+            	'Privilege' => 'Privilege',
                 'Channel' => 'Channel',
                 'Variable' => 'Variable',
                 'Value' => 'Value',
@@ -783,6 +784,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'CallerIDName' => 'CallerIDName',
                 'ConnectedLineNum' => 'ConnectedLineNum',
                 'ConnectedLineName' => 'ConnectedLineName'
+                'UniqueID' => 'UniqueID'
             ),
             'Unlink' => array(
                 'Privilege' => 'Privilege',
@@ -1566,6 +1568,19 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeVideoSourceMode' => 'BridgeVideoSourceMode',
                 'BridgeVideoSource' => 'BridgeVideoSource',
             ),
+            'DAHDIChannel' => array(
+                'Privilege' => 'Privilege',
+                'DAHDIChannel' => 'DAHDIChannel',
+                'DAHDISpan' => 'DAHDISpan',
+                'Channel' => 'Channel',
+                'UniqueID' => 'UniqueID'
+            ),
+            'Reload' => array(
+                'RawContent' => 'RawContent'
+            ),
+            'Success' => array(
+                'RawContent' => 'RawContent'
+            )
         );
         $eventGetters = array(
             'UserEvent' => array(
@@ -1693,7 +1708,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
 
             $this->assertTrue(
                 method_exists($event, $methodName),
-                sprintf('Method %s doesn\'t exixt in event %s', $methodName, get_class($event))
+                sprintf('Method %s doesn\'t exist in event %s', $methodName, get_class($event))
             );
 
             $this->assertEquals($event->$methodName(), $value, $eventName);
