@@ -39,8 +39,9 @@ namespace {
     $mockFgets = false;
     $mockFgetsCount = 0;
     $mockFreadReturn = false;
-    $mock_stream_timeout = false;
-    $mockRTimeout = 0; 
+    //$mock_stream_timeout = false;
+    $mock_stream_get_meta_data_return = false;
+    $mockRTimeout = 0;
     $standardAMIStart = array(
    		'Asterisk Call Manager/1.1',
    		'Response: Success',
@@ -102,12 +103,24 @@ namespace PAMI\Client\Impl {
         }
     }
     function stream_set_timeout() {
+		/*
 		global $mockRTimeout;
 		$args = func_get_args();
 		$mockRTimeout = $args[1];
 		return true;
+		*/
+		global $mockRTimeout;
+        global $mock_stream_socket_client;
+        if (isset($mock_stream_socket_client) && $mock_stream_socket_client === true) {
+            $args = func_get_args();
+            $mockRTimeout = $args[1];
+        } else {
+            return call_user_func_array('\stream_set_timeout', func_get_args());
+        }
+        return true;
 	}
 	function stream_get_meta_data() {
+	    /*
 		global $mockRTimeout;
 		global $mock_stream_timeout;
 		if (isset($mock_stream_timeout) && $mock_stream_timeout === true) {
@@ -116,7 +129,19 @@ namespace PAMI\Client\Impl {
 		} else {
 			return call_user_func_array('\stream_get_meta_data', func_get_args());
 		}
-	} 
+		*/
+		global $mockRTimeout;
+        global $mock_stream_socket_client;
+        global $mock_stream_get_meta_data_return;
+        if (isset($mock_stream_socket_client) && $mock_stream_socket_client === true) {
+            if ($mock_stream_get_meta_data_return === true) {
+                sleep($mockRTimeout);
+            }
+            return array('timed_out' => $mock_stream_get_meta_data_return);
+        } else {
+            return call_user_func_array('\stream_get_meta_data', func_get_args());
+        }
+	}
     function fwrite() {
         global $mockFwrite;
         global $mockFwriteCount;
@@ -227,7 +252,7 @@ class Test_Client extends \PHPUnit_Framework_TestCase
         	'username' => 'asd',
         	'secret' => 'asd',
             'connect_timeout' => 10,
-        	'read_timeout' => 10
+            'read_timeout' => 10
         );
 	    $client = new \PAMI\Client\Impl\ClientImpl($options);
     }
@@ -583,19 +608,21 @@ class Test_Client extends \PHPUnit_Framework_TestCase
     {
         global $mock_stream_socket_client;
         global $mock_stream_set_blocking;
+        global $mock_stream_get_meta_data_return;
         global $mockTime;
         global $standardAMIStartBadLogin;
         $mockTime = true;
         $mock_stream_socket_client = true;
         $mock_stream_set_blocking = true;
+        $mock_stream_get_meta_data_return = true;
         $options = array(
         	'host' => '2.3.4.5',
             'scheme' => 'tcp://',
         	'port' => 9999,
         	'username' => 'asd',
         	'secret' => 'asd',
-            'connect_timeout' => 10,
-        	'read_timeout' => 10
+            'connect_timeout' => 1,
+            'read_timeout' => 1
         );
         $write = array(
         	"action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
@@ -657,7 +684,7 @@ class Test_Client extends \PHPUnit_Framework_TestCase
         	'username' => 'asd',
         	'secret' => 'asd',
             //'connect_timeout' => 10,
-            'connect_timeout' => 3,
+            'connect_timeout' => 1,
         	'read_timeout' => 1
         );
         $write = array(

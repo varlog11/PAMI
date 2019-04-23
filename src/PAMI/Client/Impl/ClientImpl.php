@@ -308,6 +308,7 @@ class ClientImpl implements IClient
         }
     }
 
+
     /**
      * Tries to find an associated response for the given message.
      *
@@ -427,9 +428,9 @@ class ClientImpl implements IClient
         $read = 0;
 /*
         while (1) {
-            @stream_set_timeout($this->_socket, $this->rTimeout ? $this->rTimeout : 1);
+            stream_set_timeout($this->socket, $this->rTimeout ? $this->rTimeout : 1);
             $this->process();
-            $info = @stream_get_meta_data($this->_socket);
+            $info = stream_get_meta_data($this->socket);
             if ($info['timed_out'] != false) {
                 break;
             }
@@ -442,6 +443,7 @@ class ClientImpl implements IClient
             if ($this->rTimeout > 0) {
                 $read++;
             }
+        }
 */
         while ($read <= $this->rTimeout) {
  	        $this->process();

@@ -210,6 +210,22 @@ abstract class Message
     }
 
     /**
+     * Returns a key by name.
+     *
+     * @param string $key Key name (i.e: Action).
+     *
+     * @return string
+     */
+    public function getBoolKey($key)
+    {
+        $key = strtolower($key);
+        if (!isset($this->keys[$key])) {
+            return null;
+        }
+        return (boolean) $this->keys[$key];
+    }
+
+    /**
      * Returns all keys for this message.
      *
      * @return string[]
