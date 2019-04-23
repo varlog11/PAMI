@@ -126,6 +126,40 @@ abstract class Message
         return $this->variables[$key];
     }
 
+	/**
+	 * Sanitize incoming value
+	 *
+	 * @param string $value Key value.
+	 *
+	 * @return typed and sanitized value
+	 */
+	protected function sanitizeInput($value)
+	{
+		if (!isset($value) || $value === NULL || strlen($value) == 0) {
+			return NULL;
+		} else if (is_numeric($value)) {
+			if (filter_var($value, FILTER_VALIDATE_INT, FILTER_FLAG_ALLOW_HEX | FILTER_FLAG_ALLOW_OCTAL)) {
+				return intval($value, 0);
+			} else if (filter_var($value, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_FRACTION | FILTER_FLAG_ALLOW_THOUSAND | FILTER_FLAG_ALLOW_SCIENTIFIC)) {
+				return (float)$value;
+			} else {
+				return (double)$value;
+			}
+		} else if (is_string($value)) {
+			if (filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)) {
+				return (boolean)$value;
+			} else if (filter_var($value, FILTER_SANITIZE_STRING, FILTER_NULL_ON_FAILURE)) {
+				return (string)$value;
+			} else if (filter_var($value, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_NULL_ON_FAILURE)) {
+				return (string)htmlspecialchars($value, ENT_QUOTES);
+			} else {
+				throw new PAMIException("Incoming String is not sanitary. Skipping: '" . $value . "'\n");
+			}
+		} else {
+			throw new PAMIException("Don't know how to convert: '" . $value . "'\n");
+		}
+	}
+
     /**
      * Adds a variable to this message.
      *
@@ -140,6 +174,24 @@ abstract class Message
         $this->keys[$key] = (string)$value;
     }
 
+	/**
+	 * Adds a variable to this message after sanitizing it first.
+	 *
+	 * @param string $key   Key name (i.e: Action).
+	 * @param string $value Key value.
+	 *
+	 * @return void
+	 */
+	protected function setSanitizedKey($key, $value)
+	{
+		$key = strtolower((string)$key);
+		if ($key === 'actionid') {
+			$this->keys[$key] = (string)$this->sanitizeInput($value);
+		} else {
+			$this->keys[$key] = $this->sanitizeInput($value);
+		}
+	}
+
     /**
      * Returns a key by name.
      *
@@ -153,7 +205,8 @@ abstract class Message
         if (!isset($this->keys[$key])) {
             return null;
         }
-        return (string)$this->keys[$key];
+        //return (string)$this->keys[$key];
+        return $this->keys[$key];
     }
 
     /**

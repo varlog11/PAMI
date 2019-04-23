@@ -48,11 +48,9 @@ class SCCP_Test_Actions extends \PHPUnit_Framework_TestCase
 
 	public function setUp()
 	{
-		global $mockTime;
-		$this->_properties = array(
-			'log4php.properties' => RESOURCES_DIR . DIRECTORY_SEPARATOR . 'log4php.properties'
-		);
-		$mockTime = true;
+	 global $mockTime;
+         $this->_properties = array();
+         $mockTime = true;
 	}
 
 	/** 
@@ -68,7 +66,6 @@ class SCCP_Test_Actions extends \PHPUnit_Framework_TestCase
 		$mock_stream_socket_client = true;
 		$mock_stream_set_blocking = true;
 		$options = array(
-			'log4php.properties' => RESOURCES_DIR . DIRECTORY_SEPARATOR . 'log4php.properties',
 			'host' => '2.3.4.5',
 			'scheme' => 'tcp://',
 			'port' => 9999,
@@ -77,13 +74,13 @@ class SCCP_Test_Actions extends \PHPUnit_Framework_TestCase
 			'connect_timeout' => 10,
 			'read_timeout' => 100									/* readtimout still needs work, 100 needed for large responses */
 		);
-		$writeLogin = array(
-			"action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
-		);
-		setFgetsMock($standardAMIStart, $writeLogin);
-		$client = new \PAMI\Client\Impl\ClientImpl($options);
-		$client->registerEventListener(new SomeListenerClass);
-		$client->open();
+        $writeLogin = array(
+                "action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
+        );
+        setFgetsMock($standardAMIStart, $writeLogin);
+        $client = new \PAMI\Client\Impl\ClientImpl($options);
+        $client->registerEventListener(new SomeListenerClass);
+        $client->open();
 		setFgetsMock($response, $write);
 		$result = $client->send($action);
 		return $result;

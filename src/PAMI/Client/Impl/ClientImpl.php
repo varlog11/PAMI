@@ -36,6 +36,7 @@ use PAMI\Message\IncomingMessage;
 use PAMI\Message\Action\LoginAction;
 use PAMI\Message\Response\ResponseMessage;
 use PAMI\Message\Event\Factory\Impl\EventFactoryImpl;
+use PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl;
 use PAMI\Listener\IEventListener;
 use PAMI\Client\Exception\ClientException;
 use PAMI\Client\IClient;
@@ -155,6 +156,16 @@ class ClientImpl implements IClient
     private $eventMask;
 
     /**
+     * @var string
+     */
+    private $lastRequestedResponseHandler;
+
+	/**
+	 * @object class
+	 */
+	private $lastActionClass;
+
+    /**
      * Opens a tcp connection to ami.
      *
      * @throws \PAMI\Client\Exception\ClientException
@@ -237,7 +248,8 @@ class ClientImpl implements IClient
     {
         $msgs = array();
         // Read something.
-        $read = @fread($this->socket, 65535);
+        //$read = @fread($this->socket, 65535);
+        $read = @fread($this->socket, 8192);
         if ($read === false || @feof($this->socket)) {
             throw new ClientException('Error reading');
         }
@@ -262,6 +274,7 @@ class ClientImpl implements IClient
      */
     public function process()
     {
+        //$msgs = $this->getMessages($outgoingMessageClass=false);
         $msgs = $this->getMessages();
         foreach ($msgs as $aMsg) {
             $this->logger->debug(
@@ -345,7 +358,8 @@ class ClientImpl implements IClient
      */
     private function messageToResponse($msg)
     {
-        $response = new ResponseMessage($msg);
+        //$response = new ResponseMessage($msg);
+		$response = $this->responseFactory->createFromRaw($msg, $this->lastActionClass, $this->lastRequestedResponseHandler);
         $actionId = $response->getActionId();
         if (is_null($actionId)) {
             $actionId = $this->lastActionId;
@@ -405,12 +419,20 @@ class ClientImpl implements IClient
             '------ Sending: ------ ' . "\n" . $messageToSend . '----------'
         );
         $this->lastActionId = $message->getActionId();
+		$this->lastRequestedResponseHandler = $message->getResponseHandler();
+		$this->lastActionClass = $message;
         if (@fwrite($this->socket, $messageToSend) < $length) {
             throw new ClientException('Could not send message');
         }
         $read = 0;
-        while ($read <= $this->rTimeout) {
+/*
+        while (1) {
+            @stream_set_timeout($this->_socket, $this->rTimeout ? $this->rTimeout : 1);
             $this->process();
+            $info = @stream_get_meta_data($this->_socket);
+            if ($info['timed_out'] != false) {
+                break;
+            }
             $response = $this->getRelated($message);
             if ($response != false) {
                 $this->lastActionId = false;
@@ -420,6 +442,18 @@ class ClientImpl implements IClient
             if ($this->rTimeout > 0) {
                 $read++;
             }
+*/
+        while ($read <= $this->rTimeout) {
+ 	        $this->process();
+	        $response = $this->getRelated($message);
+	        if ($response != false) {
+	            $this->_lastActionId = false;
+	            return $response;
+	        }
+	        usleep(1000); // 1ms delay
+	        if ($this->rTimeout > 0) {
+	            $read++;
+	        }                         
         }
         throw new ClientException('Read timeout');
     }
@@ -461,11 +495,12 @@ class ClientImpl implements IClient
         $this->user = $options['username'];
         $this->pass = $options['secret'];
         $this->cTimeout = $options['connect_timeout'];
-        $this->rTimeout = $options['read_timeout'];
+        $this->rTimeout = $options['read_timeout'] ?? 1;
         $this->scheme = isset($options['scheme']) ? $options['scheme'] : 'tcp://';
         $this->eventMask = isset($options['event_mask']) ? $options['event_mask'] : null;
         $this->eventListeners = array();
         $this->eventFactory = new EventFactoryImpl();
+        $this->responseFactory = new ResponseFactoryImpl();
         $this->incomingQueue = array();
         $this->lastActionId = false;
     }

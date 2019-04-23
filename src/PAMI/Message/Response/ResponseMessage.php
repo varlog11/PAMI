@@ -52,13 +52,13 @@ abstract class ResponseMessage extends IncomingMessage
      * Child events.
      * @var EventMessage[]
      */
-    private $events;
+    protected $events;
 
     /**
      * Is this response completed? (with all its events).
      * @var boolean
      */
-    private $completed;
+    protected $completed;
 
     /**
      * Serialize function.

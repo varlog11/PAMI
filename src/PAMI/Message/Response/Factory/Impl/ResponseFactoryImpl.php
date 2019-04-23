@@ -50,7 +50,6 @@ use PAMI\Message\Message;
  */
 class ResponseFactoryImpl
 {
-	private $_logger;
 	/**
 	 * This is our factory method.
 	 *
@@ -78,7 +77,6 @@ class ResponseFactoryImpl
 				throw new PAMIException('Response Class ' . $_className . '  requested via responseHandler, could not be found');
 			}
 		}
-		if ($this->_logger->isDebugEnabled()) $this->_logger->debug('Created: ' . $responseclass . "\n");
 		return new $responseclass($message);
 	}
 
@@ -87,12 +85,7 @@ class ResponseFactoryImpl
 	 *
 	 * @return void
 	 */
-//    public function __construct($logger)
-//    {
-//        $this->_logger = $logger;
-    public function __construct($logger)
+    public function __construct()
     {
-        $this->_logger = $logger ? $logger : \Logger::getLogger(__CLASS__);
-		if ($this->_logger->isDebugEnabled()) $this->_logger->debug('------ Response Factory Created: ------ ' . "\n");
     }
 }

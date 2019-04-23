@@ -158,6 +158,12 @@ abstract class IncomingMessage extends Message
             } else {
                 $this->setKey($name, $value);
             }
+            // Added ResponseFactory #d3b0ce8 
+            try {
+                    $this->setSanitizedKey($name, $value);
+            } catch (PAMIException $e) {
+                    throw new PAMIException("Error: '" . $e . "'\n Dump RawContent:\n"  . $this->rawContent ."\n");
+            }
         }
         // https://github.com/marcelog/PAMI/issues/85
         if (isset($this->keys['channel'])) {
