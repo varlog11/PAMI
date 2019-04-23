@@ -105,4 +105,163 @@ class ConfbridgeJoinEvent extends EventMessage
         return $this->getKey('CallerIDname');
     }
 
+    /**
+     * Returns key: 'BridgeUniqueid'.
+     *
+     * @return string
+     */
+    public function getBridgeUniqueid()
+    {
+        return $this->getKey('BridgeUniqueid');
+    }
+
+    /**
+     * Returns key: 'BridgeType'.
+     *
+     * @return string
+     */
+    public function getBridgeType()
+    {
+        return $this->getKey('BridgeType');
+    }
+
+    /**
+     * Returns key: 'BridgeTechnology'.
+     *
+     * @return string
+     */
+    public function getBridgeTechnology()
+    {
+        return $this->getKey('BridgeTechnology');
+    }
+
+    /**
+     * Returns key: 'BridgeCreator'.
+     *
+     * @return string
+     */
+    public function getBridgeCreator()
+    {
+        return $this->getKey('BridgeCreator');
+    }
+
+    /**
+     * Returns key: 'BridgeName'.
+     *
+     * @return string
+     */
+    public function getBridgeName()
+    {
+        return $this->getKey('BridgeName');
+    }
+
+    /**
+     * Returns key: 'BridgeNumChannels'.
+     *
+     * @return string
+     */
+    public function getBridgeNumChannels()
+    {
+        return $this->getKey('BridgeNumChannels');
+    }
+
+    /**
+     * Returns key: 'ChannelState'.
+     *
+     * @return string
+     */
+    public function getChannelState()
+    {
+        return $this->getKey('ChannelState');
+    }
+
+    /**
+     * Returns key: 'ChannelStateDesc'.
+     *
+     * @return string
+     */
+    public function getChannelStateDesc()
+    {
+        return $this->getKey('ChannelStateDesc');
+    }
+
+    /**
+     * Returns key: 'ConnectedLineNum'.
+     *
+     * @return string
+     */
+    public function getConnectedLineNum()
+    {
+        return $this->getKey('ConnectedLineNum');
+    }
+
+    /**
+     * Returns key: 'ConnectedLineName'.
+     *
+     * @return string
+     */
+    public function getConnectedLineName()
+    {
+        return $this->getKey('ConnectedLineName');
+    }
+
+    /**
+     * Returns key: 'AccountCode'.
+     *
+     * @return string
+     */
+    public function getAccountCode()
+    {
+        return $this->getKey('AccountCode');
+    }
+
+    /**
+     * Returns key: 'Context'.
+     *
+     * @return string
+     */
+    public function getContext()
+    {
+        return $this->getKey('Context');
+    }
+
+    /**
+     * Returns key: 'Exten'.
+     *
+     * @return string
+     */
+    public function getExten()
+    {
+        return $this->getKey('Exten');
+    }
+
+    /**
+     * Returns key: 'Priority'.
+     *
+     * @return string
+     */
+    public function getPriority()
+    {
+        return $this->getKey('Priority');
+    }
+
+    /**
+     * Returns key: 'Linkedid'.
+     *
+     * @return string
+     */
+    public function getLinkedid()
+    {
+        return $this->getKey('Linkedid');
+    }
+
+    /**
+     * Returns key: 'Admin'.
+     *
+     * @return string
+     */
+    public function getAdmin()
+    {
+        return $this->getKey('Admin');
+    }
 }

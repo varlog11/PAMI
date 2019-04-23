@@ -105,4 +105,53 @@ class ConfbridgeListEvent extends EventMessage
         return $this->getKey('MarkedUser');
     }
 
+    /**
+     * Returns key: 'WaitMarked'.
+     *
+     * @return string
+     */
+    public function getWaitMarked()
+    {
+        return $this->getKey('WaitMarked');
+    }
+
+    /**
+     * Returns key: 'EndMarked'.
+     *
+     * @return string
+     */
+    public function getEndMarked()
+    {
+        return $this->getKey('EndMarked');
+    }
+
+    /**
+     * Returns key: 'Waiting'.
+     *
+     * @return string
+     */
+    public function getWaiting()
+    {
+        return $this->getKey('Waiting');
+    }
+
+    /**
+     * Returns key: 'Muted'.
+     *
+     * @return string
+     */
+    public function getMuted()
+    {
+        return $this->getKey('Muted');
+    }
+
+    /**
+     * Returns key: 'AnsweredTime'.
+     *
+     * @return string
+     */
+    public function getAnsweredTime()
+    {
+        return $this->getKey('AnsweredTime');
+    }
 }

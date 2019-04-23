@@ -45,4 +45,13 @@ use PAMI\Message\Event\EventMessage;
  */
 class ConfbridgeListCompleteEvent extends EventMessage
 {
+    /**
+     * Returns key: 'ListItems'.
+     *
+     * @return string
+     */
+    public function getListItems()
+    {
+        return $this->getKey('ListItems');
+    }
 }
