@@ -1,13 +1,13 @@
 <?php
 /**
- * Show sip peers.
+ * ConfbridgeListRooms action message.
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Matt Styles <mstyleshk@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
@@ -30,18 +30,18 @@
 namespace PAMI\Message\Action;
 
 /**
- * Show sip peers.
+ * ConfbridgeListRooms action message.
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Matt Styles <mstyleshk@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class ConfBridgeListRoomsAction extends ActionMessage
+class ConfbridgeListRoomsAction extends ActionMessage
 {
     /**
      * Constructor.

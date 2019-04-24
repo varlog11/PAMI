@@ -1,13 +1,13 @@
 <?php
 /**
- * Event triggered when .. ?
+ * Event triggered for the end of the list when an action ConfbridgeListRooms is issued.
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Event
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Matt Styles <mstyleshk@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
@@ -32,17 +32,26 @@ namespace PAMI\Message\Event;
 use PAMI\Message\Event\EventMessage;
 
 /**
- * Event triggered when .. ?
+ * Event triggered for the end of the list when an action ConfbridgeListRooms is issued.
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Event
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Matt Styles <mstyleshk@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
 class ConfbridgeListRoomsCompleteEvent extends EventMessage
 {
+    /**
+     * Returns key: 'ListItems'.
+     *
+     * @return string
+     */
+    public function getListItems()
+    {
+        return $this->getKey('ListItems');
+    }
 }

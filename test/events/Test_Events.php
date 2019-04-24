@@ -86,7 +86,6 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'BlindTransfer',
             'DialBegin',
             'DialEnd',
-            'DNDState',
             'DTMFBegin',
             'DTMFEnd',
             'BridgeCreate',
@@ -105,6 +104,8 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'ConfbridgeTalking',
             'ConfbridgeList',
             'ConfbridgeListComplete',
+            'ConfbridgeListRooms',
+            'ConfbridgeListRoomsComplete',
             'BridgeInfoChannel',
             'BridgeInfoComplete',
             'QueueCallerAbandon',
@@ -1111,6 +1112,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Position' => 'Position',
             ),
             'QueueCallerAbandon' => array(
+                'Privilege' => 'Privilege',
                 'Channel' => 'Channel',
                 'ChannelState' => 'ChannelState',
                 'ChannelStateDesc' => 'ChannelStateDesc',
@@ -1614,6 +1616,13 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Admin' => 'Admin',
             ),
             'ConfbridgeListComplete' => array('ListItems' => 'ListItems'),
+            'ConfbridgeListRooms' => array(
+                'Conference' => 'Conference',
+                'Parties' => 'Parties',
+                'Marked' => 'Marked',
+                'Locked' => 'Locked',
+            ),
+            'ConfbridgeListRoomsComplete' => array('ListItems' => 'ListItems'),
             'BridgeInfoChannel' => array(
                 'Channel' => 'Channel',
                 'ChannelState' => 'ChannelState',

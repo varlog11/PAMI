@@ -1,6 +1,6 @@
 <?php
 /**
- * Event triggered when .. ?
+ * Event triggered for each conference when an action ConfbridgeListRooms is issued.
  *
  * PHP Version 5
  *
@@ -32,7 +32,7 @@ namespace PAMI\Message\Event;
 use PAMI\Message\Event\EventMessage;
 
 /**
- * Event triggered when .. ?
+ * Event triggered for each conference when an action ConfbridgeListRooms is issued.
  *
  * PHP Version 5
  *
@@ -84,5 +84,4 @@ class ConfbridgeListRoomsEvent extends EventMessage
     {
         return $this->getKey('Locked');
     }
-
 }
