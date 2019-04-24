@@ -57,7 +57,7 @@ class AdvancedResponseMessage extends ResponseMessage
      * Catch All incoming Events into current Table.
      * @var Array
      */
-    private $_temptable;
+    private $temptable;
 
     /**
      * Adds an event to this response.
@@ -79,17 +79,17 @@ class AdvancedResponseMessage extends ResponseMessage
             if (!($event instanceof $unknownevent)) {
                 // Handle TableStart/TableEnd Differently
                 if (stristr($event->getName(), 'TableStart') != false) {
-                    $this->_temptable = array();
-                    $this->_temptable['Name'] = $event->getTableName();
-                    $this->_temptable['Entries'] = array();
+                    $this->temptable = array();
+                    $this->temptable['Name'] = $event->getTableName();
+                    $this->temptable['Entries'] = array();
                 } elseif (stristr($event->getName(), 'TableEnd') != false) {
                     if (!is_array($this->tables)) {
                         $this->tables = array();
                     }
-                    $this->tables[$event->getTableName()] = $this->_temptable;
-                    unset($this->_temptable);
-                } elseif (is_array($this->_temptable)) {
-                    $this->_temptable['Entries'][] = $event;
+                    $this->tables[$event->getTableName()] = $this->temptable;
+                    unset($this->temptable);
+                } elseif (is_array($this->temptable)) {
+                    $this->temptable['Entries'][] = $event;
                 } else {
                     // add regular event
                     $this->_events[] = $event;

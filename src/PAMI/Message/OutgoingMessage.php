@@ -47,25 +47,25 @@ abstract class OutgoingMessage extends Message
      * String of the Class name to handle the Reponse to this Message
      * @var string
      */
-    private $_responseHandler;
+    private $responseHandler;
 
     /**
-     * Returns '_responseHandler'.
+     * Returns 'responseHandler'.
      *
      * @return string
      */
     public function getResponseHandler()
     {
-        if (strlen($this->_responseHandler) > 0) {
-            //throw new PAMIException('Hier:' . $this->_responseHandler);
-            return (string)$this->_responseHandler;
+        if (strlen($this->responseHandler) > 0) {
+            //throw new PAMIException('Hier:' . $this->responseHandler);
+            return (string)$this->responseHandler;
         } else {
             return "";
         }
     }
 
     /**
-     * Set '_responseHandler'.
+     * Set 'responseHandler'.
      *
      * @return void
      * @throws if class cannot be found or strlen($responseHandler) == 0
@@ -78,7 +78,7 @@ abstract class OutgoingMessage extends Message
 
         $className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
         if (class_exists($className, true)) {
-            $this->_responseHandler = $responseHandler;
+            $this->responseHandler = $responseHandler;
         } else {
             throw new PAMIException('ResponseHandler could not be found.');
         }

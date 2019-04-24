@@ -58,12 +58,12 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
         parent::__construct($rawContent);
     }
     
-    private function _getEventKey($keyname)
+    private function getEventKey($keyname)
     {
         return $this->_events[0]->getKey($keyname);
     }
 
-    private function _getEventBoolKey($keyname)
+    private function getEventBoolKey($keyname)
     {
         return $this->_events[0]->getBoolKey($keyname);
     }
@@ -75,7 +75,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getMACAddress()
     {
-        return $this->_getEventKey('MACAddress');
+        return $this->getEventKey('MACAddress');
     }
 
     /**
@@ -95,7 +95,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getProtocolVersion()
     {
-        return $this->_getEventKey('ProtocolVersion');
+        return $this->getEventKey('ProtocolVersion');
     }
 
     /**
@@ -105,7 +105,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getProtocolInUse()
     {
-        return $this->_getEventKey('ProtocolInUse');
+        return $this->getEventKey('ProtocolInUse');
     }
 
     /**
@@ -115,7 +115,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDeviceFeatures()
     {
-        return $this->_getEventKey('DeviceFeatures');
+        return $this->getEventKey('DeviceFeatures');
     }
 
     /**
@@ -125,7 +125,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getTokenstate()
     {
-        return $this->_getEventKey('Tokenstate');
+        return $this->getEventKey('Tokenstate');
     }
 
     /**
@@ -135,7 +135,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getKeepalive()
     {
-        return intval($this->_getEventKey('Keepalive'));
+        return intval($this->getEventKey('Keepalive'));
     }
 
     /**
@@ -145,7 +145,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getRegistrationState()
     {
-        return $this->_getEventKey('RegistrationState');
+        return $this->getEventKey('RegistrationState');
     }
 
     /**
@@ -155,7 +155,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getState()
     {
-        return $this->_getEventKey('State');
+        return $this->getEventKey('State');
     }
 
     /**
@@ -165,7 +165,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getMWILight()
     {
-        return $this->_getEventKey('MWILight');
+        return $this->getEventKey('MWILight');
     }
 
     /**
@@ -175,7 +175,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getMWIHandsetLight()
     {
-        return $this->_getEventBoolKey('MWIHandsetLight');
+        return $this->getEventBoolKey('MWIHandsetLight');
     }
 
     /**
@@ -185,7 +185,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDescription()
     {
-        return $this->_getEventKey('Description');
+        return $this->getEventKey('Description');
     }
 
     /**
@@ -195,7 +195,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getConfigPhoneType()
     {
-        return $this->_getEventKey('ConfigPhoneType');
+        return $this->getEventKey('ConfigPhoneType');
     }
 
     /**
@@ -205,7 +205,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getSkinnyPhoneType()
     {
-        return $this->_getEventKey('SkinnyPhoneType');
+        return $this->getEventKey('SkinnyPhoneType');
     }
 
     /**
@@ -215,7 +215,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getSoftkeySupport()
     {
-        return $this->_getEventBoolKey('SoftkeySupport');
+        return $this->getEventBoolKey('SoftkeySupport');
     }
 
     /**
@@ -225,7 +225,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getSoftkeyset()
     {
-        return $this->_getEventKey('Softkeyset');
+        return $this->getEventKey('Softkeyset');
     }
 
     /**
@@ -235,7 +235,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getBTemplateSupport()
     {
-        return $this->_getEventBoolKey('BTemplateSupport');
+        return $this->getEventBoolKey('BTemplateSupport');
     }
 
     /**
@@ -245,7 +245,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getLinesRegistered()
     {
-        return $this->_getEventBoolKey('linesRegistered');
+        return $this->getEventBoolKey('linesRegistered');
     }
 
     /**
@@ -255,7 +255,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getImageVersion()
     {
-        return $this->_getEventKey('ImageVersion');
+        return $this->getEventKey('ImageVersion');
     }
 
     /**
@@ -265,7 +265,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getTimezoneOffset()
     {
-        return intval($this->_getEventKey('TimezoneOffset'));
+        return intval($this->getEventKey('TimezoneOffset'));
     }
 
     /**
@@ -276,7 +276,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
     public function getCapabilities()
     {
         $ret = array();
-        $codecs=explode(", ", substr($this->_getEventKey('Capabilities'), 1, -1));
+        $codecs=explode(", ", substr($this->getEventKey('Capabilities'), 1, -1));
         foreach ($codecs as $codec) {
             $codec_parts=explode(" ", $codec);
             $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
@@ -292,7 +292,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
     public function getCodecsPreference()
     {
         $ret = array();
-        $codecs=explode(", ", substr($this->_getEventKey('CodecsPreference'), 1, -1));
+        $codecs=explode(", ", substr($this->getEventKey('CodecsPreference'), 1, -1));
         foreach ($codecs as $codec) {
             $codec_parts=explode(" ", $codec);
             $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
@@ -307,7 +307,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getAudioTOS()
     {
-        return intval($this->_getEventKey('AudioTOS'));
+        return intval($this->getEventKey('AudioTOS'));
     }
 
     /**
@@ -317,7 +317,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getAudioCOS()
     {
-        return intval($this->_getEventKey('AudioCOS'));
+        return intval($this->getEventKey('AudioCOS'));
     }
 
     /**
@@ -327,7 +327,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getVideoTOS()
     {
-        return intval($this->_getEventKey('VideoTOS'));
+        return intval($this->getEventKey('VideoTOS'));
     }
 
     /**
@@ -337,7 +337,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getVideoCOS()
     {
-        return intval($this->_getEventKey('VideoCOS'));
+        return intval($this->getEventKey('VideoCOS'));
     }
 
     /**
@@ -347,7 +347,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDNDFeatureEnabled()
     {
-        return $this->_getEventBoolKey('DNDFeatureEnabled');
+        return $this->getEventBoolKey('DNDFeatureEnabled');
     }
 
     /**
@@ -357,7 +357,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDNDStatus()
     {
-        return $this->_getEventKey('DNDStatus');
+        return $this->getEventKey('DNDStatus');
     }
 
     /**
@@ -367,7 +367,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDNDAction()
     {
-        return $this->_getEventKey('DNDAction');
+        return $this->getEventKey('DNDAction');
     }
 
     /**
@@ -377,7 +377,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCanTransfer()
     {
-        return $this->_getEventBoolKey('CanTransfer');
+        return $this->getEventBoolKey('CanTransfer');
     }
 
     /**
@@ -387,7 +387,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCanPark()
     {
-        return $this->_getEventBoolKey('CanPark');
+        return $this->getEventBoolKey('CanPark');
     }
 
     /**
@@ -397,7 +397,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCanCFWDALL()
     {
-        return $this->_getEventBoolKey('CanCFWDALL');
+        return $this->getEventBoolKey('CanCFWDALL');
     }
 
     /**
@@ -407,7 +407,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCanCFWBUSY()
     {
-        return $this->_getEventBoolKey('CanCFWBUSY');
+        return $this->getEventBoolKey('CanCFWBUSY');
     }
 
     /**
@@ -417,7 +417,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCanCFWNOANSWER()
     {
-        return $this->_getEventBoolKey('CanCFWNOANSWER');
+        return $this->getEventBoolKey('CanCFWNOANSWER');
     }
 
     /**
@@ -427,7 +427,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getAllowRinginNotification()
     {
-        return $this->_getEventBoolKey('AllowRinginNotification');
+        return $this->getEventBoolKey('AllowRinginNotification');
     }
 
     /**
@@ -437,7 +437,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getPrivateSoftkey()
     {
-        return $this->_getEventBoolKey('PrivateSoftkey');
+        return $this->getEventBoolKey('PrivateSoftkey');
     }
 
     /**
@@ -447,7 +447,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDtmfMode()
     {
-        return $this->_getEventKey('DtmfMode');
+        return $this->getEventKey('DtmfMode');
     }
 
     /**
@@ -457,7 +457,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getNat()
     {
-        return $this->_getEventKey('Nat');
+        return $this->getEventKey('Nat');
     }
 
     /**
@@ -467,7 +467,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getVideosupport()
     {
-        return $this->_getEventBoolKey('Videosupport');
+        return $this->getEventBoolKey('Videosupport');
     }
 
     /**
@@ -477,7 +477,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDirectRTP()
     {
-        return $this->_getEventBoolKey('DirectRTP');
+        return $this->getEventBoolKey('DirectRTP');
     }
 
     /**
@@ -487,7 +487,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getBindAddress()
     {
-        return $this->_getEventKey('BindAddress');
+        return $this->getEventKey('BindAddress');
     }
 
     /**
@@ -497,7 +497,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getServerAddress()
     {
-        return $this->_getEventKey('ServerAddress');
+        return $this->getEventKey('ServerAddress');
     }
 
     /**
@@ -509,7 +509,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
     {
         $deny = array();
         $permit = array();
-        $entries=explode(",", substr($this->_getEventKey('DenyPermit'), 0, -1));
+        $entries=explode(",", substr($this->getEventKey('DenyPermit'), 0, -1));
         foreach ($entries as $entry) {
             $entry_parts=explode(":", $entry);
             if ($entry_parts[0]=="deny") {
@@ -517,7 +517,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
             } elseif ($entry_parts[0]=="permit") {
                 $permit[] = $entry_parts[1];
             } else {
-                throw new PAMIException('Could not parse DenyPermit value: ' . $this->_getEventKey('DenyPermit'));
+                throw new PAMIException('Could not parse DenyPermit value: ' . $this->getEventKey('DenyPermit'));
             }
         }
         return array('deny'=>$deny, 'permit'=>$permit);
@@ -530,7 +530,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getPermitHosts()
     {
-        return $this->_getEventKey('PermitHosts');
+        return $this->getEventKey('PermitHosts');
     }
 
     /**
@@ -540,7 +540,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getEarlyRTP()
     {
-        return $this->_getEventKey('EarlyRTP');
+        return $this->getEventKey('EarlyRTP');
     }
 
     /**
@@ -550,7 +550,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDeviceStateAcc()
     {
-        return $this->_getEventKey('DeviceStateAcc');
+        return $this->getEventKey('DeviceStateAcc');
     }
 
     /**
@@ -560,7 +560,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getLastUsedAccessory()
     {
-        return $this->_getEventKey('LastUsedAccessory');
+        return $this->getEventKey('LastUsedAccessory');
     }
 
     /**
@@ -570,7 +570,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getLastDialedNumber()
     {
-        return $this->_getEventKey('LastDialedNumber');
+        return $this->getEventKey('LastDialedNumber');
     }
 
     /**
@@ -580,7 +580,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDefaultLineInstance()
     {
-        return intval($this->_getEventKey('DefaultLineInstance'));
+        return intval($this->getEventKey('DefaultLineInstance'));
     }
 
     /**
@@ -590,7 +590,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCustomBackgroundImage()
     {
-        return $this->_getEventKey('CustomBackgroundImage');
+        return $this->getEventKey('CustomBackgroundImage');
     }
 
     /**
@@ -600,7 +600,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCustomRingTone()
     {
-        return $this->_getEventKey('CustomRingTone');
+        return $this->getEventKey('CustomRingTone');
     }
 
     /**
@@ -610,7 +610,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getUsePlacedCalls()
     {
-        return $this->_getEventBoolKey('UsePlacedCalls');
+        return $this->getEventBoolKey('UsePlacedCalls');
     }
 
     /**
@@ -620,7 +620,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getPendingUpdate()
     {
-        return $this->_getEventBoolKey('PendingUpdate');
+        return $this->getEventBoolKey('PendingUpdate');
     }
 
     /**
@@ -630,7 +630,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getPendingDelete()
     {
-        return $this->_getEventBoolKey('PendingDelete');
+        return $this->getEventBoolKey('PendingDelete');
     }
 
     /**
@@ -640,7 +640,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDirectedPickup()
     {
-        return $this->_getEventBoolKey('DirectedPickup');
+        return $this->getEventBoolKey('DirectedPickup');
     }
 
     /**
@@ -650,7 +650,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getPickupContext()
     {
-        return $this->_getEventKey('PickupContext');
+        return $this->getEventKey('PickupContext');
     }
 
     /**
@@ -660,7 +660,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getPickupModeAnswer()
     {
-        return $this->_getEventBoolKey('PickupModeAnswer');
+        return $this->getEventBoolKey('PickupModeAnswer');
     }
 
     /**
@@ -670,7 +670,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getallowConference()
     {
-        return $this->_getEventBoolKey('allowConference');
+        return $this->getEventBoolKey('allowConference');
     }
 
     /**
@@ -680,7 +680,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getconfPlayGeneralAnnounce()
     {
-        return $this->_getEventBoolKey('confPlayGeneralAnnounce');
+        return $this->getEventBoolKey('confPlayGeneralAnnounce');
     }
 
     /**
@@ -690,7 +690,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getconfPlayPartAnnounce()
     {
-        return $this->_getEventBoolKey('confPlayPartAnnounce');
+        return $this->getEventBoolKey('confPlayPartAnnounce');
     }
 
     /**
@@ -700,7 +700,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getconfMuteOnEntry()
     {
-        return $this->_getEventBoolKey('confMuteOnEntry');
+        return $this->getEventBoolKey('confMuteOnEntry');
     }
 
     /**
@@ -710,7 +710,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getconfMusicOnHoldClass()
     {
-        return $this->_getEventKey('confMusicOnHoldClass');
+        return $this->getEventKey('confMusicOnHoldClass');
     }
 
     /**
@@ -720,7 +720,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getconfShowConflist()
     {
-        return $this->_getEventBoolKey('confShowConflist');
+        return $this->getEventBoolKey('confShowConflist');
     }
 
     /**
@@ -730,7 +730,7 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getconflistActive()
     {
-        return $this->_getEventBoolKey('conflistActive');
+        return $this->getEventBoolKey('conflistActive');
     }
 
     /**

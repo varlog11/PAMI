@@ -58,12 +58,12 @@ class SCCPShowLineResponse extends SCCPGenericResponse
         parent::__construct($rawContent);
     }
     
-    private function _getEventKey($keyname)
+    private function getEventKey($keyname)
     {
         return $this->_events[0]->getKey($keyname);
     }
 
-    private function _getEventBoolKey($keyname)
+    private function getEventBoolKey($keyname)
     {
         return $this->_events[0]->getBoolKey($keyname);
     }
@@ -75,7 +75,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getName()
     {
-        return $this->_getEventKey('Name');
+        return $this->getEventKey('Name');
     }
 
     /**
@@ -85,7 +85,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getDescription()
     {
-        return $this->_getEventKey('Description');
+        return $this->getEventKey('Description');
     }
 
     /**
@@ -95,7 +95,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getLabel()
     {
-        return $this->_getEventKey('Label');
+        return $this->getEventKey('Label');
     }
 
     /**
@@ -105,7 +105,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getID()
     {
-        return intval($this->_getEventKey('ID'));
+        return intval($this->getEventKey('ID'));
     }
 
     /**
@@ -115,7 +115,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPin()
     {
-        return intval($this->_getEventKey('Pin'));
+        return intval($this->getEventKey('Pin'));
     }
 
     /**
@@ -125,7 +125,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getVoiceMailNumber()
     {
-        return $this->_getEventKey('VoiceMailNumber');
+        return $this->getEventKey('VoiceMailNumber');
     }
 
     /**
@@ -135,7 +135,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getTransferToVoicemail()
     {
-        return $this->_getEventKey('TransferToVoicemail');
+        return $this->getEventKey('TransferToVoicemail');
     }
 
     /**
@@ -145,7 +145,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getMeetMeEnabled()
     {
-        return $this->_getEventBoolKey('MeetMeEnabled');
+        return $this->getEventBoolKey('MeetMeEnabled');
     }
 
     /**
@@ -155,7 +155,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getMeetMeNumber()
     {
-        return $this->_getEventKey('MeetMeNumber');
+        return $this->getEventKey('MeetMeNumber');
     }
 
     /**
@@ -165,7 +165,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getMeetMeOptions()
     {
-        return $this->_getEventKey('MeetMeOptions');
+        return $this->getEventKey('MeetMeOptions');
     }
 
     /**
@@ -175,7 +175,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getContext()
     {
-        return $this->_getEventKey('Context');
+        return $this->getEventKey('Context');
     }
 
     /**
@@ -185,7 +185,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getLanguage()
     {
-        return $this->_getEventKey('Language');
+        return $this->getEventKey('Language');
     }
 
     /**
@@ -195,7 +195,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getAccountCode()
     {
-        return $this->_getEventKey('AccountCode');
+        return $this->getEventKey('AccountCode');
     }
 
     /**
@@ -205,7 +205,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getMusicclass()
     {
-        return $this->_getEventKey('Musicclass');
+        return $this->getEventKey('Musicclass');
     }
 
     /**
@@ -215,7 +215,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getAmaFlags()
     {
-        return intval($this->_getEventKey('AmaFlags'));
+        return intval($this->getEventKey('AmaFlags'));
     }
 
     /**
@@ -225,7 +225,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getCallGroup()
     {
-        return array_map('intval', explode(",", $this->_getEventKey('Callgroup')));
+        return array_map('intval', explode(",", $this->getEventKey('Callgroup')));
     }
 
     /**
@@ -235,7 +235,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPickupGroup()
     {
-        return array_map('intval', explode(",", $this->_getEventKey('Pickupgroup')));
+        return array_map('intval', explode(",", $this->getEventKey('Pickupgroup')));
     }
 
     /**
@@ -245,7 +245,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getNamedCallGroup()
     {
-        return explode(",", $this->_getEventKey('NamedCallGroup'));
+        return explode(",", $this->getEventKey('NamedCallGroup'));
     }
 
     /**
@@ -255,7 +255,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getNamedPickupGroup()
     {
-        return explode(",", $this->_getEventKey('NamedPickupGroup'));
+        return explode(",", $this->getEventKey('NamedPickupGroup'));
     }
 
     /**
@@ -265,7 +265,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getParkingLot()
     {
-        return $this->_getEventKey('ParkingLot');
+        return $this->getEventKey('ParkingLot');
     }
 
     /**
@@ -275,7 +275,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getCallerIDName()
     {
-        return $this->_getEventKey('CallerIDName');
+        return $this->getEventKey('CallerIDName');
     }
 
     /**
@@ -285,7 +285,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getCallerIDNumber()
     {
-        return $this->_getEventKey('CallerIDNumber');
+        return $this->getEventKey('CallerIDNumber');
     }
 
     /**
@@ -295,7 +295,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getIncomingCallsLimit()
     {
-        return intval($this->_getEventKey('IncomingCallsLimit'));
+        return intval($this->getEventKey('IncomingCallsLimit'));
     }
 
     /**
@@ -305,7 +305,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getActiveChannelCount()
     {
-        return intval($this->_getEventKey('ActiveChannelCount'));
+        return intval($this->getEventKey('ActiveChannelCount'));
     }
 
     /**
@@ -315,7 +315,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getSecDialtoneDigits()
     {
-        return intval($this->_getEventKey('SecDialtoneDigits'));
+        return intval($this->getEventKey('SecDialtoneDigits'));
     }
 
     /**
@@ -326,7 +326,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
     public function getSecDialtone()
     {
         /* can be either integer or hex -> convert hex to int */
-        return intval($this->_getEventKey('SecDialtone'), 0);
+        return intval($this->getEventKey('SecDialtone'), 0);
     }
 
     /**
@@ -336,7 +336,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getEchoCancellation()
     {
-        return $this->_getEventBoolKey('EchoCancellation');
+        return $this->getEventBoolKey('EchoCancellation');
     }
 
     /**
@@ -346,7 +346,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getSilenceSuppression()
     {
-        return $this->_getEventBoolKey('SilenceSuppression');
+        return $this->getEventBoolKey('SilenceSuppression');
     }
 
     /**
@@ -356,7 +356,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getCanTransfer()
     {
-        return $this->_getEventBoolKey('CanTransfer');
+        return $this->getEventBoolKey('CanTransfer');
     }
 
     /**
@@ -366,7 +366,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getDNDAction()
     {
-        return $this->_getEventKey('DNDAction');
+        return $this->getEventKey('DNDAction');
     }
 
     /**
@@ -376,7 +376,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getIsRealtimeLine()
     {
-        return $this->_getEventBoolKey('IsRealtimeLine');
+        return $this->getEventBoolKey('IsRealtimeLine');
     }
 
     /**
@@ -386,7 +386,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPendingDelete()
     {
-        return $this->_getEventBoolKey('PendingDelete');
+        return $this->getEventBoolKey('PendingDelete');
     }
 
     /**
@@ -396,7 +396,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPendingUpdate()
     {
-        return $this->_getEventBoolKey('PendingUpdate');
+        return $this->getEventBoolKey('PendingUpdate');
     }
 
     /**
@@ -406,7 +406,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getRegistrationExtension()
     {
-        return $this->_getEventKey('RegistrationExtension');
+        return $this->getEventKey('RegistrationExtension');
     }
 
     /**
@@ -416,7 +416,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getRegistrationContext()
     {
-        return $this->_getEventKey('RegistrationContext');
+        return $this->getEventKey('RegistrationContext');
     }
 
     /**
@@ -426,7 +426,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getAdhocNumberAssigned()
     {
-        return $this->_getEventBoolKey('AdhocNumberAssigned');
+        return $this->getEventBoolKey('AdhocNumberAssigned');
     }
 
     /**
@@ -436,7 +436,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getMessageWaitingNew()
     {
-        return intval($this->_getEventKey('MessageWaitingNew'));
+        return intval($this->getEventKey('MessageWaitingNew'));
     }
 
     /**
@@ -446,7 +446,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getMessageWaitingOld()
     {
-        return intval($this->_getEventKey('MessageWaitingOld'));
+        return intval($this->getEventKey('MessageWaitingOld'));
     }
 
     /**
