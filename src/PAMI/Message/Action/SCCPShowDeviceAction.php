@@ -54,5 +54,6 @@ class SCCPShowDeviceAction extends ActionMessage
     {
         parent::__construct('SCCPShowDevice');
         $this->setKey('DeviceName', $devicename);
+        $this->setResponseHandler("SCCPShowDevice");
     }
 }

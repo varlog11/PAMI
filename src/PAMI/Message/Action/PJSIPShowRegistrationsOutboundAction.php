@@ -51,6 +51,6 @@ class PJSIPShowRegistrationsOutboundAction extends ActionMessage
     public function __construct()
     {
         parent::__construct('PJSIPShowRegistrationsOutbound');
-        $this->setResponseHandler("PJSIPGeneric");
+        $this->setResponseHandler("Complex");
     }
 }

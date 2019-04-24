@@ -54,6 +54,6 @@ class PJSIPShowEndpointAction extends ActionMessage
     {
         parent::__construct('PJSIPShowEndpoint');
         $this->setKey('Endpoint', $endpointName);
-        $this->setResponseHandler("PJSIPGeneric");
+        $this->setResponseHandler("Complex");
     }
 }

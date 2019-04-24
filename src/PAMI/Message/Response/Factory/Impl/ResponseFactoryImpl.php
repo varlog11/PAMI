@@ -31,9 +31,9 @@
 namespace PAMI\Message\Response\Factory\Impl;
 
 use PAMI\Exception\PAMIException;
-use PAMI\Message\Response\ResponseMessage;
-use PAMI\Message\Response\GenericResponse;
-use PAMI\Message\Message;
+use PAMI\Message\OutgoingMessage;
+use PAMI\Message\Response\Factory\IResponseFactory;
+use PAMI\Message\Response\Response;
 
 /**
  * This factory knows which reponse handler to return according to a given raw message from ami,
@@ -48,43 +48,76 @@ use PAMI\Message\Message;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class ResponseFactoryImpl
+class ResponseFactoryImpl implements IResponseFactory
 {
+
+    private $logger;
+
+    private $responseClassMapping = array();
+
+    /**
+     * Registers the response class that should be used for the given action class.
+     *
+     * @param string $actionClass
+     * @param string $responseClass
+     */
+    public function registerResponseClass($actionClass, $responseClass)
+    {
+        if (!class_exists($responseClass)) {
+            throw new \InvalidArgumentException('Response class '.$responseClass.' does not exist.');
+        }
+
+        if (!is_a($responseClass, '\PAMI\Message\Response\Response', true)) {
+            throw new \InvalidArgumentException(
+                'Response class '.$responseClass.' must inherit \PAMI\Message\Response\Response.'
+            );
+        }
+
+        $this->responseClassMapping[$actionClass] = $responseClass;
+    }
+
+
     /**
      * This is our factory method.
      *
-     * @param string $message Literal message as received from ami.
-     * @param string $requestingaction
-     * @param string $responseHandler
+     * @param string          $message Literal message as received from ami.
+     * @param OutgoingMessage $requestingAction
      *
-     * @return EventMessage
+     * @return ResponseMessage
+     * @throws PAMIException
      */
-    //public static function createFromRaw($message, $requestingaction = false, $responseHandler = false)
-    public function createFromRaw($message, $requestingaction = false, $responseHandler = false)
+    public function createFromRaw($message, $requestingAction = null)
     {
-        $responseclass = '\\PAMI\\Message\\Response\\GenericResponse';
-        $_className = false;
-        if ($responseHandler != false) {
-            $_className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
-        } elseif ($requestingaction != false) {
-            $_className = '\\PAMI\\Message\\Response\\' . substr(get_class($requestingaction), 20, -6) . 'Response';
-        }
-        if ($_className) {
-            if (class_exists($_className, true)) {
-                $responseclass = $_className;
-            } elseif ($responseHandler != false) {
-                throw new PAMIException('Response Class ' . $_className . '  requested via responseHandler, could not be found');
+        $responseHandlerClass = '\\PAMI\\Message\\Response\\GenericResponse';
+
+        if ($requestingAction != null) {
+            $request_class = get_class($requestingAction);
+            if ($requestingAction->getResponseHandler() != null) {                // First, match on the per-object handler.
+                $responseHandlerClass = $requestingAction->getResponseHandler();
+            } elseif (isset($this->responseClassMapping[$request_class])) {        // Otherwise try the per-action handler.
+                $responseHandlerClass = $this->responseClassMapping[$request_class];
             }
         }
-        return new $responseclass($message);
+        return $this->createResponseHandler($responseHandlerClass, $message);
     }
 
     /**
      * Constructor. Nothing to see here, move along.
-     *
-     * @return void
      */
     public function __construct()
     {
+        //$this->logger = \Logger::getLogger(__CLASS__);
+        if ($this->logger && $this->logger->isDebugEnabled()) {
+            $this->logger->debug('------ Response Factory Created: ------ '."\n");
+        }
+    }
+
+    public function createResponseHandler($class, $message)
+    {
+        if ($this->logger && $this->logger->isDebugEnabled()) {
+            $this->logger->debug('Created response class '.$class."\n");
+        }
+
+        return new $class($message);
     }
 }

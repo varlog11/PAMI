@@ -51,5 +51,6 @@ class SCCPShowGlobalsAction extends ActionMessage
     public function __construct()
     {
         parent::__construct('SCCPShowGlobals');
+        $this->setResponseHandler("SCCPShowGlobals");
     }
 }

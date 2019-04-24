@@ -94,7 +94,7 @@ namespace PAMI\Client\Impl {
             }
             setFgetsMock($event, $write);
             $result = $client->send($action);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
             return $client;
         }
         /**

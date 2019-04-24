@@ -51,6 +51,6 @@ class PJSIPShowSubscriptionsInboundAction extends ActionMessage
     public function __construct()
     {
         parent::__construct('PJSIPShowSubscriptionsInbound');
-        $this->setResponseHandler("PJSIPGeneric");
+        $this->setResponseHandler("Complex");
     }
 }

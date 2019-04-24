@@ -53,6 +53,6 @@ class SCCPShowChannelsAction extends ActionMessage
         parent::__construct('SCCPShowChannels');
 
         /* manually overwrite the responsehandler */
-        $this->setResponseHandler('SCCPGeneric');
+        $this->setResponseHandler('Complex');
     }
 }

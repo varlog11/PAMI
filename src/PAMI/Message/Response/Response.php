@@ -46,7 +46,7 @@ use PAMI\Exception\PAMIException;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-abstract class ResponseMessage extends IncomingMessage
+abstract class Response extends IncomingMessage
 {
     /**
      * Child events.

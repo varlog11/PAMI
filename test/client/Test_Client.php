@@ -771,7 +771,7 @@ namespace PAMI\Client\Impl {
             );
             setFgetsMock($event, $write);
             $result = $client->send(new \PAMI\Message\Action\CoreShowChannelsAction);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
             $events = $result->getEvents();
             $this->assertEquals(count($events), 1);
             $this->assertTrue($events[0] instanceof \PAMI\Message\Event\CoreShowChannelsCompleteEvent);

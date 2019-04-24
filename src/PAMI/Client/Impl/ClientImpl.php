@@ -34,7 +34,7 @@ use PAMI\Message\OutgoingMessage;
 use PAMI\Message\Message;
 use PAMI\Message\IncomingMessage;
 use PAMI\Message\Action\LoginAction;
-use PAMI\Message\Response\ResponseMessage;
+use PAMI\Message\Response\Response;
 use PAMI\Message\Event\Factory\Impl\EventFactoryImpl;
 use PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl;
 use PAMI\Listener\IEventListener;
@@ -106,7 +106,7 @@ class ClientImpl implements IClient
     private $eventFactory;
 
     /**
-     * Event factory.
+     * Response factory.
      * @var ResponseFactoryImpl
      */
     private $responseFactory;
@@ -394,8 +394,7 @@ class ClientImpl implements IClient
      */
     private function messageToResponse($msg)
     {
-        //$response = new ResponseMessage($msg);
-        $response = $this->responseFactory->createFromRaw($msg, $this->lastActionClass, $this->lastRequestedResponseHandler);
+        $response = $this->responseFactory->createFromRaw($msg, $this->lastActionClass);
         $actionId = $response->getActionId();
         if (is_null($actionId)) {
             $actionId = $this->lastActionId;
@@ -457,7 +456,6 @@ class ClientImpl implements IClient
             '------ Sending: ------ ' . "\n" . $messageToSend . '----------'
         );
         $this->lastActionId = $message->getActionId();
-        $this->lastRequestedResponseHandler = $message->getResponseHandler();
         $this->lastActionClass = $message;
         if (@fwrite($this->socket, $messageToSend) < $length) {
             throw new ClientException('Could not send message');

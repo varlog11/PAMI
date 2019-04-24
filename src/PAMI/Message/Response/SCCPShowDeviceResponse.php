@@ -29,7 +29,7 @@
  */
 namespace PAMI\Message\Response;
 
-use PAMI\Message\Response\ResponseMessage;
+use PAMI\Message\Response\Response;
 use PAMI\Exception\PAMIException;
 
 /**
@@ -44,7 +44,7 @@ use PAMI\Exception\PAMIException;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class SCCPShowDeviceResponse extends SCCPGenericResponse
+class SCCPShowDeviceResponse extends ComplexResponse
 {
     /**
      * Constructor.

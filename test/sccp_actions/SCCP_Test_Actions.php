@@ -116,7 +116,7 @@ namespace PAMI\Client\Impl {
                 );
             }
             $result = $this->_start_action($write, $action, $response, false);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
             return $result;
         }
 
@@ -133,8 +133,8 @@ namespace PAMI\Client\Impl {
 
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction();
             $result = $this->_start($write, $action);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue(is_array($result->getJSON()));
         }
 
@@ -157,8 +157,8 @@ namespace PAMI\Client\Impl {
             );
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction('general');
             $result = $this->_start($write, $action, $response);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue(is_array($result->getJSON()));
         }
 
@@ -175,8 +175,8 @@ namespace PAMI\Client\Impl {
             )));
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction('device');
             $result = $this->_start($write, $action);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue(is_array($result->getJSON()));
         }
 
@@ -193,8 +193,8 @@ namespace PAMI\Client\Impl {
             )));
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction('line');
             $result = $this->_start($write, $action);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue(is_array($result->getJSON()));
         }
 
@@ -211,8 +211,8 @@ namespace PAMI\Client\Impl {
             )));
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction('softkey');
             $result = $this->_start($write, $action);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\ResponseMessage);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue(is_array($result->getJSON()));
         }
 
@@ -236,7 +236,7 @@ namespace PAMI\Client\Impl {
             );
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction('softkey');
             $result = $this->_start_action($write, $action, $response);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue(is_array($result->getJSON()));
         }
 
@@ -447,7 +447,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SCCPShowDevicesAction();
             $result = $this->_start_action($write, $action, $response);
 
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue($result->isSuccess());
             $this->assertTrue($result->hasTable());
             $this->assertTrue(is_array($result->getTableNames()));
@@ -520,7 +520,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SCCPShowDevicesAction();
             $result = $this->_start_action($write, $action, $response);
 
-            $this->assertTrue($result instanceof \PAMI\Message\Response\SCCPGenericResponse);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
             $this->assertTrue($result->isSuccess());
             $this->assertTrue($result->hasTable());
             $this->assertTrue(is_array($result->getTable('NotATable')));        /* Table does not exist */

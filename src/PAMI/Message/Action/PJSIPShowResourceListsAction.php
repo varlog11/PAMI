@@ -51,6 +51,6 @@ class PJSIPShowResourceListsAction extends ActionMessage
     public function __construct()
     {
         parent::__construct('PJSIPShowResourceLists');
-        $this->setResponseHandler("PJSIPGeneric");
+        $this->setResponseHandler("Complex");
     }
 }

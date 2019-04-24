@@ -29,7 +29,8 @@
  */
 namespace PAMI\Message\Response;
 
-use PAMI\Message\Response\ResponseMessage;
+use PAMI\Message\Response\Response;
+use PAMI\Message\Response\ComplexResponse;
 
 /**
  * A sccp show globals response message from ami.
@@ -43,7 +44,7 @@ use PAMI\Message\Response\ResponseMessage;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class SCCPShowGlobalsResponse extends SCCPGenericResponse
+class SCCPShowGlobalsResponse extends ComplexResponse
 {
     /**
      * Constructor.

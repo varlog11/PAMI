@@ -29,7 +29,7 @@
  */
 namespace PAMI\Message\Response;
 
-use PAMI\Message\Response\ResponseMessage;
+use PAMI\Message\Response\Response;
 use PAMI\Message\Event\EventMessage;
 use PAMI\Exception\PAMIException;
 
@@ -45,7 +45,7 @@ use PAMI\Exception\PAMIException;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class AdvancedResponseMessage extends ResponseMessage
+class ComplexResponse extends Response
 {
     /**
      * Child Tables

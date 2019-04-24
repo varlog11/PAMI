@@ -54,5 +54,6 @@ class SCCPShowLineAction extends ActionMessage
     {
         parent::__construct('SCCPShowLine');
         $this->setKey('LineName', $linename);
+        $this->setResponseHandler("SCCPShowLine");
     }
 }

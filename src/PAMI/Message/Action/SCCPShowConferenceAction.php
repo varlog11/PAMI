@@ -54,7 +54,7 @@ class SCCPShowConferenceAction extends ActionMessage
     public function __construct($ConferenceId)
     {
         parent::__construct('SCCPShowConference');
-        $this->setResponseHandler("SCCPGeneric");
+        $this->setResponseHandler("Complex");
         $this->setKey('ConferenceId', $ConferenceId);
     }
 }
