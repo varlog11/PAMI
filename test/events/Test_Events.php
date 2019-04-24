@@ -120,13 +120,31 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Paused' => true
             ),
             'QueueMember' => array(
-                'Paused' => true
+                'Paused' => true,
+            	'LastCall' => 1,
+            	'IsInCall' => 1,
             ),
             'QueueMemberAdded' => array(
-                'Paused' => true
+                'Paused' => true,
+            ),
+            'QueueMemberAdded' => array(
+                'LastCall' => 1,
+            	'Paused' => 2,
+                'CallsTaken' => 3,
+                'Penalty' => 4,
             ),
             'QueueEntry' => array(
                 'Position' => 0
+            ),
+        	'QueueParams' => array(
+                'Completed' => 4,
+        		'HoldTime' => 5,
+                'Calls' => 6,
+                'Max' => 6,
+                'Weight' => 2,
+                'ServiceLevel' => 1,
+                'Abandoned' => 3,
+                'TalkTime' => 1,
             ),
             'EndpointList' => array(
                 'ActiveChannels' => 0
@@ -513,16 +531,19 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'CallsTaken' => 'CallsTaken',
                 'Penalty' => 'Penalty',
             	'Membership' => 'Membership',
+            	'LastCall' => 1,
+            	'IsInCall' => 1,
+            	'StateInterface' => 'StateInterface',
             ),
             'QueueMemberAdded' => array(
                 'MemberName' => 'MemberName',
-                'LastCall' => 'LastCall',
+                'LastCall' => 1,
                 'Location' => 'Location',
                 'Queue' => 'Queue',
-            	'Paused' => 1,
+            	'Paused' => 2,
                 'Status' => 'Status',
-                'CallsTaken' => 'CallsTaken',
-                'Penalty' => 'Penalty',
+                'CallsTaken' => 3,
+                'Penalty' => 4,
             	'Membership' => 'Membership',
                 'Privilege' => 'Privilege'
             ),
@@ -538,16 +559,17 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Privilege' => 'Privilege'
             ),
         	'QueueParams' => array(
-                'Completed' => '4',
-        		'HoldTime' => '5',
-                'Calls' => '6',
+                'Completed' => 4,
+        		'HoldTime' => 5,
+                'Calls' => 6,
                 'Strategy' => 'Strategy',
-                'Max' => '6',
+                'Max' => 6,
                 'Queue' => 'Queue',
-                'Weight' => '2',
+                'Weight' => 2,
                 'ServiceLevelPerf' => 'ServiceLevelPerf',
-                'ServiceLevel' => '1',
-                'Abandoned' => '3'
+                'ServiceLevel' => 1,
+                'Abandoned' => 3,
+                'TalkTime' => 1,
             ),
             'QueueSummaryComplete' => array(),
         	'QueueSummary' => array(

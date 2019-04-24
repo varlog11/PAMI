@@ -514,7 +514,7 @@ class ClientImpl implements IClient
     {
         $this->logger = $logger;
     }
-    
+
     /**
      * Returns stream socket.
      *

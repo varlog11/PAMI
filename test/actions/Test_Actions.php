@@ -1572,6 +1572,25 @@ class Test_Actions extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
+    public function can_queue_member_ringinuse()
+    {
+        $write = array(implode("\r\n", array(
+        	'action: QueueMemberRingInUse',
+            'actionid: 1432.123',
+            'interface: interface',
+            'ringinuse: true',
+            'queue: queue',
+        	''
+        )));
+        $action = new \PAMI\Message\Action\QueueMemberRingInUse('interface', false);
+        $action->setRingInUse(true);
+        $action->setQueue('queue');
+        
+        $client = $this->_start($write, $action);
+    }
+    /**
+     * @test
+     */
     public function can_play_dtmf()
     {
         $write = array(implode("\r\n", array(
