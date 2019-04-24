@@ -26,13 +26,13 @@
     "phpunit/phpunit": "4.*",
     "monolog/monolog": "1.*",
     "squizlabs/php_codesniffer": "2.*",
-    "phpdocumentor/phpdocumentor": "2.*",
+    "phpdocumentor/phpdocumentor": "2.8.*",
     "phing/phing": "2.*",
     "phpmd/phpmd": "2.*",
     "php-coveralls/php-coveralls": "1.0.1",
     "evert/phpdoc-md" : "~0.1.1",
     "codeclimate/php-test-reporter": "dev-master",
     "sebastian/phpcpd": "*",
-    "marcelog/PAGI": "2.*"
+    "marcelog/pagi": "2.*"
   }
 }
