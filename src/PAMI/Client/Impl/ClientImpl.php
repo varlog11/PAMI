@@ -514,6 +514,16 @@ class ClientImpl implements IClient
     {
         $this->logger = $logger;
     }
+    
+    /**
+     * Returns stream socket.
+     *
+     * @return resource
+     */
+    public function getSocket()
+    {
+        return $this->socket;
+    }
 
     /**
      * Constructor.
