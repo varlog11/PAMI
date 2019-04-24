@@ -538,7 +538,7 @@ class ClientImpl implements IClient
         $this->user = $options['username'];
         $this->pass = $options['secret'];
         $this->cTimeout = $options['connect_timeout'];
-        $this->rTimeout = $options['read_timeout'] ?? 1;
+        $this->rTimeout = isset($options['read_timeout']) ? $options['read_timeout'] : 1;
         $this->scheme = isset($options['scheme']) ? $options['scheme'] : 'tcp://';
         $this->eventMask = isset($options['event_mask']) ? $options['event_mask'] : null;
         $this->eventListeners = array();
