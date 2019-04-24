@@ -1,6 +1,6 @@
 <?php
 /**
- * Event from PJSIPShowEndpoint
+ * Provide final information about an endpoint list.
  *
  * PHP Version 5
  *
@@ -32,7 +32,7 @@ namespace PAMI\Message\Event;
 use PAMI\Message\Event\EventMessage;
 
 /**
- * Event from PJSIPShowEndpoint
+ * Provide final information about an endpoint list.
  *
  * PHP Version 5
  *
@@ -43,15 +43,15 @@ use PAMI\Message\Event\EventMessage;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class EndpointListComplete extends EventMessage
+class EndpointListCompleteEvent extends EventMessage
 {
     /**
-     * Returns key: 'ListItems'.
+     * Shows count of returned items.
      *
-     * @return int
+     * @return key: 'ListItems'.
      */
     public function getListItems()
     {
-        return intval($this->getKey('ListItems'));
+        return $this->getKey('ListItems');
     }
 }

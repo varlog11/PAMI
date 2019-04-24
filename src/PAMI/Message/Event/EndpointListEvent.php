@@ -1,6 +1,7 @@
 <?php
 /**
  * Event from PJSIPShowEndpoints
+ * Provide details about a device/endpoint/contact's status.
  *
  * PHP Version 5
  *
@@ -46,9 +47,9 @@ use PAMI\Message\Event\EventMessage;
 class EndpointListEvent extends EventMessage
 {
     /**
-     * Returns key: 'ObjectType'.
+     * The object's type. This will always be 'endpoint'.
      *
-     * @return string
+     * @return string key: 'ObjectType'
      */
     public function getObjectType()
     {
@@ -56,9 +57,9 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'ObjectName'.
+     * The name of this object.
      *
-     * @return string
+     * @return string key: 'ObjectName'.
      */
     public function getObjectName()
     {
@@ -66,9 +67,9 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Transport'.
+     * The transport configurations associated with this endpoint.
      *
-     * @return string
+     * @return string key: 'Transport'.
      */
     public function getTransport()
     {
@@ -76,9 +77,9 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Aor'.
+     * The aor configurations associated with this endpoint.
      *
-     * @return string
+     * @return string key: 'Aor'.
      */
     public function getAor()
     {
@@ -86,9 +87,9 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Auths'.
+     * The inbound authentication configurations associated with this endpoint.
      *
-     * @return string
+     * @return string key: 'Auths'.
      */
     public function getAuths()
     {
@@ -96,9 +97,9 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'OutboundAuths'.
+     * The outbound authentication configurations associated with this endpoint.
      *
-     * @return string
+     * @return string key: 'OutboundAuths'.
      */
     public function getOutboundAuths()
     {
@@ -116,9 +117,9 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'DeviceState'.
+     * The aggregate device state for this endpoint.
      *
-     * @return string
+     * @return string key: 'DeviceState'.
      */
     public function getDeviceState()
     {
@@ -126,12 +127,12 @@ class EndpointListEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'ActiveChannels'.
+     * The number of active channels associated with this endpoint.
      *
-     * @return boolean
+     * @return integer for key: 'ActiveChannels'.
      */
     public function getActiveChannels()
     {
-        return $this->getBoolKey('ActiveChannels');
+        return intval($this->getKey('ActiveChannels'));
     }
 }

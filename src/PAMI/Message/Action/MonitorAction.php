@@ -85,7 +85,7 @@ class MonitorAction extends ActionMessage
      *
      * @return void
      */
-    public function setFormat($mix)
+    public function setMix($mix)
     {
         $this->setKey('Mix', $mix ? 'true' : 'false');
     }

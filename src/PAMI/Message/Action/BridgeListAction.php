@@ -1,16 +1,15 @@
 <?php
 /**
- * QueueStatus action message.
+ * BridgeList action message.
  *
  * PHP Version 5
+ *
+ * Get a list of bridges in the system.
+ * Returns a list of bridges, optionally filtering on a bridge type.
  *
  * @category   Pami
  * @package    Message
  * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
- * @version    SVN: $Id$
- * @link       http://marcelog.github.com/PAMI/
  *
  * Copyright 2011 Marcelo Gornstein <marcelog@gmail.com>
  *
@@ -25,39 +24,32 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
  */
 namespace PAMI\Message\Action;
 
 /**
- * QueueStatus action message.
+ * BridgeList action message.
  *
- * PHP Version 5
+ * Get a list of bridges in the system.
+ * Returns a list of bridges, optionally filtering on a bridge type.
  *
  * @category   Pami
  * @package    Message
  * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
- * @link       http://marcelog.github.com/PAMI/
  */
-class QueueStatusAction extends ActionMessage
+class BridgeListAction extends ActionMessage
 {
     /**
      * Constructor.
      *
-     * @param string $queue The queue (optional).
-     *
-     * @param string $member
+     * @param string|bool $bridgeType Optional type for filtering the resulting list of bridges.
+     * @param string $actionId ActionID for this transaction. Will be returned.
      */
-    public function __construct($queue = null, $member = null)
+    public function __construct($bridgeType = false, $actionId = '')
     {
-        parent::__construct('QueueStatus');
-        if ($queue != null) {
-            $this->setKey('Queue', $queue);
-        }
-        if ($member != null) {
-            $this->setKey('Member', $member);
+        parent::__construct('BridgeList');
+        if (false !== $bridgeType) {
+            $this->setKey('BridgeType', $bridgeType);
         }
     }
 }

@@ -46,9 +46,9 @@ use PAMI\Message\Event\EventMessage;
 class ConfbridgeListCompleteEvent extends EventMessage
 {
     /**
-     * Returns key: 'ListItems'.
+     * Shows count of returned items.
      *
-     * @return string
+     * @return key: 'ListItems'.
      */
     public function getListItems()
     {

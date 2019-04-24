@@ -21,6 +21,6 @@ after_script:
   - travis_retry php vendor/bin/coveralls -v
   - vendor/bin/test-reporter
 
-addons:
-  code_climate:
-    repo_token: 5d81d5163c7f9b810b46451042cb0069d24c91a5887466ba774bf89a56f0187e
+#addons:
+#  code_climate:
+#    repo_token: 5d81d5163c7f9b810b46451042cb0069d24c91a5887466ba774bf89a56f0187e
