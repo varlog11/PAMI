@@ -1157,6 +1157,28 @@ class Test_Actions extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
+    public function can_add_extension_to_dialplan()
+    {
+        $write = array(implode("\r\n", array(
+        	'action: DialplanExtensionAdd',
+            'actionid: 1432.123',
+        	'context: Context',
+        	'extension: Extension',
+        	'priority: Priority',
+        	'application: Application',
+        	'replace: true',
+        	'applicationdata: ApplicationData',
+            ''
+        )));
+	    $action = new \PAMI\Message\Action\DialplanExtensionAddAction('Context', 'Extension', 'Priority', 'Application');
+	    $action->setApplicationData('ApplicationData');
+	    $action->setReplace(true);
+        $client = $this->_start($write, $action);
+    }
+
+    /**
+     * @test
+     */
     public function can_set_var()
     {
         $write = array(implode("\r\n", array(
@@ -1737,6 +1759,9 @@ class Test_Actions extends \PHPUnit_Framework_TestCase
             'cat-000003: '.$number,
             'match-000003: some_match',
             'line-000003: line',
+            'action-000004: Append',
+            'cat-000004: '.$number,
+            'options-000004: option',
             ''
         )) );
 
@@ -1762,6 +1787,11 @@ class Test_Actions extends \PHPUnit_Framework_TestCase
         $actionCreate->setCat($number);
         $actionCreate->setMatch('some_match');
         $actionCreate->setLine('line');
+        
+        $actionCreate->setAction('Append');
+        $actionCreate->setCat($number);
+        $actionCreate->setOptions('option');
+        
 
         $client = $this->_start($writeCreate, $actionCreate);
 

@@ -43,7 +43,6 @@ namespace PAMI\Message\Action;
  */
 class UpdateConfigAction extends ActionMessage
 {
-    /** @var int */
     protected static $counter = -1;
 
     /**
@@ -58,33 +57,33 @@ class UpdateConfigAction extends ActionMessage
     }
 
     /**
-     * Sets source filename key.
+     * Sets Src filename key.
      *
-     * @param string $fileName.
+     * @param string $filename.
      *
      * @return void
      */
-    public function setSrcFilename($fileName)
+    public function setSrcFilename($filename)
     {
-        $this->setKey('SrcFilename', $fileName);
+        $this->setKey('SrcFilename', $filename);
     }
 
     /**
-     * Sets destination Filename key.
+     * Sets Dst Filename key.
      *
-     * @param string $fileName.
+     * @param string $filename.
      *
      * @return void
      */
-    public function setDstFilename($fileName)
+    public function setDstFilename($filename)
     {
-        $this->setKey('DstFilename', $fileName);
+        $this->setKey('DstFilename', $filename);
     }
 
      /**
      * Sets Reload key.
      *
-     * @param string $reload.
+     * @param string $input.
      *
      * @return void
      */
@@ -114,9 +113,9 @@ class UpdateConfigAction extends ActionMessage
      *
      * @return void
      */
-    public function setCat($cat)
+    public function setCat($input)
     {
-        $this->setKey('Cat-'.$this->getPaddedCounter(), $cat);
+        $this->setKey('Cat-'.$this->getPaddedCounter(), $input);
     }
 
     /**
@@ -165,6 +164,18 @@ class UpdateConfigAction extends ActionMessage
     public function setLine($input)
     {
         $this->setKey('Line-'.$this->getPaddedCounter(), $input);
+    }
+    
+     /**
+     * Sets Options-XXXXXX key.
+     *
+     * @param string $input.
+     *
+     * @return void
+     */
+    public function setOptions($input)
+    {
+        $this->setKey('Options-'.$this->getPaddedCounter(), $input);
     }
 
     /**
