@@ -19,7 +19,7 @@ Properties
 
 ### $logger
 
-    private \PAMI\Client\Impl\Logger $logger
+    private \Psr\Log\LoggerInterface $logger
 
 PSR-3 logger.
 
@@ -105,6 +105,17 @@ Event factory.
 * Visibility: **private**
 
 
+### $responseFactory
+
+    private \PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl $responseFactory
+
+Event factory.
+
+
+
+* Visibility: **private**
+
+
 ### $rTimeout
 
     private integer $rTimeout
@@ -151,7 +162,7 @@ Our event listeners
 
 ### $incomingQueue
 
-    private array<mixed,\PAMI\Message\IncomingMessage> $incomingQueue
+    private array<mixed,\PAMI\Message\Response\ResponseMessage> $incomingQueue
 
 The receiving queue.
 
@@ -178,6 +189,39 @@ eventually with an EOM.
 
 This should not happen. Asterisk may send responses without a
 corresponding ActionId.
+
+
+
+* Visibility: **private**
+
+
+### $eventMask
+
+    private string $eventMask
+
+Event mask to apply on login action.
+
+
+
+* Visibility: **private**
+
+
+### $lastRequestedResponseHandler
+
+    private string $lastRequestedResponseHandler
+
+
+
+
+
+* Visibility: **private**
+
+
+### $lastActionClass
+
+    private mixed $lastActionClass
+
+
 
 
 
@@ -301,6 +345,23 @@ Dispatchs the incoming message to a handler.
 
 
 
+### evaluatePredicate
+
+    boolean PAMI\Client\Impl\ClientImpl::evaluatePredicate($predicate, \PAMI\Message\IncomingMessage $message)
+
+Evaluate a predicate for a message.
+
+
+
+* Visibility: **protected**
+
+
+#### Arguments
+* $predicate **mixed** - &lt;p&gt;a closure or an array of filters.&lt;/p&gt;
+* $message **[PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)** - &lt;p&gt;Message to compare.&lt;/p&gt;
+
+
+
 ### messageToResponse
 
     \PAMI\Message\Response\ResponseMessage PAMI\Client\Impl\ClientImpl::messageToResponse(string $msg)
@@ -335,7 +396,7 @@ Returns a EventMessage from a raw string that came from asterisk.
 
 ### getRelated
 
-    \PAMI\Message\IncomingMessage PAMI\Client\Impl\ClientImpl::getRelated(\PAMI\Message\OutgoingMessage $message)
+    \PAMI\Message\Response\ResponseMessage PAMI\Client\Impl\ClientImpl::getRelated(\PAMI\Message\OutgoingMessage $message)
 
 Returns a message (response) related to the given message. This uses
 the ActionID tag (key).
@@ -395,6 +456,19 @@ Sets the logger implementation.
 
 #### Arguments
 * $logger **PAMI\Client\Psr\Log\LoggerInterface** - &lt;p&gt;The PSR3-Logger&lt;/p&gt;
+
+
+
+### getSocket
+
+    resource PAMI\Client\Impl\ClientImpl::getSocket()
+
+Returns stream socket.
+
+
+
+* Visibility: **public**
+
 
 
 

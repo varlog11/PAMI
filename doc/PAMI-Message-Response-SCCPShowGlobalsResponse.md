@@ -47,9 +47,9 @@ Child Tables
 * Visibility: **protected**
 
 
-### $_temptable
+### $temptable
 
-    private Array $_temptable
+    private Array $temptable
 
 Catch All incoming Events into current Table.
 

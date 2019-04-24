@@ -47,9 +47,9 @@ Child Tables
 * Visibility: **protected**
 
 
-### $_temptable
+### $temptable
 
-    private Array $_temptable
+    private Array $temptable
 
 Catch All incoming Events into current Table.
 
@@ -176,9 +176,9 @@ Constructor.
 
 
 
-### _getEventKey
+### getEventKey
 
-    mixed PAMI\Message\Response\SCCPShowLineResponse::_getEventKey($keyname)
+    mixed PAMI\Message\Response\SCCPShowLineResponse::getEventKey($keyname)
 
 
 
@@ -192,9 +192,9 @@ Constructor.
 
 
 
-### _getEventBoolKey
+### getEventBoolKey
 
-    mixed PAMI\Message\Response\SCCPShowLineResponse::_getEventBoolKey($keyname)
+    mixed PAMI\Message\Response\SCCPShowLineResponse::getEventBoolKey($keyname)
 
 
 
