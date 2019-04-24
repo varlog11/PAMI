@@ -29,7 +29,6 @@ This is our factory method.
 
 
 * Visibility: **public**
-* This method is **static**.
 
 
 #### Arguments

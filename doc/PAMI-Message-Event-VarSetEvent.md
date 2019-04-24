@@ -58,6 +58,17 @@ Metadata. Specific channel variables.
 * Visibility: **protected**
 
 
+### $statusVariables
+
+    protected array<mixed,string> $statusVariables
+
+Metadata. Specific channel variables.
+
+
+
+* Visibility: **protected**
+
+
 ### $lines
 
     protected array<mixed,string> $lines
@@ -172,6 +183,84 @@ Returns key: 'UniqueID'.
 
 
 
+### getChannelState
+
+    string PAMI\Message\Event\VarSetEvent::getChannelState()
+
+Returns key: 'ChannelState'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getChannelStateDesc
+
+    string PAMI\Message\Event\VarSetEvent::getChannelStateDesc()
+
+Returns key: 'ChannelStateDesc'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getCallerIDNum
+
+    string PAMI\Message\Event\VarSetEvent::getCallerIDNum()
+
+Returns key: 'CallerIDNum'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getCallerIDName
+
+    string PAMI\Message\Event\VarSetEvent::getCallerIDName()
+
+Returns key: 'CallerIDName'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getConnectedLineNum
+
+    string PAMI\Message\Event\VarSetEvent::getConnectedLineNum()
+
+Returns key: 'ConnectedLineNum'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getConnectedLineName
+
+    string PAMI\Message\Event\VarSetEvent::getConnectedLineName()
+
+Returns key: 'ConnectedLineName'.
+
+
+
+* Visibility: **public**
+
+
+
+
 ### getName
 
     string PAMI\Message\Event\EventMessage::getName()
@@ -263,6 +352,40 @@ for the &quot;current&quot; channel.&lt;/p&gt;
 
 
 
+### getAllStatusVariables
+
+    array PAMI\Message\IncomingMessage::getAllStatusVariables()
+
+Returns the channel variables for all reported channels.
+
+https://github.com/marcelog/PAMI/issues/85
+
+The channel names will be lowercased.
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getStatusVariables
+
+    array PAMI\Message\IncomingMessage::getStatusVariables(string $channel)
+
+Returns the channel variables for the given channel.
+
+https://github.com/marcelog/PAMI/issues/85
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+#### Arguments
+* $channel **string** - &lt;p&gt;Channel name. If not given, will return variables
+for the &quot;current&quot; channel.&lt;/p&gt;
+
+
+
 ### __construct
 
     void PAMI\Message\Message::__construct()
@@ -326,6 +449,23 @@ Returns a variable by name.
 
 
 
+### sanitizeInput
+
+    \PAMI\Message\typed PAMI\Message\Message::sanitizeInput(string $value)
+
+Sanitize incoming value
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### setKey
 
     void PAMI\Message\Message::setKey(string $key, string $value)
@@ -344,9 +484,44 @@ Adds a variable to this message.
 
 
 
+### setSanitizedKey
+
+    void PAMI\Message\Message::setSanitizedKey(string $key, string $value)
+
+Adds a variable to this message after sanitizing it first.
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### getKey
 
     string PAMI\Message\Message::getKey(string $key)
+
+Returns a key by name.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+
+
+
+### getBoolKey
+
+    string PAMI\Message\Message::getBoolKey(string $key)
 
 Returns a key by name.
 

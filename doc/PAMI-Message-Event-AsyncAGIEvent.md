@@ -9,7 +9,7 @@ PHP Version 5
 * Class name: AsyncAGIEvent
 * Namespace: PAMI\Message\Event
 * Parent class: [PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)
-
+* This class implements: [PAMI\AsyncAgi\Event\IAsyncAgiExecEvent](PAMI-AsyncAgi-Event-IAsyncAgiExecEvent.md), [PAMI\AsyncAgi\Event\IAsyncAgiStartEvent](PAMI-AsyncAgi-Event-IAsyncAgiStartEvent.md)
 
 
 Constants
@@ -50,6 +50,17 @@ Holds original message.
 ### $channelVariables
 
     protected array<mixed,string> $channelVariables
+
+Metadata. Specific channel variables.
+
+
+
+* Visibility: **protected**
+
+
+### $statusVariables
+
+    protected array<mixed,string> $statusVariables
 
 Metadata. Specific channel variables.
 
@@ -109,13 +120,14 @@ Methods
 
 ### getPrivilege
 
-    string PAMI\Message\Event\AsyncAGIEvent::getPrivilege()
+    string PAMI\AsyncAgi\Event\IAsyncAgiStartEvent::getPrivilege()
 
 Returns key: 'Privilege'.
 
 
 
 * Visibility: **public**
+* This method is defined by [PAMI\AsyncAgi\Event\IAsyncAgiStartEvent](PAMI-AsyncAgi-Event-IAsyncAgiStartEvent.md)
 
 
 
@@ -135,39 +147,42 @@ Returns key: 'SubEvent'.
 
 ### getChannel
 
-    string PAMI\Message\Event\AsyncAGIEvent::getChannel()
+    string PAMI\AsyncAgi\Event\IAsyncAgiStartEvent::getChannel()
 
 Returns key: 'Channel'.
 
 
 
 * Visibility: **public**
+* This method is defined by [PAMI\AsyncAgi\Event\IAsyncAgiStartEvent](PAMI-AsyncAgi-Event-IAsyncAgiStartEvent.md)
 
 
 
 
 ### getEnvironment
 
-    string PAMI\Message\Event\AsyncAGIEvent::getEnvironment()
+    string PAMI\AsyncAgi\Event\IAsyncAgiStartEvent::getEnvironment()
 
 Returns the original environment received with this event.
 
 
 
 * Visibility: **public**
+* This method is defined by [PAMI\AsyncAgi\Event\IAsyncAgiStartEvent](PAMI-AsyncAgi-Event-IAsyncAgiStartEvent.md)
 
 
 
 
 ### getResult
 
-    string PAMI\Message\Event\AsyncAGIEvent::getResult()
+    string PAMI\AsyncAgi\Event\IAsyncAgiExecEvent::getResult()
 
-Returns the agi result for the command issued.
+Returns key: 'Result'.
 
 
 
 * Visibility: **public**
+* This method is defined by [PAMI\AsyncAgi\Event\IAsyncAgiExecEvent](PAMI-AsyncAgi-Event-IAsyncAgiExecEvent.md)
 
 
 
@@ -290,6 +305,40 @@ for the &quot;current&quot; channel.&lt;/p&gt;
 
 
 
+### getAllStatusVariables
+
+    array PAMI\Message\IncomingMessage::getAllStatusVariables()
+
+Returns the channel variables for all reported channels.
+
+https://github.com/marcelog/PAMI/issues/85
+
+The channel names will be lowercased.
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getStatusVariables
+
+    array PAMI\Message\IncomingMessage::getStatusVariables(string $channel)
+
+Returns the channel variables for the given channel.
+
+https://github.com/marcelog/PAMI/issues/85
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+#### Arguments
+* $channel **string** - &lt;p&gt;Channel name. If not given, will return variables
+for the &quot;current&quot; channel.&lt;/p&gt;
+
+
+
 ### getCreatedDate
 
     integer PAMI\Message\Message::getCreatedDate()
@@ -339,6 +388,23 @@ Returns a variable by name.
 
 
 
+### sanitizeInput
+
+    \PAMI\Message\typed PAMI\Message\Message::sanitizeInput(string $value)
+
+Sanitize incoming value
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### setKey
 
     void PAMI\Message\Message::setKey(string $key, string $value)
@@ -357,9 +423,44 @@ Adds a variable to this message.
 
 
 
+### setSanitizedKey
+
+    void PAMI\Message\Message::setSanitizedKey(string $key, string $value)
+
+Adds a variable to this message after sanitizing it first.
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### getKey
 
     string PAMI\Message\Message::getKey(string $key)
+
+Returns a key by name.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+
+
+
+### getBoolKey
+
+    string PAMI\Message\Message::getBoolKey(string $key)
 
 Returns a key by name.
 
@@ -462,6 +563,20 @@ Returns key: 'ActionID'.
 
 * Visibility: **public**
 * This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+
+
+### getCommandID
+
+    string PAMI\AsyncAgi\Event\IAsyncAgiExecEvent::getCommandID()
+
+Returns key: 'CommandID'.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\AsyncAgi\Event\IAsyncAgiExecEvent](PAMI-AsyncAgi-Event-IAsyncAgiExecEvent.md)
 
 
 

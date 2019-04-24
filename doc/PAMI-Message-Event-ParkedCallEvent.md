@@ -58,6 +58,17 @@ Metadata. Specific channel variables.
 * Visibility: **protected**
 
 
+### $statusVariables
+
+    protected array<mixed,string> $statusVariables
+
+Metadata. Specific channel variables.
+
+
+
+* Visibility: **protected**
+
+
 ### $lines
 
     protected array<mixed,string> $lines
@@ -250,6 +261,214 @@ Returns key: 'Exten'.
 
 
 
+### getParkeeChannel
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeChannel()
+
+Returns key: 'ParkeeChannel'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeChannelState
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeChannelState()
+
+Returns key: 'ParkeeChannelState'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeChannelStateDesc
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeChannelStateDesc()
+
+Returns key: 'ParkeeChannelStateDesc'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeCallerIDNum
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeCallerIDNum()
+
+Returns key: 'ParkeeCallerIDNum'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeCallerIDName
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeCallerIDName()
+
+Returns key: 'ParkeeCallerIDName'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeConnectedLineNum
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeConnectedLineNum()
+
+Returns key: 'ParkeeConnectedLineNum'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeConnectedLineName
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeConnectedLineName()
+
+Returns key: 'ParkeeConnectedLineName'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeAccountCode
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeAccountCode()
+
+Returns key: 'ParkeeAccountCode'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeContext
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeContext()
+
+Returns key: 'ParkeeContext'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeExten
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeExten()
+
+Returns key: 'ParkeeExten'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeePriority
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeePriority()
+
+Returns key: 'ParkeePriority'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkeeUniqueid
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkeeUniqueid()
+
+Returns key: 'ParkeeUniqueid'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkerDialString
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkerDialString()
+
+Returns key: 'ParkerDialString'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkingSpace
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkingSpace()
+
+Returns key: 'ParkingSpace'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkingTimeout
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkingTimeout()
+
+Returns key: 'ParkingTimeout'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getParkingDuration
+
+    string PAMI\Message\Event\ParkedCallEvent::getParkingDuration()
+
+Returns key: 'ParkingDuration'.
+
+
+
+* Visibility: **public**
+
+
+
+
 ### getName
 
     string PAMI\Message\Event\EventMessage::getName()
@@ -341,6 +560,40 @@ for the &quot;current&quot; channel.&lt;/p&gt;
 
 
 
+### getAllStatusVariables
+
+    array PAMI\Message\IncomingMessage::getAllStatusVariables()
+
+Returns the channel variables for all reported channels.
+
+https://github.com/marcelog/PAMI/issues/85
+
+The channel names will be lowercased.
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getStatusVariables
+
+    array PAMI\Message\IncomingMessage::getStatusVariables(string $channel)
+
+Returns the channel variables for the given channel.
+
+https://github.com/marcelog/PAMI/issues/85
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+#### Arguments
+* $channel **string** - &lt;p&gt;Channel name. If not given, will return variables
+for the &quot;current&quot; channel.&lt;/p&gt;
+
+
+
 ### __construct
 
     void PAMI\Message\Message::__construct()
@@ -404,6 +657,23 @@ Returns a variable by name.
 
 
 
+### sanitizeInput
+
+    \PAMI\Message\typed PAMI\Message\Message::sanitizeInput(string $value)
+
+Sanitize incoming value
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### setKey
 
     void PAMI\Message\Message::setKey(string $key, string $value)
@@ -422,9 +692,44 @@ Adds a variable to this message.
 
 
 
+### setSanitizedKey
+
+    void PAMI\Message\Message::setSanitizedKey(string $key, string $value)
+
+Adds a variable to this message after sanitizing it first.
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### getKey
 
     string PAMI\Message\Message::getKey(string $key)
+
+Returns a key by name.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+
+
+
+### getBoolKey
+
+    string PAMI\Message\Message::getBoolKey(string $key)
 
 Returns a key by name.
 

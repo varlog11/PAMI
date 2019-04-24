@@ -144,6 +144,22 @@ Returns a variable by name.
 
 
 
+### sanitizeInput
+
+    \PAMI\Message\typed PAMI\Message\Message::sanitizeInput(string $value)
+
+Sanitize incoming value
+
+
+
+* Visibility: **protected**
+
+
+#### Arguments
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### setKey
 
     void PAMI\Message\Message::setKey(string $key, string $value)
@@ -161,9 +177,42 @@ Adds a variable to this message.
 
 
 
+### setSanitizedKey
+
+    void PAMI\Message\Message::setSanitizedKey(string $key, string $value)
+
+Adds a variable to this message after sanitizing it first.
+
+
+
+* Visibility: **protected**
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### getKey
 
     string PAMI\Message\Message::getKey(string $key)
+
+Returns a key by name.
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+
+
+
+### getBoolKey
+
+    string PAMI\Message\Message::getBoolKey(string $key)
 
 Returns a key by name.
 

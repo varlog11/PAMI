@@ -9,7 +9,7 @@ PHP Version 5
 * Class name: AsyncClientImpl
 * Namespace: PAMI\AsyncAgi
 * Parent class: PAGI\Client\AbstractClient
-* This class implements: [PAMI\Listener\IEventListener](PAMI-Listener-IEventListener.md)
+* This class implements: [PAMI\Listener\IEventListener](PAMI-Listener-IEventListener.md), [PAMI\AsyncAgi\IAsyncClient](PAMI-AsyncAgi-IAsyncClient.md)
 
 
 
@@ -31,7 +31,7 @@ The pami client to be used.
 
 ### $asyncAgiEvent
 
-    private \PAMI\Message\Event\AsyncAGIEvent $asyncAgiEvent
+    private \PAMI\AsyncAgi\Event\IAsyncAgiStartEvent $asyncAgiEvent
 
 The event that originated this async agi request.
 
@@ -108,7 +108,7 @@ Event handler.
 
 ### send
 
-    mixed PAMI\AsyncAgi\AsyncClientImpl::send($text)
+    \PAMI\AsyncAgi\Result PAMI\AsyncAgi\AsyncClientImpl::send($text)
 
 (non-PHPdoc)
 
@@ -165,5 +165,20 @@ environment => Environment as received by the AsyncAGI Event.
 
 #### Arguments
 * $options **array** - &lt;p&gt;Optional properties.&lt;/p&gt;
+
+
+
+### asyncBreak
+
+    void PAMI\AsyncAgi\IAsyncClient::asyncBreak()
+
+Interrupts expected flow of Async AGI commands and returns
+control to previous source (typically, the PBX dialplan).
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\AsyncAgi\IAsyncClient](PAMI-AsyncAgi-IAsyncClient.md)
+
 
 

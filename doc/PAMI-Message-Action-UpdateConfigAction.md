@@ -48,6 +48,17 @@ Properties
 * This property is **static**.
 
 
+### $_responseHandler
+
+    private string $_responseHandler
+
+String of the Class name to handle the Reponse to this Message
+
+
+
+* Visibility: **private**
+
+
 ### $lines
 
     protected array<mixed,string> $lines
@@ -255,6 +266,22 @@ Sets Line-XXXXXX key.
 
 
 
+### setOptions
+
+    void PAMI\Message\Action\UpdateConfigAction::setOptions($input)
+
+Sets Options-XXXXXX key.
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $input **mixed**
+
+
+
 ### getPaddedCounter
 
     string PAMI\Message\Action\UpdateConfigAction::getPaddedCounter()
@@ -285,6 +312,37 @@ Therefore we'll throw an exception when the ActionID is too long.
 
 #### Arguments
 * $actionID **mixed** - &lt;p&gt;The Action ID to have this action known by&lt;/p&gt;
+
+
+
+### getResponseHandler
+
+    string PAMI\Message\OutgoingMessage::getResponseHandler()
+
+Returns '_responseHandler'.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\OutgoingMessage](PAMI-Message-OutgoingMessage.md)
+
+
+
+
+### setResponseHandler
+
+    void PAMI\Message\OutgoingMessage::setResponseHandler($responseHandler)
+
+Set '_responseHandler'.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\OutgoingMessage](PAMI-Message-OutgoingMessage.md)
+
+
+#### Arguments
+* $responseHandler **mixed**
 
 
 
@@ -351,6 +409,23 @@ Returns a variable by name.
 
 
 
+### sanitizeInput
+
+    \PAMI\Message\typed PAMI\Message\Message::sanitizeInput(string $value)
+
+Sanitize incoming value
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### setKey
 
     void PAMI\Message\Message::setKey(string $key, string $value)
@@ -369,9 +444,44 @@ Adds a variable to this message.
 
 
 
+### setSanitizedKey
+
+    void PAMI\Message\Message::setSanitizedKey(string $key, string $value)
+
+Adds a variable to this message after sanitizing it first.
+
+
+
+* Visibility: **protected**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+* $value **string** - &lt;p&gt;Key value.&lt;/p&gt;
+
+
+
 ### getKey
 
     string PAMI\Message\Message::getKey(string $key)
+
+Returns a key by name.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+#### Arguments
+* $key **string** - &lt;p&gt;Key name (i.e: Action).&lt;/p&gt;
+
+
+
+### getBoolKey
+
+    string PAMI\Message\Message::getBoolKey(string $key)
 
 Returns a key by name.
 
