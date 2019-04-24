@@ -73,7 +73,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'DongleNewUSSDBase64', 'DongleNewUSSD', 'DongleUSSDStatus', 'DongleNewCUSD',
             'DongleStatus', 'DNDState', 'CEL', 'JabberEvent', 'Registry', 'UserEvent',
             'ParkedCall', 'UnParkedCall', 'Link',
-            'DAHDIChannel', 'Reload', 'Success'
+            'DAHDIChannel', 'Reload', 'Success',
             'AGIExecStart',
             'AGIExecEnd',
             'AsyncAGIStart',
@@ -783,7 +783,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'CallerIDNum' => 'CallerIDNum',
                 'CallerIDName' => 'CallerIDName',
                 'ConnectedLineNum' => 'ConnectedLineNum',
-                'ConnectedLineName' => 'ConnectedLineName'
+                'ConnectedLineName' => 'ConnectedLineName',
                 'UniqueID' => 'UniqueID'
             ),
             'Unlink' => array(

@@ -7,12 +7,12 @@
  * @category   Pami
  * @package    Message
  * @subpackage Response
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Diederik de Groot <ddegroot@talon.nl>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
  *
- * Copyright 2011 Marcelo Gornstein <marcelog@gmail.com>
+ * Copyright 2011 Diederik de Groot <ddegroot@talon.nl>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,11 +29,7 @@
  */
 namespace PAMI\Message\Response;
 
-//use PAMI\Message\Message;
-//use PAMI\Message\IncomingMessage;
-//use PAMI\Message\Event\EventMessage;
 use PAMI\Message\Response\ResponseMessage;
-//use PAMI\Exception\PAMIException;
 
 /**
  * A generic response message from ami.
@@ -43,7 +39,7 @@ use PAMI\Message\Response\ResponseMessage;
  * @category   Pami
  * @package    Message
  * @subpackage Response
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Diederik de Groot <ddegroot@talon.nl>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
