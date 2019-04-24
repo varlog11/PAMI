@@ -46,9 +46,9 @@ namespace PAMI\Client\Impl {
 
         public function setUp()
         {
-            $this->_properties = array(
-            'log4php.properties' => RESOURCES_DIR . DIRECTORY_SEPARATOR . 'log4php.properties'
-            );
+            global $mockTime;
+            $this->_properties = array();
+            $mockTime = true;
         }
 
         /**
@@ -79,37 +79,37 @@ namespace PAMI\Client\Impl {
         public function can_get_showdevices_events()
         {
             $eventValues = array(
-            'SCCPDeviceEntry' => array(
-                'ChannelType' => 'SCCP',
-                'ChannelObjectType' => 'Device',
-                'Descr' => 'Phone Féour',
-                'Address' => '[::ffff:10.15.15.205]:53108',
-                'Mac' => 'SEP0023043403F9',
-                'RegState' => 'OK',
-                'Token' => 'No Token',
-                'RegTime' => 'Sat Apr  4 23:36:53 2015',
-                'Act' => 'No',
-                'Lines' => '2',
-                'Nat' => '(Auto)Off'
-            ),
-            'SCCPShowDevicesComplete' => array(
-                'ListItems' => '1',
-            ),
+                'SCCPDeviceEntry' => array(
+                    'ChannelType' => 'SCCP',
+                    'ChannelObjectType' => 'Device',
+                    'Descr' => 'Phone Féour',
+                    'Address' => '[::ffff:10.15.15.205]:53108',
+                    'Mac' => 'SEP0023043403F9',
+                    'RegState' => 'OK',
+                    'Token' => 'No Token',
+                    'RegTime' => 'Sat Apr  4 23:36:53 2015',
+                    'Act' => 'No',
+                    'Lines' => '2',
+                    'Nat' => '(Auto)Off'
+                ),
+                'SCCPShowDevicesComplete' => array(
+                    'ListItems' => '1',
+                )
             );
             $eventTranslatedValues = array(
-            'SCCPDeviceEntry' => array(
-                'Act' => false,
-                'Lines' => 2,
-            ),
-            'SCCPShowDevicesComplete' => array(
-                'ListItems' => 1,
-            ),
+                'SCCPDeviceEntry' => array(
+                    'Act' => false,
+                    'Lines' => 2,
+                ),
+                'SCCPShowDevicesComplete' => array(
+                    'ListItems' => 1,
+                )
             );
             $eventGetters = array(
-            'SCCPDeviceEntry' => array(
-                'Act' => 'Active',
-                'Descr' => 'Description',
-            ),
+                'SCCPDeviceEntry' => array(
+                    'Act' => 'Active',
+                    'Descr' => 'Description',
+                )
             );
             foreach (array_keys($eventValues) as $eventName) {
                 $this->_testEvent($eventName, $eventGetters, $eventValues[$eventName], $eventTranslatedValues);
@@ -410,6 +410,7 @@ namespace PAMI\Client\Impl {
             $eventTranslatedValues = array(
             'SCCPLineEntry' => array(
                 'ActiveChannels' => 1,
+                'MWI' => false,
             ),
             'SCCPShowLinesComplete' => array(
                 'ListItems' => 1,
@@ -1158,7 +1159,6 @@ namespace PAMI\Client\Impl {
             $mock_stream_socket_client = true;
             $mock_stream_set_blocking = true;
             $options = array(
-            'log4php.properties' => RESOURCES_DIR . DIRECTORY_SEPARATOR . 'log4php.properties',
             'host' => '2.3.4.5',
             'scheme' => 'tcp://',
             'port' => 9999,
@@ -1195,7 +1195,11 @@ namespace PAMI\Client\Impl {
                 if (isset($translatedValues[$eventName][$key])) {
                     $value = $translatedValues[$eventName][$key];
                 }
-                $this->assertEquals($event->$methodName(), $value, "Event: '$eventName'->'$methodName' to retrieve Key: '$key', returned Value: '". var_dump($event->$methodName()) ."' instead of expected: '" . var_dump($value) . "'");
+/*                $errorstr="Action: '$eventName'->'$eventName' to retrieve Key: '$key', " .
+                    "returned Value: '" . var_dump($event->$methodName()) . "' " .
+                    "instead of expected: '" . var_dump($value) . "'";*/
+                $errorstr="Action: '$eventName'->'$eventName' to retrieve Key: '$key'";
+                $this->assertEquals($event->$methodName(), $value, $errorstr);
             }
         }
     }

@@ -63,7 +63,6 @@ class ResponseFactoryImpl
     public function createFromRaw($message, $requestingaction = false, $responseHandler = false)
     {
         $responseclass = '\\PAMI\\Message\\Response\\GenericResponse';
-
         $_className = false;
         if ($responseHandler != false) {
             $_className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';

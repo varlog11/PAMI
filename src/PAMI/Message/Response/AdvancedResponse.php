@@ -92,18 +92,18 @@ class AdvancedResponseMessage extends ResponseMessage
                     $this->temptable['Entries'][] = $event;
                 } else {
                     // add regular event
-                    $this->_events[] = $event;
+                    $this->events[] = $event;
                 }
             } else {
                 // add regular event
-                $this->_events[] = $event;
+                $this->events[] = $event;
             }
         }
         // finish eventlist
         if (stristr($event->getEventList(), 'complete') != false
             || stristr($event->getName(), 'complete') != false
         ) {
-            $this->_completed = true;
+            $this->completed = true;
         }
     }
 

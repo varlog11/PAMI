@@ -140,21 +140,27 @@ abstract class Message
         } elseif (is_numeric($value)) {
             if (filter_var($value, FILTER_VALIDATE_INT, FILTER_FLAG_ALLOW_HEX | FILTER_FLAG_ALLOW_OCTAL)) {
                 return intval($value, 0);
-            } elseif (filter_var($value, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_FRACTION | FILTER_FLAG_ALLOW_THOUSAND | FILTER_FLAG_ALLOW_SCIENTIFIC)) {
+            }
+            if (filter_var($value, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_FRACTION | FILTER_FLAG_ALLOW_THOUSAND | FILTER_FLAG_ALLOW_SCIENTIFIC)) {
                 return (float)$value;
-            } else {
-                return (double)$value;
             }
+            return (double)$value;
         } elseif (is_string($value)) {
-            if (filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)) {
-                return (boolean)$value;
-            } elseif (filter_var($value, FILTER_SANITIZE_STRING, FILTER_NULL_ON_FAILURE)) {
-                return (string)$value;
-            } elseif (filter_var($value, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_NULL_ON_FAILURE)) {
-                return (string)htmlspecialchars($value, ENT_QUOTES);
-            } else {
-                throw new PAMIException("Incoming String is not sanitary. Skipping: '" . $value . "'\n");
+            //if (filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE))
+            //    return (boolean)$value;
+            if (strcasecmp($value, 'on') === 0 || strcasecmp($value, 'true') === 0 || strcasecmp($value, 'yes') === 0) {
+                return (boolean)true;
             }
+            if (strcasecmp($value, 'off') === 0 || strcasecmp($value, 'false') === 0 || strcasecmp($value, 'no') === 0) {
+                return (boolean)false;
+            }
+            if (filter_var($value, FILTER_SANITIZE_STRING, FILTER_NULL_ON_FAILURE)) {
+                return (string)$value;
+            }
+            if (filter_var($value, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_NULL_ON_FAILURE)) {
+                return (string)htmlspecialchars($value, ENT_QUOTES);
+            }
+            throw new PAMIException("Incoming String is not sanitary. Skipping: '" . $value . "'\n");
         } else {
             throw new PAMIException("Don't know how to convert: '" . $value . "'\n");
         }

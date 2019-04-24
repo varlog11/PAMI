@@ -106,6 +106,12 @@ class ClientImpl implements IClient
     private $eventFactory;
 
     /**
+     * Event factory.
+     * @var ResponseFactoryImpl
+     */
+    private $responseFactory;
+
+    /**
      * R/W timeout, in milliseconds.
      * @var integer
      */
@@ -456,36 +462,18 @@ class ClientImpl implements IClient
         if (@fwrite($this->socket, $messageToSend) < $length) {
             throw new ClientException('Could not send message');
         }
-        $read = 0;
-/*
-        while (1) {
-            stream_set_timeout($this->socket, $this->rTimeout ? $this->rTimeout : 1);
+        $waituntil = time() + $this->rTimeout;
+        while (time() <= $waituntil) {
+            stream_set_timeout($this->socket, $this->rTimeout);
             $this->process();
             $info = stream_get_meta_data($this->socket);
-            if ($info['timed_out'] != false) {
+            if ($info['timed_out']) {
                 break;
             }
             $response = $this->getRelated($message);
             if ($response != false) {
-                $this->lastActionId = false;
-                return $response;
-            }
-            usleep(1000); // 1ms delay
-            if ($this->rTimeout > 0) {
-                $read++;
-            }
-        }
-*/
-        while ($read <= $this->rTimeout) {
-            $this->process();
-            $response = $this->getRelated($message);
-            if ($response != false) {
                 $this->_lastActionId = false;
                 return $response;
-            }
-            usleep(1000); // 1ms delay
-            if ($this->rTimeout > 0) {
-                $read++;
             }
         }
         throw new ClientException('Read timeout');

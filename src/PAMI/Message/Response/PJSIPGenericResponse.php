@@ -29,7 +29,7 @@
  */
 namespace PAMI\Message\Response;
 
-use PAMI\Message\Response\AdvancedResponseMessage;
+use PAMI\Message\Response\AdvancedResponse;
 use PAMI\Message\Event\EventMessage;
 use PAMI\Exception\PAMIException;
 

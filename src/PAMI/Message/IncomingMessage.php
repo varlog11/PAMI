@@ -214,13 +214,13 @@ abstract class IncomingMessage extends Message
                 $value = isset($content[1]) ? trim(implode(':', $content)) : '';
                 $this->statusVariables[$chanName][$name] = $value;
             } else {
-                $this->setKey($name, $value);
-            }
-            // Added ResponseFactory #d3b0ce8
-            try {
+                // Added ResponseFactory #d3b0ce8
+                try {
                     $this->setSanitizedKey($name, $value);
-            } catch (PAMIException $e) {
+                } catch (PAMIException $e) {
                     throw new PAMIException("Error: '" . $e . "'\n Dump RawContent:\n"  . $this->rawContent ."\n");
+                }
+                //$this->setKey($name, $value);
             }
         }
         // https://github.com/marcelog/PAMI/issues/85

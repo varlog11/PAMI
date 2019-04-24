@@ -60,12 +60,12 @@ class SCCPShowLineResponse extends SCCPGenericResponse
     
     private function getEventKey($keyname)
     {
-        return $this->_events[0]->getKey($keyname);
+        return $this->events[0]->getKey($keyname);
     }
 
     private function getEventBoolKey($keyname)
     {
-        return $this->_events[0]->getBoolKey($keyname);
+        return $this->events[0]->getBoolKey($keyname);
     }
     
     /**
@@ -457,8 +457,8 @@ class SCCPShowLineResponse extends SCCPGenericResponse
     public function getAttachedDevices()
     {
         $res = array();
-        if ($this->hasTable() && array_key_exists('AttachedDevices', $this->_tables)) {
-            $res = $this->_tables['AttachedDevices'];
+        if ($this->hasTable() && array_key_exists('AttachedDevices', $this->tables)) {
+            $res = $this->tables['AttachedDevices'];
         }
         return $res;
     }
@@ -471,8 +471,8 @@ class SCCPShowLineResponse extends SCCPGenericResponse
     public function getMailboxes()
     {
         $res = array();
-        if ($this->hasTable() && array_key_exists('Mailboxes', $this->_tables)) {
-            $res = $this->_tables['Mailboxes'];
+        if ($this->hasTable() && array_key_exists('Mailboxes', $this->tables)) {
+            $res = $this->tables['Mailboxes'];
         }
         return $res;
     }
@@ -485,8 +485,8 @@ class SCCPShowLineResponse extends SCCPGenericResponse
     public function getVariables()
     {
         $res = array();
-        if ($this->hasTable() && array_key_exists('Variables', $this->_tables)) {
-            $res = $this->_tables['Variables'];
+        if ($this->hasTable() && array_key_exists('Variables', $this->tables)) {
+            $res = $this->tables['Variables'];
         }
         return $res;
     }
