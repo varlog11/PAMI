@@ -113,47 +113,75 @@ use, so your contributions may make the difference! ;)
 Unknown (not yet implemented) events will be reported as UnknownEvent, so you
 can still catch them. If you catch one of these, please report it!
 
-* AgentsComplete
+* AGIExecEnd
+* AGIExec
+* AGIExecStart
 * AgentConnect
 * Agentlogin
 * Agentlogoff
-* AGIExec
+* Agents
+* AorDetail
+* AsyncAGIEnd
 * AsyncAGI
+* AsyncAGIExec
+* AsyncAGIStart
+* AttendedTransfer
+* AuthDetail
+* BlindTransfer
+* BridgeCreate
+* BridgeDestroy
+* BridgeEnter
 * Bridge
 * BridgeInfoChannel
-* BridgeInfoComplete
+* BridgeLeave
 * BridgeListItem
 * CEL
+* CallAnswered
+* CallForward
+* Cdr
 * ChannelUpdate
 * ConfbridgeEnd
 * ConfbridgeJoin
 * ConfbridgeLeave
 * ConfbridgeList
-* ConfbridgeListComplete
+* ConfbridgeListRooms
 * ConfbridgeMute
 * ConfbridgeStart
 * ConfbridgeTalking
 * ConfbridgeUnmute
+* ContactStatusDetail
 * CoreShowChannel
-* CoreShowChannelComplete
 * DAHDIChannel
-* DAHDIShowChannel
-* DAHDIShowChannelsComplete
-* FullyBooted
-* DongleSMSStatus
-* DongleUSSDStatus
-* DongleNewUSSD
-* DongleNewUSSDBase64
-* DongleNewCUSD
-* DongleStatus
-* DongleDeviceEntry
-* DongleShowDevicesComplete
+* DAHDIShowChannels
 * DBGetResponse
-* Dial
+* DND
+* DNDState
+* DTMFBegin
+* DTMFEnd
 * DTMF
-* Extension
+* DeviceStateChange
+* DeviceStatus
+* DialBegin
+* DialEnd
+* Dial
+* DongleNewCUSD
+* DongleNewUSSDBase64
+* DongleNewUSSD
+* DongleSMSStatus
+* DongleStatus
+* DongleUSSDStatus
+* EndpointDetail
+* EndpointList
+* EventMessage.php
+* ExtensionStatus
+* Factory
+* Impl
+* EventFactoryImpl.php
+* FullyBooted
 * Hangup
 * Hold
+* IdentifyDetail
+* InboundRegistrationDetail
 * JabberEvent
 * Join
 * Leave
@@ -162,145 +190,218 @@ can still catch them. If you catch one of these, please report it!
 * Masquerade
 * MessageWaiting
 * MusicOnHold
+* MusicOnHoldStart
+* MusicOnHoldStop
 * NewAccountCode
 * NewCallerid
 * Newchannel
 * Newexten
 * Newstate
 * OriginateResponse
+* OutboundRegistrationDetail
+* OutboundSubscriptionDetail
 * ParkedCall
-* ParkedCallsComplete
-* PeerEntry
-* PeerlistComplete
+* ParkedCallGiveUp
+* ParkedCallTimeOut
 * PeerStatus
-* QueueEvent
-* QueueMember
+* QueueCallerAbandon
+* QueueCallerJoin
+* QueueCallerLeave
 * QueueMemberAdded
+* QueueMember
+* QueueMemberPaused
 * QueueMemberRemoved
-* QueueMemberPause
 * QueueMemberStatus
 * QueueParams
-* QueueStatusComplete
-* QueueSummaryComplete
-* Reload
-* RegistrationsComplete
-* Registry
-* Rename
+* QueueSummary
 * RTCPReceived
-* RTCPReceiver
+* RTCPReceiverStat
 * RTCPSent
 * RTPReceiverStat
 * RTPSenderStat
-* ShowDialPlanComplete
-* Success
+* Registry
+* Reload
+* Rename
+* RequestBadFormat
+* ResourceListDetail
+* SCCPConfEnd
+* SCCPConfEntered
+* SCCPConfLeave
+* SCCPConfLeft
+* SCCPConfLock
+* SCCPConfParticipantKicked
+* SCCPConfParticipantMute
+* SCCPConfParticipantPromotion
+* SCCPConfStart
+* SCCPConfStarted
+* SCCPShowDevice
+* SCCPShowLine
 * Status
-* StatusComplete
+* Success
+* SuccessfulAuth
+* TableEnd
+* TableStart
 * Transfer
-* Unlink
+* TransportDetail
 * UnParkedCall
+* Unknown
+* Unlink
 * UserEvent
 * VarSet
-* vgsm_me_state
-* vgsm_net_state
-* vgsm_sms_rx
-* VoicemailUserEntry
-* VoicemailUserEntryComplete
-* Cdr
+* VgsmMeState
+* VgsmNetState
+* VgsmSmsRx
 
 # Currently Supported Actions
 
-* AbsoluteTimeout
 * AGI
-* Agents
+* AbsoluteTimeout
+* ActionMessage.php
 * AgentLogoff
-* Atxfer (asterisk 1.8?)
+* Agents
+* AttendedTransfer
+* BlindTransfer
 * Bridge
 * BridgeInfo
 * BridgeList
+* Challenge
 * ChangeMonitor
 * Command
+* ConfbridgeKick
 * ConfbridgeList
+* ConfbridgeListRooms
+* ConfbridgeLock
 * ConfbridgeMute
+* ConfbridgeStartRecord
+* ConfbridgeStopRecord
+* ConfbridgeUnlock
 * ConfbridgeUnmute
 * CoreSettings
 * CoreShowChannels
 * CoreStatus
-* DAHDIDialOffHookAction
+* CreateConfig
+* DAHDIDNDOff
+* DAHDIDNDOn
+* DAHDIDialOffHook
 * DAHDIHangup
 * DAHDIRestart
 * DAHDIShowChannels
-* DAHDIDNDOn
-* DAHDIDNDOff
-* DBGet
-* DBPut
+* DAHDITransfer
 * DBDel
 * DBDelTree
+* DBGet
+* DBPut
+* DialplanExtensionAdd
+* DongleReload
+* DongleReset
+* DongleRestart
+* DongleSendPDU
 * DongleSendSMS
 * DongleSendUSSD
-* DongleSendPDU
-* DongleReload
-* DongleStop
-* DongleStart
-* DongleRestart
-* DongleReset
 * DongleShowDevices
+* DongleStart
+* DongleStop
+* Events
 * ExtensionState
-* CreateConfig
 * GetConfig
 * GetConfigJSON
 * GetVar
 * Hangup
 * JabberSend
+* ListCategories
+* ListCommands
 * LocalOptimizeAway
 * Login
 * Logoff
-* ListCategories
-* ListCommands
 * MailboxCount
 * MailboxStatus
 * MeetmeList
 * MeetmeMute
 * MeetmeUnmute
 * MixMonitor
+* MixMonitorMute
 * ModuleCheck
-* ModuleLoad (split in ModuleLoad, ModuleUnload, and ModuleReload)
+* ModuleLoad
+* ModuleReload
+* ModuleUnload
 * Monitor
 * Originate
+* Park
 * ParkedCalls
 * PauseMonitor
 * Ping
 * PlayDTMF
-* Queues
 * QueueAdd
-* Queue
 * QueueLog
+* QueueMemberRingInUse.php
 * QueuePause
 * QueuePenalty
 * QueueReload
 * QueueRemove
 * QueueReset
 * QueueRule
-* QueueSummary
 * QueueStatus
+* QueueSummary
 * QueueUnpause
+* Queues
 * Redirect
 * Reload
 * SendText
 * SetVar
 * ShowDialPlan
-* Sipnotify
-* Sippeers
-* Sipqualifypeer
-* Sipshowpeer
-* Sipshowregistry
 * Status
 * StopMixMonitor
 * StopMonitor
 * UnpauseMonitor
-* VGSM_SMS_TX
+* UpdateConfig
+* UserEvent
+* VGSMSMSTx
 * VoicemailUsersList
-* DialplanExtensionAdd
-
+* WaitEvent
+* SIPNotify
+* SIPPeers
+* SIPQualifyPeer
+* SIPShowPeer
+* SIPShowRegistry
+* PJSIPQualify
+* PJSIPRegister
+* PJSIPUnregister
+* PJSIPShowEndpoint
+* PJSIPShowEndpoints
+* PJSIPShowRegistrationsInbound
+* PJSIPShowRegistrationsOutbound
+* PJSIPShowResourceLists
+* PJSIPShowSubscriptionsInbound
+* PJSIPShowSubscriptionsOutbound
+* SCCPAnswerCall
+* SCCPConference
+* SCCPDeviceAddLine
+* SCCPDeviceRestart
+* SCCPDeviceSetDND
+* SCCPDeviceUpdate
+* SCCPDndDevice
+* SCCPHangupCall
+* SCCPHoldCall
+* SCCPLineForwardUpdate
+* SCCPMessageDevice
+* SCCPMessageDevices
+* SCCPStartCall
+* SCCPSystemMessage
+* SCCPTokenAck
+* SCCPConfigMetaData
+* SCCPShowChannels
+* SCCPShowConference
+* SCCPShowConferences
+* SCCPShowDevice
+* SCCPShowDevices
+* SCCPShowGlobals
+* SCCPShowHintLineStates
+* SCCPShowHintSubscriptions
+* SCCPShowLine
+* SCCPShowLines
+* SCCPShowMWISubscriptions
+* SCCPShowSessions
+* SCCPShowSoftkeySets
 
 ## Debugging, logging
 
@@ -354,7 +455,20 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-# Thanks To
+# Maintainer of This Fork:
+
+* Diederik de Groot <ddegroot@talon.nl>
+
+* Added the SCCP Message Implementation.
+* ResponseHandling for ReponseEvents returned from ActionMessages that
+  return multiple/complex results [Orig PR:73](https://github.com/marcelog/PAMI/pull/73).
+* Note: Had some help from Jacob Kiers on the ResponseHandling.
+
+# Thanks To:
+
+* First a formost Marcelo Gornstein, the original designer and developer of
+this module. See:[https://github.com/marcelog/PAMI](https://github.com/marcelog/PAMI)
+for more information
 
 * Jason Blank <rumpled at github> for helping in the debugging of the queue
 functionality and some other ami inconsistencies.
@@ -371,16 +485,49 @@ dongle support.
 * Joshua Elson for his help in trying and debugging in loaded asterisk servers.
 
 * Jacob Kiers for his help in bringing in and testing async agi functionality,
-and CEL event
-support.
+and CEL event support.
 
 * Richard Baar for noticing the lack of eof support when reading from socket,
 the JabberEvent, and the ScreenName in JabberAction.
 
-* Scot Opell for helping in debugging stream_get_line() in 5.3.9 and 5.3.10
+* Scot Opell for helping in debugging stream_get_line() in 5.3.9 and 5.3.10.
 
-* Brian (wormling) for trying and fixing bugs on asyncagi
+* Brian (wormling) for trying and fixing bugs on asyncagi.
 
 * Henning Bragge for helping with newstate event and queues.
 
 * mbonneau for ParkedCall and UnParkedCall events.
+
+* @brenard : Updates to ConfBridge. See:[Orig PR:179](https://github.com/marcelog/PAMI/pull/179)
+
+* @NikolayRevin: Add action QueueMemberRingInUse and updated: QueueMemberEvent and
+QueueParamsEvent. See:[Orig PR:177](https://github.com/marcelog/PAMI/pull/177).
+
+* @alexmnv: Added `getSocket()` method to `ClientImpl` class. See:[Orig
+  PR:169](https://github.com/marcelog/PAMI/pull/169).
+
+* @edigomes: Added Options-XXXXXX. See:[Orig PR:162](https://github.com/marcelog/PAMI/pull/162).
+
+* @amir200xven: Added CDR EVent. See:[Orig PR:159](https://github.com/marcelog/PAMI/pull/159).
+
+* @wizzle: Added PJSIPShowEndpoints et al. See:[Orig PR:158](https://github.com/marcelog/PAMI/pull/158)
+and [Orig PR:157](https://github.com/marcelog/PAMI/pull/157).
+
+* @syco: Extended MonitorAction. See:[Orig PR:149](https://github.com/marcelog/PAMI/pull/149).
+
+* @ilgiz-badamshin: Extended AsyncAgi impl. See:[Orig
+  PR:143](https://github.com/marcelog/PAMI/pull/143).
+
+* @Adrian0350: Added DAHDIChannelEvent. See:[Orig
+  PR:138](https://github.com/marcelog/PAMI/pull/138).
+
+* @Bloodoff: Added DeviceStateChange/VarSet. See:[Orig
+  PR:126](https://github.com/marcelog/PAMI/pull/126).
+
+* @thomasvargiu: Fix getMessages. See:[Orig PR:122](https://github.com/marcelog/PAMI/pull/122).
+
+* @sctt: Added event filters. See:[Orig PR:107](https://github.com/marcelog/PAMI/pull/107).
+
+* @alesf: Added QueueEntry. See:[Orig PR:98](https://github.com/marcelog/PAMI/pull/98).
+
+* @parhamdoustdar: ConfBridge et al. See:[Orig PR:80](https://github.com/marcelog/PAMI/pull/80).
