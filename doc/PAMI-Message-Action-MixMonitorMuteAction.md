@@ -62,9 +62,9 @@ Properties
 
 ### $responseHandler
 
-    private string $responseHandler
+    private string $responseHandler = null
 
-String of the Class name to handle the Reponse to this Message
+String of the Class name to handle the Response to this Message
 
 
 
@@ -189,9 +189,9 @@ Therefore we'll throw an exception when the ActionID is too long.
 
 ### getResponseHandler
 
-    string PAMI\Message\OutgoingMessage::getResponseHandler()
+    string|null PAMI\Message\OutgoingMessage::getResponseHandler()
 
-Returns 'responseHandler'.
+Returns the class name of the response handler.
 
 
 
@@ -203,9 +203,9 @@ Returns 'responseHandler'.
 
 ### setResponseHandler
 
-    void PAMI\Message\OutgoingMessage::setResponseHandler($responseHandler)
+    void PAMI\Message\OutgoingMessage::setResponseHandler($newResponseHandler)
 
-Set 'responseHandler'.
+Set the response handler.
 
 
 
@@ -214,7 +214,7 @@ Set 'responseHandler'.
 
 
 #### Arguments
-* $responseHandler **mixed**
+* $newResponseHandler **mixed**
 
 
 

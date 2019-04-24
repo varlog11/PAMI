@@ -98,7 +98,7 @@ Closes the connection to ami.
 
 ### send
 
-    \PAMI\Message\Response\ResponseMessage PAMI\Client\IClient::send(\PAMI\Message\OutgoingMessage $message)
+    \PAMI\Message\Response\Response PAMI\Client\IClient::send(\PAMI\Message\OutgoingMessage $message)
 
 Sends a message to ami.
 

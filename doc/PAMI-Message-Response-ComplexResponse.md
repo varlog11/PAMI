@@ -1,12 +1,12 @@
-PAMI\Message\Response\GenericResponse
+PAMI\Message\Response\ComplexResponse
 ===============
 
-A generic response message from ami.
+A generic SCCP response message from ami.
 
 PHP Version 5
 
 
-* Class name: GenericResponse
+* Class name: ComplexResponse
 * Namespace: PAMI\Message\Response
 * Parent class: [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
@@ -34,6 +34,28 @@ Constants
 
 Properties
 ----------
+
+
+### $tables
+
+    protected array<mixed,\PAMI\Message\Event\EventMessage> $tables
+
+Child Tables
+
+
+
+* Visibility: **protected**
+
+
+### $temptable
+
+    private Array $temptable
+
+Catch All incoming Events into current Table.
+
+
+
+* Visibility: **private**
 
 
 ### $events
@@ -140,6 +162,78 @@ Methods
 -------
 
 
+### addEvent
+
+    void PAMI\Message\Response\Response::addEvent(\PAMI\Message\Event\EventMessage $event)
+
+Adds an event to this response.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
+
+
+#### Arguments
+* $event **[PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)** - &lt;p&gt;Child event to add.&lt;/p&gt;
+
+
+
+### hasTable
+
+    boolean PAMI\Message\Response\ComplexResponse::hasTable()
+
+Returns true if this Response Message contains an events tables (TableStart/TableEnd)
+
+
+
+* Visibility: **public**
+
+
+
+
+### getTableNames
+
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\ComplexResponse::getTableNames()
+
+Returns all eventtabless for this response.
+
+
+
+* Visibility: **public**
+
+
+
+
+### getTable
+
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\ComplexResponse::getTable($tablename)
+
+Returns all associated events for this response->tablename.
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $tablename **mixed**
+
+
+
+### getJSON
+
+    array PAMI\Message\Response\ComplexResponse::getJSON()
+
+Returns decoded version of the 'JSON' key if present.
+
+
+
+* Visibility: **public**
+
+
+
+
 ### __construct
 
     void PAMI\Message\Message::__construct()
@@ -181,23 +275,6 @@ an EventList = Complete.
 * Visibility: **public**
 * This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
-
-
-
-### addEvent
-
-    void PAMI\Message\Response\Response::addEvent(\PAMI\Message\Event\EventMessage $event)
-
-Adds an event to this response.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
-
-
-#### Arguments
-* $event **[PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)** - &lt;p&gt;Child event to add.&lt;/p&gt;
 
 
 

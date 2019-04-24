@@ -8,7 +8,7 @@ PHP Version 5
 
 * Class name: SCCPShowLineResponse
 * Namespace: PAMI\Message\Response
-* Parent class: [PAMI\Message\Response\SCCPGenericResponse](PAMI-Message-Response-SCCPGenericResponse.md)
+* Parent class: [PAMI\Message\Response\ComplexResponse](PAMI-Message-Response-ComplexResponse.md)
 
 
 
@@ -744,14 +744,14 @@ Returns all variabels for this message.
 
 ### addEvent
 
-    void PAMI\Message\Response\ResponseMessage::addEvent(\PAMI\Message\Event\EventMessage $event)
+    void PAMI\Message\Response\Response::addEvent(\PAMI\Message\Event\EventMessage $event)
 
 Adds an event to this response.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 #### Arguments
@@ -761,42 +761,42 @@ Adds an event to this response.
 
 ### hasTable
 
-    boolean PAMI\Message\Response\AdvancedResponseMessage::hasTable()
+    boolean PAMI\Message\Response\ComplexResponse::hasTable()
 
 Returns true if this Response Message contains an events tables (TableStart/TableEnd)
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\ComplexResponse](PAMI-Message-Response-ComplexResponse.md)
 
 
 
 
 ### getTableNames
 
-    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\AdvancedResponseMessage::getTableNames()
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\ComplexResponse::getTableNames()
 
 Returns all eventtabless for this response.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\ComplexResponse](PAMI-Message-Response-ComplexResponse.md)
 
 
 
 
 ### getTable
 
-    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\AdvancedResponseMessage::getTable($tablename)
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\ComplexResponse::getTable($tablename)
 
 Returns all associated events for this response->tablename.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\ComplexResponse](PAMI-Message-Response-ComplexResponse.md)
 
 
 #### Arguments
@@ -806,14 +806,14 @@ Returns all associated events for this response->tablename.
 
 ### getJSON
 
-    array PAMI\Message\Response\AdvancedResponseMessage::getJSON()
+    array PAMI\Message\Response\ComplexResponse::getJSON()
 
 Returns decoded version of the 'JSON' key if present.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\ComplexResponse](PAMI-Message-Response-ComplexResponse.md)
 
 
 
@@ -834,7 +834,7 @@ Serialize function.
 
 ### isComplete
 
-    boolean PAMI\Message\Response\ResponseMessage::isComplete()
+    boolean PAMI\Message\Response\Response::isComplete()
 
 True if this response is complete. A response is considered complete
 if it's not a list OR it's a list with its last child event containing
@@ -843,42 +843,42 @@ an EventList = Complete.
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### getEvents
 
-    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\ResponseMessage::getEvents()
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\Response::getEvents()
 
 Returns all associated events for this response.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### isSuccess
 
-    boolean PAMI\Message\Response\ResponseMessage::isSuccess()
+    boolean PAMI\Message\Response\Response::isSuccess()
 
 Checks if the Response field has the word Error in it.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### isList
 
-    boolean PAMI\Message\Response\ResponseMessage::isList()
+    boolean PAMI\Message\Response\Response::isList()
 
 Returns true if this response contains the key EventList with the
 word 'start' in it. Another way is to have a Message key, like:
@@ -887,28 +887,28 @@ Message: Result will follow
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### getMessage
 
-    string PAMI\Message\Response\ResponseMessage::getMessage()
+    string PAMI\Message\Response\Response::getMessage()
 
 Returns key: 'Privilege'.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### setActionId
 
-    void PAMI\Message\Response\ResponseMessage::setActionId(string $actionId)
+    void PAMI\Message\Response\Response::setActionId(string $actionId)
 
 Sets an action id. This should not be necessary, but asterisk sometimes
 decides to not send the Response: or Event: headers.
@@ -916,7 +916,7 @@ decides to not send the Response: or Event: headers.
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 #### Arguments

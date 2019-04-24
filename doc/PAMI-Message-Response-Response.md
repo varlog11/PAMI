@@ -1,15 +1,15 @@
-PAMI\Message\Action\ActionMessage
+PAMI\Message\Response\Response
 ===============
 
-A generic action ami message.
+A generic response message from ami.
 
 PHP Version 5
 
 
-* Class name: ActionMessage
-* Namespace: PAMI\Message\Action
+* Class name: Response
+* Namespace: PAMI\Message\Response
 * This is an **abstract** class
-* Parent class: [PAMI\Message\OutgoingMessage](PAMI-Message-OutgoingMessage.md)
+* Parent class: [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
 
 
 
@@ -37,15 +37,59 @@ Properties
 ----------
 
 
-### $responseHandler
+### $events
 
-    private string $responseHandler = null
+    protected array<mixed,\PAMI\Message\Event\EventMessage> $events
 
-String of the Class name to handle the Response to this Message
+Child events.
 
 
 
-* Visibility: **private**
+* Visibility: **protected**
+
+
+### $completed
+
+    protected boolean $completed
+
+Is this response completed? (with all its events).
+
+
+
+* Visibility: **protected**
+
+
+### $rawContent
+
+    protected string $rawContent
+
+Holds original message.
+
+
+
+* Visibility: **protected**
+
+
+### $channelVariables
+
+    protected array<mixed,string> $channelVariables
+
+Metadata. Specific channel variables.
+
+
+
+* Visibility: **protected**
+
+
+### $statusVariables
+
+    protected array<mixed,string> $statusVariables
+
+Metadata. Specific channel variables.
+
+
+
+* Visibility: **protected**
 
 
 ### $lines
@@ -97,6 +141,122 @@ Methods
 -------
 
 
+### __sleep
+
+    array<mixed,string> PAMI\Message\Message::__sleep()
+
+Serialize function.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
+
+
+
+
+### isComplete
+
+    boolean PAMI\Message\Response\Response::isComplete()
+
+True if this response is complete. A response is considered complete
+if it's not a list OR it's a list with its last child event containing
+an EventList = Complete.
+
+
+
+* Visibility: **public**
+
+
+
+
+### addEvent
+
+    void PAMI\Message\Response\Response::addEvent(\PAMI\Message\Event\EventMessage $event)
+
+Adds an event to this response.
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $event **[PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)** - &lt;p&gt;Child event to add.&lt;/p&gt;
+
+
+
+### getEvents
+
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\Response::getEvents()
+
+Returns all associated events for this response.
+
+
+
+* Visibility: **public**
+
+
+
+
+### isSuccess
+
+    boolean PAMI\Message\Response\Response::isSuccess()
+
+Checks if the Response field has the word Error in it.
+
+
+
+* Visibility: **public**
+
+
+
+
+### isList
+
+    boolean PAMI\Message\Response\Response::isList()
+
+Returns true if this response contains the key EventList with the
+word 'start' in it. Another way is to have a Message key, like:
+Message: Result will follow
+
+
+
+* Visibility: **public**
+
+
+
+
+### getMessage
+
+    string PAMI\Message\Response\Response::getMessage()
+
+Returns key: 'Privilege'.
+
+
+
+* Visibility: **public**
+
+
+
+
+### setActionId
+
+    void PAMI\Message\Response\Response::setActionId(string $actionId)
+
+Sets an action id. This should not be necessary, but asterisk sometimes
+decides to not send the Response: or Event: headers.
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $actionId **string** - &lt;p&gt;New ActionId.&lt;/p&gt;
+
+
+
 ### __construct
 
     void PAMI\Message\Message::__construct()
@@ -111,67 +271,100 @@ Constructor.
 
 
 
-### setActionID
+### getEventList
 
-    void PAMI\Message\Action\ActionMessage::setActionID($actionID)
+    string PAMI\Message\IncomingMessage::getEventList()
 
-Sets Action ID.
+Returns key 'EventList'. In respones, this will surely be a "start". In
+events, should be a "complete".
 
-The ActionID can be at most 69 characters long, according to
-[Asterisk Issue 14847](https://issues.asterisk.org/jira/browse/14847).
 
-Therefore we'll throw an exception when the ActionID is too long.
 
 * Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getRawContent
+
+    string PAMI\Message\IncomingMessage::getRawContent()
+
+Returns the original message content without parsing.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getAllChannelVariables
+
+    array PAMI\Message\IncomingMessage::getAllChannelVariables()
+
+Returns the channel variables for all reported channels.
+
+https://github.com/marcelog/PAMI/issues/85
+
+The channel names will be lowercased.
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getChannelVariables
+
+    array PAMI\Message\IncomingMessage::getChannelVariables(string $channel)
+
+Returns the channel variables for the given channel.
+
+https://github.com/marcelog/PAMI/issues/85
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
 
 
 #### Arguments
-* $actionID **mixed** - &lt;p&gt;The Action ID to have this action known by&lt;/p&gt;
+* $channel **string** - &lt;p&gt;Channel name. If not given, will return variables
+for the &quot;current&quot; channel.&lt;/p&gt;
 
 
 
-### getResponseHandler
+### getAllStatusVariables
 
-    string|null PAMI\Message\OutgoingMessage::getResponseHandler()
+    array PAMI\Message\IncomingMessage::getAllStatusVariables()
 
-Returns the class name of the response handler.
+Returns the channel variables for all reported channels.
 
+https://github.com/marcelog/PAMI/issues/85
 
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\OutgoingMessage](PAMI-Message-OutgoingMessage.md)
-
-
-
-
-### setResponseHandler
-
-    void PAMI\Message\OutgoingMessage::setResponseHandler($newResponseHandler)
-
-Set the response handler.
-
-
+The channel names will be lowercased.
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\OutgoingMessage](PAMI-Message-OutgoingMessage.md)
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
+
+
+
+
+### getStatusVariables
+
+    array PAMI\Message\IncomingMessage::getStatusVariables(string $channel)
+
+Returns the channel variables for the given channel.
+
+https://github.com/marcelog/PAMI/issues/85
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\IncomingMessage](PAMI-Message-IncomingMessage.md)
 
 
 #### Arguments
-* $newResponseHandler **mixed**
-
-
-
-### __sleep
-
-    array<mixed,string> PAMI\Message\Message::__sleep()
-
-Serialize function.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
-
+* $channel **string** - &lt;p&gt;Channel name. If not given, will return variables
+for the &quot;current&quot; channel.&lt;/p&gt;
 
 
 

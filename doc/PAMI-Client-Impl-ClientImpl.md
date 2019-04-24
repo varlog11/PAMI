@@ -109,7 +109,7 @@ Event factory.
 
     private \PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl $responseFactory
 
-Event factory.
+Response factory.
 
 
 
@@ -162,7 +162,7 @@ Our event listeners
 
 ### $incomingQueue
 
-    private array<mixed,\PAMI\Message\Response\ResponseMessage> $incomingQueue
+    private array<mixed,\PAMI\Client\Impl\ResponseMessage> $incomingQueue
 
 The receiving queue.
 
@@ -413,7 +413,7 @@ the ActionID tag (key).
 
 ### send
 
-    \PAMI\Message\Response\ResponseMessage PAMI\Client\IClient::send(\PAMI\Message\OutgoingMessage $message)
+    \PAMI\Message\Response\Response PAMI\Client\IClient::send(\PAMI\Message\OutgoingMessage $message)
 
 Sends a message to ami.
 
