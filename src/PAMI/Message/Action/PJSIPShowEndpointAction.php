@@ -57,4 +57,3 @@ class PJSIPShowEndpointAction extends ActionMessage
         $this->setResponseHandler("PJSIPGeneric");
     }
 }
-
