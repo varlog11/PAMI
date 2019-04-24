@@ -45,44 +45,43 @@ use PAMI\Message\Event\EventMessage;
  */
 class DeviceStatusEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ChannelType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelType()
-	{
-      return $this->getKey('ChannelType');
-	}
+    /**
+     * Returns key: 'ChannelType'.
+     *
+     * @return string
+     */
+    public function getChannelType()
+    {
+        return $this->getKey('ChannelType');
+    }
 
-	/**
-	 * Returns key: 'ChannelObjectType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelObjectType()
-	{
-      return $this->getKey('ChannelObjectType');
-	}
+    /**
+     * Returns key: 'ChannelObjectType'.
+     *
+     * @return string
+     */
+    public function getChannelObjectType()
+    {
+        return $this->getKey('ChannelObjectType');
+    }
 
-	/**
-	 * Returns key: 'DeviceStatus'.
-	 *
-	 * @return string
-	 */
-	public function getDeviceStatus()
-	{
-      return $this->getKey('DeviceStatus');
-	}
+    /**
+     * Returns key: 'DeviceStatus'.
+     *
+     * @return string
+     */
+    public function getDeviceStatus()
+    {
+        return $this->getKey('DeviceStatus');
+    }
 
-	/**
-	 * Returns key: 'SCCPDevice'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPDevice()
-	{
-      return $this->getKey('SCCPDevice');
-	}
-
+    /**
+     * Returns key: 'SCCPDevice'.
+     *
+     * @return string
+     */
+    public function getSCCPDevice()
+    {
+        return $this->getKey('SCCPDevice');
+    }
 }

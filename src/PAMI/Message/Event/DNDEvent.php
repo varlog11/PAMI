@@ -45,54 +45,53 @@ use PAMI\Message\Event\EventMessage;
  */
 class DNDEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ChannelType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelType()
-	{
-      return $this->getKey('ChannelType');
-	}
+    /**
+     * Returns key: 'ChannelType'.
+     *
+     * @return string
+     */
+    public function getChannelType()
+    {
+        return $this->getKey('ChannelType');
+    }
 
-	/**
-	 * Returns key: 'ChannelObjectType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelObjectType()
-	{
-      return $this->getKey('ChannelObjectType');
-	}
+    /**
+     * Returns key: 'ChannelObjectType'.
+     *
+     * @return string
+     */
+    public function getChannelObjectType()
+    {
+        return $this->getKey('ChannelObjectType');
+    }
 
-	/**
-	 * Returns key: 'Feature'.
-	 *
-	 * @return string
-	 */
-	public function getFeature()
-	{
-      return $this->getKey('Feature');
-	}
+    /**
+     * Returns key: 'Feature'.
+     *
+     * @return string
+     */
+    public function getFeature()
+    {
+        return $this->getKey('Feature');
+    }
 
-	/**
-	 * Returns key: 'Status'.
-	 *
-	 * @return string
-	 */
-	public function getStatus()
-	{
-      return $this->getKey('Status');
-	}
+    /**
+     * Returns key: 'Status'.
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->getKey('Status');
+    }
 
-	/**
-	 * Returns key: 'SCCPDevice'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPDevice()
-	{
-      return $this->getKey('SCCPDevice');
-	}
-
+    /**
+     * Returns key: 'SCCPDevice'.
+     *
+     * @return string
+     */
+    public function getSCCPDevice()
+    {
+        return $this->getKey('SCCPDevice');
+    }
 }

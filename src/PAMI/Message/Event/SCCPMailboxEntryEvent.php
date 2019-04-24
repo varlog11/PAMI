@@ -84,5 +84,4 @@ class SCCPMailboxEntryEvent extends EventMessage
     {
         return $this->getKey('Context');
     }
-
 }

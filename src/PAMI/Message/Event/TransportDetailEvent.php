@@ -284,6 +284,4 @@ class TransportDetailEvent extends EventMessage
     {
         return $this->getKey('EndpointName');
     }
-
-
 }

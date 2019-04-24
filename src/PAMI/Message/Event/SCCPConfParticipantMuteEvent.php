@@ -45,34 +45,33 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPConfParticipantMuteEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ConfId'.
-	 *
-	 * @return integer
-	 */
-	public function getConfId()
-	{
-      return intval($this->getKey('ConfId'));
-	}
+    /**
+     * Returns key: 'ConfId'.
+     *
+     * @return integer
+     */
+    public function getConfId()
+    {
+        return intval($this->getKey('ConfId'));
+    }
 
-	/**
-	 * Returns key: 'PartId'.
-	 *
-	 * @return integer
-	 */
-	public function getPartId()
-	{
-      return intval($this->getKey('PartId'));
-	}
+    /**
+     * Returns key: 'PartId'.
+     *
+     * @return integer
+     */
+    public function getPartId()
+    {
+        return intval($this->getKey('PartId'));
+    }
 
-	/**
-	 * Returns key: 'Mute'.
-	 *
-	 * @return boolean
-	 */
-	public function getMute()
-	{
-      return $this->getBoolKey('Mute');
-	}
-
+    /**
+     * Returns key: 'Mute'.
+     *
+     * @return boolean
+     */
+    public function getMute()
+    {
+        return $this->getBoolKey('Mute');
+    }
 }

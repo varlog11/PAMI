@@ -48,11 +48,11 @@ class SCCPConfigMetaDataAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct($segment=false)
+    public function __construct($segment = false)
     {
         parent::__construct('SCCPConfigMetaData');
         if ($segment != false) {
-        	$this->setKey('Segment', $segment);
+            $this->setKey('Segment', $segment);
         }
         $this->setResponseHandler("SCCPGeneric");
     }

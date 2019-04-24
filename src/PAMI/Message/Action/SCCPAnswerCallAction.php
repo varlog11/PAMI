@@ -53,7 +53,7 @@ class SCCPAnswerCallAction extends ActionMessage
      */
     public function __construct($ChannelId, $DeviceId)
     {
-    	// is meant to be SCCPAnswerCall1 not SCCPAnswerCall (for now)
+        // is meant to be SCCPAnswerCall1 not SCCPAnswerCall (for now)
         parent::__construct('SCCPAnswerCall1');
         $this->setKey('ChannelId', $ChannelId);
         $this->setKey('DeviceId', $DeviceId);

@@ -47,15 +47,15 @@ use PAMI\Exception\PAMIException;
  */
 class PJSIPGenericResponse extends AdvancedResponseMessage
 {
-	/**
-	 * Constructor.
-	 *
-	 * @param string $rawContent Literal message as received from ami.
-	 *
-	 * @return void
-	 */
-	public function __construct($rawContent)
-	{
-		parent::__construct($rawContent);
-	}
+    /**
+     * Constructor.
+     *
+     * @param string $rawContent Literal message as received from ami.
+     *
+     * @return void
+     */
+    public function __construct($rawContent)
+    {
+        parent::__construct($rawContent);
+    }
 }

@@ -56,7 +56,7 @@ class SCCPLineForwardUpdateAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct($DeviceName, $LineName, $ForwardType, $Disable=false, $Number=false)
+    public function __construct($DeviceName, $LineName, $ForwardType, $Disable = false, $Number = false)
     {
         parent::__construct('SCCPLineForwardUpdate');
         
@@ -64,7 +64,7 @@ class SCCPLineForwardUpdateAction extends ActionMessage
         $this->setKey('LineName', $LineName);
 
         if (in_array(strtolower($ForwardType), array('all', 'busy'))) {
-		    $this->setKey('ForwardType', $ForwardType);
+            $this->setKey('ForwardType', $ForwardType);
         } else {
             throw new PAMIException('ForwardType has to be one of \'all\', \'busy\'.');
         }

@@ -45,24 +45,23 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPConfStartEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ConfId'.
-	 *
-	 * @return integer
-	 */
-	public function getConfId()
-	{
-      return intval($this->getKey('ConfId'));
-	}
+    /**
+     * Returns key: 'ConfId'.
+     *
+     * @return integer
+     */
+    public function getConfId()
+    {
+        return intval($this->getKey('ConfId'));
+    }
 
-	/**
-	 * Returns key: 'SCCPDevice'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPDevice()
-	{
-      return $this->getKey('SCCPDevice');
-	}
-
+    /**
+     * Returns key: 'SCCPDevice'.
+     *
+     * @return string
+     */
+    public function getSCCPDevice()
+    {
+        return $this->getKey('SCCPDevice');
+    }
 }

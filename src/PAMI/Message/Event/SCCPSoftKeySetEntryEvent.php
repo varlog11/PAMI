@@ -45,74 +45,73 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPSoftKeySetEntryEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ChannelType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelType()
-	{
-      return $this->getKey('ChannelType');
-	}
+    /**
+     * Returns key: 'ChannelType'.
+     *
+     * @return string
+     */
+    public function getChannelType()
+    {
+        return $this->getKey('ChannelType');
+    }
 
-	/**
-	 * Returns key: 'ChannelObjectType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelObjectType()
-	{
-      return $this->getKey('ChannelObjectType');
-	}
+    /**
+     * Returns key: 'ChannelObjectType'.
+     *
+     * @return string
+     */
+    public function getChannelObjectType()
+    {
+        return $this->getKey('ChannelObjectType');
+    }
 
-	/**
-	 * Returns key: 'Set'.
-	 *
-	 * @return string
-	 */
-	public function getSet()
-	{
-      return $this->getKey('Set');
-	}
+    /**
+     * Returns key: 'Set'.
+     *
+     * @return string
+     */
+    public function getSet()
+    {
+        return $this->getKey('Set');
+    }
 
-	/**
-	 * Returns key: 'Mode'.
-	 *
-	 * @return string
-	 */
-	public function getMode()
-	{
-      return $this->getKey('Mode');
-	}
+    /**
+     * Returns key: 'Mode'.
+     *
+     * @return string
+     */
+    public function getMode()
+    {
+        return $this->getKey('Mode');
+    }
 
-	/**
-	 * Returns key: 'Description'.
-	 *
-	 * @return string
-	 */
-	public function getDescription()
-	{
-      return $this->getKey('Description');
-	}
+    /**
+     * Returns key: 'Description'.
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->getKey('Description');
+    }
 
-	/**
-	 * Returns key: 'LblID'.
-	 *
-	 * @return integer
-	 */
-	public function getLblID()
-	{
-      return intval($this->getKey('LblID'));
-	}
+    /**
+     * Returns key: 'LblID'.
+     *
+     * @return integer
+     */
+    public function getLblID()
+    {
+        return intval($this->getKey('LblID'));
+    }
 
-	/**
-	 * Returns key: 'Label'.
-	 *
-	 * @return string
-	 */
-	public function getLabel()
-	{
-      return $this->getKey('Label');
-	}
-
+    /**
+     * Returns key: 'Label'.
+     *
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->getKey('Label');
+    }
 }

@@ -59,9 +59,9 @@ class SCCPDndDeviceAction extends ActionMessage
         
         $this->setKey('DeviceId', $DeviceName);
         if (in_array(strtolower($State), array('off', 'reject', 'silent'))) {
-		    $this->setKey('State', $State);
-	    } else {
-	        throw new PAMIException('State has to be one of \'off\', \'reject\', \'silent\'.');
+            $this->setKey('State', $State);
+        } else {
+            throw new PAMIException('State has to be one of \'off\', \'reject\', \'silent\'.');
         }
     }
 }

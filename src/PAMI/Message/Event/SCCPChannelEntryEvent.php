@@ -184,5 +184,4 @@ class SCCPChannelEntryEvent extends EventMessage
     {
         return $this->getKey('DTMFmode');
     }
-
 }

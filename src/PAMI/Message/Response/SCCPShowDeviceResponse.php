@@ -57,15 +57,17 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
     {
         parent::__construct($rawContent);
     }
-	
-	private function _getEventKey($keyname) {
-		return $this->_events[0]->getKey($keyname);
-	}
+    
+    private function _getEventKey($keyname)
+    {
+        return $this->_events[0]->getKey($keyname);
+    }
 
-	private function _getEventBoolKey($keyname) {
-		return $this->_events[0]->getBoolKey($keyname);
-	}
-	
+    private function _getEventBoolKey($keyname)
+    {
+        return $this->_events[0]->getBoolKey($keyname);
+    }
+    
     /**
      * Returns key: 'MACAddress'.
      *
@@ -273,12 +275,12 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCapabilities()
     {
-    	$ret = array();
-    	$codecs=explode(", ", substr($this->_getEventKey('Capabilities'), 1, -1));
-    	foreach($codecs as $codec) {
-    		$codec_parts=explode(" ", $codec);
-    		$ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
-    	}
+        $ret = array();
+        $codecs=explode(", ", substr($this->_getEventKey('Capabilities'), 1, -1));
+        foreach ($codecs as $codec) {
+            $codec_parts=explode(" ", $codec);
+            $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
+        }
         return $ret;
     }
 
@@ -289,12 +291,12 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getCodecsPreference()
     {
-    	$ret = array();
-    	$codecs=explode(", ", substr($this->_getEventKey('CodecsPreference'), 1, -1));
-    	foreach($codecs as $codec) {
-    		$codec_parts=explode(" ", $codec);
-    		$ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
-    	}
+        $ret = array();
+        $codecs=explode(", ", substr($this->_getEventKey('CodecsPreference'), 1, -1));
+        foreach ($codecs as $codec) {
+            $codec_parts=explode(" ", $codec);
+            $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
+        }
         return $ret;
     }
 
@@ -505,19 +507,19 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      */
     public function getDenyPermit()
     {
-    	$deny = array();
-    	$permit = array();
-    	$entries=explode(",", substr($this->_getEventKey('DenyPermit'), 0, -1));
-    	foreach($entries as $entry) {
-    		$entry_parts=explode(":", $entry);
-    		if ($entry_parts[0]=="deny") {
-    			$deny[] = $entry_parts[1];
-    		} else if ($entry_parts[0]=="permit") {
-    			$permit[] = $entry_parts[1];
-    		} else {
-    			throw new PAMIException('Could not parse DenyPermit value: ' . $this->_getEventKey('DenyPermit'));
-    		}
-    	}
+        $deny = array();
+        $permit = array();
+        $entries=explode(",", substr($this->_getEventKey('DenyPermit'), 0, -1));
+        foreach ($entries as $entry) {
+            $entry_parts=explode(":", $entry);
+            if ($entry_parts[0]=="deny") {
+                $deny[] = $entry_parts[1];
+            } elseif ($entry_parts[0]=="permit") {
+                $permit[] = $entry_parts[1];
+            } else {
+                throw new PAMIException('Could not parse DenyPermit value: ' . $this->_getEventKey('DenyPermit'));
+            }
+        }
         return array('deny'=>$deny, 'permit'=>$permit);
     }
 
@@ -736,42 +738,42 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      *
      * @return events[]
      */
-	public function getButtons()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('Buttons', $this->_tables)) {
-			$res = $this->_tables['Buttons'];
-		}
-		return $res;
-	}
+    public function getButtons()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('Buttons', $this->_tables)) {
+            $res = $this->_tables['Buttons'];
+        }
+        return $res;
+    }
 
     /**
      * Returns events[] related to LineButtons from the tables['LineButtons']
      *
      * @return events[]
      */
-	public function getLineButtons()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('LineButtons', $this->_tables)) {
-			$res = $this->_tables['LineButtons'];
-		}
-		return $res;
-	}
+    public function getLineButtons()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('LineButtons', $this->_tables)) {
+            $res = $this->_tables['LineButtons'];
+        }
+        return $res;
+    }
 
     /**
      * Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']
      *
      * @return events[]
      */
-	public function getSpeeddialButtons()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('SpeeddialButtons', $this->_tables)) {
-			$res = $this->_tables['SpeeddialButtons'];
-		}
-		return $res;
-	}
+    public function getSpeeddialButtons()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('SpeeddialButtons', $this->_tables)) {
+            $res = $this->_tables['SpeeddialButtons'];
+        }
+        return $res;
+    }
 
 
     /**
@@ -779,14 +781,14 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      *
      * @return events[]
      */
-	public function getServiceURLButtons()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('ServiceURLButtons', $this->_tables)) {
-			$res = $this->_tables['ServiceURLButtons'];
-		}
-		return $res;
-	}
+    public function getServiceURLButtons()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('ServiceURLButtons', $this->_tables)) {
+            $res = $this->_tables['ServiceURLButtons'];
+        }
+        return $res;
+    }
 
 
     /**
@@ -794,14 +796,14 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      *
      * @return events[]
      */
-	public function getFeatureButtons()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('FeatureButtons', $this->_tables)) {
-			$res = $this->_tables['FeatureButtons'];
-		}
-		return $res;
-	}
+    public function getFeatureButtons()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('FeatureButtons', $this->_tables)) {
+            $res = $this->_tables['FeatureButtons'];
+        }
+        return $res;
+    }
 
 
     /**
@@ -809,27 +811,26 @@ class SCCPShowDeviceResponse extends SCCPGenericResponse
      *
      * @return events[]
      */
-	public function getVariables()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('Variables', $this->_tables)) {
-			$res = $this->_tables['Variables'];
-		}
-		return $res;
-	}
+    public function getVariables()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('Variables', $this->_tables)) {
+            $res = $this->_tables['Variables'];
+        }
+        return $res;
+    }
 
     /**
      * Returns events[] related to DeviceCallStatistics from the tables['CallStatistics']
      *
      * @return events[]
      */
-	public function getCallStatistics()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('CallStatistics', $this->_tables)) {
-			$res = $this->_tables['CallStatistics'];
-		}
-		return $res;
-	}
-
+    public function getCallStatistics()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('CallStatistics', $this->_tables)) {
+            $res = $this->_tables['CallStatistics'];
+        }
+        return $res;
+    }
 }

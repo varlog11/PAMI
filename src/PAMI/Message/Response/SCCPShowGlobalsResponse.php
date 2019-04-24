@@ -354,12 +354,12 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getCodecsPreference()
     {
-    	$ret = array();
-    	$codecs=explode(", ", substr($this->getKey('CodecsPreference'), 1, -1));
-    	foreach($codecs as $codec) {
-    		$codec_parts=explode(" ", $codec);
-    		$ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
-    	}
+        $ret = array();
+        $codecs=explode(", ", substr($this->getKey('CodecsPreference'), 1, -1));
+        foreach ($codecs as $codec) {
+            $codec_parts=explode(" ", $codec);
+            $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
+        }
         return $ret;
     }
 
@@ -370,7 +370,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getCFWDALL()
     {
-    	return $this->getBoolKey('CFWDALL');
+        return $this->getBoolKey('CFWDALL');
     }
 
     /**
@@ -380,7 +380,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getCFWDBUSY()
     {
-    	return $this->getBoolKey('CFWDBUSY');
+        return $this->getBoolKey('CFWDBUSY');
     }
 
     /**
@@ -390,7 +390,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getCFWDNOANSWER()
     {
-    	return $this->getBoolKey('CFWDNOANSWER');
+        return $this->getBoolKey('CFWDNOANSWER');
     }
 
     /**
@@ -400,7 +400,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getCallEvents()
     {
-    	return $this->getBoolKey('CallEvents');
+        return $this->getBoolKey('CallEvents');
     }
 
     /**
@@ -410,7 +410,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getDNDFeatureEnabled()
     {
-    	return $this->getBoolKey('DNDFeatureEnabled');
+        return $this->getBoolKey('DNDFeatureEnabled');
     }
 
     /**
@@ -420,7 +420,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getPark()
     {
-    	return $this->getBoolKey('Park');
+        return $this->getBoolKey('Park');
     }
 
     /**
@@ -430,7 +430,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getPrivateSoftkey()
     {
-    	return $this->getBoolKey('PrivateSoftkey');
+        return $this->getBoolKey('PrivateSoftkey');
     }
 
     /**
@@ -440,7 +440,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getEchoCancel()
     {
-    	return $this->getBoolKey('EchoCancel');
+        return $this->getBoolKey('EchoCancel');
     }
 
     /**
@@ -450,7 +450,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getSilenceSuppression()
     {
-    	return $this->getBoolKey('SilenceSuppression');
+        return $this->getBoolKey('SilenceSuppression');
     }
 
     /**
@@ -510,7 +510,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getTransferOnHangup()
     {
-    	return $this->getBoolKey('TransferOnHangup');
+        return $this->getBoolKey('TransferOnHangup');
     }
 
     /**
@@ -550,7 +550,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getJitterbufferEnabled()
     {
-    	return $this->getBoolKey('JitterbufferEnabled');
+        return $this->getBoolKey('JitterbufferEnabled');
     }
 
     /**
@@ -560,7 +560,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getJitterbufferForced()
     {
-    	return $this->getBoolKey('JitterbufferForced');
+        return $this->getBoolKey('JitterbufferForced');
     }
 
     /**
@@ -600,7 +600,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getJitterbufferLog()
     {
-    	return $this->getBoolKey('JitterbufferLog');
+        return $this->getBoolKey('JitterbufferLog');
     }
 
     /**
@@ -630,7 +630,7 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
      */
     public function getHotlineEnabled()
     {
-    	return $this->getBoolKey('HotlineEnabled');
+        return $this->getBoolKey('HotlineEnabled');
     }
 
     /**
@@ -662,6 +662,4 @@ class SCCPShowGlobalsResponse extends SCCPGenericResponse
     {
         return $this->getKey('ThreadpoolSize');
     }
-
-    
 }

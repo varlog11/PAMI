@@ -57,15 +57,17 @@ class SCCPShowLineResponse extends SCCPGenericResponse
     {
         parent::__construct($rawContent);
     }
-	
-	private function _getEventKey($keyname) {
-		return $this->_events[0]->getKey($keyname);
-	}
+    
+    private function _getEventKey($keyname)
+    {
+        return $this->_events[0]->getKey($keyname);
+    }
 
-	private function _getEventBoolKey($keyname) {
-		return $this->_events[0]->getBoolKey($keyname);
-	}
-	
+    private function _getEventBoolKey($keyname)
+    {
+        return $this->_events[0]->getBoolKey($keyname);
+    }
+    
     /**
      * Returns key: 'Name'.
      *
@@ -223,7 +225,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getCallGroup()
     {
-    	return array_map('intval', explode(",", $this->_getEventKey('Callgroup')));
+        return array_map('intval', explode(",", $this->_getEventKey('Callgroup')));
     }
 
     /**
@@ -233,7 +235,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPickupGroup()
     {
-    	return array_map('intval', explode(",", $this->_getEventKey('Pickupgroup')));
+        return array_map('intval', explode(",", $this->_getEventKey('Pickupgroup')));
     }
 
     /**
@@ -243,7 +245,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getNamedCallGroup()
     {
-    	return explode(",", $this->_getEventKey('NamedCallGroup'));
+        return explode(",", $this->_getEventKey('NamedCallGroup'));
     }
 
     /**
@@ -323,7 +325,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getSecDialtone()
     {
-    	/* can be either integer or hex -> convert hex to int */
+        /* can be either integer or hex -> convert hex to int */
         return intval($this->_getEventKey('SecDialtone'), 0);
     }
 
@@ -334,7 +336,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getEchoCancellation()
     {
-    	return $this->_getEventBoolKey('EchoCancellation');
+        return $this->_getEventBoolKey('EchoCancellation');
     }
 
     /**
@@ -344,7 +346,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getSilenceSuppression()
     {
-    	return $this->_getEventBoolKey('SilenceSuppression');
+        return $this->_getEventBoolKey('SilenceSuppression');
     }
 
     /**
@@ -354,7 +356,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getCanTransfer()
     {
-    	return $this->_getEventBoolKey('CanTransfer');
+        return $this->_getEventBoolKey('CanTransfer');
     }
 
     /**
@@ -364,7 +366,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getDNDAction()
     {
-    	return $this->_getEventKey('DNDAction');
+        return $this->_getEventKey('DNDAction');
     }
 
     /**
@@ -374,7 +376,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getIsRealtimeLine()
     {
-    	return $this->_getEventBoolKey('IsRealtimeLine');
+        return $this->_getEventBoolKey('IsRealtimeLine');
     }
 
     /**
@@ -384,7 +386,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPendingDelete()
     {
-    	return $this->_getEventBoolKey('PendingDelete');
+        return $this->_getEventBoolKey('PendingDelete');
     }
 
     /**
@@ -394,7 +396,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getPendingUpdate()
     {
-    	return $this->_getEventBoolKey('PendingUpdate');
+        return $this->_getEventBoolKey('PendingUpdate');
     }
 
     /**
@@ -424,7 +426,7 @@ class SCCPShowLineResponse extends SCCPGenericResponse
      */
     public function getAdhocNumberAssigned()
     {
-    	return $this->_getEventBoolKey('AdhocNumberAssigned');
+        return $this->_getEventBoolKey('AdhocNumberAssigned');
     }
 
     /**
@@ -447,45 +449,45 @@ class SCCPShowLineResponse extends SCCPGenericResponse
         return intval($this->_getEventKey('MessageWaitingOld'));
     }
 
-	/**
-	 * Returns events[] related to AttachedDevices from the tables['AttachedDevices']
-	 *
-	 * @return events[]
-	 */
-	public function getAttachedDevices()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('AttachedDevices', $this->_tables)) {
-			$res = $this->_tables['AttachedDevices'];
-		}
-		return $res;
-	}
+    /**
+     * Returns events[] related to AttachedDevices from the tables['AttachedDevices']
+     *
+     * @return events[]
+     */
+    public function getAttachedDevices()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('AttachedDevices', $this->_tables)) {
+            $res = $this->_tables['AttachedDevices'];
+        }
+        return $res;
+    }
 
-	/**
-	 * Returns events[] related to Mailboxes from the tables['Mailboxes']
-	 *
-	 * @return events[]
-	 */
-	public function getMailboxes()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('Mailboxes', $this->_tables)) {
-			$res = $this->_tables['Mailboxes'];
-		}
-		return $res;
-	}
+    /**
+     * Returns events[] related to Mailboxes from the tables['Mailboxes']
+     *
+     * @return events[]
+     */
+    public function getMailboxes()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('Mailboxes', $this->_tables)) {
+            $res = $this->_tables['Mailboxes'];
+        }
+        return $res;
+    }
 
-	/**
-	 * Returns events[] related to Variables from the tables['Variables']
-	 *
-	 * @return events[]
-	 */
-	public function getVariables()
-	{
-		$res = array();
-		if ($this->hasTable() && array_key_exists('Variables', $this->_tables)) {
-			$res = $this->_tables['Variables'];
-		}
-		return $res;
-	}
+    /**
+     * Returns events[] related to Variables from the tables['Variables']
+     *
+     * @return events[]
+     */
+    public function getVariables()
+    {
+        $res = array();
+        if ($this->hasTable() && array_key_exists('Variables', $this->_tables)) {
+            $res = $this->_tables['Variables'];
+        }
+        return $res;
+    }
 }

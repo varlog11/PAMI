@@ -164,5 +164,4 @@ class SCCPLineEntryEvent extends EventMessage
     {
         return $this->getKey('Capabilities');
     }
-
 }

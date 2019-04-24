@@ -32,6 +32,7 @@ namespace PAMI\Message\Response;
 use PAMI\Message\Response\ResponseMessage;
 use PAMI\Message\Event\EventMessage;
 use PAMI\Exception\PAMIException;
+
 /**
  * A generic SCCP response message from ami.
  *
@@ -69,42 +70,41 @@ class AdvancedResponseMessage extends ResponseMessage
      */
     public function addEvent(EventMessage $event)
     {
-    	// not eventlist (start/complete)
+        // not eventlist (start/complete)
         if (stristr($event->getEventList(), 'start') === false
             && stristr($event->getEventList(), 'complete') === false
             && stristr($event->getName(), 'complete') === false
         ) {
-        	$unknownevent = "PAMI\\Message\\Event\\UnknownEvent";
-        	if (!($event instanceof $unknownevent)) {
-				// Handle TableStart/TableEnd Differently 
-				if (stristr($event->getName(), 'TableStart') != false) {
-					$this->_temptable = array();
-					$this->_temptable['Name'] = $event->getTableName();
-					$this->_temptable['Entries'] = array();
-				} else if (stristr($event->getName(), 'TableEnd') != false) {
-					if (!is_array($this->tables)) {
-						$this->tables = array();
-					}
-					$this->tables[$event->getTableName()] = $this->_temptable;
-					unset($this->_temptable);
-				} else if (is_array($this->_temptable)) {
-					$this->_temptable['Entries'][] = $event;
-				} else {
-					// add regular event
-					$this->_events[] = $event;
-				}
-			} else {
-				// add regular event
-				$this->_events[] = $event;
-			}
+            $unknownevent = "PAMI\\Message\\Event\\UnknownEvent";
+            if (!($event instanceof $unknownevent)) {
+                // Handle TableStart/TableEnd Differently
+                if (stristr($event->getName(), 'TableStart') != false) {
+                    $this->_temptable = array();
+                    $this->_temptable['Name'] = $event->getTableName();
+                    $this->_temptable['Entries'] = array();
+                } elseif (stristr($event->getName(), 'TableEnd') != false) {
+                    if (!is_array($this->tables)) {
+                        $this->tables = array();
+                    }
+                    $this->tables[$event->getTableName()] = $this->_temptable;
+                    unset($this->_temptable);
+                } elseif (is_array($this->_temptable)) {
+                    $this->_temptable['Entries'][] = $event;
+                } else {
+                    // add regular event
+                    $this->_events[] = $event;
+                }
+            } else {
+                // add regular event
+                $this->_events[] = $event;
+            }
         }
         // finish eventlist
-        if (
-            stristr($event->getEventList(), 'complete') != false
+        if (stristr($event->getEventList(), 'complete') != false
             || stristr($event->getName(), 'complete') != false
-		) {
+        ) {
             $this->_completed = true;
-		}
+        }
     }
 
     /**
@@ -114,10 +114,10 @@ class AdvancedResponseMessage extends ResponseMessage
      */
     public function hasTable()
     {
-		if (is_array($this->tables)) {
-			return true;
-		}
-		return false;
+        if (is_array($this->tables)) {
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -127,7 +127,7 @@ class AdvancedResponseMessage extends ResponseMessage
      */
     public function getTableNames()
     {
-    	return array_keys($this->tables);
+        return array_keys($this->tables);
     }
 
 
@@ -139,25 +139,25 @@ class AdvancedResponseMessage extends ResponseMessage
     public function getTable($tablename)
     {
         if ($this->hasTable() && array_key_exists($tablename, $this->tables)) {
-        	return $this->tables[$tablename];
+            return $this->tables[$tablename];
         }
-		throw new PAMIException("No such table.");        
+        throw new PAMIException("No such table.");
     }
 
     /**
-     * Returns decoded version of the 'JSON' key if present. 
+     * Returns decoded version of the 'JSON' key if present.
      *
      * @return array
      */
     public function getJSON()
     {
-		if (strlen($this->getKey('JSON')) > 0) {
-			if (($json = json_decode($this->getKey('JSON'), true)) != false) {
-				return $json;
-			}
-		}
-		throw new PAMIException("No JSON Key found to return.");
-	}
+        if (strlen($this->getKey('JSON')) > 0) {
+            if (($json = json_decode($this->getKey('JSON'), true)) != false) {
+                return $json;
+            }
+        }
+        throw new PAMIException("No JSON Key found to return.");
+    }
 
     /**
      * Constructor.

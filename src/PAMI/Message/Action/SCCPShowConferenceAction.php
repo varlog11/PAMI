@@ -43,7 +43,7 @@ namespace PAMI\Message\Action;
  */
 class SCCPShowConferenceAction extends ActionMessage
 {
-	
+    
     /**
      * Constructor.
      *

@@ -60,9 +60,9 @@ class SCCPConferenceAction extends ActionMessage
         $this->setKey('ConferenceId', $ConferenceId);
         $this->setKey('ParticipantId', $ParticipantId);
         if (in_array(strtolower($Command), array('endconf', 'kick', 'mute', 'invite', 'moderate'))) {
-	        $this->setKey('Command', strtolower($Command));
-		} else {
-			throw new PAMIException('State has to be one of \'endconf\', \'kick\', \'mute\', \'invite\', \'moderate\'.');
-		}
+            $this->setKey('Command', strtolower($Command));
+        } else {
+            throw new PAMIException('State has to be one of \'endconf\', \'kick\', \'mute\', \'invite\', \'moderate\'.');
+        }
     }
 }

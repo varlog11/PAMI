@@ -45,84 +45,83 @@ use PAMI\Message\Event\EventMessage;
  */
 class CallAnsweredEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'Channel'.
-	 *
-	 * @return string
-	 */
-	public function getChannel()
-	{
-      return $this->getKey('Channel');
-	}
+    /**
+     * Returns key: 'Channel'.
+     *
+     * @return string
+     */
+    public function getChannel()
+    {
+        return $this->getKey('Channel');
+    }
 
-	/**
-	 * Returns key: 'SCCPLine'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPLine()
-	{
-      return $this->getKey('SCCPLine');
-	}
+    /**
+     * Returns key: 'SCCPLine'.
+     *
+     * @return string
+     */
+    public function getSCCPLine()
+    {
+        return $this->getKey('SCCPLine');
+    }
 
-	/**
-	 * Returns key: 'SCCPDevice'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPDevice()
-	{
-      return $this->getKey('SCCPDevice');
-	}
+    /**
+     * Returns key: 'SCCPDevice'.
+     *
+     * @return string
+     */
+    public function getSCCPDevice()
+    {
+        return $this->getKey('SCCPDevice');
+    }
 
-	/**
-	 * Returns key: 'Uniqueid'.
-	 *
-	 * @return string
-	 */
-	public function getUniqueid()
-	{
-      return $this->getKey('Uniqueid');
-	}
+    /**
+     * Returns key: 'Uniqueid'.
+     *
+     * @return string
+     */
+    public function getUniqueid()
+    {
+        return $this->getKey('Uniqueid');
+    }
 
-	/**
-	 * Returns key: 'CallingPartyNumber'.
-	 *
-	 * @return string
-	 */
-	public function getCallingPartyNumber()
-	{
-      return $this->getKey('CallingPartyNumber');
-	}
+    /**
+     * Returns key: 'CallingPartyNumber'.
+     *
+     * @return string
+     */
+    public function getCallingPartyNumber()
+    {
+        return $this->getKey('CallingPartyNumber');
+    }
 
-	/**
-	 * Returns key: 'CallingPartyName'.
-	 *
-	 * @return string
-	 */
-	public function getCallingPartyName()
-	{
-      return $this->getKey('CallingPartyName');
-	}
+    /**
+     * Returns key: 'CallingPartyName'.
+     *
+     * @return string
+     */
+    public function getCallingPartyName()
+    {
+        return $this->getKey('CallingPartyName');
+    }
 
-	/**
-	 * Returns key: 'originalCallingParty'.
-	 *
-	 * @return string
-	 */
-	public function getoriginalCallingParty()
-	{
-      return $this->getKey('originalCallingParty');
-	}
+    /**
+     * Returns key: 'originalCallingParty'.
+     *
+     * @return string
+     */
+    public function getoriginalCallingParty()
+    {
+        return $this->getKey('originalCallingParty');
+    }
 
-	/**
-	 * Returns key: 'lastRedirectingParty'.
-	 *
-	 * @return string
-	 */
-	public function getlastRedirectingParty()
-	{
-      return $this->getKey('lastRedirectingParty');
-	}
-
+    /**
+     * Returns key: 'lastRedirectingParty'.
+     *
+     * @return string
+     */
+    public function getlastRedirectingParty()
+    {
+        return $this->getKey('lastRedirectingParty');
+    }
 }

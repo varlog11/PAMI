@@ -201,7 +201,7 @@ abstract class IncomingMessage extends Message
                 unset($content[0]);
                 $value = isset($content[1]) ? trim(implode(':', $content)) : '';
                 $this->channelVariables[$chanName][$name] = $value;
-            } else if (!strncmp($name, 'variable', 8)) {
+            } elseif (!strncmp($name, 'variable', 8)) {
                 // https://github.com/marcelog/PAMI/issues/85
                 $matches = preg_match("/\(([^\)]*)\)/", $name, $captures);
                 $chanName = 'default';
@@ -216,7 +216,7 @@ abstract class IncomingMessage extends Message
             } else {
                 $this->setKey($name, $value);
             }
-            // Added ResponseFactory #d3b0ce8 
+            // Added ResponseFactory #d3b0ce8
             try {
                     $this->setSanitizedKey($name, $value);
             } catch (PAMIException $e) {

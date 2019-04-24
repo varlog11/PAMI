@@ -253,12 +253,12 @@ class SCCPShowDeviceEvent extends EventMessage
      */
     public function getCapabilities()
     {
-    	$ret = array();
-    	$codecs=explode(", ", substr($this->getKey('Capabilities'), 1, -1));
-    	foreach($codecs as $codec) {
-    		$codec_parts=explode(" ", $codec);
-    		$ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
-    	}
+        $ret = array();
+        $codecs=explode(", ", substr($this->getKey('Capabilities'), 1, -1));
+        foreach ($codecs as $codec) {
+            $codec_parts=explode(" ", $codec);
+            $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
+        }
         return $ret;
     }
 
@@ -269,12 +269,12 @@ class SCCPShowDeviceEvent extends EventMessage
      */
     public function getCodecsPreference()
     {
-    	$ret = array();
-    	$codecs=explode(", ", substr($this->getKey('CodecsPreference'), 1, -1));
-    	foreach($codecs as $codec) {
-    		$codec_parts=explode(" ", $codec);
-    		$ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
-    	}
+        $ret = array();
+        $codecs=explode(", ", substr($this->getKey('CodecsPreference'), 1, -1));
+        foreach ($codecs as $codec) {
+            $codec_parts=explode(" ", $codec);
+            $ret[] = array("name" => $codec_parts[0], "value" => substr($codec_parts[1], 1, -1));
+        }
         return $ret;
     }
 
@@ -485,19 +485,19 @@ class SCCPShowDeviceEvent extends EventMessage
      */
     public function getDenyPermit()
     {
-    	$deny = array();
-    	$permit = array();
-    	$entries=explode(",", substr($this->getKey('DenyPermit'), 0, -1));
-    	foreach($entries as $entry) {
-    		$entry_parts=explode(":", $entry);
-    		if ($entry_parts[0]=="deny") {
-    			$deny[] = $entry_parts[1];
-    		} else if ($entry_parts[0]=="permit") {
-    			$permit[] = $entry_parts[1];
-    		} else {
-    			throw new PAMIException('Could not parse DenyPermit value: ' . $this->getKey('DenyPermit'));
-    		}
-    	}
+        $deny = array();
+        $permit = array();
+        $entries=explode(",", substr($this->getKey('DenyPermit'), 0, -1));
+        foreach ($entries as $entry) {
+            $entry_parts=explode(":", $entry);
+            if ($entry_parts[0]=="deny") {
+                $deny[] = $entry_parts[1];
+            } elseif ($entry_parts[0]=="permit") {
+                $permit[] = $entry_parts[1];
+            } else {
+                throw new PAMIException('Could not parse DenyPermit value: ' . $this->getKey('DenyPermit'));
+            }
+        }
         return array('deny'=>$deny, 'permit'=>$permit);
     }
 

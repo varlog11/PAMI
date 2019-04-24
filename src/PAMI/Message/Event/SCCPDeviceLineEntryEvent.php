@@ -124,5 +124,4 @@ class SCCPDeviceLineEntryEvent extends EventMessage
     {
         return $this->getKey('CfwdNumber');
     }
-
 }

@@ -68,7 +68,7 @@ class ConfbridgeUnmuteEvent extends EventMessage
     /**
      * Returns key: 'Uniqueid'.
      *
-     
+
      * @return string
      */
     public function getUniqueid()

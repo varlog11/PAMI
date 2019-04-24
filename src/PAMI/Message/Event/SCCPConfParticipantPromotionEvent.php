@@ -45,34 +45,33 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPConfParticipantPromotionEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ConfId'.
-	 *
-	 * @return integer
-	 */
-	public function getConfId()
-	{
-      return intval($this->getKey('ConfId'));
-	}
+    /**
+     * Returns key: 'ConfId'.
+     *
+     * @return integer
+     */
+    public function getConfId()
+    {
+        return intval($this->getKey('ConfId'));
+    }
 
-	/**
-	 * Returns key: 'PartId'.
-	 *
-	 * @return integer
-	 */
-	public function getPartId()
-	{
-      return intval($this->getKey('PartId'));
-	}
+    /**
+     * Returns key: 'PartId'.
+     *
+     * @return integer
+     */
+    public function getPartId()
+    {
+        return intval($this->getKey('PartId'));
+    }
 
-	/**
-	 * Returns key: 'Moderator'.
-	 *
-	 * @return boolean
-	 */
-	public function getModerator()
-	{
-      return $this->getBoolKey('Moderator');
-	}
-
+    /**
+     * Returns key: 'Moderator'.
+     *
+     * @return boolean
+     */
+    public function getModerator()
+    {
+        return $this->getBoolKey('Moderator');
+    }
 }

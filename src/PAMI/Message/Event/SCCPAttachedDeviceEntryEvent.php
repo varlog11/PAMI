@@ -94,5 +94,4 @@ class SCCPAttachedDeviceEntryEvent extends EventMessage
     {
         return $this->getKey('CfwdNumber');
     }
-
 }

@@ -134,5 +134,4 @@ class QueueEntryEvent extends EventMessage
     {
         return $this->getKey('Wait');
     }
-
 }

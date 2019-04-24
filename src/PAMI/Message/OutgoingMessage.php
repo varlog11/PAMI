@@ -43,44 +43,44 @@ use PAMI\Exception\PAMIException;
  */
 abstract class OutgoingMessage extends Message
 {
-	/**
-	 * String of the Class name to handle the Reponse to this Message
-	 * @var string
-	 */
-	private $_responseHandler;
+    /**
+     * String of the Class name to handle the Reponse to this Message
+     * @var string
+     */
+    private $_responseHandler;
 
-	/**
-	 * Returns '_responseHandler'.
-	 *
-	 * @return string
-	 */
-	public function getResponseHandler()
-	{
-		if (strlen($this->_responseHandler) > 0) {
-			//throw new PAMIException('Hier:' . $this->_responseHandler);
-			return (string)$this->_responseHandler;
-		} else {
-			return "";
-		}
-	}
+    /**
+     * Returns '_responseHandler'.
+     *
+     * @return string
+     */
+    public function getResponseHandler()
+    {
+        if (strlen($this->_responseHandler) > 0) {
+            //throw new PAMIException('Hier:' . $this->_responseHandler);
+            return (string)$this->_responseHandler;
+        } else {
+            return "";
+        }
+    }
 
-	/**
-	 * Set '_responseHandler'.
-	 *
-	 * @return void
-	 * @throws if class cannot be found or strlen($responseHandler) == 0
-	 */
-	public function setResponseHandler($responseHandler)
-	{
-		if (0 == strlen($responseHandler)) {
-			throw new PAMIException('ResponseHandler cannot be empty.');
-		}
+    /**
+     * Set '_responseHandler'.
+     *
+     * @return void
+     * @throws if class cannot be found or strlen($responseHandler) == 0
+     */
+    public function setResponseHandler($responseHandler)
+    {
+        if (0 == strlen($responseHandler)) {
+            throw new PAMIException('ResponseHandler cannot be empty.');
+        }
 
-		$className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
-		if (class_exists($className, true)) {
-			$this->_responseHandler = $responseHandler;
-		} else {
-			throw new PAMIException('ResponseHandler could not be found.');
-		}
-	}
+        $className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
+        if (class_exists($className, true)) {
+            $this->_responseHandler = $responseHandler;
+        } else {
+            throw new PAMIException('ResponseHandler could not be found.');
+        }
+    }
 }

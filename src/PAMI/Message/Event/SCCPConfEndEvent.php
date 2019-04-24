@@ -45,14 +45,13 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPConfEndEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ConfId'.
-	 *
-	 * @return integer
-	 */
-	public function getConfId()
-	{
-      return intval($this->getKey('ConfId'));
-	}
-
+    /**
+     * Returns key: 'ConfId'.
+     *
+     * @return integer
+     */
+    public function getConfId()
+    {
+        return intval($this->getKey('ConfId'));
+    }
 }

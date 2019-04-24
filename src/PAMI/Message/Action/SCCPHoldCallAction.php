@@ -64,7 +64,7 @@ class SCCPHoldCallAction extends ActionMessage
         if ($Hold == true) {
             $this->setKey('Hold', 'on');
             if ($SwapChannels == true) {
-    	        throw new PAMIException('Cannot SwapChannels when putting on hold.');
+                throw new PAMIException('Cannot SwapChannels when putting on hold.');
             }
             $this->setKey('SwapChannels', 'off');
         } else {

@@ -50,41 +50,41 @@ use PAMI\Message\Message;
  */
 class ResponseFactoryImpl
 {
-	/**
-	 * This is our factory method.
-	 *
-	 * @param string $message Literal message as received from ami.
-	 * @param string $requestingaction
-	 * @param string $responseHandler
-	 *
-	 * @return EventMessage
-	 */
-	//public static function createFromRaw($message, $requestingaction = false, $responseHandler = false)
-	public function createFromRaw($message, $requestingaction = false, $responseHandler = false)
-	{
-		$responseclass = '\\PAMI\\Message\\Response\\GenericResponse';
+    /**
+     * This is our factory method.
+     *
+     * @param string $message Literal message as received from ami.
+     * @param string $requestingaction
+     * @param string $responseHandler
+     *
+     * @return EventMessage
+     */
+    //public static function createFromRaw($message, $requestingaction = false, $responseHandler = false)
+    public function createFromRaw($message, $requestingaction = false, $responseHandler = false)
+    {
+        $responseclass = '\\PAMI\\Message\\Response\\GenericResponse';
 
-		$_className = false;
-		if ($responseHandler != false) {
-			$_className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
-		} else if ($requestingaction != false) {
-			$_className = '\\PAMI\\Message\\Response\\' . substr(get_class($requestingaction), 20, -6) . 'Response';
-		}
-		if ($_className) {
-			if (class_exists($_className, true)) {
-				$responseclass = $_className;
-			} else if ($responseHandler != false){
-				throw new PAMIException('Response Class ' . $_className . '  requested via responseHandler, could not be found');
-			}
-		}
-		return new $responseclass($message);
-	}
+        $_className = false;
+        if ($responseHandler != false) {
+            $_className = '\\PAMI\\Message\\Response\\' . $responseHandler . 'Response';
+        } elseif ($requestingaction != false) {
+            $_className = '\\PAMI\\Message\\Response\\' . substr(get_class($requestingaction), 20, -6) . 'Response';
+        }
+        if ($_className) {
+            if (class_exists($_className, true)) {
+                $responseclass = $_className;
+            } elseif ($responseHandler != false) {
+                throw new PAMIException('Response Class ' . $_className . '  requested via responseHandler, could not be found');
+            }
+        }
+        return new $responseclass($message);
+    }
 
-	/**
-	 * Constructor. Nothing to see here, move along.
-	 *
-	 * @return void
-	 */
+    /**
+     * Constructor. Nothing to see here, move along.
+     *
+     * @return void
+     */
     public function __construct()
     {
     }

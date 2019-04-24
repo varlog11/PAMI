@@ -47,7 +47,7 @@ class UserEventAction extends ActionMessage
      * Constructor.
      *
      * @param $userevent Event
-     * @param $valuesArr Array 
+     * @param $valuesArr Array
      * @return void
      */
     public function __construct($userevent, $valuesArr = null)
@@ -55,10 +55,10 @@ class UserEventAction extends ActionMessage
         parent::__construct('UserEvent');
         $this->setKey('UserEvent', $userevent);
 
-        if(is_array($valuesArr) && $valuesArr){
-        	foreach ($valuesArr as $key => $value) {
-        		$this->setKey($key, $value);
-        	}
+        if (is_array($valuesArr) && $valuesArr) {
+            foreach ($valuesArr as $key => $value) {
+                $this->setKey($key, $value);
+            }
         }
     }
 }

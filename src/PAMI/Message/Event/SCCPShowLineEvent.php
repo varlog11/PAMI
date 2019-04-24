@@ -202,7 +202,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getCallGroup()
     {
-    	return array_map('intval', explode(",", $this->getKey('Callgroup')));
+        return array_map('intval', explode(",", $this->getKey('Callgroup')));
     }
 
     /**
@@ -212,7 +212,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getPickupGroup()
     {
-    	return array_map('intval', explode(",", $this->getKey('Pickupgroup')));
+        return array_map('intval', explode(",", $this->getKey('Pickupgroup')));
     }
 
     /**
@@ -222,7 +222,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getNamedCallGroup()
     {
-    	return explode(",", $this->getKey('NamedCallGroup'));
+        return explode(",", $this->getKey('NamedCallGroup'));
     }
 
     /**
@@ -302,7 +302,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getSecDialtone()
     {
-    	/* can be either integer or hex -> convert hex to int */
+        /* can be either integer or hex -> convert hex to int */
         return intval($this->getKey('SecDialtone'), 0);
     }
 
@@ -313,7 +313,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getEchoCancellation()
     {
-    	return $this->getBoolKey('EchoCancellation');
+        return $this->getBoolKey('EchoCancellation');
     }
 
     /**
@@ -323,7 +323,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getSilenceSuppression()
     {
-    	return $this->getBoolKey('SilenceSuppression');
+        return $this->getBoolKey('SilenceSuppression');
     }
 
     /**
@@ -333,7 +333,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getCanTransfer()
     {
-    	return $this->getBoolKey('CanTransfer');
+        return $this->getBoolKey('CanTransfer');
     }
 
     /**
@@ -343,7 +343,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getDNDAction()
     {
-    	return $this->getKey('DNDAction');
+        return $this->getKey('DNDAction');
     }
 
     /**
@@ -353,7 +353,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getIsRealtimeLine()
     {
-    	return $this->getBoolKey('IsRealtimeLine');
+        return $this->getBoolKey('IsRealtimeLine');
     }
 
     /**
@@ -363,7 +363,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getPendingDelete()
     {
-    	return $this->getBoolKey('PendingDelete');
+        return $this->getBoolKey('PendingDelete');
     }
 
     /**
@@ -373,7 +373,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getPendingUpdate()
     {
-    	return $this->getBoolKey('PendingUpdate');
+        return $this->getBoolKey('PendingUpdate');
     }
 
     /**
@@ -403,7 +403,7 @@ class SCCPShowLineEvent extends EventMessage
      */
     public function getAdhocNumberAssigned()
     {
-    	return $this->getBoolKey('AdhocNumberAssigned');
+        return $this->getBoolKey('AdhocNumberAssigned');
     }
 
     /**

@@ -45,104 +45,103 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPHintSubscriptionEntryEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ChannelType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelType()
-	{
-      return $this->getKey('ChannelType');
-	}
+    /**
+     * Returns key: 'ChannelType'.
+     *
+     * @return string
+     */
+    public function getChannelType()
+    {
+        return $this->getKey('ChannelType');
+    }
 
-	/**
-	 * Returns key: 'ChannelObjectType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelObjectType()
-	{
-      return $this->getKey('ChannelObjectType');
-	}
+    /**
+     * Returns key: 'ChannelObjectType'.
+     *
+     * @return string
+     */
+    public function getChannelObjectType()
+    {
+        return $this->getKey('ChannelObjectType');
+    }
 
-	/**
-	 * Returns key: 'Exten'.
-	 *
-	 * @return string
-	 */
-	public function getExten()
-	{
-      return $this->getKey('Exten');
-	}
+    /**
+     * Returns key: 'Exten'.
+     *
+     * @return string
+     */
+    public function getExten()
+    {
+        return $this->getKey('Exten');
+    }
 
-	/**
-	 * Returns key: 'Context'.
-	 *
-	 * @return string
-	 */
-	public function getContext()
-	{
-      return $this->getKey('Context');
-	}
+    /**
+     * Returns key: 'Context'.
+     *
+     * @return string
+     */
+    public function getContext()
+    {
+        return $this->getKey('Context');
+    }
 
-	/**
-	 * Returns key: 'Hint'.
-	 *
-	 * @return string
-	 */
-	public function getHint()
-	{
-      return $this->getKey('Hint');
-	}
+    /**
+     * Returns key: 'Hint'.
+     *
+     * @return string
+     */
+    public function getHint()
+    {
+        return $this->getKey('Hint');
+    }
 
-	/**
-	 * Returns key: 'State'.
-	 *
-	 * @return string
-	 */
-	public function getState()
-	{
-      return $this->getKey('State');
-	}
+    /**
+     * Returns key: 'State'.
+     *
+     * @return string
+     */
+    public function getState()
+    {
+        return $this->getKey('State');
+    }
 
-	/**
-	 * Returns key: 'CallInfoNumber:'.
-	 *
-	 * @return string
-	 */
-	public function getCallInfoNumber()
-	{
-      return $this->getKey('CallInfoNumber:');
-	}
+    /**
+     * Returns key: 'CallInfoNumber:'.
+     *
+     * @return string
+     */
+    public function getCallInfoNumber()
+    {
+        return $this->getKey('CallInfoNumber:');
+    }
 
-	/**
-	 * Returns key: 'CallInfoName:'.
-	 *
-	 * @return string
-	 */
-	public function getCallInfoName()
-	{
-      return $this->getKey('CallInfoName:');
-	}
+    /**
+     * Returns key: 'CallInfoName:'.
+     *
+     * @return string
+     */
+    public function getCallInfoName()
+    {
+        return $this->getKey('CallInfoName:');
+    }
 
-	/**
-	 * Returns key: 'Direction:'.
-	 *
-	 * @return string
-	 */
-	public function getDirection()
-	{
-      return $this->getKey('Direction:');
-	}
+    /**
+     * Returns key: 'Direction:'.
+     *
+     * @return string
+     */
+    public function getDirection()
+    {
+        return $this->getKey('Direction:');
+    }
 
-	/**
-	 * Returns key: 'Subs'.
-	 *
-	 * @return integer
-	 */
-	public function getSubs()
-	{
-      return intval($this->getKey('Subs'));
-	}
-
+    /**
+     * Returns key: 'Subs'.
+     *
+     * @return integer
+     */
+    public function getSubs()
+    {
+        return intval($this->getKey('Subs'));
+    }
 }

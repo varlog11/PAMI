@@ -45,24 +45,23 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPConfParticipantKickedEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ConfId'.
-	 *
-	 * @return integer
-	 */
-	public function getConfId()
-	{
-      return intval($this->getKey('ConfId'));
-	}
+    /**
+     * Returns key: 'ConfId'.
+     *
+     * @return integer
+     */
+    public function getConfId()
+    {
+        return intval($this->getKey('ConfId'));
+    }
 
-	/**
-	 * Returns key: 'PartId'.
-	 *
-	 * @return integer
-	 */
-	public function getPartId()
-	{
-      return intval($this->getKey('PartId'));
-	}
-
+    /**
+     * Returns key: 'PartId'.
+     *
+     * @return integer
+     */
+    public function getPartId()
+    {
+        return intval($this->getKey('PartId'));
+    }
 }

@@ -45,44 +45,43 @@ use PAMI\Message\Event\EventMessage;
  */
 class SCCPConfLeaveEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ConfId'.
-	 *
-	 * @return integer
-	 */
-	public function getConfId()
-	{
-      return intval($this->getKey('ConfId'));
-	}
+    /**
+     * Returns key: 'ConfId'.
+     *
+     * @return integer
+     */
+    public function getConfId()
+    {
+        return intval($this->getKey('ConfId'));
+    }
 
-	/**
-	 * Returns key: 'PartId'.
-	 *
-	 * @return integer
-	 */
-	public function getPartId()
-	{
-      return intval($this->getKey('PartId'));
-	}
+    /**
+     * Returns key: 'PartId'.
+     *
+     * @return integer
+     */
+    public function getPartId()
+    {
+        return intval($this->getKey('PartId'));
+    }
 
-	/**
-	 * Returns key: 'Channel'.
-	 *
-	 * @return string
-	 */
-	public function getChannel()
-	{
-      return $this->getKey('Channel');
-	}
+    /**
+     * Returns key: 'Channel'.
+     *
+     * @return string
+     */
+    public function getChannel()
+    {
+        return $this->getKey('Channel');
+    }
 
-	/**
-	 * Returns key: 'Uniqueid'.
-	 *
-	 * @return string
-	 */
-	public function getUniqueid()
-	{
-      return $this->getKey('Uniqueid');
-	}
-
+    /**
+     * Returns key: 'Uniqueid'.
+     *
+     * @return string
+     */
+    public function getUniqueid()
+    {
+        return $this->getKey('Uniqueid');
+    }
 }

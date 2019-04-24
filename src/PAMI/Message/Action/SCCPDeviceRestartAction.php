@@ -53,15 +53,15 @@ class SCCPDeviceRestartAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct($DeviceName, $Type="restart")
+    public function __construct($DeviceName, $Type = "restart")
     {
         parent::__construct('SCCPDeviceRestart');
         
         $this->setKey('DeviceName', $DeviceName);
         if (in_array(strtolower($Type), array('restart', 'full', 'reset'))) {
-		    $this->setKey('Type', $Type);
+            $this->setKey('Type', $Type);
         } else {
-		    throw new PAMIException('Param2 has to be one of \'restart\', \'full\', \'reset\'.');
+            throw new PAMIException('Param2 has to be one of \'restart\', \'full\', \'reset\'.');
         }
     }
 }

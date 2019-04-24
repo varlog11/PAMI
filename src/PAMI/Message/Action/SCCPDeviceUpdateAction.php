@@ -47,7 +47,7 @@ class SCCPDeviceUpdateAction extends ActionMessage
      * Constructor.
      *
      * @param string $DeviceName Device Name
-     * 
+     *
      * @return void
      */
     public function __construct($DeviceName)

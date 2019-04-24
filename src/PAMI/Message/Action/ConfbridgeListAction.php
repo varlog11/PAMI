@@ -48,7 +48,7 @@ class ConfBridgeListAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct( $conference )
+    public function __construct($conference)
     {
         parent::__construct('ConfbridgeList');
         $this->setKey('Conference', $conference);

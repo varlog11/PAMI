@@ -45,74 +45,73 @@ use PAMI\Message\Event\EventMessage;
  */
 class CallForwardEvent extends EventMessage
 {
-	/**
-	 * Returns key: 'ChannelType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelType()
-	{
-      return $this->getKey('ChannelType');
-	}
+    /**
+     * Returns key: 'ChannelType'.
+     *
+     * @return string
+     */
+    public function getChannelType()
+    {
+        return $this->getKey('ChannelType');
+    }
 
-	/**
-	 * Returns key: 'ChannelObjectType'.
-	 *
-	 * @return string
-	 */
-	public function getChannelObjectType()
-	{
-      return $this->getKey('ChannelObjectType');
-	}
+    /**
+     * Returns key: 'ChannelObjectType'.
+     *
+     * @return string
+     */
+    public function getChannelObjectType()
+    {
+        return $this->getKey('ChannelObjectType');
+    }
 
-	/**
-	 * Returns key: 'Feature'.
-	 *
-	 * @return string
-	 */
-	public function getFeature()
-	{
-      return $this->getKey('Feature');
-	}
+    /**
+     * Returns key: 'Feature'.
+     *
+     * @return string
+     */
+    public function getFeature()
+    {
+        return $this->getKey('Feature');
+    }
 
-	/**
-	 * Returns key: 'Status'.
-	 *
-	 * @return boolean
-	 */
-	public function getStatus()
-	{
-      return $this->getBoolKey('Status');
-	}
+    /**
+     * Returns key: 'Status'.
+     *
+     * @return boolean
+     */
+    public function getStatus()
+    {
+        return $this->getBoolKey('Status');
+    }
 
-	/**
-	 * Returns key: 'Extension'.
-	 *
-	 * @return string
-	 */
-	public function getExtension()
-	{
-      return $this->getKey('Extension');
-	}
+    /**
+     * Returns key: 'Extension'.
+     *
+     * @return string
+     */
+    public function getExtension()
+    {
+        return $this->getKey('Extension');
+    }
 
-	/**
-	 * Returns key: 'SCCPLine'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPLine()
-	{
-      return $this->getKey('SCCPLine');
-	}
+    /**
+     * Returns key: 'SCCPLine'.
+     *
+     * @return string
+     */
+    public function getSCCPLine()
+    {
+        return $this->getKey('SCCPLine');
+    }
 
-	/**
-	 * Returns key: 'SCCPDevice'.
-	 *
-	 * @return string
-	 */
-	public function getSCCPDevice()
-	{
-      return $this->getKey('SCCPDevice');
-	}
-
+    /**
+     * Returns key: 'SCCPDevice'.
+     *
+     * @return string
+     */
+    public function getSCCPDevice()
+    {
+        return $this->getKey('SCCPDevice');
+    }
 }

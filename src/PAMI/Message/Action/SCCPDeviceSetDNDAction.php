@@ -59,9 +59,9 @@ class SCCPDeviceSetDNDAction extends ActionMessage
         
         $this->setKey('DeviceName', $DeviceName);
         if (in_array(strtolower($DNDState), array('on', 'reject', 'silent', 'off'))) {
-	    	$this->setKey('DNDState', $DNDState);
+            $this->setKey('DNDState', $DNDState);
         } else {
-	    	throw new PAMIException('Param2 has to be one of \'off\', \'reject\', \'silent\', \'off\'.');
+            throw new PAMIException('Param2 has to be one of \'off\', \'reject\', \'silent\', \'off\'.');
         }
     }
 }

@@ -53,7 +53,7 @@ class SCCPMessageDeviceAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct($DeviceName, $MessageText, $Beep=false, $Timeout=false)
+    public function __construct($DeviceName, $MessageText, $Beep = false, $Timeout = false)
     {
         parent::__construct('SCCPMessageDevice');
 
@@ -61,11 +61,11 @@ class SCCPMessageDeviceAction extends ActionMessage
         $this->setKey('MessageText', $MessageText);
 
         if ($Beep != false) {
-	        $this->setKey('Beep', 'beep');
+            $this->setKey('Beep', 'beep');
         }
 
         if ($Timeout != false) {
-        	$this->setKey('Timeout', intval($Timeout));
+            $this->setKey('Timeout', intval($Timeout));
         }
     }
 }

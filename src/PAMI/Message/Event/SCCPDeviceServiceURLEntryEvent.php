@@ -94,5 +94,4 @@ class SCCPDeviceServiceURLEntryEvent extends EventMessage
     {
         return $this->getKey('URL');
     }
-
 }

@@ -112,7 +112,7 @@ class SCCPDeviceButtonEntryEvent extends EventMessage
      */
     public function getPendingDelete()
     {
-    	return $this->getBoolKey('pendDel');
+        return $this->getBoolKey('pendDel');
     }
 
     /**
@@ -122,7 +122,7 @@ class SCCPDeviceButtonEntryEvent extends EventMessage
      */
     public function getPendingUpdate()
     {
-    	return $this->getBoolKey('pendUpdt');
+        return $this->getBoolKey('pendUpdt');
     }
 
     /**
@@ -132,6 +132,6 @@ class SCCPDeviceButtonEntryEvent extends EventMessage
      */
     public function getDefault()
     {
-    	return $this->getBoolKey('Default');
+        return $this->getBoolKey('Default');
     }
 }

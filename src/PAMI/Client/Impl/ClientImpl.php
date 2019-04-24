@@ -160,10 +160,10 @@ class ClientImpl implements IClient
      */
     private $lastRequestedResponseHandler;
 
-	/**
-	 * @object class
-	 */
-	private $lastActionClass;
+    /**
+     * @object class
+     */
+    private $lastActionClass;
 
     /**
      * Opens a tcp connection to ami.
@@ -338,8 +338,7 @@ class ClientImpl implements IClient
             $listener = $data[0];
             $predicate = $data[1];
 
-            if (!$this->evaluatePredicate($predicate, $message))
-            {
+            if (!$this->evaluatePredicate($predicate, $message)) {
                 continue;
             }
 
@@ -390,7 +389,7 @@ class ClientImpl implements IClient
     private function messageToResponse($msg)
     {
         //$response = new ResponseMessage($msg);
-		$response = $this->responseFactory->createFromRaw($msg, $this->lastActionClass, $this->lastRequestedResponseHandler);
+        $response = $this->responseFactory->createFromRaw($msg, $this->lastActionClass, $this->lastRequestedResponseHandler);
         $actionId = $response->getActionId();
         if (is_null($actionId)) {
             $actionId = $this->lastActionId;
@@ -452,8 +451,8 @@ class ClientImpl implements IClient
             '------ Sending: ------ ' . "\n" . $messageToSend . '----------'
         );
         $this->lastActionId = $message->getActionId();
-		$this->lastRequestedResponseHandler = $message->getResponseHandler();
-		$this->lastActionClass = $message;
+        $this->lastRequestedResponseHandler = $message->getResponseHandler();
+        $this->lastActionClass = $message;
         if (@fwrite($this->socket, $messageToSend) < $length) {
             throw new ClientException('Could not send message');
         }
@@ -478,16 +477,16 @@ class ClientImpl implements IClient
         }
 */
         while ($read <= $this->rTimeout) {
- 	        $this->process();
-	        $response = $this->getRelated($message);
-	        if ($response != false) {
-	            $this->_lastActionId = false;
-	            return $response;
-	        }
-	        usleep(1000); // 1ms delay
-	        if ($this->rTimeout > 0) {
-	            $read++;
-	        }                         
+            $this->process();
+            $response = $this->getRelated($message);
+            if ($response != false) {
+                $this->_lastActionId = false;
+                return $response;
+            }
+            usleep(1000); // 1ms delay
+            if ($this->rTimeout > 0) {
+                $read++;
+            }
         }
         throw new ClientException('Read timeout');
     }
