@@ -37,7 +37,7 @@
   </target>
 
   <target name="cs">
-    <exec command="vendor/bin/phpcs --standard=PSR2 src/*"
+    <exec command="vendor/bin/phpcs --standard=PSR2 --tab-width=4 --exclude=Generic.Files.LineLength src/*"
       checkreturn="true"
       passthru="true"/>
   </target>
