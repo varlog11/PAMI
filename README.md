@@ -199,6 +199,7 @@ can still catch them. If you catch one of these, please report it!
 * vgsm_sms_rx
 * VoicemailUserEntry
 * VoicemailUserEntryComplete
+* Cdr
 
 # Currently Supported Actions
 

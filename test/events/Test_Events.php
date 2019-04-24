@@ -110,6 +110,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'QueueCallerAbandon',
             'EndpointList',
             'EndpointListComplete',
+            'Cdr',
         );
         $eventTranslatedValues = array(
             'QueueMemberStatus' => array(
@@ -1640,6 +1641,26 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'ActiveChannels' => 0,
             ),
             'EndpointListComplete' => array('ListItems' => 'ListItems'),
+            'Cdr' => array(
+                'UniqueID' => 'UniqueID',
+                'Privilege' => 'Privilege',
+                'AccountCode' => 'AccountCode',
+                'Source' => 'Source',
+                'Destination' => 'Destination',
+                'DestinationContext' => 'DestinationContext',
+                'CallerID' => 'CallerID',
+                'Channel' => 'Channel',
+                'DestinationChannel' => 'DestinationChannel',
+                'LastApplication' => 'LastApplication',
+                'LastData' => 'LastData',
+                'StartTime' => 'StartTime',
+                'AnswerTime' => 'AnswerTime',
+                'EndTime' => 'EndTime',
+                'Duration' => 'Duration',
+                'BillableSeconds' => 'BillableSeconds',
+                'Disposition' => 'Disposition',
+                'AMAFlags' => 'AMAFlags'
+            ),
         );
         $eventGetters = array(
             'UserEvent' => array(
