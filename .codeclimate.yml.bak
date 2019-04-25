@@ -11,8 +11,6 @@ checks:
   method-count:
     enabled: true
     threshold: 50
-  method-lines:
-    enabled: true
   nested-control-flow:
     enabled: true
   return-statements:
