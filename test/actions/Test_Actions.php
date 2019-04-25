@@ -1960,6 +1960,51 @@ namespace PAMI\Client\Impl {
         /**
          * @test
          */
+        public function can_pjsip_register()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPRegister',
+            'actionid: 1432.123',
+            'registration: Register',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPRegisterAction('Register');
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_qualify()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPQualify',
+            'actionid: 1432.123',
+            'endpoint: Endpoint',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPQualifyAction('Endpoint');
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_show_endpoint()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPShowEndpoint',
+            'actionid: 1432.123',
+            'endpoint: Endpoint',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPShowEndpointAction('Endpoint');
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
         public function can_pjsip_show_endpoints()
         {
             $write = array(implode("\r\n", array(
@@ -1968,6 +2013,76 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\PJSIPShowEndpointsAction();
+            $result = $this->_start($write, $action);
+        }
+        
+        /**
+         * @test
+         */
+        public function can_pjsip_show_respourcelists()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPShowResourceLists',
+            'actionid: 1432.123',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPShowResourceListsAction();
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_show_registrations_inbound_action()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPShowRegistrationsInbound',
+            'actionid: 1432.123',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPShowRegistrationsInboundAction();
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_show_registrations_outbound_action()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPShowRegistrationsOutbound',
+            'actionid: 1432.123',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPShowRegistrationsOutboundAction();
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_show_subscriptions_inbound_action()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPShowSubscriptionsInbound',
+            'actionid: 1432.123',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPShowSubscriptionsInboundAction();
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_show_subscriptions_outbound_action()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPShowSubscriptionsOutbound',
+            'actionid: 1432.123',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPShowSubscriptionsOutboundAction();
             $result = $this->_start($write, $action);
         }
     }
