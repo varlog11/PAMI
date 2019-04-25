@@ -5,8 +5,8 @@
 -->
 [![Build
 Status](https://travis-ci.org/dkgroot/PAMI.svg)](https://travis-ci.org/dkgroot/PAMI)
+[![Coverage Status](https://coveralls.io/repos/dkgroot/PAMI/badge.svg?branch=master&service=github)](https://coveralls.io/github/dkgroot/PAMI?branch=master)
 <!--
-[![Coverage Status](https://coveralls.io/repos/marcelog/PAMI/badge.svg?branch=master&service=github)](https://coveralls.io/github/marcelog/PAMI?branch=master)
 [![Code Climate](https://codeclimate.com/github/marcelog/PAMI/badges/gpa.svg)](https://codeclimate.com/github/marcelog/PAMI)
 [![Issue Count](https://codeclimate.com/github/dkgroot/PAMI/badges/issue_count.svg)](https://codeclimate.com/github/dkgroot/PAMI)
 [![Click here to lend your support to: PAMI and make a donation at pledgie.com !](https://pledgie.com/campaigns/30944.png?skin_name=chrome' border='0')](https://pledgie.com/campaigns/30944)
