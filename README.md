@@ -4,7 +4,7 @@
 [![Documentation Status](https://readthedocs.org/projects/pami/badge/?version=latest)](http://pami.readthedocs.org/en/latest/?badge=latest)
 -->
 [![Build Status](https://travis-ci.org/dkgroot/PAMI.svg)](https://travis-ci.org/dkgroot/PAMI)
-[![Coverage Status](https://coveralls.io/repos/dkgroot/PAMI/badge.svg?branch=master&service=github)](https://coveralls.io/github/dkgroot/PAMI?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/dkgroot/PAMI/badge.svg?branch=master)](https://coveralls.io/github/dkgroot/PAMI?branch=master)
 <!--
 [![Code Climate](https://codeclimate.com/github/dkgroot/PAMI/badges/gpa.svg)](https://codeclimate.com/github/dkgroot/PAMI)
 [![Issue Count](https://codeclimate.com/github/dkgroot/PAMI/badges/issue_count.svg)](https://codeclimate.com/github/dkgroot/PAMI)
