@@ -1,0 +1,56 @@
+version: "2"
+plugins:
+  phpcodesniffer:
+    enabled: true
+    config:
+      standard: "PSR1,PSR2"
+  phpmd:
+    enabled: true
+    config:
+      CleanCode/StaticAccess:
+        enabled: false
+      Naming/ShortVariable:
+        enabled: false
+      Naming/ShortMethodName:
+        enabled: false
+checks:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - php:
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+    config:
+      MD024:
+        enabled: false
+  method-count:
+    enabled: true
+    config:
+      threshold: 50
+  similar-code:
+    enabled: true
+    config:
+      threshold: 95
+  identical-code:
+    enabled: true
+    config:
+      threshold: 98
+  complex-logic:
+    enabled: false
+  method-complexity:
+    enabled: false
+  nested-control-flow:
+    enabled: true
+  return-statements:
+    enabled: true
+  spell-check:
+    enabled: true
+
+exclude_patterns:
+  - "**/vendor/**/*"
+  - "**/doc/**/*"
+  - "**/build/**/*"
+  - "test/"
