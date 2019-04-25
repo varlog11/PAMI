@@ -29,30 +29,32 @@
  */
 
 namespace PAMI\Client\Impl {
+    use PHPUnit\Framework\TestCase as BaseTestCase;
 
-/**
- * This class will test some actions.
- *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Test
- * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/ Apache License 2.0
- * @link       http://marcelog.github.com/
- */
-    class SCCP_Test_Actions extends \PHPUnit_Framework_TestCase
+    /**
+     * This class will test some actions.
+     *
+     * PHP Version 5
+     *
+     * @category   Pami
+     * @package    Test
+     * @subpackage Action
+     * @author     Marcelo Gornstein <marcelog@gmail.com>
+     * @license    http://marcelog.github.com/ Apache License 2.0
+     * @link       http://marcelog.github.com/
+     */
+    class SCCP_Test_Actions extends BaseTestCase
     {
+/*
         private $_properties = array();
 
-        public function setUp()
+        public function setUp() :void
         {
             global $mockTime;
             $this->_properties = array();
             $mockTime = true;
         }
-
+*/
         /**
          * Test Helper
          */
@@ -208,7 +210,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_get_SCCPConfigMetaData_brokenjson()
         {
@@ -224,6 +226,7 @@ namespace PAMI\Client\Impl {
             'ActionID: 1432.123',
             '',
             );
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPConfigMetaDataAction('softkey');
             $result = $this->_start_action($write, $action, $response);
             $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
@@ -448,7 +451,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_get_SCCPShowDevices_NonexistentTable()
         {
@@ -507,6 +510,7 @@ namespace PAMI\Client\Impl {
             'ActionID: 1432.123',
             '',
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPShowDevicesAction();
             $result = $this->_start_action($write, $action, $response);
 
@@ -1117,13 +1121,14 @@ namespace PAMI\Client\Impl {
 
         /**
          * @//test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_get_SCCPShowChannels()
         {
             $write = array(implode("\r\n", array(
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPShowChannelsAction('xxx');
             $result = $this->_start($write, $action);
         }
@@ -1320,7 +1325,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPConference_with_wrong_comand()
         {
@@ -1332,6 +1337,7 @@ namespace PAMI\Client\Impl {
             'command: hangup',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPConferenceAction('100', '1', 'hangup');
             $result = $this->_start($write, $action);
         }
@@ -1357,6 +1363,9 @@ namespace PAMI\Client\Impl {
             );
             $action = new \PAMI\Message\Action\SCCPConferenceAction('100', '1', 'kick');
             $result = $this->_start_action($write, $action, $response);
+            $this->assertTrue($action instanceof \PAMI\Message\Action\SCCPConferenceAction);
+            $this->assertTrue($result instanceof \PAMI\Message\Response\GenericResponse);
+            $this->assertFalse($result->isSuccess());
         }
 
         /**
@@ -1425,7 +1434,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPDeviceRestart_with_wrong_Type()
         {
@@ -1436,6 +1445,7 @@ namespace PAMI\Client\Impl {
             'type: boo',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPDeviceRestartAction('SEP001122334455', 'boo');
             $client = $this->_start($write, $action);
         }
@@ -1506,7 +1516,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPDeviceSetDND_with_wrong_dndstate()
         {
@@ -1517,6 +1527,7 @@ namespace PAMI\Client\Impl {
             'dndstate: boo',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPDeviceSetDNDAction('SEP001122334455', 'boo');
             $client = $this->_start($write, $action);
         }
@@ -1586,7 +1597,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPDndDevice_with_wrong_state()
         {
@@ -1597,6 +1608,7 @@ namespace PAMI\Client\Impl {
             'state: boo',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPDndDeviceAction('SEP001122334455', 'boo');
             $client = $this->_start($write, $action);
         }
@@ -1655,7 +1667,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPHoldCall_hold_and_swapchannels()
         {
@@ -1668,6 +1680,7 @@ namespace PAMI\Client\Impl {
             'swapchannels: on',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPHoldCallAction('SCCP/003423-432', 'SEP001122334455', true, true);
             $client = $this->_start($write, $action);
         }
@@ -1710,7 +1723,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPLineForwardUpdate_forward_with_wrong_type()
         {
@@ -1723,6 +1736,7 @@ namespace PAMI\Client\Impl {
             'number: 666',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPLineForwardUpdateAction('SEP001122334455', '12345', 'boo', false, '666');
             $client = $this->_start($write, $action);
         }
@@ -1749,7 +1763,7 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_SCCPLineForwardUpdate_FailOnNumber()
         {
@@ -1762,6 +1776,7 @@ namespace PAMI\Client\Impl {
             'disable: on',
             ''
             )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPLineForwardUpdateAction('SEP001122334455', '12345', 'all', true, '666');
             $client = $this->_start($write, $action);
         }

@@ -27,8 +27,9 @@
  * limitations under the License.
  *
  */
-//namespace PAMI\Message\Response\Factory\Impl {
 namespace PAMI\Client\Impl {
+    use PHPUnit\Framework\TestCase as BaseTestCase;
+
     /**
      * This class will test the response factory
      *
@@ -41,11 +42,12 @@ namespace PAMI\Client\Impl {
      * @license    http://marcelog.github.com/ Apache License 2.0
      * @link       http://marcelog.github.com/
      */
-    class Test_ResponseFactory extends \PHPUnit_Framework_TestCase
+    class Test_ResponseFactory extends BaseTestCase
     {
+/*
         private $_properties = array();
 
-        public function setUp()
+        public function setUp() :void
         {
             $this->_properties = array(
                 'log4php.properties' => RESOURCES_DIR . DIRECTORY_SEPARATOR . 'log4php.properties'
@@ -55,7 +57,7 @@ namespace PAMI\Client\Impl {
             }
             $this->_logger = \Logger::getLogger('ResponseFactory');
         }
-
+*/
         /**
          * @test
          *

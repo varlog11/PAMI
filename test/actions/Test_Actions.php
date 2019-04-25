@@ -29,29 +29,32 @@
  */
 
 namespace PAMI\Client\Impl {
-/**
- * This class will test some actions.
- *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Test
- * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/ Apache License 2.0
- * @link       http://marcelog.github.com/
- */
-    class Test_Actions extends \PHPUnit_Framework_TestCase
+    use PHPUnit\Framework\TestCase as BaseTestCase;
+
+    /**
+     * This class will test some actions.
+     *
+     * PHP Version 5
+     *
+     * @category   Pami
+     * @package    Test
+     * @subpackage Action
+     * @author     Marcelo Gornstein <marcelog@gmail.com>
+     * @license    http://marcelog.github.com/ Apache License 2.0
+     * @link       http://marcelog.github.com/
+     */
+    class Test_Actions extends BaseTestCase
     {
+/*
         private $_properties = array();
 
-        public function setUp()
+        public function setUp() :void
         {
             global $mockTime;
             $this->_properties = array();
             $mockTime = true;
         }
-
+*/
         private function _start(array $write, \PAMI\Message\Action\ActionMessage $action)
         {
             global $mock_stream_socket_client;
@@ -1850,10 +1853,11 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_set_actionid_longer_than_69_characters()
         {
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\PingAction();
             // A 70-character long ActionID
             $action->setActionID('1234567890123456789012345678901234567890123456789012345678901234567890');
@@ -1861,10 +1865,11 @@ namespace PAMI\Client\Impl {
 
         /**
          * @test
-         * @expectedException \PAMI\Exception\PAMIException
+         * expectedException \PAMI\Exception\PAMIException
          */
         public function cannot_set_empty_actionid()
         {
+            $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\PingAction();
             // An empty ActionID
             $action->setActionID('');

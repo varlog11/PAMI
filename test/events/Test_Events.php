@@ -28,26 +28,30 @@
  *
  */
 namespace PAMI\Client\Impl {
-/**
- * This class will test some events.
- *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Test
- * @subpackage Event
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/ Apache License 2.0
- * @link       http://marcelog.github.com/
- */
-    class Test_Events extends \PHPUnit_Framework_TestCase
+    use PHPUnit\Framework\TestCase as BaseTestCase;
+
+    /**
+     * This class will test some events.
+     *
+     * PHP Version 5
+     *
+     * @category   Pami
+     * @package    Test
+     * @subpackage Event
+     * @author     Marcelo Gornstein <marcelog@gmail.com>
+     * @license    http://marcelog.github.com/ Apache License 2.0
+     * @link       http://marcelog.github.com/
+     */
+    class Test_Events extends BaseTestCase
     {
+/*
         private $_properties = array();
 
-        public function setUp()
+        public function setUp() :void
         {
             $this->_properties = array();
         }
+*/
         /**
          * @test
          */

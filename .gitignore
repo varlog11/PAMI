@@ -3,6 +3,7 @@ vendor
 .buildpath
 .project
 .settings
+.phpunit.result.cache
 build
 docs/examples/quickstart/log.log
 resources/php.ini

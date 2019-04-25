@@ -501,6 +501,16 @@ class ClientImpl implements IClient
     }
 
     /**
+     * Get the logger implementation.
+     *
+     * @return @object The current PSR3-Logger instance
+     */
+    public function getLogger()
+    {
+        return $this->logger;
+    }
+
+    /**
      * Returns stream socket.
      *
      * @return resource

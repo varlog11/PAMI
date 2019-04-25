@@ -27,6 +27,7 @@
  * limitations under the License.
  *
  */
+/*
 namespace {
     $mockTime = false;
     $mockTimeCount = false;
@@ -76,6 +77,8 @@ namespace PAMI\Message\Action {
 }
 
 namespace PAMI\Client\Impl {
+    use PHPUnit\Framework\TestCase as BaseTestCase;
+
     function microtime()
     {
         global $mockTime;
@@ -110,12 +113,10 @@ namespace PAMI\Client\Impl {
     }
     function stream_set_timeout()
     {
-        /*
-        global $mockRTimeout;
-        $args = func_get_args();
-        $mockRTimeout = $args[1];
-        return true;
-        */
+        //global $mockRTimeout;
+        //$args = func_get_args();
+        //$mockRTimeout = $args[1];
+        //return true;
         global $mockRTimeout;
         global $mock_stream_socket_client;
         if (isset($mock_stream_socket_client) && $mock_stream_socket_client === true) {
@@ -128,16 +129,14 @@ namespace PAMI\Client\Impl {
     }
     function stream_get_meta_data()
     {
-        /*
-        global $mockRTimeout;
-        global $mock_stream_timeout;
-        if (isset($mock_stream_timeout) && $mock_stream_timeout === true) {
-            sleep($mockRTimeout);
-            return array('timed_out' => true);
-        } else {
-            return call_user_func_array('\stream_get_meta_data', func_get_args());
-        }
-        */
+        //global $mockRTimeout;
+        //global $mock_stream_timeout;
+        //if (isset($mock_stream_timeout) && $mock_stream_timeout === true) {
+        //    sleep($mockRTimeout);
+        //    return array('timed_out' => true);
+        //} else {
+        //    return call_user_func_array('\stream_get_meta_data', func_get_args());
+        //}
         global $mockRTimeout;
         global $mock_stream_socket_client;
         global $mock_stream_get_meta_data_return;
@@ -232,27 +231,32 @@ namespace PAMI\Client\Impl {
         $mockFwriteCount = 0;
         $mockFwriteReturn = $writeValues;
     }
-/**
- * This class will test the ami client
- *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Test
- * @subpackage Client
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/ Apache License 2.0
- * @link       http://marcelog.github.com/
- */
-    class Test_Client extends \PHPUnit_Framework_TestCase
+*/
+namespace PAMI\Client\Impl {
+    use PHPUnit\Framework\TestCase as BaseTestCase;
+
+    /**
+     * This class will test the ami client
+     *
+     * PHP Version 5
+     *
+     * @category   Pami
+     * @package    Test
+     * @subpackage Client
+     * @author     Marcelo Gornstein <marcelog@gmail.com>
+     * @license    http://marcelog.github.com/ Apache License 2.0
+     * @link       http://marcelog.github.com/
+     */
+    class Test_Client extends BaseTestCase
     {
+/*
         private $_properties = array();
 
-        public function setUp()
+        public function setUp() :void
         {
             $this->_properties = array();
         }
-
+*/
         /**
          * @test
          */
@@ -267,6 +271,7 @@ namespace PAMI\Client\Impl {
             'read_timeout' => 10
             );
             $client = new \PAMI\Client\Impl\ClientImpl($options);
+            $this->assertTrue($client instanceof \PAMI\Client\Impl\ClientImpl);
         }
         /**
          * @test
@@ -282,7 +287,8 @@ namespace PAMI\Client\Impl {
             'read_timeout' => 10
             );
             $client = new \PAMI\Client\Impl\ClientImpl($options);
-            $client -> setLogger(new \Psr\Log\NullLogger);
+            $client->setLogger(new \Psr\Log\NullLogger);
+            $this->assertTrue($client->getLogger() instanceof \Psr\Log\NullLogger);
         }
         /**
          * @test
@@ -309,7 +315,7 @@ namespace PAMI\Client\Impl {
         }
         /**
          * @test
-         * @expectedException \PAMI\Client\Exception\ClientException
+         * expectedException \PAMI\Client\Exception\ClientException
          */
         public function can_detect_other_peer()
         {
@@ -329,6 +335,7 @@ namespace PAMI\Client\Impl {
             $read = array('Whatever');
             $write = array();
             setFgetsMock($read, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
             $client->open();
         }
@@ -595,11 +602,12 @@ namespace PAMI\Client\Impl {
             setFgetsMock($standardAMIStart, $write);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
             $client->open();
+            $this->assertTrue($client instanceof \PAMI\Client\Impl\ClientImpl);
             $client->close();
         }
         /**
          * @test
-         * @expectedException \PAMI\Client\Exception\ClientException
+         * expectedException \PAMI\Client\Exception\ClientException
          */
         public function cannot_send()
         {
@@ -623,13 +631,14 @@ namespace PAMI\Client\Impl {
             'fwrite error'
             );
             setFgetsMock($standardAMIStart, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
             $client->open();
         }
 
         /**
          * @test
-         * @expectedException \PAMI\Client\Exception\ClientException
+         * expectedException \PAMI\Client\Exception\ClientException
          */
         public function cannot_login()
         {
@@ -655,12 +664,13 @@ namespace PAMI\Client\Impl {
             "action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
             );
             setFgetsMock($standardAMIStartBadLogin, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
             $client->open();
         }
         /**
          * @test
-         * @expectedException \PAMI\Client\Exception\ClientException
+         * expectedException \PAMI\Client\Exception\ClientException
          */
         public function cannot_read()
         {
@@ -684,6 +694,7 @@ namespace PAMI\Client\Impl {
             "action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
             );
             setFgetsMock($standardAMIStart, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
             $client->open();
             setFgetsMock(array(false), $write);
@@ -691,7 +702,7 @@ namespace PAMI\Client\Impl {
         }
         /**
          * @test
-         * @expectedException \PAMI\Client\Exception\ClientException
+         * expectedException \PAMI\Client\Exception\ClientException
          */
         public function cannot_read_by_read_timeout()
         {
@@ -718,6 +729,7 @@ namespace PAMI\Client\Impl {
             "action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
             );
             setFgetsMock($standardAMIStart, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
             $client->open();
             setFgetsMock(array(10, 4), $write);
