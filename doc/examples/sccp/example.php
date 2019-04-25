@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 declare(ticks=1);
 /**
@@ -26,8 +27,8 @@ declare(ticks=1);
  * limitations under the License.
  *
  */
-if ($argc != 7) {
-    echo "Use: $argv[0] <host> <port> <user> <pass> <connect timeout> <read timeout>";
+if ($argc != 5) {
+    echo "Use: $argv[0] <host> <port> <user> <pass>\n";
     exit (254);
 }
 
@@ -47,8 +48,14 @@ ini_set(
 ////////////////////////////////////////////////////////////////////////////////
 // Mandatory stuff to bootstrap.
 ////////////////////////////////////////////////////////////////////////////////
-require_once 'PAMI/Autoloader/Autoloader.php'; // Include PAMI autoloader.
-\PAMI\Autoloader\Autoloader::register(); // Call autoloader register for PAMI autoloader.
+require(implode(DIRECTORY_SEPARATOR, array(
+    __DIR__,
+    '..',
+    '..',
+    '..',
+    'vendor',
+    'autoload.php'
+)));
 use PAMI\Client\Impl\ClientImpl;
 use PAMI\Listener\IEventListener;
 use PAMI\Message\Event\EventMessage;
@@ -80,11 +87,12 @@ use PAMI\Message\Event\SCCPShowDevicesCompleteEvent;
 use PAMI\Message\Event\SCCPShowDeviceCompleteEvent;
 use PAMI\Message\Event\SCCPShowChannelsCompleteEvent;
 use PAMI\Message\Event\SCCPShowSessionsCompleteEvent;
-class A implements IEventListener
+
+class EventListener implements IEventListener
 {
     public function handle(EventMessage $event)
     {
-        var_dump($event);
+        //var_dump($event);
     }
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -101,43 +109,31 @@ try
 		'port' => $argv[2],
 		'username' => $argv[3],
 		'secret' => $argv[4],
-		'connect_timeout' => $argv[5],
-		'read_timeout' => $argv[6],
-		'scheme' => 'tcp://' // try tls://
+		'connect_timeout' => 2,
+		'read_timeout' => 2,
 	);
-	$a = new ClientImpl($options);
+	$pami = new ClientImpl($options);
+	$pami->registerEventListener(new EventListener());
+	$pami->open();
 
-	// Registering a closure
-	//$a->registerEventListener(function ($event) {
-	//
-	//});
-
-	// Register a specific method of an object for event listening
-	//$a->registerEventListener(array($listener, 'handle'));
-	// Register an IEventListener:
-
-	$a->registerEventListener(new A());
-	$a->open();
-
-/*
-	var_dump($a->send(new ListCommandsAction()));
-	var_dump($a->send(new GetConfigJSONAction("sip.conf")));
-
-	$response = $a->send(new GetConfigJSONAction("sip.conf"));
+	// Retrieve json info from chan_sip
+	$response = $pami->send(new GetConfigJSONAction("sip.conf"));
 	var_dump($response->getJSON());
 
-	$response = $a->send(new SCCPConfigMetaDataAction());
+	// Retrieve config meta data json info from chan_sccp
+	$response = $pami->send(new SCCPConfigMetaDataAction());
 	print_r($response->getJSON());
 
-	$response = $a->send(new SCCPConfigMetaDataAction("general"));
+	// Retrieve config meta data json info from chan_sccp for a general section
+	$response = $pami->send(new SCCPConfigMetaDataAction("general"));
 	print_r($response->getJSON());
-*/
 
-/*	$response = $a->send(new SCCPConfigMetaDataAction("device"));
+	// Retrieve config meta data json info from chan_sccp for a device section
+	$response = $pami->send(new SCCPConfigMetaDataAction("device"));
 	print_r($response->getJSON());
-*/	
-//	var_dump($a->send(new SCCPShowGlobalsAction()));
-/*	$response = $a->send(new SCCPShowGlobalsAction());
+
+	// Retrieve SCCPShowGlobals returning big response section
+	$response = $pami->send(new SCCPShowGlobalsAction());
 	if ($response->isSuccess()) {
 		print "op\n";
 		print "KeepAlive: " . $response->getKey("KeepAlive") . "\n";
@@ -158,12 +154,10 @@ try
 				}
 			}
 		}
-		//print_r($response->getJSON());
 	}
-*/
-//	var_dump($a->send(new SCCPShowDevicesAction()));
-/*
-	$response = $a->send(new SCCPShowDevicesAction());
+
+	// Retrieve SCCPShowDevices returning multiple device sections
+	$response = $pami->send(new SCCPShowDevicesAction());
 	if ($response->isList()) {
 		$events = $response->getEvents();
 		foreach ($events as $event) {
@@ -172,10 +166,9 @@ try
 			}
 		} 
 	}
-*/
-//	var_dump($a->send(new SCCPShowLinesAction()));
-/*
-	$response = $a->send(new SCCPShowLinesAction());
+
+	// Retrieve SCCPShowLines returning multiple line sections
+	$response = $pami->send(new SCCPShowLinesAction());
 	if ($response->isList()) {
 		$events = $response->getEvents();
 		foreach ($events as $event) {
@@ -184,9 +177,9 @@ try
 			}
 		} 
 	}
-*/
-	//var_dump($a->send(new SCCPShowDeviceAction("SEP0023043403F9")));
-	$response = $a->send(new SCCPShowDeviceAction("SEP0023043403F9"));
+
+	// Retrieve SCCPShowDevice returning multiple sections
+	$response = $pami->send(new SCCPShowDeviceAction("SEP0023043403F9"));
 	if ($response->isList()) {
 		$events = $response->getEvents(); 
 		print ("DeviceName" . $response->getDeviceName() . "\n");
@@ -206,19 +199,17 @@ try
 			print_r ($entry);
 		} 
 	}
-//	var_dump($a->send(new SCCPShowLineAction("98011")));
-//	var_dump($a->send(new SCCPShowChannelsAction()));
-//	var_dump($a->send(new SCCPShowSessionsAction()));
+
+	// Retrieve SCCPShowLine returning multiple sections
+    var_dump($pami->send(new SCCPShowLineAction("98031")));
 
     $time = time();
-    while(( time() - $time) < $argv[5]) // Wait for events.
+    while((time() - $time) < $options['connect_timeout'])
     {
-        usleep(1000); // 1ms delay
-        // Since we declare(ticks=1) at the top, the following line is not necessary
-        $a->process();
+        usleep(10000);					// wait 10 ms
+        $pami->process();				// poll pami to see if anything happened
     }
-
-	$a->close(); // send logoff and close the connection.
+    $pami->close(); // send logoff and close the connection.
 } catch (Exception $e) {
 	echo $e->getMessage() . "\n";
 }
