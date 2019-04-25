@@ -16,12 +16,4 @@ interface IResponseFactory
      * @throws PAMIException
      */
     public function createFromRaw($responseMessage, $requestMessage = null);
-
-    /**
-     * Registers the response class that should be used for the given action class.
-     *
-     * @param string $actionClass
-     * @param string $responseClass
-     */
-    public function registerResponseClass($actionClass, $responseClass);
 }
