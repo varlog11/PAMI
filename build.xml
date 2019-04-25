@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- phar build file -->
 <project
   name="pami"
   default="build"
