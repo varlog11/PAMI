@@ -85,6 +85,14 @@ namespace PAMI\Client\Impl {
                 'ActionID: 1432.123',
                 ''
                 );
+            } elseif ($action instanceof \PAMI\Message\Action\CommandAction) {
+                $event = array(
+                'Response: Success',
+                'ActionID: 1432.123',
+                'Message: Command output follows',
+                'Output: Changing mystate1 to INUSE',
+                ''
+                );
             } else {
                 $event = array(
                 'Response: Success',
@@ -93,9 +101,9 @@ namespace PAMI\Client\Impl {
                 );
             }
             setFgetsMock($event, $write);
-            $result = $client->send($action);
-            $this->assertTrue($result instanceof \PAMI\Message\Response\Response);
-            return $client;
+            $response = $client->send($action);
+            $this->assertTrue($response instanceof \PAMI\Message\Response\Response);
+            return array('client' => $client, 'response' => $response);
         }
         /**
          * @test
@@ -106,7 +114,7 @@ namespace PAMI\Client\Impl {
             "action: AbsoluteTimeout\r\nactionid: 1432.123\r\nchannel: SIP/asd\r\ntimeout: 10\r\n"
             );
             $action = new \PAMI\Message\Action\AbsoluteTimeoutAction('SIP/asd', 10);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -121,7 +129,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\LoginAction('foo', 'bar');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -137,7 +145,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\LoginAction('foo', 'bar', 'all');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -152,7 +160,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\AgentLogoffAction('asd', true);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -165,7 +173,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\AgentsAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -182,7 +190,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\AttendedTransferAction('channel', 'exten', 'context', 'priority');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -198,7 +206,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\BlindTransferAction('channel', 'exten', 'context');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -214,7 +222,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\BridgeAction('channel1', 'channel2', true);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -230,7 +238,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\BridgeInfoAction($bridge_uniqueid);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -243,7 +251,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\BridgeListAction();
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -258,7 +266,7 @@ namespace PAMI\Client\Impl {
             )));
             $bridgeType = 'basic';
             $action = new \PAMI\Message\Action\BridgeListAction($bridgeType);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -272,7 +280,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ChallengeAction('test');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -287,21 +295,27 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ChangeMonitorAction('channel', 'file', true);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
          */
         public function can_command()
         {
-            $write = array(implode("\r\n", array(
-            'action: Command',
-            'actionid: 1432.123',
-            'command: command',
-            ''
-            )));
-            $action = new \PAMI\Message\Action\CommandAction('command');
-            $client = $this->_start($write, $action);
+            $write = array(implode(
+                "\r\n",
+                array(
+                    'action: Command',
+                    'actionid: 1432.123',
+                    'command: devstate change Custom:mystate1 INUSE',
+                    ''
+                )
+            ));
+            $action = new \PAMI\Message\Action\CommandAction("devstate change Custom:mystate1 INUSE");
+            $result = $this->_start($write, $action);
+            $response = $result['response'];
+            $this->assertTrue($response instanceof \PAMI\Message\Response\CommandResponse);
+            $this->assertEquals($response->getCommandOutput(), "Changing mystate1 to INUSE");
         }
         /**
          * @test
@@ -315,7 +329,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeListRoomsAction();
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -330,7 +344,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeListAction($conference);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -345,7 +359,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeMuteAction('channel', 'conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -360,7 +374,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeUnmuteAction('channel', 'conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -374,7 +388,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeLockAction('conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -388,7 +402,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeUnlockAction('conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -403,7 +417,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeKickAction('conference', 'channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -417,7 +431,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeStartRecordAction('conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -431,7 +445,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ConfbridgeStopRecordAction('conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -444,7 +458,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\CoreSettingsAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -457,7 +471,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleShowDevicesAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -471,7 +485,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleReloadAction('when');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -486,7 +500,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleRestartAction('when', 'device');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -500,7 +514,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleResetAction('device');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -515,7 +529,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleSendPDUAction('device', 'pdu');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -530,7 +544,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleSendUSSDAction('device', 'ussd');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -545,7 +559,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleStopAction('when', 'device');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -559,7 +573,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleStartAction('device');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -575,7 +589,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DongleSendSMSAction('device', 'number', 'message');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -588,7 +602,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\CoreStatusAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -602,7 +616,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\CreateConfigAction('file.conf');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -616,7 +630,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDIDNDOffAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -630,7 +644,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDIDNDOnAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -645,7 +659,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDIDialOffHookAction('channel', 'number');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -659,7 +673,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDIHangupAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -672,7 +686,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDIRestartAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -685,7 +699,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDIShowChannelsAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -699,7 +713,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DAHDITransferAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -714,7 +728,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DBDelAction('family', 'key');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -729,7 +743,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DBDelTreeAction('family', 'key');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -744,7 +758,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DBGetAction('family', 'key');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -760,7 +774,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\DBPutAction('family', 'key', 'val');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -774,7 +788,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\EventsAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -788,7 +802,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\EventsAction(array('a', 'b', 'c'));
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -803,7 +817,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ExtensionStateAction('exten', 'context');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -818,7 +832,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\GetConfigAction('file.conf', 'category');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -832,7 +846,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\GetConfigJSONAction('file.conf', 'category');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -847,7 +861,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\GetVarAction('var', 'channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -861,7 +875,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\HangupAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -876,7 +890,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\HangupAction('channel', 5);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -893,7 +907,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\JabberSendAction('jabber', 'jid', 'message');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -907,7 +921,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ListCategoriesAction('file.conf');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -920,7 +934,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ListCommandsAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -934,7 +948,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\LocalOptimizeAwayAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -948,7 +962,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\MailboxCountAction('mailbox');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -962,7 +976,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\MailboxStatusAction('mailbox');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -977,7 +991,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\MeetmeListAction('conference');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -992,7 +1006,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\MeetmeMuteAction('meetme', 'usernum');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1007,7 +1021,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\MeetmeUnmuteAction('meetme', 'usernum');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1025,7 +1039,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MixMonitorAction('channel');
             $action->setFile('file');
             $action->setOptions(array('o', 'p', 't', 'i', 'o', 'n', 's'));
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1043,7 +1057,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MixMonitorMuteAction('channel', false, 'read');
             $action->setState(true);
             $action->setDirection('both');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1057,7 +1071,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ModuleCheckAction('module');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -1073,7 +1087,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ModuleLoadAction('module');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1088,7 +1102,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ModuleReloadAction('module');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1103,7 +1117,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ModuleUnloadAction('module');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1118,7 +1132,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\MonitorAction('channel', 'file');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1137,7 +1151,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MonitorAction('channel', 'file');
             $action->setFormat('wav');
             $action->setMix(false);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1150,7 +1164,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\VoicemailUsersListAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1164,7 +1178,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\PauseMonitorAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1178,7 +1192,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\UnpauseMonitorAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1192,7 +1206,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\StopMonitorAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1208,7 +1222,7 @@ namespace PAMI\Client\Impl {
             )));
             $action = new \PAMI\Message\Action\StopMixMonitorAction('channel');
             $action->setMixMonitorId('mix_monitor');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1226,7 +1240,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MixMonitorMuteAction('channel');
             $action->setState(true);
             $action->setDirection('write');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1240,7 +1254,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\StatusAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1255,7 +1269,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ShowDialPlanAction('context', 'extension');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1276,7 +1290,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\DialplanExtensionAddAction('Context', 'Extension', 'Priority', 'Application');
             $action->setApplicationData('ApplicationData');
             $action->setReplace(true);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -1293,7 +1307,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SetVarAction('variable', 'value', 'channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1307,7 +1321,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ReloadAction('module');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1320,7 +1334,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\PingAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1335,7 +1349,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SendTextAction('channel', 'message');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1348,7 +1362,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SIPShowRegistryAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1361,7 +1375,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SIPPeersAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1375,7 +1389,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SIPNotifyAction('channel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1389,7 +1403,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SIPShowPeerAction('peer');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1403,7 +1417,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\SIPQualifyPeerAction('peer');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1436,7 +1450,7 @@ namespace PAMI\Client\Impl {
             $action->setContentEncoding('encoding');
             $action->setContentType('type');
             $action->setTo('to');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1449,7 +1463,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ParkedCallsAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1462,7 +1476,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueuesAction;
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1487,7 +1501,7 @@ namespace PAMI\Client\Impl {
             $action->setExtraContext('extracontext');
             $action->setExtraExtension('extraextension');
             $action->setExtraChannel('extrachannel');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1504,7 +1518,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueUnpauseAction('interface', 'queue', 'reason');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1521,7 +1535,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueuePauseAction('interface', 'queue', 'reason');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1535,7 +1549,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueSummaryAction('queue');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1550,7 +1564,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueStatusAction('queue', 'member');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1564,7 +1578,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueResetAction('queue');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1578,7 +1592,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueRuleAction('rule');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1593,7 +1607,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueRemoveAction('queue', 'interface');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1610,7 +1624,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueueReloadAction('queue', true, true, true);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1626,7 +1640,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\QueuePenaltyAction('interface', 'penalty', 'queue');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1647,7 +1661,7 @@ namespace PAMI\Client\Impl {
             $action->setMessage('message');
             $action->setMemberName('member');
             $action->setUniqueId('uniqueid');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1670,7 +1684,7 @@ namespace PAMI\Client\Impl {
             $action->setMemberName('member');
             $action->setPenalty('penalty');
             $action->setStateInterface('state');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1689,7 +1703,7 @@ namespace PAMI\Client\Impl {
             $action->setRingInUse(true);
             $action->setQueue('queue');
         
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1704,7 +1718,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\PlayDTMFAction('channel', '1');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1721,7 +1735,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\ParkAction('channel1', 'channel2', 'timeout', 'lot');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1737,7 +1751,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\AGIAction('channel1', 'an agi command', 'blah');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
         /**
          * @test
@@ -1773,7 +1787,7 @@ namespace PAMI\Client\Impl {
             $action->setContext('context');
             $action->setExtension('extension');
             $action->setVariable('a', 'b');
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -1787,7 +1801,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\LogoffAction();
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -1804,7 +1818,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\UserEventAction('FooEvent', ['Foo' => 'Bar', 'Bar' => 'Foo']);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -1819,7 +1833,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\WaitEventAction(20);
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
 
         /**
@@ -1914,7 +1928,7 @@ namespace PAMI\Client\Impl {
             $actionCreate->setCat($number);
             $actionCreate->setOptions('option');
         
-            $client = $this->_start($writeCreate, $actionCreate);
+            $result = $this->_start($writeCreate, $actionCreate);
 
             $writeDelete = array( implode("\r\n", array(
             'action: UpdateConfig',
@@ -1935,7 +1949,7 @@ namespace PAMI\Client\Impl {
             $actionDelete->setAction('DelCat');
             $actionDelete->setCat($number);
 
-            $client = $this->_start($writeDelete, $actionDelete);
+            $result = $this->_start($writeDelete, $actionDelete);
         }
 
         /**
@@ -1949,7 +1963,7 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\PJSIPShowEndpointsAction();
-            $client = $this->_start($write, $action);
+            $result = $this->_start($write, $action);
         }
     }
 }

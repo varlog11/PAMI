@@ -1,18 +1,18 @@
 <?php
 /**
- * Command action message.
+ * A generic SCCP response message from ami.
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
- * @subpackage Action
- * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @subpackage Response
+ * @author     Diederik de Groot <ddegroot@talon.nl>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
  *
- * Copyright 2011 Marcelo Gornstein <marcelog@gmail.com>
+ * Copyright 2019 Diederik de Groot <ddegroot@talon.nl>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,33 +27,56 @@
  * limitations under the License.
  *
  */
-namespace PAMI\Message\Action;
+namespace PAMI\Message\Response;
+
+use PAMI\Message\Response\Response;
+use PAMI\Message\Event\EventMessage;
+use PAMI\Exception\PAMIException;
 
 /**
- * Command action message.
+ * A generic SCCP response message from ami.
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
- * @subpackage Action
+ * @subpackage Response
  * @author     Marcelo Gornstein <marcelog@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class CommandAction extends ActionMessage
+class CommandResponse extends Response
 {
+    /**
+     * Returns true if this response contains the Message: command output follow
+     *
+     * @return boolean
+     */
+    public function isCommandFinished()
+    {
+        return stristr($this->getMessage(), 'command output follow') !== false;
+    }
+
+    /**
+     * Returns Command output result
+     *
+     * @return string
+     */
+    public function getCommandOutput()
+    {
+        return (string) $this->getKey('Output');
+    }
+    
     /**
      * Constructor.
      *
-     * @param string $command CLI Command to issue.
+     * @param string $rawContent Literal message as received from ami.
      *
      * @return void
      */
-    public function __construct($command)
+    public function __construct($rawContent)
     {
-        parent::__construct('Command');
-        $this->setKey('Command', $command);
-        $this->setResponseHandler("Command");
+        parent::__construct($rawContent);
+        $this->completed = $this->isCommandFinished();
     }
 }

@@ -91,17 +91,7 @@ namespace PAMI\Client\Impl {
          */
         private function _start(array $write, \PAMI\Message\Action\ActionMessage $action)
         {
-            if ($action instanceof \PAMI\Message\Action\DBGetAction) {
-                $response = array(
-                'Response: Success',
-                'EventList: start',
-                'ActionID: 1432.123',
-                '',
-                'Event: DBGetResponse',
-                'ActionID: 1432.123',
-                ''
-                );
-            } elseif ($action instanceof \PAMI\Message\Action\SCCPConfigMetaDataAction) {
+            if ($action instanceof \PAMI\Message\Action\SCCPConfigMetaDataAction) {
                 $response = array(
                 'Response: Success',
                 'JSON: {"Name":"Chan-sccp-b","Branch":"RC2","Version":"4.2.0","Revision":"5995M","ConfigRevision":"5988","ConfigureEnabled": ["park","pickup","realtime","conferenence","dirtrfr","feature_monitor","functions","manager_events","devicestate","devstate_feature","dynamic_speeddial","dynamic_speeddial_cid","experimental","debug"],"Segments":["general","device","line","softkey"]}',
@@ -2010,10 +2000,12 @@ namespace PAMI\Client\Impl {
                 if (isset($translatedValues[$actionName][$key])) {
                     $value = $translatedValues[$actionName][$key];
                 }
+                /*
                 $errorstr="Action: '$actionName'->'$methodName' to retrieve Key: '$key', " .
                     "returned Value: '" . var_dump($result->$methodName()) . "' " .
                     "instead of expected: '" . var_dump($value) . "'";
-
+                */
+                $errorstr="Action: '$actionName'->'$methodName' to retrieve Key: '$key'";
                 $this->assertEquals($result->$methodName(), $value, $errorstr);
             }
             return $result;
