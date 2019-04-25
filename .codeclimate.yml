@@ -1,19 +1,44 @@
-engines:
-  duplication:
+version: "2" 
+checks:
+  argument-count:
     enabled: true
-    config:
-      languages:
-      - php
+  complex-logic:
+    enabled: true
+  file-lines:
+    enabled: true
+  method-complexity:
+    enabled: true
+  method-count:
+    enabled: true
+    threshold: 50
+  method-lines:
+    enabled: true
+  nested-control-flow:
+    enabled: true
+  return-statements:
+    enabled: true
+  duplication:
+    enabled: false
   fixme:
     enabled: false
+  similar-code:
+    enabled: true
+    config:
+      threshold: 95
+  identical-code:
+    enabled: true
+    config:
+      threshold: 98
+
+plugins:
   phpcodesniffer:
     enabled: true
   phpmd:
     enabled: true
-
-ratings:
-  paths:
-  - "**.php"
+      file_extensions: 
+        - php
+      rulesets: "unusedcode,codesize,naming"
 
 exclude_paths:
+- doc/**/*
 - test/**/*
