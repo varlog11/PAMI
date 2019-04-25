@@ -162,11 +162,6 @@ class ClientImpl implements IClient
     private $eventMask;
 
     /**
-     * @var string
-     */
-    private $lastRequestedResponseHandler;
-
-    /**
      * @object class
      */
     private $lastActionClass;

@@ -206,17 +206,6 @@ Event mask to apply on login action.
 * Visibility: **private**
 
 
-### $lastRequestedResponseHandler
-
-    private string $lastRequestedResponseHandler
-
-
-
-
-
-* Visibility: **private**
-
-
 ### $lastActionClass
 
     private mixed $lastActionClass
@@ -456,6 +445,19 @@ Sets the logger implementation.
 
 #### Arguments
 * $logger **PAMI\Client\Psr\Log\LoggerInterface** - &lt;p&gt;The PSR3-Logger&lt;/p&gt;
+
+
+
+### getLogger
+
+    \PAMI\Client\Impl\@object PAMI\Client\Impl\ClientImpl::getLogger()
+
+Get the logger implementation.
+
+
+
+* Visibility: **public**
+
 
 
 

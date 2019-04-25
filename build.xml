@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- phar build file -->
+<!-- phing build file -->
 <project
   name="pami"
   default="build"
@@ -56,10 +56,8 @@
   </target>
 
   <target name="docmd">
-    <exec dir="build/doc/md" command="../../../vendor/bin/phpdocmd ../xml/structure.xml"
-      checkreturn="true"
-      passthru="true"/>
-    <copy todir="doc" overwrite="true">
+    <exec dir="build/doc/md" command="../../../vendor/bin/phpdocmd ../xml/structure.xml" checkreturn="true" passthru="true"/>
+    <copy todir="docs" overwrite="true">
       <fileset dir="build/doc/md">
         <include name="*.md" />
       </fileset>

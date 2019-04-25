@@ -18,17 +18,6 @@ Properties
 ----------
 
 
-### $logger
-
-    private mixed $logger
-
-
-
-
-
-* Visibility: **private**
-
-
 ### $responseClassMapping
 
     private mixed $responseClassMapping = array()
@@ -42,24 +31,6 @@ Properties
 
 Methods
 -------
-
-
-### registerResponseClass
-
-    mixed PAMI\Message\Response\Factory\IResponseFactory::registerResponseClass(string $actionClass, string $responseClass)
-
-Registers the response class that should be used for the given action class.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\Factory\IResponseFactory](PAMI-Message-Response-Factory-IResponseFactory.md)
-
-
-#### Arguments
-* $actionClass **string**
-* $responseClass **string**
-
 
 
 ### createFromRaw
@@ -77,35 +48,5 @@ This is our factory method.
 #### Arguments
 * $responseMessage **string** - &lt;p&gt;Literal message as received from ami.&lt;/p&gt;
 * $requestMessage **string**
-
-
-
-### __construct
-
-    mixed PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl::__construct()
-
-Constructor. Nothing to see here, move along.
-
-
-
-* Visibility: **public**
-
-
-
-
-### createResponseHandler
-
-    mixed PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl::createResponseHandler($class, $message)
-
-
-
-
-
-* Visibility: **public**
-
-
-#### Arguments
-* $class **mixed**
-* $message **mixed**
 
 

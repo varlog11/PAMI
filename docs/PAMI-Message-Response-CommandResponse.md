@@ -1,4 +1,4 @@
-PAMI\Message\Response\SCCPGenericResponse
+PAMI\Message\Response\CommandResponse
 ===============
 
 A generic SCCP response message from ami.
@@ -6,9 +6,9 @@ A generic SCCP response message from ami.
 PHP Version 5
 
 
-* Class name: SCCPGenericResponse
+* Class name: CommandResponse
 * Namespace: PAMI\Message\Response
-* Parent class: [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
+* Parent class: [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
@@ -34,28 +34,6 @@ Constants
 
 Properties
 ----------
-
-
-### $tables
-
-    protected array<mixed,\PAMI\Message\Event\EventMessage> $tables
-
-Child Tables
-
-
-
-* Visibility: **protected**
-
-
-### $temptable
-
-    private Array $temptable
-
-Catch All incoming Events into current Table.
-
-
-
-* Visibility: **private**
 
 
 ### $events
@@ -162,6 +140,32 @@ Methods
 -------
 
 
+### isCommandFinished
+
+    boolean PAMI\Message\Response\CommandResponse::isCommandFinished()
+
+Returns true if this response contains the Message: command output follow
+
+
+
+* Visibility: **public**
+
+
+
+
+### getCommandOutput
+
+    string PAMI\Message\Response\CommandResponse::getCommandOutput()
+
+Returns Command output result
+
+
+
+* Visibility: **public**
+
+
+
+
 ### __construct
 
     void PAMI\Message\Message::__construct()
@@ -172,82 +176,6 @@ Constructor.
 
 * Visibility: **public**
 * This method is defined by [PAMI\Message\Message](PAMI-Message-Message.md)
-
-
-
-
-### addEvent
-
-    void PAMI\Message\Response\ResponseMessage::addEvent(\PAMI\Message\Event\EventMessage $event)
-
-Adds an event to this response.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
-
-
-#### Arguments
-* $event **[PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)** - &lt;p&gt;Child event to add.&lt;/p&gt;
-
-
-
-### hasTable
-
-    boolean PAMI\Message\Response\AdvancedResponseMessage::hasTable()
-
-Returns true if this Response Message contains an events tables (TableStart/TableEnd)
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
-
-
-
-
-### getTableNames
-
-    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\AdvancedResponseMessage::getTableNames()
-
-Returns all eventtabless for this response.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
-
-
-
-
-### getTable
-
-    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\AdvancedResponseMessage::getTable($tablename)
-
-Returns all associated events for this response->tablename.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
-
-
-#### Arguments
-* $tablename **mixed**
-
-
-
-### getJSON
-
-    array PAMI\Message\Response\AdvancedResponseMessage::getJSON()
-
-Returns decoded version of the 'JSON' key if present.
-
-
-
-* Visibility: **public**
-* This method is defined by [PAMI\Message\Response\AdvancedResponseMessage](PAMI-Message-Response-AdvancedResponseMessage.md)
 
 
 
@@ -268,7 +196,7 @@ Serialize function.
 
 ### isComplete
 
-    boolean PAMI\Message\Response\ResponseMessage::isComplete()
+    boolean PAMI\Message\Response\Response::isComplete()
 
 True if this response is complete. A response is considered complete
 if it's not a list OR it's a list with its last child event containing
@@ -277,42 +205,59 @@ an EventList = Complete.
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
+
+
+
+### addEvent
+
+    void PAMI\Message\Response\Response::addEvent(\PAMI\Message\Event\EventMessage $event)
+
+Adds an event to this response.
+
+
+
+* Visibility: **public**
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
+
+
+#### Arguments
+* $event **[PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)** - &lt;p&gt;Child event to add.&lt;/p&gt;
 
 
 
 ### getEvents
 
-    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\ResponseMessage::getEvents()
+    array<mixed,\PAMI\Message\Event\EventMessage> PAMI\Message\Response\Response::getEvents()
 
 Returns all associated events for this response.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### isSuccess
 
-    boolean PAMI\Message\Response\ResponseMessage::isSuccess()
+    boolean PAMI\Message\Response\Response::isSuccess()
 
 Checks if the Response field has the word Error in it.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### isList
 
-    boolean PAMI\Message\Response\ResponseMessage::isList()
+    boolean PAMI\Message\Response\Response::isList()
 
 Returns true if this response contains the key EventList with the
 word 'start' in it. Another way is to have a Message key, like:
@@ -321,28 +266,28 @@ Message: Result will follow
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### getMessage
 
-    string PAMI\Message\Response\ResponseMessage::getMessage()
+    string PAMI\Message\Response\Response::getMessage()
 
 Returns key: 'Privilege'.
 
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 
 
 ### setActionId
 
-    void PAMI\Message\Response\ResponseMessage::setActionId(string $actionId)
+    void PAMI\Message\Response\Response::setActionId(string $actionId)
 
 Sets an action id. This should not be necessary, but asterisk sometimes
 decides to not send the Response: or Event: headers.
@@ -350,7 +295,7 @@ decides to not send the Response: or Event: headers.
 
 
 * Visibility: **public**
-* This method is defined by [PAMI\Message\Response\ResponseMessage](PAMI-Message-Response-ResponseMessage.md)
+* This method is defined by [PAMI\Message\Response\Response](PAMI-Message-Response-Response.md)
 
 
 #### Arguments

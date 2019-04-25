@@ -35,20 +35,3 @@ This is our factory method.
 * $requestMessage **string**
 
 
-
-### registerResponseClass
-
-    mixed PAMI\Message\Response\Factory\IResponseFactory::registerResponseClass(string $actionClass, string $responseClass)
-
-Registers the response class that should be used for the given action class.
-
-
-
-* Visibility: **public**
-
-
-#### Arguments
-* $actionClass **string**
-* $responseClass **string**
-
-
