@@ -50,13 +50,22 @@
   </target>
 
   <target name="dochtml">
-    <exec command="vendor/bin/phpdoc -t build/doc/html -d src --validate --sourcecode --force --log"
+    <!--exec command="vendor/bin/phpdoc -t build/doc/html -d src -\-validate -\-sourcecode -\-force -\-log"
       checkreturn="true"
       passthru="true"/>
+    -->
     <copy todir="docs" overwrite="true">
       <fileset dir="build/doc/html">
-        <include name="*" />
-        <exclude name="phpdoc-cache*" />
+        <include name="*.html"/>
+        <include name="classes/*"/>
+        <include name="css/*"/>
+        <include name="files/*"/>
+        <include name="font/*"/>
+        <include name="graphs/*"/>
+        <include name="images/*"/>
+        <include name="js/*"/>
+        <include name="namespaces/*"/>
+        <include name="reports/*"/>
       </fileset>
     </copy>
   </target>

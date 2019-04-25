@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+        <script type="text/javascript">
+        function loadExternalCodeSnippets() {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+                var src = pre.getAttribute('data-src');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist or is empty';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        $(document).ready(function(){
+            loadExternalCodeSnippets();
+        });
+        $('#source-view').on('shown', function () {
+            loadExternalCodeSnippets();
+        })
+    </script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/PAMI.html">\PAMI</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">31</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">20</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-259623392"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-259623392" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1862411308"></a>
+                                <a href="../namespaces/PAMI.html" style="margin-left: 30px; padding-left: 0">PAMI</a>
+            </div>
+            <div id="namespace-1862411308" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1604531559"></a>
+                                <a href="../namespaces/PAMI.AsyncAgi.html" style="margin-left: 30px; padding-left: 0">AsyncAgi</a>
+            </div>
+            <div id="namespace-1604531559" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1159641391"></a>
+                                <a href="../namespaces/PAMI.AsyncAgi.Application.html" style="margin-left: 30px; padding-left: 0">Application</a>
+            </div>
+            <div id="namespace-1159641391" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.AsyncAgi.Application.PAGIAsyncApplication.html">PAGIAsyncApplication</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2079651848"></a>
+                                <a href="../namespaces/PAMI.AsyncAgi.Event.html" style="margin-left: 30px; padding-left: 0">Event</a>
+            </div>
+            <div id="namespace-2079651848" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/PAMI.AsyncAgi.Event.IAsyncAgiExecEvent.html">IAsyncAgiExecEvent</a></li>
+                                                    <li class="interface"><a href="../classes/PAMI.AsyncAgi.Event.IAsyncAgiStartEvent.html">IAsyncAgiStartEvent</a></li>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/PAMI.AsyncAgi.IAsyncClient.html">IAsyncClient</a></li>
+                                                                                                    <li class="class"><a href="../classes/PAMI.AsyncAgi.AsyncClientImpl.html">AsyncClientImpl</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1646140607"></a>
+                                <a href="../namespaces/PAMI.Client.html" style="margin-left: 30px; padding-left: 0">Client</a>
+            </div>
+            <div id="namespace-1646140607" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-275708736"></a>
+                                <a href="../namespaces/PAMI.Client.Exception.html" style="margin-left: 30px; padding-left: 0">Exception</a>
+            </div>
+            <div id="namespace-275708736" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Client.Exception.ClientException.html">ClientException</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-8026927"></a>
+                                <a href="../namespaces/PAMI.Client.Impl.html" style="margin-left: 30px; padding-left: 0">Impl</a>
+            </div>
+            <div id="namespace-8026927" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Client.Impl.ClientImpl.html">ClientImpl</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/PAMI.Client.IClient.html">IClient</a></li>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1341598010"></a>
+                                <a href="../namespaces/PAMI.Exception.html" style="margin-left: 30px; padding-left: 0">Exception</a>
+            </div>
+            <div id="namespace-1341598010" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Exception.PAMIException.html">PAMIException</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-470776344"></a>
+                                <a href="../namespaces/PAMI.Listener.html" style="margin-left: 30px; padding-left: 0">Listener</a>
+            </div>
+            <div id="namespace-470776344" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/PAMI.Listener.IEventListener.html">IEventListener</a></li>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-547414927"></a>
+                                <a href="../namespaces/PAMI.Message.html" style="margin-left: 30px; padding-left: 0">Message</a>
+            </div>
+            <div id="namespace-547414927" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2120829091"></a>
+                                <a href="../namespaces/PAMI.Message.Action.html" style="margin-left: 30px; padding-left: 0">Action</a>
+            </div>
+            <div id="namespace-2120829091" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Message.Action.AbsoluteTimeoutAction.html">AbsoluteTimeoutAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ActionMessage.html">ActionMessage</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.AgentLogoffAction.html">AgentLogoffAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.AgentsAction.html">AgentsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.AGIAction.html">AGIAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.AttendedTransferAction.html">AttendedTransferAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.BlindTransferAction.html">BlindTransferAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.BridgeAction.html">BridgeAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.BridgeInfoAction.html">BridgeInfoAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.BridgeListAction.html">BridgeListAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ChallengeAction.html">ChallengeAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ChangeMonitorAction.html">ChangeMonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.CommandAction.html">CommandAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeKickAction.html">ConfbridgeKickAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfBridgeListAction.html">ConfBridgeListAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeListRoomsAction.html">ConfbridgeListRoomsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeLockAction.html">ConfbridgeLockAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeMuteAction.html">ConfbridgeMuteAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeStartRecordAction.html">ConfbridgeStartRecordAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeStopRecordAction.html">ConfbridgeStopRecordAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeUnlockAction.html">ConfbridgeUnlockAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ConfbridgeUnmuteAction.html">ConfbridgeUnmuteAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.CoreSettingsAction.html">CoreSettingsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.CoreShowChannelsAction.html">CoreShowChannelsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.CoreStatusAction.html">CoreStatusAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.CreateConfigAction.html">CreateConfigAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDIDialOffHookAction.html">DAHDIDialOffHookAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDIDNDOffAction.html">DAHDIDNDOffAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDIDNDOnAction.html">DAHDIDNDOnAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDIHangupAction.html">DAHDIHangupAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDIRestartAction.html">DAHDIRestartAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDIShowChannelsAction.html">DAHDIShowChannelsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DAHDITransferAction.html">DAHDITransferAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DBDelAction.html">DBDelAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DBDelTreeAction.html">DBDelTreeAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DBGetAction.html">DBGetAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DBPutAction.html">DBPutAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DialplanExtensionAddAction.html">DialplanExtensionAddAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleReloadAction.html">DongleReloadAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleResetAction.html">DongleResetAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleRestartAction.html">DongleRestartAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleSendPDUAction.html">DongleSendPDUAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleSendSMSAction.html">DongleSendSMSAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleSendUSSDAction.html">DongleSendUSSDAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleShowDevicesAction.html">DongleShowDevicesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleStartAction.html">DongleStartAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.DongleStopAction.html">DongleStopAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.EventsAction.html">EventsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ExtensionStateAction.html">ExtensionStateAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.GetConfigAction.html">GetConfigAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.GetConfigJSONAction.html">GetConfigJSONAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.GetVarAction.html">GetVarAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.HangupAction.html">HangupAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.JabberSendAction.html">JabberSendAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ListCategoriesAction.html">ListCategoriesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ListCommandsAction.html">ListCommandsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.LocalOptimizeAwayAction.html">LocalOptimizeAwayAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.LoginAction.html">LoginAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.LogoffAction.html">LogoffAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MailboxCountAction.html">MailboxCountAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MailboxStatusAction.html">MailboxStatusAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MeetmeListAction.html">MeetmeListAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MeetmeMuteAction.html">MeetmeMuteAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MeetmeUnmuteAction.html">MeetmeUnmuteAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MixMonitorAction.html">MixMonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MixMonitorMuteAction.html">MixMonitorMuteAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ModuleCheckAction.html">ModuleCheckAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ModuleLoadAction.html">ModuleLoadAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ModuleReloadAction.html">ModuleReloadAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ModuleUnloadAction.html">ModuleUnloadAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.MonitorAction.html">MonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.OriginateAction.html">OriginateAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ParkAction.html">ParkAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ParkedCallsAction.html">ParkedCallsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PauseMonitorAction.html">PauseMonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PingAction.html">PingAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPQualifyAction.html">PJSIPQualifyAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPRegisterAction.html">PJSIPRegisterAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowEndpointAction.html">PJSIPShowEndpointAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowEndpointsAction.html">PJSIPShowEndpointsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowRegistrationsInboundAction.html">PJSIPShowRegistrationsInboundAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowRegistrationsOutboundAction.html">PJSIPShowRegistrationsOutboundAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowResourceListsAction.html">PJSIPShowResourceListsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowSubscriptionsInboundAction.html">PJSIPShowSubscriptionsInboundAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPShowSubscriptionsOutboundAction.html">PJSIPShowSubscriptionsOutboundAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PJSIPUnregisterAction.html">PJSIPUnregisterAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.PlayDTMFAction.html">PlayDTMFAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueAddAction.html">QueueAddAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueLogAction.html">QueueLogAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueMemberRingInUse.html">QueueMemberRingInUse</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueuePauseAction.html">QueuePauseAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueuePenaltyAction.html">QueuePenaltyAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueReloadAction.html">QueueReloadAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueRemoveAction.html">QueueRemoveAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueResetAction.html">QueueResetAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueRuleAction.html">QueueRuleAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueuesAction.html">QueuesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueStatusAction.html">QueueStatusAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueSummaryAction.html">QueueSummaryAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.QueueUnpauseAction.html">QueueUnpauseAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.RedirectAction.html">RedirectAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ReloadAction.html">ReloadAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPAnswerCallAction.html">SCCPAnswerCallAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPConferenceAction.html">SCCPConferenceAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPConfigMetaDataAction.html">SCCPConfigMetaDataAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPDeviceAddLineAction.html">SCCPDeviceAddLineAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPDeviceRestartAction.html">SCCPDeviceRestartAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPDeviceSetDNDAction.html">SCCPDeviceSetDNDAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPDeviceUpdateAction.html">SCCPDeviceUpdateAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPDndDeviceAction.html">SCCPDndDeviceAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPHangupCallAction.html">SCCPHangupCallAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPHoldCallAction.html">SCCPHoldCallAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPLineForwardUpdateAction.html">SCCPLineForwardUpdateAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPMessageDeviceAction.html">SCCPMessageDeviceAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPMessageDevicesAction.html">SCCPMessageDevicesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowChannelsAction.html">SCCPShowChannelsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowConferenceAction.html">SCCPShowConferenceAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowConferencesAction.html">SCCPShowConferencesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowDeviceAction.html">SCCPShowDeviceAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowDevicesAction.html">SCCPShowDevicesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowGlobalsAction.html">SCCPShowGlobalsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowHintLineStatesAction.html">SCCPShowHintLineStatesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowHintSubscriptionsAction.html">SCCPShowHintSubscriptionsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowLineAction.html">SCCPShowLineAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowLinesAction.html">SCCPShowLinesAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowMWISubscriptionsAction.html">SCCPShowMWISubscriptionsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowSessionsAction.html">SCCPShowSessionsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPShowSoftkeySetsAction.html">SCCPShowSoftkeySetsAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPStartCallAction.html">SCCPStartCallAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPSystemMessageAction.html">SCCPSystemMessageAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SCCPTokenAckAction.html">SCCPTokenAckAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SendTextAction.html">SendTextAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SetVarAction.html">SetVarAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.ShowDialPlanAction.html">ShowDialPlanAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SIPNotifyAction.html">SIPNotifyAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SIPPeersAction.html">SIPPeersAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SIPQualifyPeerAction.html">SIPQualifyPeerAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SIPShowPeerAction.html">SIPShowPeerAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.SIPShowRegistryAction.html">SIPShowRegistryAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.StatusAction.html">StatusAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.StopMixMonitorAction.html">StopMixMonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.StopMonitorAction.html">StopMonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.UnpauseMonitorAction.html">UnpauseMonitorAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.UpdateConfigAction.html">UpdateConfigAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.UserEventAction.html">UserEventAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.VGSMSMSTxAction.html">VGSMSMSTxAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.VoicemailUsersListAction.html">VoicemailUsersListAction</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Action.WaitEventAction.html">WaitEventAction</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-433855276"></a>
+                                <a href="../namespaces/PAMI.Message.Event.html" style="margin-left: 30px; padding-left: 0">Event</a>
+            </div>
+            <div id="namespace-433855276" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1811448389"></a>
+                                <a href="../namespaces/PAMI.Message.Event.Factory.html" style="margin-left: 30px; padding-left: 0">Factory</a>
+            </div>
+            <div id="namespace-1811448389" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1160244899"></a>
+                                <a href="../namespaces/PAMI.Message.Event.Factory.Impl.html" style="margin-left: 30px; padding-left: 0">Impl</a>
+            </div>
+            <div id="namespace-1160244899" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Message.Event.Factory.Impl.EventFactoryImpl.html">EventFactoryImpl</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AgentConnectEvent.html">AgentConnectEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AgentloginEvent.html">AgentloginEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AgentlogoffEvent.html">AgentlogoffEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AgentsCompleteEvent.html">AgentsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AgentsEvent.html">AgentsEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AGIExecEndEvent.html">AGIExecEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AGIExecEvent.html">AGIExecEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AGIExecStartEvent.html">AGIExecStartEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AorDetailEvent.html">AorDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AsyncAGIEndEvent.html">AsyncAGIEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AsyncAGIEvent.html">AsyncAGIEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AsyncAGIExecEvent.html">AsyncAGIExecEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AsyncAGIStartEvent.html">AsyncAGIStartEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AttendedTransferEvent.html">AttendedTransferEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.AuthDetailEvent.html">AuthDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BlindTransferEvent.html">BlindTransferEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeCreateEvent.html">BridgeCreateEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeDestroyEvent.html">BridgeDestroyEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeEnterEvent.html">BridgeEnterEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeEvent.html">BridgeEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeInfoChannelEvent.html">BridgeInfoChannelEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeInfoCompleteEvent.html">BridgeInfoCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeLeaveEvent.html">BridgeLeaveEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.BridgeListItemEvent.html">BridgeListItemEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.CallAnsweredEvent.html">CallAnsweredEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.CallForwardEvent.html">CallForwardEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.CdrEvent.html">CdrEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.CELEvent.html">CELEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ChannelUpdateEvent.html">ChannelUpdateEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeEndEvent.html">ConfbridgeEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeJoinEvent.html">ConfbridgeJoinEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeLeaveEvent.html">ConfbridgeLeaveEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeListCompleteEvent.html">ConfbridgeListCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeListEvent.html">ConfbridgeListEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeListRoomsCompleteEvent.html">ConfbridgeListRoomsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeListRoomsEvent.html">ConfbridgeListRoomsEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeMuteEvent.html">ConfbridgeMuteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeStartEvent.html">ConfbridgeStartEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeTalkingEvent.html">ConfbridgeTalkingEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ConfbridgeUnmuteEvent.html">ConfbridgeUnmuteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ContactStatusDetailEvent.html">ContactStatusDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.CoreShowChannelEvent.html">CoreShowChannelEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.CoreShowChannelsCompleteEvent.html">CoreShowChannelsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DAHDIChannelEvent.html">DAHDIChannelEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DAHDIShowChannelsCompleteEvent.html">DAHDIShowChannelsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DAHDIShowChannelsEvent.html">DAHDIShowChannelsEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DBGetResponseEvent.html">DBGetResponseEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DeviceStateChangeEvent.html">DeviceStateChangeEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DeviceStatusEvent.html">DeviceStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DialBeginEvent.html">DialBeginEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DialEndEvent.html">DialEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DialEvent.html">DialEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DNDEvent.html">DNDEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DNDStateEvent.html">DNDStateEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleDeviceEntryEvent.html">DongleDeviceEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleNewCUSDEvent.html">DongleNewCUSDEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleNewUSSDBase64Event.html">DongleNewUSSDBase64Event</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleNewUSSDEvent.html">DongleNewUSSDEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleShowDevicesCompleteEvent.html">DongleShowDevicesCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleSMSStatusEvent.html">DongleSMSStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleStatusEvent.html">DongleStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DongleUSSDStatusEvent.html">DongleUSSDStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DTMFBeginEvent.html">DTMFBeginEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DTMFEndEvent.html">DTMFEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.DTMFEvent.html">DTMFEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.EndpointDetailEvent.html">EndpointDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.EndpointListCompleteEvent.html">EndpointListCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.EndpointListEvent.html">EndpointListEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.EventMessage.html">EventMessage</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ExtensionStatusEvent.html">ExtensionStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.FullyBootedEvent.html">FullyBootedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.HangupEvent.html">HangupEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.HoldEvent.html">HoldEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.IdentifyDetailEvent.html">IdentifyDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.InboundRegistrationDetailEvent.html">InboundRegistrationDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.JabberEventEvent.html">JabberEventEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.JoinEvent.html">JoinEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.LeaveEvent.html">LeaveEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.LinkEvent.html">LinkEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ListDialPlanEvent.html">ListDialPlanEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.MasqueradeEvent.html">MasqueradeEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.MessageWaitingEvent.html">MessageWaitingEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.MusicOnHoldEvent.html">MusicOnHoldEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.MusicOnHoldStartEvent.html">MusicOnHoldStartEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.MusicOnHoldStopEvent.html">MusicOnHoldStopEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.NewAccountCodeEvent.html">NewAccountCodeEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.NewCalleridEvent.html">NewCalleridEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.NewchannelEvent.html">NewchannelEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.NewextenEvent.html">NewextenEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.NewstateEvent.html">NewstateEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.OriginateResponseEvent.html">OriginateResponseEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.OutboundRegistrationDetailEvent.html">OutboundRegistrationDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.OutboundSubscriptionDetailEvent.html">OutboundSubscriptionDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ParkedCallEvent.html">ParkedCallEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ParkedCallGiveUpEvent.html">ParkedCallGiveUpEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ParkedCallsCompleteEvent.html">ParkedCallsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ParkedCallTimeOutEvent.html">ParkedCallTimeOutEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.PeerEntryEvent.html">PeerEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.PeerlistCompleteEvent.html">PeerlistCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.PeerStatusEvent.html">PeerStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueCallerAbandonEvent.html">QueueCallerAbandonEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueCallerJoinEvent.html">QueueCallerJoinEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueCallerLeaveEvent.html">QueueCallerLeaveEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueEntryEvent.html">QueueEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueMemberAddedEvent.html">QueueMemberAddedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueMemberEvent.html">QueueMemberEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueMemberPausedEvent.html">QueueMemberPausedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueMemberRemovedEvent.html">QueueMemberRemovedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueMemberStatusEvent.html">QueueMemberStatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueParamsEvent.html">QueueParamsEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueStatusCompleteEvent.html">QueueStatusCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueSummaryCompleteEvent.html">QueueSummaryCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.QueueSummaryEvent.html">QueueSummaryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RegistrationsCompleteEvent.html">RegistrationsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RegistryEvent.html">RegistryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ReloadEvent.html">ReloadEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RenameEvent.html">RenameEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RequestBadFormatEvent.html">RequestBadFormatEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ResourceListDetailEvent.html">ResourceListDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RTCPReceivedEvent.html">RTCPReceivedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RTCPReceiverStatEvent.html">RTCPReceiverStatEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RTCPSentEvent.html">RTCPSentEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RTPReceiverStatEvent.html">RTPReceiverStatEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.RTPSenderStatEvent.html">RTPSenderStatEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPAttachedDeviceEntryEvent.html">SCCPAttachedDeviceEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPChannelEntryEvent.html">SCCPChannelEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfEndEvent.html">SCCPConfEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfEnteredEvent.html">SCCPConfEnteredEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConferenceEntryEvent.html">SCCPConferenceEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfLeaveEvent.html">SCCPConfLeaveEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfLeftEvent.html">SCCPConfLeftEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfLockEvent.html">SCCPConfLockEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfParticipantKickedEvent.html">SCCPConfParticipantKickedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfParticipantMuteEvent.html">SCCPConfParticipantMuteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfParticipantPromotionEvent.html">SCCPConfParticipantPromotionEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfStartedEvent.html">SCCPConfStartedEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPConfStartEvent.html">SCCPConfStartEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceButtonEntryEvent.html">SCCPDeviceButtonEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceEntryEvent.html">SCCPDeviceEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceFeatureEntryEvent.html">SCCPDeviceFeatureEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceLineEntryEvent.html">SCCPDeviceLineEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceServiceURLEntryEvent.html">SCCPDeviceServiceURLEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceSpeeddialEntryEvent.html">SCCPDeviceSpeeddialEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPDeviceStatisticsEntryEvent.html">SCCPDeviceStatisticsEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPHintLineStateEntryEvent.html">SCCPHintLineStateEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPHintSubscriptionEntryEvent.html">SCCPHintSubscriptionEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPLineEntryEvent.html">SCCPLineEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPMailboxEntryEvent.html">SCCPMailboxEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPMailboxSubscriberEntryEvent.html">SCCPMailboxSubscriberEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPSessionEntryEvent.html">SCCPSessionEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowChannelsCompleteEvent.html">SCCPShowChannelsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowConferencesCompleteEvent.html">SCCPShowConferencesCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowDeviceCompleteEvent.html">SCCPShowDeviceCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowDeviceEvent.html">SCCPShowDeviceEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowDevicesCompleteEvent.html">SCCPShowDevicesCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowHintLineStatesCompleteEvent.html">SCCPShowHintLineStatesCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowHintSubscriptionsCompleteEvent.html">SCCPShowHintSubscriptionsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowLineCompleteEvent.html">SCCPShowLineCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowLineEvent.html">SCCPShowLineEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowLinesCompleteEvent.html">SCCPShowLinesCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowMWISubscriptionsCompleteEvent.html">SCCPShowMWISubscriptionsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowSessionsCompleteEvent.html">SCCPShowSessionsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPShowSoftKeySetsCompleteEvent.html">SCCPShowSoftKeySetsCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPSoftKeySetEntryEvent.html">SCCPSoftKeySetEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SCCPVariablesEntryEvent.html">SCCPVariablesEntryEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.ShowDialPlanCompleteEvent.html">ShowDialPlanCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.StatusCompleteEvent.html">StatusCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.StatusEvent.html">StatusEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SuccessEvent.html">SuccessEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.SuccessfulAuthEvent.html">SuccessfulAuthEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.TableEndEvent.html">TableEndEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.TableStartEvent.html">TableStartEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.TransferEvent.html">TransferEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.TransportDetailEvent.html">TransportDetailEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.UnknownEvent.html">UnknownEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.UnlinkEvent.html">UnlinkEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.UnParkedCallEvent.html">UnParkedCallEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.UserEventEvent.html">UserEventEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.VarSetEvent.html">VarSetEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.VgsmMeStateEvent.html">VgsmMeStateEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.VgsmNetStateEvent.html">VgsmNetStateEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.VgsmSmsRxEvent.html">VgsmSmsRxEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.VoicemailUserEntryCompleteEvent.html">VoicemailUserEntryCompleteEvent</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Event.VoicemailUserEntryEvent.html">VoicemailUserEntryEvent</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1994116522"></a>
+                                <a href="../namespaces/PAMI.Message.Response.html" style="margin-left: 30px; padding-left: 0">Response</a>
+            </div>
+            <div id="namespace-1994116522" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-81305822"></a>
+                                <a href="../namespaces/PAMI.Message.Response.Factory.html" style="margin-left: 30px; padding-left: 0">Factory</a>
+            </div>
+            <div id="namespace-81305822" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-591955179"></a>
+                                <a href="../namespaces/PAMI.Message.Response.Factory.Impl.html" style="margin-left: 30px; padding-left: 0">Impl</a>
+            </div>
+            <div id="namespace-591955179" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Message.Response.Factory.Impl.ResponseFactoryImpl.html">ResponseFactoryImpl</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/PAMI.Message.Response.Factory.IResponseFactory.html">IResponseFactory</a></li>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Message.Response.CommandResponse.html">CommandResponse</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Response.ComplexResponse.html">ComplexResponse</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Response.GenericResponse.html">GenericResponse</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Response.Response.html">Response</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Response.SCCPShowDeviceResponse.html">SCCPShowDeviceResponse</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Response.SCCPShowGlobalsResponse.html">SCCPShowGlobalsResponse</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Response.SCCPShowLineResponse.html">SCCPShowLineResponse</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/PAMI.Message.IncomingMessage.html">IncomingMessage</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.Message.html">Message</a></li>
+                                                    <li class="class"><a href="../classes/PAMI.Message.OutgoingMessage.html">OutgoingMessage</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content file">
+                    <nav>
+                                                                    </nav>
+
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+                    <h1><small>Message/Event/Factory/Impl</small>EventFactoryImpl.php</h1>
+                    <p><em>This factory knows which event to return according to a given raw message
+from ami.</em></p>
+                    <p>PHP Version 5</p>
+
+                    
+                    
+                                        <h2>Classes</h2>
+                    <table class="table table-hover">
+                                            <tr>
+                            <td><a href="../classes/PAMI.Message.Event.Factory.Impl.EventFactoryImpl.html">EventFactoryImpl</a></td>
+                            <td><em>This factory knows which event to return according to a given raw message
+from ami.</em></td>
+                        </tr>
+                                        </table>
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                                                    <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">\Event\Factory.Impl</div></dd>
+                        
+                                                                                    <dt>See also</dt>
+                                                                                        <dd><a href="http://marcelog.github.com/PAMI/"><div class="namespace-wrapper">Copyright 2011 Marcelo Gornstein &lt;marcelog@gmail.com&gt;
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</div></a></dd>
+                                                    
+                    </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                                    <tr>
+                                <th>
+                                    category
+                                </th>
+                                <td>
+                                                                            <p>Pami</p>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    author
+                                </th>
+                                <td>
+                                                                            <p>Marcelo Gornstein <a href="mailto:marcelog@gmail.com">marcelog@gmail.com</a></p>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    license
+                                </th>
+                                <td>
+                                                                            <p><a href="http://marcelog.github.com/PAMI/">http://marcelog.github.com/PAMI/</a> Apache License 2.0</p>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    version
+                                </th>
+                                <td>
+                                                                            
+                                                                    </td>
+                            </tr>
+                                            </table>
+
+                </aside>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label"></h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/Message/Event/Factory/Impl/EventFactoryImpl.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/PAMI.html">\PAMI</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on April 26th, 2019 at 01:05.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
