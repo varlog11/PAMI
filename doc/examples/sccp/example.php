@@ -29,7 +29,7 @@ declare(ticks=1);
  */
 if ($argc != 5) {
     echo "Use: $argv[0] <host> <port> <user> <pass>\n";
-    exit (254);
+    exit(254);
 }
 
 // Setup include path.
@@ -101,117 +101,115 @@ class EventListener implements IEventListener
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-try
-{
-	$options = array(
-		'log4php.properties' => realpath(__DIR__) . DIRECTORY_SEPARATOR . 'log4php.properties',
-		'host' => $argv[1],
-		'port' => $argv[2],
-		'username' => $argv[3],
-		'secret' => $argv[4],
-		'connect_timeout' => 2,
-		'read_timeout' => 2,
-	);
-	$pami = new ClientImpl($options);
-	$pami->registerEventListener(new EventListener());
-	$pami->open();
+try {
+    $options = array(
+        'log4php.properties' => realpath(__DIR__) . DIRECTORY_SEPARATOR . 'log4php.properties',
+        'host' => $argv[1],
+        'port' => $argv[2],
+        'username' => $argv[3],
+        'secret' => $argv[4],
+        'connect_timeout' => 2,
+        'read_timeout' => 2,
+    );
+    $pami = new ClientImpl($options);
+    $pami->registerEventListener(new EventListener());
+    $pami->open();
 
-	// Retrieve json info from chan_sip
-	$response = $pami->send(new GetConfigJSONAction("sip.conf"));
-	var_dump($response->getJSON());
+    // Retrieve json info from chan_sip
+    $response = $pami->send(new GetConfigJSONAction("sip.conf"));
+    var_dump($response->getJSON());
 
-	// Retrieve config meta data json info from chan_sccp
-	$response = $pami->send(new SCCPConfigMetaDataAction());
-	print_r($response->getJSON());
+    // Retrieve config meta data json info from chan_sccp
+    $response = $pami->send(new SCCPConfigMetaDataAction());
+    print_r($response->getJSON());
 
-	// Retrieve config meta data json info from chan_sccp for a general section
-	$response = $pami->send(new SCCPConfigMetaDataAction("general"));
-	print_r($response->getJSON());
+    // Retrieve config meta data json info from chan_sccp for a general section
+    $response = $pami->send(new SCCPConfigMetaDataAction("general"));
+    print_r($response->getJSON());
 
-	// Retrieve config meta data json info from chan_sccp for a device section
-	$response = $pami->send(new SCCPConfigMetaDataAction("device"));
-	print_r($response->getJSON());
+    // Retrieve config meta data json info from chan_sccp for a device section
+    $response = $pami->send(new SCCPConfigMetaDataAction("device"));
+    print_r($response->getJSON());
 
-	// Retrieve SCCPShowGlobals returning big response section
-	$response = $pami->send(new SCCPShowGlobalsAction());
-	if ($response->isSuccess()) {
-		print "op\n";
-		print "KeepAlive: " . $response->getKey("KeepAlive") . "\n";
-		print "ConfigFile: " . $response->getKey("ConfigFile") . "\n";
-		print "CodecsPreference: ";
-		print_r ($response->getKey("CodecsPreference"));
-		print "\n";
-		if ($response->isList()) {
-			print "ok\n";
-			$events = $response->getEvents();
-			foreach ($events as $event) {
-				if ($event->getName() == "SCCPGlobalSettings") {
-					print "KeepAlive: " . $event->getKeepAlive() . "\n";
-					print "ConfigFile: " . $event->getConfigFile() . "\n";
-					print "CodecsPreference: ";
-					print_r ($event->getCodecsPreference());
-					print "\n";
-				}
-			}
-		}
-	}
+    // Retrieve SCCPShowGlobals returning big response section
+    $response = $pami->send(new SCCPShowGlobalsAction());
+    if ($response->isSuccess()) {
+        print "op\n";
+        print "KeepAlive: " . $response->getKey("KeepAlive") . "\n";
+        print "ConfigFile: " . $response->getKey("ConfigFile") . "\n";
+        print "CodecsPreference: ";
+        print_r($response->getKey("CodecsPreference"));
+        print "\n";
+        if ($response->isList()) {
+            print "ok\n";
+            $events = $response->getEvents();
+            foreach ($events as $event) {
+                if ($event->getName() == "SCCPGlobalSettings") {
+                    print "KeepAlive: " . $event->getKeepAlive() . "\n";
+                    print "ConfigFile: " . $event->getConfigFile() . "\n";
+                    print "CodecsPreference: ";
+                    print_r($event->getCodecsPreference());
+                    print "\n";
+                }
+            }
+        }
+    }
 
-	// Retrieve SCCPShowDevices returning multiple device sections
-	$response = $pami->send(new SCCPShowDevicesAction());
-	if ($response->isList()) {
-		$events = $response->getEvents();
-		foreach ($events as $event) {
-			if ($event->getName() == "SCCPDeviceEntry") {
-				print_r ($event);
-			}
-		} 
-	}
+    // Retrieve SCCPShowDevices returning multiple device sections
+    $response = $pami->send(new SCCPShowDevicesAction());
+    if ($response->isList()) {
+        $events = $response->getEvents();
+        foreach ($events as $event) {
+            if ($event->getName() == "SCCPDeviceEntry") {
+                print_r($event);
+            }
+        }
+    }
 
-	// Retrieve SCCPShowLines returning multiple line sections
-	$response = $pami->send(new SCCPShowLinesAction());
-	if ($response->isList()) {
-		$events = $response->getEvents();
-		foreach ($events as $event) {
-			if ($event->getName() == "SCCPLineEntry") {
-				print_r ($event);
-			}
-		} 
-	}
+    // Retrieve SCCPShowLines returning multiple line sections
+    $response = $pami->send(new SCCPShowLinesAction());
+    if ($response->isList()) {
+        $events = $response->getEvents();
+        foreach ($events as $event) {
+            if ($event->getName() == "SCCPLineEntry") {
+                print_r($event);
+            }
+        }
+    }
 
-	// Retrieve SCCPShowDevice returning multiple sections
-	$response = $pami->send(new SCCPShowDeviceAction("SEP0023043403F9"));
-	if ($response->isList()) {
-		$events = $response->getEvents(); 
-		print ("DeviceName" . $response->getDeviceName() . "\n");
-		print ("\nDenyPermit:\n");
-		print_r ($response->getDenyPermit());
-		print ("\nCaps:\n");
-		print_r ($response->getCapabilities());
-		print ("\nPrefs:\n");
-		print_r ($response->getCodecsPreference());
-	}
-	$tableNames = $response->getTableNames();
-	foreach ($tableNames as $tableName) {
-		print "Table: $tableName\n";
-		$method = 'get' . $tableName;
-		$table = $response->$method();
-		foreach ($table as $entry) {
-			print_r ($entry);
-		} 
-	}
+    // Retrieve SCCPShowDevice returning multiple sections
+    $response = $pami->send(new SCCPShowDeviceAction("SEP0023043403F9"));
+    if ($response->isList()) {
+        $events = $response->getEvents();
+        print ("DeviceName" . $response->getDeviceName() . "\n");
+        print ("\nDenyPermit:\n");
+        print_r($response->getDenyPermit());
+        print ("\nCaps:\n");
+        print_r($response->getCapabilities());
+        print ("\nPrefs:\n");
+        print_r($response->getCodecsPreference());
+    }
+    $tableNames = $response->getTableNames();
+    foreach ($tableNames as $tableName) {
+        print "Table: $tableName\n";
+        $method = 'get' . $tableName;
+        $table = $response->$method();
+        foreach ($table as $entry) {
+            print_r($entry);
+        }
+    }
 
-	// Retrieve SCCPShowLine returning multiple sections
+    // Retrieve SCCPShowLine returning multiple sections
     var_dump($pami->send(new SCCPShowLineAction("98031")));
 
     $time = time();
-    while((time() - $time) < $options['connect_timeout'])
-    {
-        usleep(10000);					// wait 10 ms
-        $pami->process();				// poll pami to see if anything happened
+    while ((time() - $time) < $options['connect_timeout']) {
+        usleep(10000);                  // wait 10 ms
+        $pami->process();               // poll pami to see if anything happened
     }
     $pami->close(); // send logoff and close the connection.
 } catch (Exception $e) {
-	echo $e->getMessage() . "\n";
+    echo $e->getMessage() . "\n";
 }
 ////////////////////////////////////////////////////////////////////////////////
 // Code ENDS.

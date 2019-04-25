@@ -109,7 +109,6 @@ class MyPAGIApplication extends PAGIAsyncApplication
             $client = $this->getAgi();
             $client->hangup();
         } catch (\Exception $e) {
-
         }
     }
 
