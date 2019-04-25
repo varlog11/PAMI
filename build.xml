@@ -50,10 +50,9 @@
   </target>
 
   <target name="dochtml">
-    <!--exec command="vendor/bin/phpdoc -t build/doc/html -d src -\-validate -\-sourcecode -\-force -\-log"
+    <exec command="vendor/bin/phpdoc -t build/doc/html -d src --validate --sourcecode --force --log --template='zend'" 
       checkreturn="true"
       passthru="true"/>
-    -->
     <copy todir="docs" overwrite="true">
       <fileset dir="build/doc/html">
         <include name="*.html"/>
