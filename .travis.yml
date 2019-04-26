@@ -29,3 +29,10 @@ after_script:
 addons:
   code_climate:
     repo_token: db9a4de41133c5c603bbd29c279541a5a3aa95c1b9e8d802bd8c118802a666bd
+
+notifications:
+  webhooks:
+    urls: https://webhooks.gitter.im/e/acdad6e84d56bd5d896f    
+    on_success: change
+    on_failure: always
+    on_start: never
