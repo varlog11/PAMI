@@ -67,5 +67,6 @@ checks:
 exclude_patterns:
   - "**/vendor/**/*"
   - "**/doc/**/*"
+  - "**/docs/**/*"
   - "**/build/**/*"
   - "test/"
