@@ -1,4 +1,5 @@
-[![Gitter](https://gitter.im/chan-sccp/PAMI.svg)](https://gitter.im/chan-sccp/PAMI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+[![Gitter](https://badges.gitter.im/chan-sccp/PAMI.svg)](https://gitter.im/chan-sccp/PAMI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 <!--
 [![License](https://poser.pugx.org/marcelog/PAMI/license)](https://packagist.org/packages/marcelog/PAMI)
 [![Latest Stable Version](https://poser.pugx.org/marcelog/PAMI/v/stable)](https://packagist.org/packages/marcelog/PAMI)
