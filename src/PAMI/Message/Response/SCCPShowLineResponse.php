@@ -453,12 +453,13 @@ class SCCPShowLineResponse extends ComplexResponse
      * Returns events[] related to AttachedDevices from the tables['AttachedDevices']
      *
      * @return events[]
+     * @return PAMI\Message\Event\SCCPAttachedDeviceEntryEvent[]
      */
     public function getAttachedDevices()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('AttachedDevices', $this->tables)) {
-            $res = $this->tables['AttachedDevices'];
+            $res = $this->tables['AttachedDevices']['Entries'];
         }
         return $res;
     }
@@ -466,13 +467,13 @@ class SCCPShowLineResponse extends ComplexResponse
     /**
      * Returns events[] related to Mailboxes from the tables['Mailboxes']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPMailboxEntryEvent[]
      */
     public function getMailboxes()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('Mailboxes', $this->tables)) {
-            $res = $this->tables['Mailboxes'];
+            $res = $this->tables['Mailboxes']['Entries'];
         }
         return $res;
     }
@@ -480,13 +481,13 @@ class SCCPShowLineResponse extends ComplexResponse
     /**
      * Returns events[] related to Variables from the tables['Variables']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPVariableEntryEvent[]
      */
     public function getVariables()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('Variables', $this->tables)) {
-            $res = $this->tables['Variables'];
+            $res = $this->tables['Variables']['Entries'];
         }
         return $res;
     }

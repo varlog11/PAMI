@@ -717,7 +717,7 @@ Returns events[] related to AttachedDevices from the tables['AttachedDevices']
 
 ### getMailboxes
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowLineResponse::getMailboxes()
+    array<mixed,\PAMI\Message\Response\PAMI\Message\Event\SCCPMailboxEntryEvent> PAMI\Message\Response\SCCPShowLineResponse::getMailboxes()
 
 Returns events[] related to Mailboxes from the tables['Mailboxes']
 

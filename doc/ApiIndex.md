@@ -255,6 +255,7 @@ API Index
             * [RTPReceiverStatEvent](PAMI-Message-Event-RTPReceiverStatEvent.md)
             * [SCCPConfLockEvent](PAMI-Message-Event-SCCPConfLockEvent.md)
             * [RequestBadFormatEvent](PAMI-Message-Event-RequestBadFormatEvent.md)
+            * [SCCPVariableEntryEvent](PAMI-Message-Event-SCCPVariableEntryEvent.md)
             * [VgsmSmsRxEvent](PAMI-Message-Event-VgsmSmsRxEvent.md)
             * [NewAccountCodeEvent](PAMI-Message-Event-NewAccountCodeEvent.md)
             * [SCCPDeviceEntryEvent](PAMI-Message-Event-SCCPDeviceEntryEvent.md)
@@ -349,7 +350,6 @@ API Index
             * [AGIExecEvent](PAMI-Message-Event-AGIExecEvent.md)
             * [SCCPDeviceServiceURLEntryEvent](PAMI-Message-Event-SCCPDeviceServiceURLEntryEvent.md)
             * [UnParkedCallEvent](PAMI-Message-Event-UnParkedCallEvent.md)
-            * [SCCPVariableEntryEvent](PAMI-Message-Event-SCCPVariableEntryEvent.md)
         * [Message](PAMI-Message-Message.md)
         * PAMI\Message\Response
             * [SCCPShowGlobalsResponse](PAMI-Message-Response-SCCPShowGlobalsResponse.md)

@@ -39,6 +39,7 @@
     </filter>
     
     <testsuites>
+<!--
         <testsuite name="Client">
           <directory suffix=".php">../client</directory>
         </testsuite>
@@ -47,7 +48,7 @@
         </testsuite>
         <testsuite name="Events">
             <directory suffix=".php">../events</directory>
-        </testsuite>
+        </testsuite>-->
         <testsuite name="SCCP_Actions">
             <directory suffix=".php">../sccp_actions</directory>
         </testsuite>
@@ -60,5 +61,4 @@
         <log type="coverage-html" target="../../build/coverage-html"/>
         <log type="coverage-clover" target="../../build/logs/clover.xml"/>
     </logging>
-
 </phpunit>

@@ -1109,9 +1109,18 @@ namespace PAMI\Client\Impl {
             $this->assertTrue($result->hasTable());
             $this->assertEquals(array('AttachedDevices','Mailboxes','Variables'), $result->getTableNames());
             $this->assertTrue(is_array($result->getTableNames()));
+            $subtablenames=array('AttachedDevices','Mailboxes','Variables');
+            foreach ($subtablenames as $subtablename) {
+                $getmethod = 'get' . $subtablename;
+                $this->assertTrue(is_array($result->$getmethod()));
+            }
+            $this->assertTrue(is_array($result->getTableNames()));
             $this->assertTrue(is_array($result->getAttachedDevices()));
+            $this->assertEquals($result->getAttachedDevices()[0]->getDeviceName(), "SEP001B54CA499B");
             $this->assertTrue(is_array($result->getMailboxes()));
+            $this->assertEquals($result->getMailboxes()[0]->getMailbox(), "98011");
             $this->assertTrue(is_array($result->getVariables()));
+            $this->assertEquals($result->getVariables()[1]->getValue(), "myval2");
         }
 
 
