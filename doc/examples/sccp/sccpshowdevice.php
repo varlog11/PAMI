@@ -52,16 +52,17 @@ try {
     $pami->open();
 
     $response = $pami->send(new SCCPShowDeviceAction($argv[5]));
+    print("Device:" . $argv[5]. ":\n");
     $linebuttons = $response->getLineButtons();
     foreach($linebuttons as $entry) {
-        print("LineButton:\n");
+        print(" - LineButton:\n");
         if ($entry instanceof PAMI\Message\Event\SCCPDeviceLineEntryEvent) {
-            print(" - Name:" . $entry->getName() . "\n");
-            print(" - Label:" . $entry->getLabel() . "\n");
-            print(" - Id:" . $entry->getId() . "\n");
-            print(" - Suffix:" . $entry->getSuffix() . "\n");
-            print(" - CfwdType:" . $entry->getCfwdType() . "\n");
-            print(" - CfwdNumber:" . $entry->getCfwdNumber() . "\n");
+            print("   - Name:" . $entry->getName() . "\n");
+            print("   - Label:" . $entry->getLabel() . "\n");
+            print("   - Id:" . $entry->getId() . "\n");
+            print("   - Suffix:" . $entry->getSuffix() . "\n");
+            print("   - CfwdType:" . $entry->getCfwdType() . "\n");
+            print("   - CfwdNumber:" . $entry->getCfwdNumber() . "\n");
         }
     }
     
