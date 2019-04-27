@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 declare(ticks=1);
-if ($argc != 5) {
-    echo "Use: $argv[0] <host> <port> <user> <pass>\n";
+if ($argc != 6) {
+    echo "Use: $argv[0] <host> <port> <user> <pass> <deviceid>\n";
     exit(254);
 }
 
@@ -51,9 +51,8 @@ try {
     $pami = new ClientImpl($options);
     $pami->open();
 
-    $response = $pami->send(new SCCPShowDeviceAction("SEP00AABBCCDDEE"));
+    $response = $pami->send(new SCCPShowDeviceAction($argv[5]));
     $linebuttons = $response->getLineButtons();
-    print("LineButtonName: " . $linebuttons['Name'] . "\n");
     foreach($linebuttons as $entry) {
         print("LineButton:\n");
         if ($entry instanceof PAMI\Message\Event\SCCPDeviceLineEntryEvent) {
