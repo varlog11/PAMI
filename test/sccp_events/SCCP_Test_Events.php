@@ -251,7 +251,7 @@ namespace PAMI\Client\Impl {
                 'rConceal' => '0.000000',
                 'sConceal' => '0',
             ),
-            'SCCPVariablesEntry' => array(
+            'SCCPVariableEntry' => array(
                 'ChannelType' => 'SCCP',
                 'ChannelObjectType' => 'Variable',
                 'Name' => 'Test',
@@ -486,7 +486,7 @@ namespace PAMI\Client\Impl {
                 'mailbox' => '98011',
                 'context' => 'default',
             ),
-            'SCCPVariablesEntry' => array(
+            'SCCPVariableEntry' => array(
                 'Name' => 'Test',
                 'Value' => 'Something',
             ),
@@ -551,7 +551,7 @@ namespace PAMI\Client\Impl {
                 'Direct' => 'no',
                 'DTMFmode' => 'RFC2833',
             ),
-            'SCCPVariablesEntry' => array(
+            'SCCPVariableEntry' => array(
                 'Name' => 'Test',
                 'Value' => 'Something',
             ),
