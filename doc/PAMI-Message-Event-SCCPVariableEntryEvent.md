@@ -1,4 +1,4 @@
-PAMI\Message\Event\SCCPVariablesEntryEvent
+PAMI\Message\Event\SCCPVariableEntryEvent
 ===============
 
 Event triggered by SCCPShowDevice/SCCPShowLine for Variable Entries.
@@ -6,7 +6,7 @@ Event triggered by SCCPShowDevice/SCCPShowLine for Variable Entries.
 PHP Version 5
 
 
-* Class name: SCCPVariablesEntryEvent
+* Class name: SCCPVariableEntryEvent
 * Namespace: PAMI\Message\Event
 * Parent class: [PAMI\Message\Event\EventMessage](PAMI-Message-Event-EventMessage.md)
 
@@ -120,7 +120,7 @@ Methods
 
 ### getChannelType
 
-    string PAMI\Message\Event\SCCPVariablesEntryEvent::getChannelType()
+    string PAMI\Message\Event\SCCPVariableEntryEvent::getChannelType()
 
 Returns key: 'ChannelType'.
 
@@ -133,7 +133,7 @@ Returns key: 'ChannelType'.
 
 ### getChannelObjectType
 
-    string PAMI\Message\Event\SCCPVariablesEntryEvent::getChannelObjectType()
+    string PAMI\Message\Event\SCCPVariableEntryEvent::getChannelObjectType()
 
 Returns key: 'ChannelObjectType'.
 
@@ -160,7 +160,7 @@ Returns key 'Event'.
 
 ### getValue
 
-    string PAMI\Message\Event\SCCPVariablesEntryEvent::getValue()
+    string PAMI\Message\Event\SCCPVariableEntryEvent::getValue()
 
 Returns key: 'Value'.
 

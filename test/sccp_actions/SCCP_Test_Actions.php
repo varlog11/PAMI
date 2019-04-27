@@ -709,7 +709,7 @@ namespace PAMI\Client\Impl {
             'ChannelType: SCCP',
             'ChannelObjectType: DeviceFeature',
             'Id: 8',
-            'Name: call forwared',
+            'Name: call forward',
             'Options: 500',
             'Status: 0',
             '',
@@ -728,27 +728,27 @@ namespace PAMI\Client\Impl {
             'TableEntries: 0',
             '',
             'Event: TableStart',
-            'TableName: Variables',
             'ActionID: 1432.123',
+            'TableName: Variables',
             '',
             'Event: SCCPVariableEntry',
+            'ActionID: 1432.123',
             'ChannelType: SCCP',
             'ChannelObjectType: Variable',
-            'ActionID: 1432.123',
             'Name: testvariable1',
             'Value: myval1',
             '',
             'Event: SCCPVariableEntry',
+            'ActionID: 1432.123',
             'ChannelType: SCCP',
             'ChannelObjectType: Variable',
-            'ActionID: 1432.123',
             'Name: testvariable2',
             'Value: myval2',
             '',
             'Event: TableEnd',
+            'ActionID: 1432.123',
             'TableName: Variables',
             'TableEntries: 2',
-            'ActionID: 1432.123',
             '',
             'Event: TableStart',
             'ActionId: 1432.123',
@@ -890,20 +890,12 @@ namespace PAMI\Client\Impl {
                 $getmethod = 'get' . $subtablename;
                 $this->assertTrue(is_array($result->$getmethod()));
             }
-            $this->assertTrue(is_array($result->getButtons()));
-            //$this->assertTrue($result->getButtons()[0] instanceof PAMI\Message\Event\SCCPDeviceButtonEntryEvent);
-            $this->assertTrue(is_array($result->getLineButtons()));
-            //$this->assertTrue($result->getLineButtons()[0] instanceof PAMI\Message\Event\SCCPDeviceLineButtonEntryEvent);
-            $this->assertTrue(is_array($result->getSpeeddialButtons()));
-            //$this->assertTrue($result->getSpeeddialButtons()[0] instanceof PAMI\Message\Event\SCCPDeviceSpeeddialButtonEntryEvent);
-            $this->assertTrue(is_array($result->getServiceURLButtons()));
-            //$this->assertTrue($result->getServiceURLButtons()[0] instanceof PAMI\Message\Event\SCCPDeviceServiceURLButtonEntryEvent);
-            $this->assertTrue(is_array($result->getFeatureButtons()));
-            //$this->assertTrue($result->getFeatureButtons()[0] instanceof PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent);
-            $this->assertTrue(is_array($result->getVariables()));
-            //$this->assertTrue($result->getVariables()[0] instanceof PAMI\Message\Event\SCCPVariablesEntryEvent);
-            $this->assertTrue(is_array($result->getCallStatistics()));
-            //$this->assertTrue($result->getCallStatistics()[0] instanceof PAMI\Message\Event\SCCPDeviceStatisticsEntryEvent);
+            $this->assertEquals($result->getButtons()[0]->getTypeStr(), "Line");
+            $this->assertEquals($result->getLineButtons()[0]->getName(), "98041");
+            $this->assertEquals($result->getSpeeddialButtons()[0]->getName(), "98011");
+            $this->assertEquals($result->getFeatureButtons()[0]->getName(), "call forward");
+            $this->assertEquals($result->getVariables()[1]->getValue(), "myval2");
+            $this->assertEquals($result->getCallStatistics()[1]->getType(), "AVG");
         }
 
 

@@ -1295,6 +1295,23 @@ namespace PAMI\Client\Impl {
             $action->setReplace(true);
             $result = $this->_start($write, $action);
         }
+        /**
+         * @test
+         */
+        public function can_remove_extension_to_dialplan()
+        {
+            $write = array(implode("\r\n", array(
+            'action: DialplanExtensionRemove',
+            'actionid: 1432.123',
+            'context: Context',
+            'extension: Extension',
+            'priority: Priority',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\DialplanExtensionRemoveAction('Context', 'Extension');
+            $action->setPriority('Priority');
+            $result = $this->_start($write, $action);
+        }
 
         /**
          * @test

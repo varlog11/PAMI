@@ -234,4 +234,13 @@ namespace PAMI\Client\Impl {
         $mockFwriteCount = 0;
         $mockFwriteReturn = $writeValues;
     }
+    class SomeListenerClass implements \PAMI\Listener\IEventListener
+    {
+        public static $event;
+
+        public function handle(\PAMI\Message\Event\EventMessage $event)
+        {
+            self::$event = $event;
+        }
+    }
 }

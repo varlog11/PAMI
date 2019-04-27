@@ -1042,9 +1042,9 @@ Returns key: 'conflistActive'.
 
 ### getButtons
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowDeviceResponse::getButtons()
+    \PAMI\Message\Response\PAMI\Message\Event\SCCPDeviceButtonEntryEvent[]) PAMI\Message\Response\SCCPShowDeviceResponse::getButtons()
 
-Returns events[] related to ButtonEntries from the tables['Buttons']
+Returns events[] related to ButtonEntries from the tables['Buttons']['Entries']
 
 
 
@@ -1055,9 +1055,9 @@ Returns events[] related to ButtonEntries from the tables['Buttons']
 
 ### getLineButtons
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowDeviceResponse::getLineButtons()
+    array<mixed,\PAMI\Message\Response\PAMI\Message\Event\SCCPDeviceLineButtonEntryEvent> PAMI\Message\Response\SCCPShowDeviceResponse::getLineButtons()
 
-Returns events[] related to LineButtons from the tables['LineButtons']
+Returns events[] related to LineButtons from the tables['LineButtons']['Entries']
 
 
 
@@ -1068,9 +1068,9 @@ Returns events[] related to LineButtons from the tables['LineButtons']
 
 ### getSpeeddialButtons
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowDeviceResponse::getSpeeddialButtons()
+    array<mixed,\PAMI\Message\Response\PAMI\Message\Event\SCCPDeviceSpeeddialButtonEntryEvent> PAMI\Message\Response\SCCPShowDeviceResponse::getSpeeddialButtons()
 
-Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']
+Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']['Entries']
 
 
 
@@ -1081,9 +1081,9 @@ Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']
 
 ### getServiceURLButtons
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowDeviceResponse::getServiceURLButtons()
+    array<mixed,\PAMI\Message\Response\PAMI\Message\Event\SCCPDeviceServiceURLButtonEntryEvent> PAMI\Message\Response\SCCPShowDeviceResponse::getServiceURLButtons()
 
-Returns events[] related to ServiceURLButtons from the tables['ServiceURLs']
+Returns events[] related to ServiceURLButtons from the tables['ServiceURLs']['Entries']
 
 
 
@@ -1094,9 +1094,9 @@ Returns events[] related to ServiceURLButtons from the tables['ServiceURLs']
 
 ### getFeatureButtons
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowDeviceResponse::getFeatureButtons()
+    array<mixed,\PAMI\Message\Response\PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent> PAMI\Message\Response\SCCPShowDeviceResponse::getFeatureButtons()
 
-Returns events[] related to FeatureButtons from the tables['FeatureButtons']
+Returns events[] related to FeatureButtons from the tables['FeatureButtons']['Entries']
 
 
 
@@ -1121,9 +1121,9 @@ Returns all variabels for this message.
 
 ### getCallStatistics
 
-    array<mixed,\PAMI\Message\Response\events> PAMI\Message\Response\SCCPShowDeviceResponse::getCallStatistics()
+    array<mixed,\PAMI\Message\Response\PAMI\Message\Event\SCCPDeviceStatisticsEntryEvent> PAMI\Message\Response\SCCPShowDeviceResponse::getCallStatistics()
 
-Returns events[] related to DeviceCallStatistics from the tables['CallStatistics']
+Returns events[] related to DeviceCallStatistics from the tables['CallStatistics']['Entries']
 
 
 

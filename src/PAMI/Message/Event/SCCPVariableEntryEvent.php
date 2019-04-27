@@ -43,7 +43,7 @@ use PAMI\Message\Event\EventMessage;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class SCCPVariablesEntryEvent extends EventMessage
+class SCCPVariableEntryEvent extends EventMessage
 {
     /**
      * Returns key: 'ChannelType'.
