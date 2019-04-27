@@ -81,7 +81,7 @@ namespace PAMI\Client\Impl {
             );
             setFgetsMock($standardAMIStart, $writeLogin);
             $client = new \PAMI\Client\Impl\ClientImpl($options);
-            $client->registerEventListener(new SomeListenerClass);
+            //$client->registerEventListener(new SomeListenerClass);
             $client->open();
             setFgetsMock($response, $write);
             $result = $client->send($action);
@@ -441,10 +441,15 @@ namespace PAMI\Client\Impl {
             $result = $this->_start_action($write, $action, $response);
 
             $this->assertTrue($result instanceof \PAMI\Message\Response\ComplexResponse);
+            //$this->assertTrue($result instanceof \PAMI\Message\Response\SCCPShowDeviceResponse);
             $this->assertTrue($result->isSuccess());
             $this->assertTrue($result->hasTable());
             $this->assertTrue(is_array($result->getTableNames()));
             $this->assertTrue(is_array($result->getTable('Devices')));
+            //$this->assertTrue(is_array($result->getLineButtons()));
+            //$linebuttons = $result->getLineButtons();
+            //$this->assertTrue($linebuttons[0]['Entries'][0] instanceof PAMI\Message\Event\SCCPDeviceLineEntryEvent);
+            
             #$this->setExpectedException('PAMIException');
             #$this->assertFalse(is_array($result->getTable('NotATable')));
         }
@@ -880,12 +885,15 @@ namespace PAMI\Client\Impl {
             $this->assertTrue($result->hasTable());
             $this->assertEquals(array('Buttons','LineButtons','SpeeddialButtons','FeatureButtons','ServiceURLButtons','Variables','CallStatistics'), $result->getTableNames());
             $this->assertTrue(is_array($result->getTableNames()));
-            $subtablenamess=array('Buttons','LineButtons','SpeeddialButtons','FeatureButtons','ServiceURLButtons','Variables','CallStatistics');
-            foreach ($subtablenamess as $subtablename) {
+            $subtablenames=array('Buttons','LineButtons','SpeeddialButtons','FeatureButtons','ServiceURLButtons','Variables','CallStatistics');
+            foreach ($subtablenames as $subtablename) {
                 $getmethod = 'get' . $subtablename;
                 $this->assertTrue(is_array($result->$getmethod()));
             }
             $this->assertEquals('Buttons', $result->getButtons()['Name']);
+            $this->assertTrue(is_array($result->getButtons()['Entries']));
+            $this->assertEquals('LineButtons', $result->getLineButtons()['Name']);
+            $this->assertTrue(is_array($result->getButtons()['Entries']));
         }
 
 
