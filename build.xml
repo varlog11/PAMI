@@ -57,15 +57,15 @@
       <fileset dir="build/doc/html">
         <include name="*.html"/>
         <exclude name="index.html"/>
-        <include name="classes/*"/>
-        <include name="css/*"/>
-        <include name="files/*"/>
-        <include name="font/*"/>
-        <include name="graphs/*"/>
-        <include name="images/*"/>
-        <include name="js/*"/>
-        <include name="namespaces/*"/>
-        <include name="reports/*"/>
+        <include name="classes/**/*"/>
+        <include name="css/**/*"/>
+        <include name="files/**/*"/>
+        <include name="font/**/*"/>
+        <include name="graphs/**/*"/>
+        <include name="images/**/*"/>
+        <include name="js/**/*"/>
+        <include name="namespaces/**/*"/>
+        <include name="reports/**/*"/>
       </fileset>
     </copy>
   </target>
