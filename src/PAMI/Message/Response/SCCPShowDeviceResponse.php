@@ -734,102 +734,102 @@ class SCCPShowDeviceResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to ButtonEntries from the tables['Buttons']
+     * Returns events[] related to ButtonEntries from the tables['Buttons']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPDeviceButtonEntryEvent[])
      */
     public function getButtons()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('Buttons', $this->tables)) {
-            $res = $this->tables['Buttons'];
+            $res = $this->tables['Buttons']['Entries'];
         }
         return $res;
     }
 
     /**
-     * Returns events[] related to LineButtons from the tables['LineButtons']
+     * Returns events[] related to LineButtons from the tables['LineButtons']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPDeviceLineButtonEntryEvent[]
      */
     public function getLineButtons()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('LineButtons', $this->tables)) {
-            $res = $this->tables['LineButtons'];
+            $res = $this->tables['LineButtons']['Entries'];
         }
         return $res;
     }
 
     /**
-     * Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']
+     * Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPDeviceSpeeddialButtonEntryEvent[]
      */
     public function getSpeeddialButtons()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('SpeeddialButtons', $this->tables)) {
-            $res = $this->tables['SpeeddialButtons'];
+            $res = $this->tables['SpeeddialButtons']['Entries'];
         }
         return $res;
     }
 
 
     /**
-     * Returns events[] related to ServiceURLButtons from the tables['ServiceURLs']
+     * Returns events[] related to ServiceURLButtons from the tables['ServiceURLs']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPDeviceServiceURLButtonEntryEvent[]
      */
     public function getServiceURLButtons()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('ServiceURLButtons', $this->tables)) {
-            $res = $this->tables['ServiceURLButtons'];
+            $res = $this->tables['ServiceURLButtons']['Entries'];
         }
         return $res;
     }
 
 
     /**
-     * Returns events[] related to FeatureButtons from the tables['FeatureButtons']
+     * Returns events[] related to FeatureButtons from the tables['FeatureButtons']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent[]
      */
     public function getFeatureButtons()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('FeatureButtons', $this->tables)) {
-            $res = $this->tables['FeatureButtons'];
+            $res = $this->tables['FeatureButtons']['Entries'];
         }
         return $res;
     }
 
 
     /**
-     * Returns events[] related to Variables from the tables['Variables']
+     * Returns events[] related to Variables from the tables['Variables']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPVariablesEntryEvent[]
      */
     public function getVariables()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('Variables', $this->tables)) {
-            $res = $this->tables['Variables'];
+            $res = $this->tables['Variables']['Entries'];
         }
         return $res;
     }
 
     /**
-     * Returns events[] related to DeviceCallStatistics from the tables['CallStatistics']
+     * Returns events[] related to DeviceCallStatistics from the tables['CallStatistics']['Entries']
      *
-     * @return events[]
+     * @return PAMI\Message\Event\SCCPDeviceStatisticsEntryEvent[]
      */
     public function getCallStatistics()
     {
         $res = array();
         if ($this->hasTable() && array_key_exists('CallStatistics', $this->tables)) {
-            $res = $this->tables['CallStatistics'];
+            $res = $this->tables['CallStatistics']['Entries'];
         }
         return $res;
     }

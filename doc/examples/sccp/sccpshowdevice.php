@@ -54,7 +54,7 @@ try {
     $response = $pami->send(new SCCPShowDeviceAction("SEP00AABBCCDDEE"));
     $linebuttons = $response->getLineButtons();
     print("LineButtonName: " . $linebuttons['Name'] . "\n");
-    foreach($linebuttons['Entries'] as $entry) {
+    foreach($linebuttons as $entry) {
         print("LineButton:\n");
         if ($entry instanceof PAMI\Message\Event\SCCPDeviceLineEntryEvent) {
             print(" - Name:" . $entry->getName() . "\n");
