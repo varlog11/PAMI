@@ -8,7 +8,7 @@
 >
   <filter>
     <whitelist>
-      <directory suffix=".php">../src/mg/PAMI</directory>
+      <directory suffix=".php">../src/PAMI</directory>
     </whitelist>
   </filter>
   <testsuites>
@@ -35,6 +35,9 @@
     </testsuite>
     <testsuite name="SCCPEvents">
       <directory suffix=".php">sccp_events</directory>
+    </testsuite>
+    <testsuite name="XSLT">
+      <directory suffix=".php">xslt</directory>
     </testsuite>
   </testsuites>
 </phpunit>
