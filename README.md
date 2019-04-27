@@ -255,154 +255,207 @@ can still catch them. If you catch one of these, please report it!
 
 # Currently Supported Actions
 
-* AGI
-* AbsoluteTimeout
-* ActionMessage.php
-* AgentLogoff
-* Agents
-* AttendedTransfer
-* BlindTransfer
-* Bridge
-* BridgeInfo
-* BridgeList
-* Challenge
-* ChangeMonitor
-* Command
-* ConfbridgeKick
-* ConfbridgeList
-* ConfbridgeListRooms
-* ConfbridgeLock
-* ConfbridgeMute
-* ConfbridgeStartRecord
-* ConfbridgeStopRecord
-* ConfbridgeUnlock
-* ConfbridgeUnmute
-* CoreSettings
-* CoreShowChannels
-* CoreStatus
-* CreateConfig
-* DAHDIDNDOff
-* DAHDIDNDOn
-* DAHDIDialOffHook
-* DAHDIHangup
-* DAHDIRestart
-* DAHDIShowChannels
-* DAHDITransfer
-* DBDel
-* DBDelTree
-* DBGet
-* DBPut
-* DialplanExtensionAdd
-* DongleReload
-* DongleReset
-* DongleRestart
-* DongleSendPDU
-* DongleSendSMS
-* DongleSendUSSD
-* DongleShowDevices
-* DongleStart
-* DongleStop
-* Events
-* ExtensionState
-* GetConfig
-* GetConfigJSON
-* GetVar
-* Hangup
-* JabberSend
-* ListCategories
-* ListCommands
-* LocalOptimizeAway
-* Login
-* Logoff
-* MailboxCount
-* MailboxStatus
-* MeetmeList
-* MeetmeMute
-* MeetmeUnmute
-* MixMonitor
-* MixMonitorMute
-* ModuleCheck
-* ModuleLoad
-* ModuleReload
-* ModuleUnload
-* Monitor
-* Originate
-* Park
-* ParkedCalls
-* PauseMonitor
-* Ping
-* PlayDTMF
-* QueueAdd
-* QueueLog
-* QueueMemberRingInUse.php
-* QueuePause
-* QueuePenalty
-* QueueReload
-* QueueRemove
-* QueueReset
-* QueueRule
-* QueueStatus
-* QueueSummary
-* QueueUnpause
-* Queues
-* Redirect
-* Reload
-* SendText
-* SetVar
-* ShowDialPlan
-* Status
-* StopMixMonitor
-* StopMonitor
-* UnpauseMonitor
-* UpdateConfig
-* UserEvent
-* VGSMSMSTx
-* VoicemailUsersList
-* WaitEvent
-* SIPNotify
-* SIPPeers
-* SIPQualifyPeer
-* SIPShowPeer
-* SIPShowRegistry
-* PJSIPQualify
-* PJSIPRegister
-* PJSIPUnregister
-* PJSIPShowEndpoint
-* PJSIPShowEndpoints
-* PJSIPShowRegistrationsInbound
-* PJSIPShowRegistrationsOutbound
-* PJSIPShowResourceLists
-* PJSIPShowSubscriptionsInbound
-* PJSIPShowSubscriptionsOutbound
-* SCCPAnswerCall
-* SCCPConference
-* SCCPDeviceAddLine
-* SCCPDeviceRestart
-* SCCPDeviceSetDND
-* SCCPDeviceUpdate
-* SCCPDndDevice
-* SCCPHangupCall
-* SCCPHoldCall
-* SCCPLineForwardUpdate
-* SCCPMessageDevice
-* SCCPMessageDevices
-* SCCPStartCall
-* SCCPSystemMessage
-* SCCPTokenAck
-* SCCPConfigMetaData
-* SCCPShowChannels
-* SCCPShowConference
-* SCCPShowConferences
-* SCCPShowDevice
-* SCCPShowDevices
-* SCCPShowGlobals
-* SCCPShowHintLineStates
-* SCCPShowHintSubscriptions
-* SCCPShowLine
-* SCCPShowLines
-* SCCPShowMWISubscriptions
-* SCCPShowSessions
-* SCCPShowSoftkeySets
+ * AbsoluteTimeout
+ * Action
+ * ActionMessage.php
+ * AgentLogoff
+ * Agents
+ * AGI
+ * AttendedTransfer
+ * Atxfer
+ * BlindTransfer
+ * Bridge
+ * BridgeDestroy
+ * BridgeInfo
+ * BridgeKick
+ * BridgeList
+ * BridgeTechnologyList
+ * BridgeTechnologySuspend
+ * BridgeTechnologyUnsuspend
+ * CancelAtxfer
+ * Challenge
+ * ChangeMonitor
+ * Command
+ * ConfbridgeKick
+ * ConfbridgeList
+ * ConfbridgeListRooms
+ * ConfbridgeLock
+ * ConfbridgeMute
+ * ConfbridgeSetSingleVideoSrc
+ * ConfbridgeStartRecord
+ * ConfbridgeStopRecord
+ * ConfbridgeUnlock
+ * ConfbridgeUnmute
+ * ControlPlayback
+ * CoreSettings
+ * CoreShowChannels
+ * CoreStatus
+ * CreateConfig
+ * DAHDIDialOffHook
+ * DAHDIDNDOff
+ * DAHDIDNDOn
+ * DAHDIHangup
+ * DAHDIRestart
+ * DAHDIShowChannels
+ * DAHDITransfer
+ * DBDel
+ * DBDelTree
+ * DBGet
+ * DBPut
+ * DeviceStateList
+ * DialplanExtensionAdd
+ * DialplanExtensionRemove
+ * DongleReload
+ * DongleReset
+ * DongleRestart
+ * DongleSendPDU
+ * DongleSendSMS
+ * DongleSendUSSD
+ * DongleShowDevices
+ * DongleStart
+ * DongleStop
+ * Events
+ * ExtensionState
+ * ExtensionStateList
+ * FAXSession
+ * FAXSessions
+ * FAXStats
+ * Filter
+ * GetConfig
+ * GetConfigJSON
+ * GetVar
+ * Hangup
+ * IAXnetstats
+ * IAXpeerlist
+ * IAXpeers
+ * IAXregistry
+ * JabberSend
+ * ListCategories
+ * ListCommands
+ * LocalOptimizeAway
+ * LoggerRotate
+ * Login
+ * Logoff
+ * MailboxCount
+ * MailboxStatus
+ * MeetmeList
+ * MeetmeListRooms
+ * MeetmeMute
+ * MeetmeUnmute
+ * MixMonitor
+ * MixMonitorMute
+ * ModuleCheck
+ * ModuleLoad
+ * ModuleReload
+ * ModuleUnload
+ * Monitor
+ * MuteAudio
+ * MWIDelete
+ * MWIGet
+ * MWIUpdate
+ * Originate
+ * Park
+ * ParkedCalls
+ * Parkinglots
+ * PauseMonitor
+ * Ping
+ * PJSIPNotify
+ * PJSIPQualify
+ * PJSIPRegister
+ * PJSIPShowAors
+ * PJSIPShowAuths
+ * PJSIPShowContacts
+ * PJSIPShowEndpoint
+ * PJSIPShowEndpoints
+ * PJSIPShowRegistrationInboundContactStatuses
+ * PJSIPShowRegistrationsInbound
+ * PJSIPShowRegistrationsOutbound
+ * PJSIPShowResourceLists
+ * PJSIPShowSubscriptionsInbound
+ * PJSIPShowSubscriptionsOutbound
+ * PJSIPUnregister
+ * PlayDTMF
+ * PresenceState
+ * PresenceStateList
+ * PRIDebugFileSet
+ * PRIDebugFileUnset
+ * PRIDebugSet
+ * PRIShowSpans
+ * QueueAdd
+ * QueueChangePriorityCaller
+ * QueueLog
+ * QueueMemberRingInUse
+ * QueueMemberRingInUse.php
+ * QueuePause
+ * QueuePenalty
+ * QueueReload
+ * QueueRemove
+ * QueueReset
+ * QueueRule
+ * Queues
+ * QueueStatus
+ * QueueSummary
+ * QueueUnpause
+ * Redirect
+ * Reload
+ * SCCPAnswerCall
+ * SCCPConference
+ * SCCPConfigMetaData
+ * SCCPDeviceAddLine
+ * SCCPDeviceRestart
+ * SCCPDeviceSetDND
+ * SCCPDeviceUpdate
+ * SCCPDndDevice
+ * SCCPHangupCall
+ * SCCPHoldCall
+ * SCCPLineForwardUpdate
+ * SCCPMessageDevice
+ * SCCPMessageDevices
+ * SCCPShowChannels
+ * SCCPShowConference
+ * SCCPShowConferences
+ * SCCPShowDevice
+ * SCCPShowDevices
+ * SCCPShowGlobals
+ * SCCPShowHintLineStates
+ * SCCPShowHintSubscriptions
+ * SCCPShowLine
+ * SCCPShowLines
+ * SCCPShowMWISubscriptions
+ * SCCPShowSessions
+ * SCCPShowSoftkeySets
+ * SCCPStartCall
+ * SCCPSystemMessage
+ * SCCPTokenAck
+ * SendText
+ * SetVar
+ * ShowDialPlan
+ * SIPNotify
+ * SIPPeers
+ * SIPpeerstatus
+ * SIPQualifyPeer
+ * SIPShowPeer
+ * SIPShowRegistry
+ * SKINNYdevices
+ * SKINNYlines
+ * SKINNYshowdevice
+ * SKINNYshowline
+ * SorceryMemoryCacheExpire
+ * SorceryMemoryCacheExpireObject
+ * SorceryMemoryCachePopulate
+ * SorceryMemoryCacheStale
+ * SorceryMemoryCacheStaleObject
+ * Status
+ * StopMixMonitor
+ * StopMonitor
+ * UnpauseMonitor
+ * UpdateConfig
+ * UserEvent
+ * VGSMSMSTx
+ * VoicemailRefresh
+ * VoicemailUsersList
+ * VoicemailUserStatus
+ * WaitEvent
 
 ## Debugging, logging
 
