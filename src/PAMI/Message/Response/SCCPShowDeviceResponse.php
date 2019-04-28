@@ -30,6 +30,13 @@
 namespace PAMI\Message\Response;
 
 use PAMI\Message\Response\Response;
+use PAMI\Message\Event\SCCPDeviceButtonEntryEvent;
+use PAMI\Message\Event\SCCPDeviceLineButtonEntryEvent;
+use PAMI\Message\Event\SCCPDeviceSpeeddialButtonEntryEvent;
+use PAMI\Message\Event\SCCPDeviceServiceURLButtonEntryEvent;
+use PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent;
+use PAMI\Message\Event\SCCPVariablesEntryEvent;
+use PAMI\Message\Event\SCCPDeviceStatisticsEntryEvent;
 use PAMI\Exception\PAMIException;
 
 /**
@@ -734,7 +741,9 @@ class SCCPShowDeviceResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to ButtonEntries from the tables['Buttons']['Entries']
+     * Returns an array of SCCPDeviceButtonEntryEvent's
+     *
+     * The returned array contains PAMI\Message\Event\SCCPDeviceButtonEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPDeviceButtonEntryEvent[])
      */
@@ -748,7 +757,9 @@ class SCCPShowDeviceResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to LineButtons from the tables['LineButtons']['Entries']
+     * Returns an array of SCCPDeviceLineButtonEntryEvent's
+     *
+     *The returned array contains PAMI\Message\Event\SCCPDeviceLineButtonEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPDeviceLineButtonEntryEvent[]
      */
@@ -762,7 +773,9 @@ class SCCPShowDeviceResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to SpeeddialButtons from the tables['SpeeddialButtons']['Entries']
+     * Returns an array of SCCPDeviceSpeeddialButtonEntryEvent's
+     *
+     *The returned array contains PAMI\Message\Event\SCCPDeviceSpeeddialButtonEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPDeviceSpeeddialButtonEntryEvent[]
      */
@@ -777,7 +790,9 @@ class SCCPShowDeviceResponse extends ComplexResponse
 
 
     /**
-     * Returns events[] related to ServiceURLButtons from the tables['ServiceURLs']['Entries']
+     * Returns an array of SCCPDeviceServiceURLButtonEntryEvent's
+     *
+     *The returned array contains PAMI\Message\Event\SCCPDeviceServiceURLButtonEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPDeviceServiceURLButtonEntryEvent[]
      */
@@ -792,8 +807,10 @@ class SCCPShowDeviceResponse extends ComplexResponse
 
 
     /**
-     * Returns events[] related to FeatureButtons from the tables['FeatureButtons']['Entries']
+     * Returns an array of SCCPDeviceFeatureButtonEntryEvent's
      *
+     *The returned array contains PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent objects
+     * 
      * @return PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent[]
      */
     public function getFeatureButtons()
@@ -807,9 +824,11 @@ class SCCPShowDeviceResponse extends ComplexResponse
 
 
     /**
-     * Returns events[] related to Variables from the tables['Variables']['Entries']
+     * Returns an array of SCCPVariableEntryEvent's
      *
-     * @return PAMI\Message\Event\SCCPVariablesEntryEvent[]
+     * The returned array contains PAMI\Message\Event\SCCPVariableEntryEvent objects
+     *
+     * @return PAMI\Message\Event\SCCPVariableEntryEvent[]
      */
     public function getVariables()
     {
@@ -821,7 +840,9 @@ class SCCPShowDeviceResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to DeviceCallStatistics from the tables['CallStatistics']['Entries']
+     * Returns an array of SCCPDeviceCalStatisticEntryEvent's
+     *
+     * The returned array contains PAMI\Message\Event\SCCPDeviceStatisticsEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPDeviceStatisticsEntryEvent[]
      */

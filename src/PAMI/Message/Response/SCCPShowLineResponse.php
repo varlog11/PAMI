@@ -30,6 +30,8 @@
 namespace PAMI\Message\Response;
 
 use PAMI\Message\Response\Response;
+use PAMI\Message\Event\SCCPVariablesEntryEvent;
+use PAMI\Message\Event\SCCPMailboxEntryEvent;
 
 /**
  * A sccp show line response message from ami.
@@ -465,7 +467,9 @@ class SCCPShowLineResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to Mailboxes from the tables['Mailboxes']
+     * Returns an array of SCCPSCCPMailboxEntryEvent's
+     *
+     * The returned array contains PAMI\Message\Event\SCCPMailboxEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPMailboxEntryEvent[]
      */
@@ -479,7 +483,9 @@ class SCCPShowLineResponse extends ComplexResponse
     }
 
     /**
-     * Returns events[] related to Variables from the tables['Variables']
+     * Returns an array of SCCPVariableEntryEvent's
+     *
+     * The returned array contains PAMI\Message\Event\SCCPVariableEntryEvent objects
      *
      * @return PAMI\Message\Event\SCCPVariableEntryEvent[]
      */
