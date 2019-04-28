@@ -23,6 +23,7 @@
     <mkdir dir="build/doc/md" mode="0755"/>
     <mkdir dir="build/logs" mode="0755"/>
     <mkdir dir="build/coverage-html" mode="0755"/>
+    <mkdir dir="build/coverage-xml" mode="0755"/>
   </target>
 
   <target name="cpd">
@@ -44,30 +45,34 @@
   </target>
 
   <target name="docxml">
-    <exec command="vendor/bin/phpdoc --template=xml -t build/doc/xml -d src --validate --sourcecode --force --log"
+    <exec command="vendor/bin/phpdoc --template=xml -t build/doc/xml -d src --validate --sourcecode --force --cache-folder=build/doc/.cache --progressbar --title 'dkgroot-PAMI' --defaultpackagename 'PAMI' --log"
       checkreturn="true"
       passthru="true"/>
   </target>
 
-  <target name="dochtml">
-    <exec command="vendor/bin/phpdoc -t build/doc/html -d src --validate --sourcecode --force --log --template='zend'" 
+  <target name="dochtml_old">
+    <!-- generate files -->
+    <exec command="vendor/bin/phpdoc -d src -t build/doc/html --cache-folder=build/doc/.cache --validate --sourcecode --progressbar --title 'dkgroot-PAMI' --defaultpackagename 'PAMI' --log"
+      checkreturn="true"
+      passthru="true"/>
+    <!-- switch templates -->
+    <exec command="vendor/bin/phpdoc --template=zend -d src -t build/doc/html --cache-folder=build/doc/.cache --validate --sourcecode --progressbar --title 'dkgroot-PAMI' --defaultpackagename 'PAMI' --log"
       checkreturn="true"
       passthru="true"/>
     <copy todir="docs" overwrite="true">
       <fileset dir="build/doc/html">
-        <include name="*.html"/>
-        <exclude name="index.html"/>
-        <include name="classes/**/*"/>
-        <include name="css/**/*"/>
-        <include name="files/**/*"/>
-        <include name="font/**/*"/>
-        <include name="graphs/**/*"/>
-        <include name="images/**/*"/>
-        <include name="js/**/*"/>
-        <include name="namespaces/**/*"/>
-        <include name="reports/**/*"/>
+        <include name="**"/>
       </fileset>
     </copy>
+  </target>
+
+  <target name="dochtml">
+    <exec command="vendor/bin/phploc --log-xml=build/phploc.xml ./src"
+      checkreturn="true"
+      passthru="false"/>
+    <exec command="vendor/bin/phpdox"
+      checkreturn="true"
+      passthru="true"/>
   </target>
 
   <target name="docmd">
@@ -80,6 +85,7 @@
       </fileset>
     </copy>
   </target>
+
 
   <target name="test">
     <exec command="vendor/bin/phpunit -v --debug -c test/resources/phpunit.xml"
