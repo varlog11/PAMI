@@ -114,144 +114,225 @@ use, so your contributions may make the difference! ;)
 Unknown (not yet implemented) events will be reported as UnknownEvent, so you
 can still catch them. If you catch one of these, please report it!
 
-* AGIExecEnd
-* AGIExec
-* AGIExecStart
-* AgentConnect
-* Agentlogin
-* Agentlogoff
-* Agents
-* AorDetail
-* AsyncAGIEnd
-* AsyncAGI
-* AsyncAGIExec
-* AsyncAGIStart
-* AttendedTransfer
-* AuthDetail
-* BlindTransfer
-* BridgeCreate
-* BridgeDestroy
-* BridgeEnter
-* Bridge
-* BridgeInfoChannel
-* BridgeLeave
-* BridgeListItem
-* CEL
-* CallAnswered
-* CallForward
-* Cdr
-* ChannelUpdate
-* ConfbridgeEnd
-* ConfbridgeJoin
-* ConfbridgeLeave
-* ConfbridgeList
-* ConfbridgeListRooms
-* ConfbridgeMute
-* ConfbridgeStart
-* ConfbridgeTalking
-* ConfbridgeUnmute
-* ContactStatusDetail
-* CoreShowChannel
-* DAHDIChannel
-* DAHDIShowChannels
-* DBGetResponse
-* DND
-* DNDState
-* DTMFBegin
-* DTMFEnd
-* DTMF
-* DeviceStateChange
-* DeviceStatus
-* DialBegin
-* DialEnd
-* Dial
-* DongleNewCUSD
-* DongleNewUSSDBase64
-* DongleNewUSSD
-* DongleSMSStatus
-* DongleStatus
-* DongleUSSDStatus
-* EndpointDetail
-* EndpointList
-* EventMessage.php
-* ExtensionStatus
-* Factory
-* Impl
-* EventFactoryImpl.php
-* FullyBooted
-* Hangup
-* Hold
-* IdentifyDetail
-* InboundRegistrationDetail
-* JabberEvent
-* Join
-* Leave
-* Link
-* ListDialplan
-* Masquerade
-* MessageWaiting
-* MusicOnHold
-* MusicOnHoldStart
-* MusicOnHoldStop
-* NewAccountCode
-* NewCallerid
-* Newchannel
-* Newexten
-* Newstate
-* OriginateResponse
-* OutboundRegistrationDetail
-* OutboundSubscriptionDetail
-* ParkedCall
-* ParkedCallGiveUp
-* ParkedCallTimeOut
-* PeerStatus
-* QueueCallerAbandon
-* QueueCallerJoin
-* QueueCallerLeave
-* QueueMemberAdded
-* QueueMember
-* QueueMemberPaused
-* QueueMemberRemoved
-* QueueMemberStatus
-* QueueParams
-* QueueSummary
-* RTCPReceived
-* RTCPReceiverStat
-* RTCPSent
-* RTPReceiverStat
-* RTPSenderStat
-* Registry
-* Reload
-* Rename
-* RequestBadFormat
-* ResourceListDetail
-* SCCPConfEnd
-* SCCPConfEntered
-* SCCPConfLeave
-* SCCPConfLeft
-* SCCPConfLock
-* SCCPConfParticipantKicked
-* SCCPConfParticipantMute
-* SCCPConfParticipantPromotion
-* SCCPConfStart
-* SCCPConfStarted
-* SCCPShowDevice
-* SCCPShowLine
-* Status
-* Success
-* SuccessfulAuth
-* TableEnd
-* TableStart
-* Transfer
-* TransportDetail
-* UnParkedCall
-* Unknown
-* Unlink
-* UserEvent
-* VarSet
-* VgsmMeState
-* VgsmNetState
-* VgsmSmsRx
+ * AgentCalled
+ * AgentComplete
+ * AgentConnect
+ * AgentDump
+ * Agentlogin
+ * Agentlogoff
+ * AgentRingNoAnswer
+ * Agents
+ * AGIExec
+ * AGIExecEnd
+ * AGIExecStart
+ * Alarm
+ * AlarmClear
+ * AorDetail
+ * AorList
+ * AorListComplete
+ * AsyncAGI
+ * AsyncAGIEnd
+ * AsyncAGIExec
+ * AsyncAGIStart
+ * AttendedTransfer
+ * AuthDetail
+ * AuthList
+ * AuthListComplete
+ * AuthMethodNotAllowed
+ * BlindTransfer
+ * Bridge
+ * BridgeCreate
+ * BridgeDestroy
+ * BridgeEnter
+ * BridgeInfoChannel
+ * BridgeLeave
+ * BridgeListItem
+ * BridgeVideoSourceUpdate
+ * CallAnswered
+ * CallForward
+ * Cdr
+ * CEL
+ * ChallengeResponseFailed
+ * ChallengeSent
+ * ChannelTalkingStart
+ * ChannelTalkingStop
+ * ChannelUpdate
+ * ChanSpyStart
+ * ChanSpyStop
+ * ConfbridgeEnd
+ * ConfbridgeJoin
+ * ConfbridgeLeave
+ * ConfbridgeList
+ * ConfbridgeListRooms
+ * ConfbridgeMute
+ * ConfbridgeRecord
+ * ConfbridgeStart
+ * ConfbridgeStopRecord
+ * ConfbridgeTalking
+ * ConfbridgeUnmute
+ * ContactList
+ * ContactListComplete
+ * ContactStatus
+ * ContactStatusDetail
+ * CoreShowChannel
+ * DAHDIChannel
+ * DAHDIShowChannels
+ * DBGetResponse
+ * DeviceStateChange
+ * DeviceStateListComplete
+ * DeviceStatus
+ * Dial
+ * DialBegin
+ * DialEnd
+ * DialState
+ * DND
+ * DNDState
+ * DongleNewCUSD
+ * DongleNewUSSD
+ * DongleNewUSSDBase64
+ * DongleSMSStatus
+ * DongleStatus
+ * DongleUSSDStatus
+ * DTMF
+ * DTMFBegin
+ * DTMFEnd
+ * EndpointDetail
+ * EndpointDetailComplete
+ * EndpointList
+ * EventFactoryImpl.php
+ * EventMessage.php
+ * ExtensionStateListComplete
+ * ExtensionStatus
+ * Factory
+ * FailedACL
+ * FAXSession
+ * FAXSessionsComplete
+ * FAXSessionsEntry
+ * FAXStats
+ * FAXStatus
+ * FullyBooted
+ * Hangup
+ * HangupHandlerPop
+ * HangupHandlerPush
+ * HangupHandlerRun
+ * HangupRequest
+ * Hold
+ * IdentifyDetail
+ * Impl
+ * InboundRegistrationDetail
+ * InvalidAccountID
+ * InvalidPassword
+ * InvalidTransport
+ * JabberEvent
+ * Join
+ * Leave
+ * Link
+ * ListDialplan
+ * Load
+ * LoadAverageLimit
+ * LocalBridge
+ * LocalOptimizationBegin
+ * LocalOptimizationEnd
+ * Masquerade
+ * MCID
+ * MeetmeEnd
+ * MeetmeJoin
+ * MeetmeLeave
+ * MeetmeMute
+ * MeetmeTalking
+ * MeetmeTalkRequest
+ * MemoryLimit
+ * MessageWaiting
+ * MiniVoiceMail
+ * MonitorStart
+ * MonitorStop
+ * MusicOnHold
+ * MusicOnHoldStart
+ * MusicOnHoldStop
+ * MWIGet
+ * MWIGetComplete
+ * NewAccountCode
+ * NewCallerid
+ * Newchannel
+ * NewConnectedLine
+ * Newexten
+ * Newstate
+ * OriginateResponse
+ * OutboundRegistrationDetail
+ * OutboundSubscriptionDetail
+ * ParkedCall
+ * ParkedCallGiveUp
+ * ParkedCallSwap
+ * ParkedCallTimeOut
+ * PeerStatus
+ * Pickup
+ * PresenceStateChange
+ * PresenceStateListComplete
+ * PresenceStatus
+ * QueueCallerAbandon
+ * QueueCallerJoin
+ * QueueCallerLeave
+ * QueueMember
+ * QueueMemberAdded
+ * QueueMemberPause
+ * QueueMemberPaused
+ * QueueMemberPenalty
+ * QueueMemberRemoved
+ * QueueMemberRinginuse
+ * QueueMemberStatus
+ * QueueParams
+ * QueueSummary
+ * ReceiveFAX
+ * Registry
+ * Reload
+ * Rename
+ * RequestBadFormat
+ * RequestNotAllowed
+ * RequestNotSupported
+ * ResourceListDetail
+ * RTCPReceived
+ * RTCPReceiverStat
+ * RTCPSent
+ * RTPReceiverStat
+ * RTPSenderStat
+ * SCCPConfEnd
+ * SCCPConfEntered
+ * SCCPConfLeave
+ * SCCPConfLeft
+ * SCCPConfLock
+ * SCCPConfParticipantKicked
+ * SCCPConfParticipantMute
+ * SCCPConfParticipantPromotion
+ * SCCPConfStart
+ * SCCPConfStarted
+ * SCCPShowDevice
+ * SCCPShowLine
+ * SendFAX
+ * SessionLimit
+ * SessionTimeout
+ * Shutdown
+ * SIPQualifyPeerDone
+ * SoftHangupRequest
+ * SpanAlarm
+ * SpanAlarmClear
+ * Status
+ * Success
+ * SuccessfulAuth
+ * TableEnd
+ * TableStart
+ * Transfer
+ * TransportDetail
+ * UnexpectedAddress
+ * Unhold
+ * Unknown
+ * Unlink
+ * Unload
+ * UnParkedCall
+ * UserEvent
+ * VarSet
+ * VgsmMeState
+ * VgsmNetState
+ * VgsmSmsRx
 
 # Currently Supported Actions
 
