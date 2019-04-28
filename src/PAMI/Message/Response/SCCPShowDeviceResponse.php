@@ -810,7 +810,7 @@ class SCCPShowDeviceResponse extends ComplexResponse
      * Returns an array of SCCPDeviceFeatureButtonEntryEvent's
      *
      *The returned array contains PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent objects
-     * 
+     *
      * @return PAMI\Message\Event\SCCPDeviceFeatureButtonEntryEvent[]
      */
     public function getFeatureButtons()
