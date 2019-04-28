@@ -2109,6 +2109,7 @@ namespace PAMI\Client\Impl {
                 $client->process();
             }
             $event = SomeListenerClass::$event;
+            //$this->assertInstanceOf($eventClass, $event);
             foreach ($values as $key => $value) {
                 if (isset($getters[$eventName][$key])) {
                     $methodName = 'get' . $getters[$eventName][$key];
