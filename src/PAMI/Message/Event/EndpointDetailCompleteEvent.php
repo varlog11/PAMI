@@ -75,8 +75,4 @@ class EndpointDetailCompleteEvent extends EventMessage
     {
         return $this->getKey('ListItems');
     }
-
-    
-} 
-?>
-  
+}

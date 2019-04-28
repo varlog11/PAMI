@@ -1,7 +1,7 @@
 <?php
 /**
  * ReceiveFAX Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ReceiveFAX Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -291,8 +291,4 @@ class ReceiveFAXEvent extends EventMessage
     {
         return $this->getKey('FileName');
     }
-
-    
-} 
-?>
-  
+}

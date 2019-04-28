@@ -1,7 +1,7 @@
 <?php
 /**
  * AuthMethodNotAllowed Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * AuthMethodNotAllowed Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -183,8 +183,4 @@ class AuthMethodNotAllowedEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

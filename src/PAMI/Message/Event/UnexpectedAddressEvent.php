@@ -1,7 +1,7 @@
 <?php
 /**
  * UnexpectedAddress Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * UnexpectedAddress Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -183,8 +183,4 @@ class UnexpectedAddressEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

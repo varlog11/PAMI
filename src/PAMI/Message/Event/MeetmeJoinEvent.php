@@ -1,7 +1,7 @@
 <?php
 /**
  * MeetmeJoin Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MeetmeJoin Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -243,8 +243,4 @@ class MeetmeJoinEvent extends EventMessage
     {
         return $this->getKey('Linkedid');
     }
-
-    
-} 
-?>
-  
+}

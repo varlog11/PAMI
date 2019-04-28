@@ -1,7 +1,7 @@
 <?php
 /**
  * SpanAlarm Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * SpanAlarm Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -75,8 +75,4 @@ class SpanAlarmEvent extends EventMessage
     {
         return $this->getKey('Alarm');
     }
-
-    
-} 
-?>
-  
+}

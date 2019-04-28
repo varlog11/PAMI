@@ -1,7 +1,7 @@
 <?php
 /**
  * ConfbridgeStopRecord Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ConfbridgeStopRecord Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -159,8 +159,4 @@ class ConfbridgeStopRecordEvent extends EventMessage
     {
         return $this->getKey('BridgeVideoSource');
     }
-
-    
-} 
-?>
-  
+}

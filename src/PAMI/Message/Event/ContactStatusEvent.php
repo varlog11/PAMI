@@ -1,7 +1,7 @@
 <?php
 /**
  * ContactStatus Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ContactStatus Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -111,8 +111,4 @@ class ContactStatusEvent extends EventMessage
     {
         return $this->getKey('RoundtripUsec');
     }
-
-    
-} 
-?>
-  
+}

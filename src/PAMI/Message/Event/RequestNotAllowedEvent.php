@@ -1,7 +1,7 @@
 <?php
 /**
  * RequestNotAllowed Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * RequestNotAllowed Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -195,8 +195,4 @@ class RequestNotAllowedEvent extends EventMessage
     {
         return $this->getKey('RequestParams');
     }
-
-    
-} 
-?>
-  
+}

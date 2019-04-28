@@ -1,7 +1,7 @@
 <?php
 /**
  * FAXSession Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * FAXSession Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -183,8 +183,4 @@ class FAXSessionEvent extends EventMessage
     {
         return $this->getKey('TotalBadLines');
     }
-
-    
-} 
-?>
-  
+}

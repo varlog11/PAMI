@@ -1,7 +1,7 @@
 <?php
 /**
  * ChannelTalkingStop Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ChannelTalkingStop Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -231,8 +231,4 @@ class ChannelTalkingStopEvent extends EventMessage
     {
         return $this->getKey('Duration');
     }
-
-    
-} 
-?>
-  
+}

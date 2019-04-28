@@ -75,8 +75,4 @@ class PresenceStateListCompleteEvent extends EventMessage
     {
         return $this->getKey('ListItems');
     }
-
-    
-} 
-?>
-  
+}

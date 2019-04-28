@@ -75,8 +75,4 @@ class ExtensionStateListCompleteEvent extends EventMessage
     {
         return $this->getKey('ListItems');
     }
-
-    
-} 
-?>
-  
+}

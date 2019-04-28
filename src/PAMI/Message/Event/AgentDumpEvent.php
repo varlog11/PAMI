@@ -1,7 +1,7 @@
 <?php
 /**
  * AgentDump Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * AgentDump Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -423,8 +423,4 @@ class AgentDumpEvent extends EventMessage
     {
         return $this->getKey('Interface');
     }
-
-    
-} 
-?>
-  
+}

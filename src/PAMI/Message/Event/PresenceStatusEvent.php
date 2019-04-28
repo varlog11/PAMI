@@ -1,7 +1,7 @@
 <?php
 /**
  * PresenceStatus Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * PresenceStatus Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -123,8 +123,4 @@ class PresenceStatusEvent extends EventMessage
     {
         return $this->getKey('Message');
     }
-
-    
-} 
-?>
-  
+}

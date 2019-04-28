@@ -1,7 +1,7 @@
 <?php
 /**
  * FAXStatus Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * FAXStatus Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -267,8 +267,4 @@ class FAXStatusEvent extends EventMessage
     {
         return $this->getKey('FileName');
     }
-
-    
-} 
-?>
-  
+}

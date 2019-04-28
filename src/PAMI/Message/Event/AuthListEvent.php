@@ -147,8 +147,4 @@ class AuthListEvent extends EventMessage
     {
         return $this->getKey('NonceLifetime');
     }
-
-    
-} 
-?>
-  
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * MonitorStop Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MonitorStop Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -219,8 +219,4 @@ class MonitorStopEvent extends EventMessage
     {
         return $this->getKey('Linkedid');
     }
-
-    
-} 
-?>
-  
+}

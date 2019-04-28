@@ -1,7 +1,7 @@
 <?php
 /**
  * MWIGetComplete Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MWIGetComplete Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -75,8 +75,4 @@ class MWIGetCompleteEvent extends EventMessage
     {
         return $this->getKey('ListItems');
     }
-
-    
-} 
-?>
-  
+}

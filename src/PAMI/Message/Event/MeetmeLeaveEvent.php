@@ -1,7 +1,7 @@
 <?php
 /**
  * MeetmeLeave Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MeetmeLeave Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -255,8 +255,4 @@ class MeetmeLeaveEvent extends EventMessage
     {
         return $this->getKey('Duration');
     }
-
-    
-} 
-?>
-  
+}

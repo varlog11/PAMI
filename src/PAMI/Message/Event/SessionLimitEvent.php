@@ -1,7 +1,7 @@
 <?php
 /**
  * SessionLimit Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * SessionLimit Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -171,8 +171,4 @@ class SessionLimitEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

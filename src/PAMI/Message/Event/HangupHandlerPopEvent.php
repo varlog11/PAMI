@@ -1,7 +1,7 @@
 <?php
 /**
  * HangupHandlerPop Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * HangupHandlerPop Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -231,8 +231,4 @@ class HangupHandlerPopEvent extends EventMessage
     {
         return $this->getKey('Handler');
     }
-
-    
-} 
-?>
-  
+}

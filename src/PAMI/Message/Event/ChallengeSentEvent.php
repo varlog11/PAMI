@@ -1,7 +1,7 @@
 <?php
 /**
  * ChallengeSent Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ChallengeSent Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -183,8 +183,4 @@ class ChallengeSentEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

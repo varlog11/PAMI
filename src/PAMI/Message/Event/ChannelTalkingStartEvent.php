@@ -1,7 +1,7 @@
 <?php
 /**
  * ChannelTalkingStart Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ChannelTalkingStart Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -219,8 +219,4 @@ class ChannelTalkingStartEvent extends EventMessage
     {
         return $this->getKey('Linkedid');
     }
-
-    
-} 
-?>
-  
+}

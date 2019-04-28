@@ -1,7 +1,7 @@
 <?php
 /**
  * Unload Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * Unload Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -75,8 +75,4 @@ class UnloadEvent extends EventMessage
     {
         return $this->getKey('Status');
     }
-
-    
-} 
-?>
-  
+}

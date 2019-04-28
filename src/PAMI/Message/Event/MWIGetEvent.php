@@ -1,7 +1,7 @@
 <?php
 /**
  * MWIGet Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MWIGet Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -87,8 +87,4 @@ class MWIGetEvent extends EventMessage
     {
         return $this->getKey('NewMessages');
     }
-
-    
-} 
-?>
-  
+}

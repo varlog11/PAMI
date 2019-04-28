@@ -1,7 +1,7 @@
 <?php
 /**
  * HangupRequest Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * HangupRequest Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -231,8 +231,4 @@ class HangupRequestEvent extends EventMessage
     {
         return $this->getKey('Cause');
     }
-
-    
-} 
-?>
-  
+}

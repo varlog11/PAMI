@@ -1,7 +1,7 @@
 <?php
 /**
  * SoftHangupRequest Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * SoftHangupRequest Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -231,8 +231,4 @@ class SoftHangupRequestEvent extends EventMessage
     {
         return $this->getKey('Cause');
     }
-
-    
-} 
-?>
-  
+}

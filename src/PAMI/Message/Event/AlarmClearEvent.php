@@ -1,7 +1,7 @@
 <?php
 /**
  * AlarmClear Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * AlarmClear Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -63,8 +63,4 @@ class AlarmClearEvent extends EventMessage
     {
         return $this->getKey('DAHDIChannel');
     }
-
-    
-} 
-?>
-  
+}

@@ -267,8 +267,4 @@ class ContactListEvent extends EventMessage
     {
         return $this->getKey('RoundtripUsec');
     }
-
-    
-} 
-?>
-  
+}

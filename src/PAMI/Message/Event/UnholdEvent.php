@@ -1,7 +1,7 @@
 <?php
 /**
  * Unhold Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * Unhold Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -219,8 +219,4 @@ class UnholdEvent extends EventMessage
     {
         return $this->getKey('Linkedid');
     }
-
-    
-} 
-?>
-  
+}

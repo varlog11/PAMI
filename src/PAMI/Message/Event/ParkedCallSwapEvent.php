@@ -1,7 +1,7 @@
 <?php
 /**
  * ParkedCallSwap Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ParkedCallSwap Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -447,8 +447,4 @@ class ParkedCallSwapEvent extends EventMessage
     {
         return $this->getKey('ParkingDuration');
     }
-
-    
-} 
-?>
-  
+}

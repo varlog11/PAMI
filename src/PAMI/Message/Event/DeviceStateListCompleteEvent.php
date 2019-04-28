@@ -75,8 +75,4 @@ class DeviceStateListCompleteEvent extends EventMessage
     {
         return $this->getKey('ListItems');
     }
-
-    
-} 
-?>
-  
+}

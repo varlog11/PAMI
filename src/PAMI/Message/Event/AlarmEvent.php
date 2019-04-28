@@ -1,7 +1,7 @@
 <?php
 /**
  * Alarm Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * Alarm Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -75,8 +75,4 @@ class AlarmEvent extends EventMessage
     {
         return $this->getKey('Alarm');
     }
-
-    
-} 
-?>
-  
+}

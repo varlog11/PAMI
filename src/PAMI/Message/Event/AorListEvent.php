@@ -195,8 +195,4 @@ class AorListEvent extends EventMessage
     {
         return $this->getKey('SupportPath');
     }
-
-    
-} 
-?>
-  
+}

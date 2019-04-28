@@ -1,7 +1,7 @@
 <?php
 /**
  * MCID Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MCID Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -531,8 +531,4 @@ class MCIDEvent extends EventMessage
     {
         return $this->getKey('MConnectedIDPres');
     }
-
-    
-} 
-?>
-  
+}

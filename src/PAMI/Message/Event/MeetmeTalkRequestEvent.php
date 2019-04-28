@@ -1,7 +1,7 @@
 <?php
 /**
  * MeetmeTalkRequest Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MeetmeTalkRequest Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -267,8 +267,4 @@ class MeetmeTalkRequestEvent extends EventMessage
     {
         return $this->getKey('Status');
     }
-
-    
-} 
-?>
-  
+}

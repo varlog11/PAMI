@@ -1,7 +1,7 @@
 <?php
 /**
  * Load Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * Load Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -75,8 +75,4 @@ class LoadEvent extends EventMessage
     {
         return $this->getKey('Status');
     }
-
-    
-} 
-?>
-  
+}

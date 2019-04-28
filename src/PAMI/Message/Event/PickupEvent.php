@@ -1,7 +1,7 @@
 <?php
 /**
  * Pickup Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * Pickup Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -387,8 +387,4 @@ class PickupEvent extends EventMessage
     {
         return $this->getKey('TargetLinkedid');
     }
-
-    
-} 
-?>
-  
+}

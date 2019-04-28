@@ -1,7 +1,7 @@
 <?php
 /**
  * MeetmeEnd Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MeetmeEnd Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -63,8 +63,4 @@ class MeetmeEndEvent extends EventMessage
     {
         return $this->getKey('Meetme');
     }
-
-    
-} 
-?>
-  
+}

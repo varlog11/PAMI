@@ -1,7 +1,7 @@
 <?php
 /**
  * FAXStats Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * FAXStats Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -123,8 +123,4 @@ class FAXStatsEvent extends EventMessage
     {
         return $this->getKey('FailedFAXes');
     }
-
-    
-} 
-?>
-  
+}

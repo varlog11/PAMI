@@ -1,7 +1,7 @@
 <?php
 /**
  * QueueMemberRinginuse Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * QueueMemberRinginuse Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -231,8 +231,4 @@ class QueueMemberRinginuseEvent extends EventMessage
     {
         return $this->getKey('Wrapuptime');
     }
-
-    
-} 
-?>
-  
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * InvalidAccountID Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * InvalidAccountID Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -171,8 +171,4 @@ class InvalidAccountIDEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

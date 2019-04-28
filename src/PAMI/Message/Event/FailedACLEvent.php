@@ -1,7 +1,7 @@
 <?php
 /**
  * FailedACL Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * FailedACL Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -183,8 +183,4 @@ class FailedACLEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

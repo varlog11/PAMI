@@ -1,7 +1,7 @@
 <?php
 /**
  * Shutdown Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * Shutdown Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -75,8 +75,4 @@ class ShutdownEvent extends EventMessage
     {
         return $this->getKey('Restart');
     }
-
-    
-} 
-?>
-  
+}

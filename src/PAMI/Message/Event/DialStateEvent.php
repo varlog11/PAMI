@@ -1,7 +1,7 @@
 <?php
 /**
  * DialState Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * DialState Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -411,8 +411,4 @@ class DialStateEvent extends EventMessage
     {
         return $this->getKey('Forward');
     }
-
-    
-} 
-?>
-  
+}

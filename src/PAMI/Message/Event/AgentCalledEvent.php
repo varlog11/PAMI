@@ -1,7 +1,7 @@
 <?php
 /**
  * AgentCalled Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * AgentCalled Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -423,8 +423,4 @@ class AgentCalledEvent extends EventMessage
     {
         return $this->getKey('Interface');
     }
-
-    
-} 
-?>
-  
+}

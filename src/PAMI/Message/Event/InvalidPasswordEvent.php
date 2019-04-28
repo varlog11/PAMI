@@ -1,7 +1,7 @@
 <?php
 /**
  * InvalidPassword Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * InvalidPassword Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -207,8 +207,4 @@ class InvalidPasswordEvent extends EventMessage
     {
         return $this->getKey('ReceivedHash');
     }
-
-    
-} 
-?>
-  
+}

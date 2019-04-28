@@ -1,7 +1,7 @@
 <?php
 /**
  * LocalBridge Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * LocalBridge Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -423,8 +423,4 @@ class LocalBridgeEvent extends EventMessage
     {
         return $this->getKey('LocalOptimization');
     }
-
-    
-} 
-?>
-  
+}

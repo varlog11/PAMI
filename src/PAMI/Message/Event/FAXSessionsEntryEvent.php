@@ -1,7 +1,7 @@
 <?php
 /**
  * FAXSessionsEntry Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * FAXSessionsEntry Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -135,8 +135,4 @@ class FAXSessionsEntryEvent extends EventMessage
     {
         return $this->getKey('Files');
     }
-
-    
-} 
-?>
-  
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * FAXSessionsComplete Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * FAXSessionsComplete Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -63,8 +63,4 @@ class FAXSessionsCompleteEvent extends EventMessage
     {
         return $this->getKey('Total');
     }
-
-    
-} 
-?>
-  
+}

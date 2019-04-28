@@ -99,8 +99,4 @@ class PresenceStateChangeEvent extends EventMessage
     {
         return $this->getKey('Message');
     }
-
-    
-} 
-?>
-  
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * MonitorStart Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * MonitorStart Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -219,8 +219,4 @@ class MonitorStartEvent extends EventMessage
     {
         return $this->getKey('Linkedid');
     }
-
-    
-} 
-?>
-  
+}

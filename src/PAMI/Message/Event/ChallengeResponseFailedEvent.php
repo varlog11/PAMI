@@ -1,7 +1,7 @@
 <?php
 /**
  * ChallengeResponseFailed Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ChallengeResponseFailed Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -207,8 +207,4 @@ class ChallengeResponseFailedEvent extends EventMessage
     {
         return $this->getKey('SessionTV');
     }
-
-    
-} 
-?>
-  
+}

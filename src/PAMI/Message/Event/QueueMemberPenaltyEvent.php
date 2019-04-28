@@ -1,7 +1,7 @@
 <?php
 /**
  * QueueMemberPenalty Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * QueueMemberPenalty Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -231,8 +231,4 @@ class QueueMemberPenaltyEvent extends EventMessage
     {
         return $this->getKey('Wrapuptime');
     }
-
-    
-} 
-?>
-  
+}

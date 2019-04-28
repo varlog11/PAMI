@@ -1,7 +1,7 @@
 <?php
 /**
  * AgentComplete Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * AgentComplete Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -459,8 +459,4 @@ class AgentCompleteEvent extends EventMessage
     {
         return $this->getKey('Reason');
     }
-
-    
-} 
-?>
-  
+}

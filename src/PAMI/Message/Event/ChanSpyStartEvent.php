@@ -1,7 +1,7 @@
 <?php
 /**
  * ChanSpyStart Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * ChanSpyStart Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -387,8 +387,4 @@ class ChanSpyStartEvent extends EventMessage
     {
         return $this->getKey('SpyeeLinkedid');
     }
-
-    
-} 
-?>
-  
+}

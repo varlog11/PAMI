@@ -1,7 +1,7 @@
 <?php
 /**
  * BridgeVideoSourceUpdate Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * BridgeVideoSourceUpdate Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -159,8 +159,4 @@ class BridgeVideoSourceUpdateEvent extends EventMessage
     {
         return $this->getKey('BridgePreviousVideoSource');
     }
-
-    
-} 
-?>
-  
+}

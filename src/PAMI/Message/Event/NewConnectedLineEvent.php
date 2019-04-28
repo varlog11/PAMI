@@ -1,7 +1,7 @@
 <?php
 /**
  * NewConnectedLine Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * NewConnectedLine Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -219,8 +219,4 @@ class NewConnectedLineEvent extends EventMessage
     {
         return $this->getKey('Linkedid');
     }
-
-    
-} 
-?>
-  
+}

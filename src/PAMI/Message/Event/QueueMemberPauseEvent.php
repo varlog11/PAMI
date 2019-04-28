@@ -1,7 +1,7 @@
 <?php
 /**
  * QueueMemberPause Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * QueueMemberPause Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -243,8 +243,4 @@ class QueueMemberPauseEvent extends EventMessage
     {
         return $this->getKey('Reason');
     }
-
-    
-} 
-?>
-  
+}

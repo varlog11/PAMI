@@ -1,7 +1,7 @@
 <?php
 /**
  * LocalOptimizationEnd Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * LocalOptimizationEnd Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -411,8 +411,4 @@ class LocalOptimizationEndEvent extends EventMessage
     {
         return $this->getKey('Id');
     }
-
-    
-} 
-?>
-  
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * AgentRingNoAnswer Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -37,7 +37,7 @@ use PAMI\Message\Event\EventMessage;
 
 /**
  * AgentRingNoAnswer Event
- * 
+ *
  *
  * Note: Auto Generated using xsltproc
  *
@@ -435,8 +435,4 @@ class AgentRingNoAnswerEvent extends EventMessage
     {
         return $this->getKey('RingTime');
     }
-
-    
-} 
-?>
-  
+}
