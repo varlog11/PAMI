@@ -18,9 +18,7 @@
   <target name="prepare">
     <mkdir dir="build" mode="0755"/>
     <mkdir dir="build/doc" mode="0755"/>
-    <mkdir dir="build/doc/xml" mode="0755"/>
-    <mkdir dir="build/doc/html" mode="0755"/>
-    <mkdir dir="build/doc/md" mode="0755"/>
+    <mkdir dir="build/doc/phpdox" mode="0755"/>
     <mkdir dir="build/logs" mode="0755"/>
     <mkdir dir="build/coverage-html" mode="0755"/>
     <mkdir dir="build/coverage-xml" mode="0755"/>
@@ -44,28 +42,6 @@
       passthru="true"/>
   </target>
 
-  <target name="docxml">
-    <exec command="vendor/bin/phpdoc --template=xml -t build/doc/xml -d src --validate --sourcecode --force --cache-folder=build/doc/.cache --progressbar --title 'dkgroot-PAMI' --defaultpackagename 'PAMI' --log"
-      checkreturn="true"
-      passthru="true"/>
-  </target>
-
-  <target name="dochtml_old">
-    <!-- generate files -->
-    <exec command="vendor/bin/phpdoc -d src -t build/doc/html --cache-folder=build/doc/.cache --validate --sourcecode --progressbar --title 'dkgroot-PAMI' --defaultpackagename 'PAMI' --log"
-      checkreturn="true"
-      passthru="true"/>
-    <!-- switch templates -->
-    <exec command="vendor/bin/phpdoc --template=zend -d src -t build/doc/html --cache-folder=build/doc/.cache --validate --sourcecode --progressbar --title 'dkgroot-PAMI' --defaultpackagename 'PAMI' --log"
-      checkreturn="true"
-      passthru="true"/>
-    <copy todir="docs" overwrite="true">
-      <fileset dir="build/doc/html">
-        <include name="**"/>
-      </fileset>
-    </copy>
-  </target>
-
   <target name="dochtml">
     <exec command="vendor/bin/phploc --log-xml=build/phploc.xml ./src"
       checkreturn="true"
@@ -76,16 +52,10 @@
   </target>
 
   <target name="docmd">
-    <exec dir="build/doc/md" command="../../../vendor/bin/phpdocmd ../xml/structure.xml"
+    <exec command="vendor/bin/phpdoc-md generate src > doc/api.md"
       checkreturn="true"
-      passthru="true"/>
-    <copy todir="doc" overwrite="true">
-      <fileset dir="build/doc/md">
-        <include name="*.md" />
-      </fileset>
-    </copy>
+      passthru="false"/>
   </target>
-
 
   <target name="test">
     <exec command="vendor/bin/phpunit -v --debug -c test/resources/phpunit.xml"
@@ -95,6 +65,6 @@
 
   <target name="build" depends="clean, prepare, cpd, cs, md, doc, test"/>
   <target name="travis" depends="clean, prepare, cpd, cs, test"/>
-  <target name="doc" depends="docxml, dochtml, docmd"/>
+  <target name="doc" depends="dochtml, docmd"/>
 
 </project>
