@@ -62,17 +62,17 @@
             <a href="#methods">Methods</a>
           </li>
           <li>
-            <a href="../source/PAMI/Message/Event/IdentifyDetailEvent.php.html#line46">Source</a>
+            <a href="../source/PAMI/Message/Event/IdentifyDetailEvent.php.html#line53">Source</a>
           </li>
         </ul>
       </nav>
       <section>
         <h1 id="introduction"><small>PAMI\Message\Event\</small>IdentifyDetailEvent</h1>
-        <h4>Event from PJSIPShowEndpoint</h4>
-        <p>PHP Version 5</p>
+        <h4>IdentifyDetail Event isListEntry and Part Action: PJSIPShowEndpoint</h4>
+        <p>Note: Auto Generated using xsltproc<br/><br/>PHP Version 5</p>
         <ul>
-          <li>Author: Niklas Larsson &lt;niklas@tese.se&gt;</li>
-          <li>License: http://marcelog.github.com/PAMI/ Apache License 2.0</li>
+          <li>Author: Diederik de Groot &lt;ddegroot@gmail.com&gt;</li>
+          <li>License: http://dkgroot.github.com/PAMI/ Apache License 2.0</li>
         </ul>
         <h2 id="synopsis">Synopsis</h2>
         <div class="synopsis">class IdentifyDetailEvent
@@ -80,7 +80,9 @@
             {<br/><ul class="none"><li>// Inherited constants from <a title="PAMI\Message\Message" href="../classes/PAMI_Message_Message.html">Message</a></li><li>const <a href="#EOL">EOL</a> = "\r\n";</li><li>const <a href="#EOM">EOM</a> = "\r\n\r\n";</li></ul><ul class="none"><li>// methods</li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getObjectType.html">getObjectType</a>()
                     </li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getObjectName.html">getObjectName</a>()
                     </li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getEndpoint.html">getEndpoint</a>()
+                    </li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getSrvLookups.html">getSrvLookups</a>()
                     </li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getMatch.html">getMatch</a>()
+                    </li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getMatchHeader.html">getMatchHeader</a>()
                     </li><li>public string <a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getEndpointName.html">getEndpointName</a>()
                     </li></ul><ul class="none"><li>// Inherited methods from <span title="PAMI\Message\Event\EventMessage">EventMessage</span></li><li>public string <a title="PAMI\Message\Event\EventMessage" href="../classes/PAMI_Message_Event_EventMessage/getName.html">getName</a>()
                         </li></ul><ul class="none"><li>// Inherited methods from <span title="PAMI\Message\IncomingMessage">IncomingMessage</span></li><li>public array <a title="PAMI\Message\IncomingMessage" href="../classes/PAMI_Message_IncomingMessage/__sleep.html">__sleep</a>()
@@ -138,15 +140,19 @@
           <h4>public</h4>
           <ul>
             <li id="getEndpoint"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getEndpoint.html">getEndpoint()</a>
-                — Returns key: 'Endpoint'. Name of Endpoint</li>
+                — get Endpoint</li>
             <li id="getEndpointName"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getEndpointName.html">getEndpointName()</a>
-                — Returns key: 'EndpointName'. The name of the endpoint associated with this information.</li>
+                — get EndpointName</li>
             <li id="getMatch"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getMatch.html">getMatch()</a>
-                — Returns key: 'Match'. IP addresses or networks to match against</li>
+                — get Match</li>
+            <li id="getMatchHeader"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getMatchHeader.html">getMatchHeader()</a>
+                — get MatchHeader</li>
             <li id="getObjectName"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getObjectName.html">getObjectName()</a>
-                — Returns key: 'ObjectName'. The name of this object.</li>
+                — get ObjectName</li>
             <li id="getObjectType"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getObjectType.html">getObjectType()</a>
-                — Returns key: 'ObjectType'. The object's type. This will always be 'identify'.</li>
+                — get ObjectType</li>
+            <li id="getSrvLookups"><a title="PAMI\Message\Event\IdentifyDetailEvent" href="../classes/PAMI_Message_Event_IdentifyDetailEvent/getSrvLookups.html">getSrvLookups()</a>
+                — get SrvLookups</li>
           </ul>
           <h3>Inherited from <a title="PAMI\Message\Event\EventMessage" href="../classes/PAMI_Message_Event_EventMessage.html">PAMI\Message\Event\EventMessage</a></h3>
           <h4>public</h4>

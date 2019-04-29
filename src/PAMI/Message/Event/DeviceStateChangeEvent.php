@@ -1,6 +1,9 @@
 <?php
 /**
- * Event triggered when connected device changes state.
+ * DeviceStateChange Event
+ * isListEntry and Part Action: DeviceStateList
+ *
+ * Note: Auto Generated using xsltproc
  *
  * PHP Version 5
  *
@@ -8,6 +11,7 @@
  * @package    Message
  * @subpackage Event
  * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Diederik de Groot <ddegroot@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
@@ -29,31 +33,29 @@
  */
 namespace PAMI\Message\Event;
 
+use PAMI\Message\Event\EventMessage;
+
 /**
- * Event triggered when a caller abandons the queue.
+ * DeviceStateChange Event
+ * isListEntry and Part Action: DeviceStateList
+ *
+ * Note: Auto Generated using xsltproc
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Event
- * @author     Marcelo Gornstein <marcelog@gmail.com>
- * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
- * @link       http://marcelog.github.com/PAMI/
+ * @author     Diederik de Groot <ddegroot@gmail.com>
+ * @license    http://dkgroot.github.com/PAMI/ Apache License 2.0
+ * @link       http://github.com/dkgroot/PAMI/
  */
 class DeviceStateChangeEvent extends EventMessage
 {
     /**
-     * Returns key: 'Privilege'.
+     * get Device
      *
-     * @return string
-     */
-    public function getPrivilege()
-    {
-        return $this->getKey('Privilege');
-    }
-    /**
-     * Returns key: 'Device'.
+     * Returns:The device whose state has changed
      *
      * @return string
      */
@@ -61,8 +63,11 @@ class DeviceStateChangeEvent extends EventMessage
     {
         return $this->getKey('Device');
     }
+
     /**
-     * Returns key: 'State'.
+     * get State
+     *
+     * Returns:The new state of the device
      *
      * @return string
      */

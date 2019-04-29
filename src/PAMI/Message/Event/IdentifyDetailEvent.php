@@ -1,18 +1,22 @@
 <?php
 /**
- * Event from PJSIPShowEndpoint
+ * IdentifyDetail Event
+ * isListEntry and Part Action: PJSIPShowEndpoint
+ *
+ * Note: Auto Generated using xsltproc
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Event
- * @author     Niklas Larsson <niklas@tese.se>
+ * @author     Marcelo Gornstein <marcelog@gmail.com>
+ * @author     Diederik de Groot <ddegroot@gmail.com>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
  *
- * Copyright 2015 Niklas Larsson <niklas@tese.se>, Marcelo Gornstein <marcelog@gmail.com>
+ * Copyright 2011 Marcelo Gornstein <marcelog@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,21 +36,26 @@ namespace PAMI\Message\Event;
 use PAMI\Message\Event\EventMessage;
 
 /**
- * Event from PJSIPShowEndpoint
+ * IdentifyDetail Event
+ * isListEntry and Part Action: PJSIPShowEndpoint
+ *
+ * Note: Auto Generated using xsltproc
  *
  * PHP Version 5
  *
  * @category   Pami
  * @package    Message
  * @subpackage Event
- * @author     Niklas Larsson <niklas@tese.se>
- * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
- * @link       http://marcelog.github.com/PAMI/
+ * @author     Diederik de Groot <ddegroot@gmail.com>
+ * @license    http://dkgroot.github.com/PAMI/ Apache License 2.0
+ * @link       http://github.com/dkgroot/PAMI/
  */
 class IdentifyDetailEvent extends EventMessage
 {
     /**
-     * Returns key: 'ObjectType'. The object's type. This will always be 'identify'.
+     * get ObjectType
+     *
+     * Returns:The object's type. This will always be 'identify'.
      *
      * @return string
      */
@@ -56,7 +65,9 @@ class IdentifyDetailEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'ObjectName'. The name of this object.
+     * get ObjectName
+     *
+     * Returns:The name of this object.
      *
      * @return string
      */
@@ -66,7 +77,9 @@ class IdentifyDetailEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Endpoint'. Name of Endpoint
+     * get Endpoint
+     *
+     * Returns:Name of endpoint identified
      *
      * @return string
      */
@@ -76,7 +89,21 @@ class IdentifyDetailEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'Match'. IP addresses or networks to match against
+     * get SrvLookups
+     *
+     * Returns:Perform SRV lookups for provided hostnames.
+     *
+     * @return string
+     */
+    public function getSrvLookups()
+    {
+        return $this->getKey('SrvLookups');
+    }
+
+    /**
+     * get Match
+     *
+     * Returns:IP addresses or networks to match against.
      *
      * @return string
      */
@@ -86,7 +113,21 @@ class IdentifyDetailEvent extends EventMessage
     }
 
     /**
-     * Returns key: 'EndpointName'. The name of the endpoint associated with this information.
+     * get MatchHeader
+     *
+     * Returns:Header/value pair to match against.
+     *
+     * @return string
+     */
+    public function getMatchHeader()
+    {
+        return $this->getKey('MatchHeader');
+    }
+
+    /**
+     * get EndpointName
+     *
+     * Returns:The name of the endpoint associated with this information.
      *
      * @return string
      */

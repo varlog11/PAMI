@@ -4407,13 +4407,12 @@
 
 ### Class: \PAMI\Message\Event\DeviceStateChangeEvent
 
-> Event triggered when a caller abandons the queue. PHP Version 5
+> DeviceStateChange Event isListEntry and Part Action: DeviceStateList Note: Auto Generated using xsltproc PHP Version 5
 
 | Visibility | Function |
 |:-----------|:---------|
-| public | <strong>getDevice()</strong> : <em>string</em><br /><em>Returns key: 'Device'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getState()</strong> : <em>string</em><br /><em>Returns key: 'State'.</em> |
+| public | <strong>getDevice()</strong> : <em>string</em><br /><em>get Device Returns:The device whose state has changed</em> |
+| public | <strong>getState()</strong> : <em>string</em><br /><em>get State Returns:The new state of the device</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -4905,15 +4904,17 @@
 
 ### Class: \PAMI\Message\Event\IdentifyDetailEvent
 
-> Event from PJSIPShowEndpoint PHP Version 5
+> IdentifyDetail Event isListEntry and Part Action: PJSIPShowEndpoint Note: Auto Generated using xsltproc PHP Version 5
 
 | Visibility | Function |
 |:-----------|:---------|
-| public | <strong>getEndpoint()</strong> : <em>string</em><br /><em>Returns key: 'Endpoint'. Name of Endpoint</em> |
-| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
-| public | <strong>getMatch()</strong> : <em>string</em><br /><em>Returns key: 'Match'. IP addresses or networks to match against</em> |
-| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
-| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'identify'.</em> |
+| public | <strong>getEndpoint()</strong> : <em>string</em><br /><em>get Endpoint Returns:Name of endpoint identified</em> |
+| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>get EndpointName Returns:The name of the endpoint associated with this information.</em> |
+| public | <strong>getMatch()</strong> : <em>string</em><br /><em>get Match Returns:IP addresses or networks to match against.</em> |
+| public | <strong>getMatchHeader()</strong> : <em>string</em><br /><em>get MatchHeader Returns:Header/value pair to match against.</em> |
+| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>get ObjectName Returns:The name of this object.</em> |
+| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>get ObjectType Returns:The object's type. This will always be 'identify'.</em> |
+| public | <strong>getSrvLookups()</strong> : <em>string</em><br /><em>get SrvLookups Returns:Perform SRV lookups for provided hostnames.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
