@@ -37,18 +37,7 @@ namespace PAMI\Message\Action;
 /**
  * SorceryMemoryCacheStaleObject Action
  *
- *
- *
  * Note: Auto Generated using xsltproc
- *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Message
- * @subpackage Action
- * @author     Diederik de Groot <ddegroot@gmail.com>
- * @license    http://dkgroot.github.com/PAMI/ Apache License 2.0
- * @link       http://github.com/dkgroot/PAMI/
  */
 class SorceryMemoryCacheStaleObjectAction extends ActionMessage
 {

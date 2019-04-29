@@ -37,18 +37,14 @@ namespace PAMI\Message\Action;
 /**
  * BridgeKick Action
  *
- *
+ * Related To:
+ * - @see PAMI\Message\Action\BridgeAction
+ * - @see PAMI\Message\Action\BridgeDestroyAction
+ * - @see PAMI\Message\Action\BridgeInfoAction
+ * - @see PAMI\Message\Action\BridgeListAction
+ * - @see PAMI\Message\Event\BridgeLeaveEvent
  *
  * Note: Auto Generated using xsltproc
- *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Message
- * @subpackage Action
- * @author     Diederik de Groot <ddegroot@gmail.com>
- * @license    http://dkgroot.github.com/PAMI/ Apache License 2.0
- * @link       http://github.com/dkgroot/PAMI/
  */
 class BridgeKickAction extends ActionMessage
 {
