@@ -166,6 +166,51 @@ class ClientImpl implements IClient
      */
     private $lastActionClass;
 
+
+    /**
+     * Return a formatted string containing scheme, host and port
+     *
+     * @return string
+     */
+    private function getSocketUri()
+    {
+        return sprintf('%s%s:%s', $this->scheme, $this->host, $this->port);
+    }
+
+    /**
+     * Connects a tcp connection to ami.
+     *
+     * @throws \PAMI\Client\Exception\ClientException
+     * @return void
+     */
+    protected function connect()
+    {
+        $errno = $errstr = null;
+        $socketUri = $this->getSocketUri();
+        $this->context = stream_context_create();
+        $this->socket = @stream_socket_client(
+            $socketUri,
+            $errno,
+            $errstr,
+            $this->cTimeout,
+            STREAM_CLIENT_CONNECT,
+            $this->context
+        );
+        if ($this->socket === false) {
+            throw new ClientException(sprintf('error: "%s" while create socket "%s"', $errstr, $socketUri));
+        }
+        // set socket in block mode
+        if (!stream_set_blocking($this->socket, true)) {
+            throw new ClientException(sprintf('error set block mode on "%s" socket', $socketUri));
+        }
+        // set read timeout on socket
+        if (!stream_set_timeout($this->socket, $this->rTimeout)) {
+            throw new ClientException(
+                sprintf('socket "%s" timeout "%s" set error', $socketUri, $this->rTimeout)
+            );
+        }
+    }
+
     /**
      * Opens a tcp connection to ami.
      *
@@ -174,37 +219,29 @@ class ClientImpl implements IClient
      */
     public function open()
     {
-        $cString = $this->scheme . $this->host . ':' . $this->port;
-        $this->context = stream_context_create();
-        $errno = 0;
-        $errstr = '';
-        $this->socket = @stream_socket_client(
-            $cString,
-            $errno,
-            $errstr,
-            $this->cTimeout,
-            STREAM_CLIENT_CONNECT,
-            $this->context
-        );
-        if ($this->socket === false) {
-            throw new ClientException('Error connecting to ami: ' . $errstr);
+        $this->connect();
+        $socketUri = $this->getSocketUri();
+        $asteriskId = stream_get_line($this->socket, 1024, Message::EOL);
+
+        if ($asteriskId === false) {
+            throw new ClientException(sprintf('error: "%s" while read socket', socket_strerror(socket_last_error())));
         }
-        $msg = new LoginAction($this->user, $this->pass, $this->eventMask);
-        $asteriskId = @stream_get_line($this->socket, 1024, Message::EOL);
+
         if (strstr($asteriskId, 'Asterisk') === false) {
-            throw new ClientException(
-                "Unknown peer. Is this an ami?: $asteriskId"
-            );
+            throw new ClientException(sprintf('Unknown peer: "%s"', $asteriskId));
         }
-        $response = $this->send($msg);
-        if (!$response->isSuccess()) {
-            throw new ClientException(
-                'Could not connect: ' . $response->getMessage()
-            );
-        }
-        @stream_set_blocking($this->socket, 0);
+        $this->logger->debug(sprintf('recv <-- asteriskId: "%s"', $asteriskId));
+
+        $msg = new LoginAction($this->user, $this->pass);
+        $this->send($msg, function (ResponseMessage $response) use ($socketUri) {
+            if (!$response->isSuccess()) {
+                throw new ClientException(
+                    sprintf('Could not connect to: "%s", response: "%s"', $socketUri, $response->getMessage())
+                );
+            }
+        });
         $this->currentProcessingMessage = '';
-        $this->logger->debug('Logged in successfully to ami.');
+        $this->logger->info(sprintf('Login to: "%s" by user: "%s"', $socketUri, $this->user));
     }
 
     /**
@@ -445,6 +482,14 @@ class ClientImpl implements IClient
      */
     public function send(OutgoingMessage $message)
     {
+        $actionId = $message->getActionId();
+        if (null === $actionId) {
+            $actionId = bin2hex(random_bytes(8));
+            $message->setActionId($actionId);
+            $this->logger->debug(
+                sprintf('set actionId: "%s" on message of class "%s"', $actionId, get_class($message))
+            );
+        }
         $messageToSend = $message->serialize();
         $length = strlen($messageToSend);
         $this->logger->debug(

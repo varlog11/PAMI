@@ -9,6 +9,7 @@
 - [\PAMI\Client\Exception\ClientException](#class-pamiclientexceptionclientexception)
 - [\PAMI\Client\Impl\ClientImpl](#class-pamiclientimplclientimpl)
 - [\PAMI\Client\Impl\ClientImpl](#class-pamiclientimplclientimpl)
+- [\PAMI\Client\Impl\ClientImpl](#class-pamiclientimplclientimpl)
 - [\PAMI\Exception\PAMIException](#class-pamiexceptionpamiexception)
 - [\PAMI\Listener\IEventListener (interface)](#interface-pamilistenerieventlistener)
 - [\PAMI\Message\IncomingMessage (abstract)](#class-pamimessageincomingmessage-abstract)
@@ -608,6 +609,7 @@
 | public | <strong>send(</strong><em>[\PAMI\Message\OutgoingMessage](#class-pamimessageoutgoingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Sends a message to ami.</em> |
 | public | <strong>setLogger(</strong><em>\Psr\Log\LoggerInterface</em> <strong>$logger</strong>)</strong> : <em>void</em><br /><em>Sets the logger implementation.</em> |
 | public | <strong>unregisterEventListener(</strong><em>string</em> <strong>$listenerId</strong>)</strong> : <em>void</em><br /><em>Unregisters an event listener.</em> |
+| protected | <strong>connect()</strong> : <em>void</em><br /><em>Connects a tcp connection to ami.</em> |
 | protected | <strong>dispatch(</strong><em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Dispatchs the incoming message to a handler.</em> |
 | protected | <strong>evaluatePredicate(</strong><em>mixed</em> <strong>$predicate</strong>, <em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>bool</em><br /><em>Evaluate a predicate for a message.</em> |
 | protected | <strong>findResponse(</strong><em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Tries to find an associated response for the given message.</em> |
@@ -634,6 +636,34 @@
 | public | <strong>send(</strong><em>[\PAMI\Message\OutgoingMessage](#class-pamimessageoutgoingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Sends a message to ami.</em> |
 | public | <strong>setLogger(</strong><em>\Psr\Log\LoggerInterface</em> <strong>$logger</strong>)</strong> : <em>void</em><br /><em>Sets the logger implementation.</em> |
 | public | <strong>unregisterEventListener(</strong><em>string</em> <strong>$listenerId</strong>)</strong> : <em>void</em><br /><em>Unregisters an event listener.</em> |
+| protected | <strong>connect()</strong> : <em>void</em><br /><em>Connects a tcp connection to ami.</em> |
+| protected | <strong>dispatch(</strong><em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Dispatchs the incoming message to a handler.</em> |
+| protected | <strong>evaluatePredicate(</strong><em>mixed</em> <strong>$predicate</strong>, <em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>bool</em><br /><em>Evaluate a predicate for a message.</em> |
+| protected | <strong>findResponse(</strong><em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Tries to find an associated response for the given message.</em> |
+| protected | <strong>getMessages()</strong> : <em>\string[]</em><br /><em>Reads a complete message over the stream until EOM.</em> |
+| protected | <strong>getRelated(</strong><em>[\PAMI\Message\OutgoingMessage](#class-pamimessageoutgoingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Returns a message (response) related to the given message. This uses the ActionID tag (key).</em> |
+
+*This class implements [\PAMI\Client\IClient](#interface-pamiclienticlient)*
+
+<hr />
+
+### Class: \PAMI\Client\Impl\ClientImpl
+
+> TCP Client implementation for AMI. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string[]</em> <strong>$options</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>close()</strong> : <em>void</em><br /><em>Closes the connection to ami.</em> |
+| public | <strong>getLogger()</strong> : <em>@object The current PSR3-Logger instance</em><br /><em>Get the logger implementation.</em> |
+| public | <strong>getSocket()</strong> : <em>\PAMI\Client\Impl\resource</em><br /><em>Returns stream socket.</em> |
+| public | <strong>open()</strong> : <em>void</em><br /><em>Opens a tcp connection to ami.</em> |
+| public | <strong>process()</strong> : <em>void</em><br /><em>Main processing loop. Also called from send(), you should call this in your own application in order to continue reading events and responses from ami.</em> |
+| public | <strong>registerEventListener(</strong><em>mixed</em> <strong>$listener</strong>, <em>[\Closure](http://php.net/manual/en/class.closure.php)/null</em> <strong>$predicate=null</strong>)</strong> : <em>string</em><br /><em>Registers the given listener so it can receive events. Returns the generated id for this new listener. You can pass in a an IEventListener, a Closure, and an array containing the object and name of the method to invoke. Can specify an optional predicate to invoke before calling the callback.</em> |
+| public | <strong>send(</strong><em>[\PAMI\Message\OutgoingMessage](#class-pamimessageoutgoingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Sends a message to ami.</em> |
+| public | <strong>setLogger(</strong><em>\Psr\Log\LoggerInterface</em> <strong>$logger</strong>)</strong> : <em>void</em><br /><em>Sets the logger implementation.</em> |
+| public | <strong>unregisterEventListener(</strong><em>string</em> <strong>$listenerId</strong>)</strong> : <em>void</em><br /><em>Unregisters an event listener.</em> |
+| protected | <strong>connect()</strong> : <em>void</em><br /><em>Connects a tcp connection to ami.</em> |
 | protected | <strong>dispatch(</strong><em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Dispatchs the incoming message to a handler.</em> |
 | protected | <strong>evaluatePredicate(</strong><em>mixed</em> <strong>$predicate</strong>, <em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>bool</em><br /><em>Evaluate a predicate for a message.</em> |
 | protected | <strong>findResponse(</strong><em>[\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)Message</em><br /><em>Tries to find an associated response for the given message.</em> |
