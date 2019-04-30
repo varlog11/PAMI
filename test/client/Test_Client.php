@@ -44,14 +44,6 @@ namespace PAMI\Client\Impl {
      */
     class Test_Client extends BaseTestCase
     {
-/*
-        private $_properties = array();
-
-        public function setUp() :void
-        {
-            $this->_properties = array();
-        }
-*/
         /**
          * @test
          */
@@ -993,6 +985,127 @@ namespace PAMI\Client\Impl {
             $this->assertEquals($varChan1, $event->getChannelVariables());
             $this->assertEquals($channelVars, $event->getAllChannelVariables());
             $this->assertNull($event->getChannelVariables('unknown'));
+        }
+
+        /**
+         * @test
+         * expectedException \PAMI\Client\Exception\ClientException
+         */
+        public function can_detect_socket_returning_false()
+        {
+            global $mock_stream_socket_client;
+            global $mock_stream_set_blocking;
+            $mock_stream_socket_client = false;
+            $mock_stream_set_blocking = true;
+            $options = array(
+            'host' => '2.3.4.5',
+            'scheme' => 'tcp://',
+            'port' => 9999,
+            'username' => 'asd',
+            'secret' => 'asd',
+            'connect_timeout' => 1,
+            'read_timeout' => 2
+            );
+            $read = array('Whatever');
+            $write = array();
+            setFgetsMock($read, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
+            $client = new \PAMI\Client\Impl\ClientImpl($options);
+            $client->open();
+        }
+
+        /**
+         * @test
+         * expectedException \PAMI\Client\Exception\ClientException
+         */
+        public function can_detect_socket_set_blocking_returning_false()
+        {
+            global $mock_stream_socket_client;
+            global $mock_stream_set_blocking;
+            $mock_stream_socket_client = true;
+            $mock_stream_set_blocking = false;
+            $options = array(
+            'host' => '2.3.4.5',
+            'scheme' => 'tcp://',
+            'port' => 9999,
+            'username' => 'asd',
+            'secret' => 'asd',
+            'connect_timeout' => 1,
+            'read_timeout' => 2
+            );
+            $read = array('Whatever');
+            $write = array();
+            setFgetsMock($read, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
+            $client = new \PAMI\Client\Impl\ClientImpl($options);
+            $client->open();
+        }
+
+        /**
+         * @test
+         * expectedException \PAMI\Client\Exception\ClientException
+         */
+        public function can_detect_socket_set_timeout_returning_false()
+        {
+            global $mock_stream_socket_client;
+            global $mock_stream_set_blocking;
+            global $mock_stream_set_timeout;
+            $mock_stream_socket_client = true;
+            $mock_stream_set_blocking = true;
+            $mock_stream_set_timeout = false;
+            $options = array(
+                'host' => '2.3.4.5',
+                'scheme' => 'tcp://',
+                'port' => 9999,
+                'username' => 'asd',
+                'secret' => 'asd',
+                'connect_timeout' => 1,
+                'read_timeout' => 2
+            );
+            $read = array('Whatever');
+            $write = array();
+            setFgetsMock($read, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
+            $client = new \PAMI\Client\Impl\ClientImpl($options);
+            $client->open();
+        }
+
+        /**
+         * @test
+         * expectedException \PAMI\Client\Exception\ClientException
+         */
+        public function can_detect_open_returning_non_asteriskId()
+        {
+            global $mock_stream_socket_client;
+            global $mock_stream_set_blocking;
+            $mock_stream_socket_client = true;
+            $mock_stream_set_blocking = true;
+            $testAMIStart = array(
+                'Something Else Call Manager/1.1',
+                'Response: Success',
+                'ActionID: 1432.123',
+                'Message: Authentication accepted',
+                '',
+                'Response: Goodbye',
+                'ActionID: 1432.123',
+                'Message: Thanks for all the fish.',
+                ''
+            );
+            $options = array(
+                'host' => '2.3.4.5',
+                'scheme' => 'tcp://',
+                'port' => 9999,
+                'username' => 'asd',
+                'secret' => 'asd',
+                'connect_timeout' => 1,
+                'read_timeout' => 2
+            );
+            $write = array();
+            setFgetsMock($testAMIStart, $write);
+            $this->expectException(\PAMI\Client\Exception\ClientException::class);
+            $client = new \PAMI\Client\Impl\ClientImpl($options);
+            $client->registerEventListener(new SomeListenerClass);
+            $client->open();
         }
     }
 }

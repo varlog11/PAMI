@@ -33,14 +33,14 @@ namespace {
     $mockTimeReturn = false;
     $mock_stream_socket_client = false;
     $mock_stream_set_blocking = false;
+    $mock_stream_set_timeout = false;
+    $mock_stream_get_meta_data_return = false;
     $mockFwrite = false;
     $mockFwriteReturn = false;
     $mockFwriteCount = 0;
     $mockFgets = false;
     $mockFgetsCount = 0;
     $mockFreadReturn = false;
-    //$mock_stream_timeout = false;
-    $mock_stream_get_meta_data_return = false;
     $mockRTimeout = 0;
     $standardAMIStart = array(
         'Asterisk Call Manager/1.1',
@@ -104,8 +104,8 @@ namespace PAMI\Client\Impl {
     function stream_set_blocking()
     {
         global $mock_stream_set_blocking;
-        if (isset($mock_stream_set_blocking) && $mock_stream_set_blocking === true) {
-            return true;
+        if (isset($mock_stream_set_blocking)) {
+            return $mock_stream_set_blocking;
         } else {
             return call_user_func_array('\stream_set_blocking', func_get_args());
         }
@@ -120,34 +120,27 @@ namespace PAMI\Client\Impl {
         */
         global $mockRTimeout;
         global $mock_stream_socket_client;
-        if (isset($mock_stream_socket_client) && $mock_stream_socket_client === true) {
+        if (isset($mock_stream_socket_client)) {
             $args = func_get_args();
             $mockRTimeout = $args[1];
+            return $mock_stream_socket_client;
         } else {
             return call_user_func_array('\stream_set_timeout', func_get_args());
         }
-        return true;
     }
     function stream_get_meta_data()
     {
-        /*
-        global $mockRTimeout;
-        global $mock_stream_timeout;
-        if (isset($mock_stream_timeout) && $mock_stream_timeout === true) {
-            sleep($mockRTimeout);
-            return array('timed_out' => true);
-        } else {
-            return call_user_func_array('\stream_get_meta_data', func_get_args());
-        }
-        */
         global $mockRTimeout;
         global $mock_stream_socket_client;
         global $mock_stream_get_meta_data_return;
-        if (isset($mock_stream_socket_client) && $mock_stream_socket_client === true) {
-            if ($mock_stream_get_meta_data_return === true) {
-                sleep($mockRTimeout);
+        if (isset($mock_stream_socket_client)) {
+            if ($mock_stream_socket_client === true) {
+                if ($mock_stream_get_meta_data_return === true) {
+                    sleep($mockRTimeout);
+                }
+                return array('timed_out' => $mock_stream_get_meta_data_return);
             }
-            return array('timed_out' => $mock_stream_get_meta_data_return);
+            return $mock_stream_socket_client;
         } else {
             return call_user_func_array('\stream_get_meta_data', func_get_args());
         }
