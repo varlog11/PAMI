@@ -1,3 +1,207 @@
+PHP Warning:  include(/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDialOffHookAction.php): failed to open stream: No such file or directory in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. class_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(): Failed opening '/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDialOffHookAction.php' for inclusion (include_path='/data/development/sccp/sources/PAMI/vendor/phing/phing/classes:.:/usr/share/php') in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. class_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDialOffHookAction.php): failed to open stream: No such file or directory in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. interface_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(): Failed opening '/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDialOffHookAction.php' for inclusion (include_path='/data/development/sccp/sources/PAMI/vendor/phing/phing/classes:.:/usr/share/php') in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. interface_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOffAction.php): failed to open stream: No such file or directory in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. class_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(): Failed opening '/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOffAction.php' for inclusion (include_path='/data/development/sccp/sources/PAMI/vendor/phing/phing/classes:.:/usr/share/php') in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. class_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOffAction.php): failed to open stream: No such file or directory in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. interface_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(): Failed opening '/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOffAction.php' for inclusion (include_path='/data/development/sccp/sources/PAMI/vendor/phing/phing/classes:.:/usr/share/php') in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. interface_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOnAction.php): failed to open stream: No such file or directory in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. class_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(): Failed opening '/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOnAction.php' for inclusion (include_path='/data/development/sccp/sources/PAMI/vendor/phing/phing/classes:.:/usr/share/php') in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. class_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOnAction.php): failed to open stream: No such file or directory in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. interface_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
+PHP Warning:  include(): Failed opening '/data/development/sccp/sources/PAMI/vendor/composer/../../src/PAMI/Message/Action/DAHDIDNDOnAction.php' for inclusion (include_path='/data/development/sccp/sources/PAMI/vendor/phing/phing/classes:.:/usr/share/php') in /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php on line 444
+PHP Stack trace:
+PHP   1. {main}() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:0
+PHP   2. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/bin/phpdoc-md:15
+PHP   3. PHPDocsMD\Console\CLI->run() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/CLI.php:29
+PHP   4. PHPDocsMD\Console\CLI->doRun() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:145
+PHP   5. PHPDocsMD\Console\CLI->doRunCommand() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:269
+PHP   6. PHPDocsMD\Console\PHPDocsMDCommand->run() /data/development/sccp/sources/PAMI/vendor/symfony/console/Application.php:908
+PHP   7. PHPDocsMD\Console\PHPDocsMDCommand->execute() /data/development/sccp/sources/PAMI/vendor/symfony/console/Command/Command.php:255
+PHP   8. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:95
+PHP   9. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  10. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  11. PHPDocsMD\Console\PHPDocsMDCommand->findClassesInDir() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:266
+PHP  12. interface_exists() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  13. spl_autoload_call() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  14. Composer\Autoload\ClassLoader->loadClass() /data/development/sccp/sources/PAMI/vendor/victorjonsson/markdowndocs/src/PHPDocsMD/Console/PHPDocsMDCommand.php:262
+PHP  15. Composer\Autoload\includeFile() /data/development/sccp/sources/PAMI/vendor/composer/ClassLoader.php:322
 ## Table of contents
 
 - [\PAMI\AsyncAgi\AsyncClientImpl](#class-pamiasyncagiasyncclientimpl)
@@ -16,43 +220,8 @@
 - [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
 - [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
 - [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
-- [\PAMI\Message\Action\AGIAction](#class-pamimessageactionagiaction)
-- [\PAMI\Message\Action\AbsoluteTimeoutAction](#class-pamimessageactionabsolutetimeoutaction)
 - [\PAMI\Message\Action\ActionMessage (abstract)](#class-pamimessageactionactionmessage-abstract)
-- [\PAMI\Message\Action\AgentLogoffAction](#class-pamimessageactionagentlogoffaction)
-- [\PAMI\Message\Action\AgentsAction](#class-pamimessageactionagentsaction)
 - [\PAMI\Message\Action\AttendedTransferAction](#class-pamimessageactionattendedtransferaction)
-- [\PAMI\Message\Action\BlindTransferAction](#class-pamimessageactionblindtransferaction)
-- [\PAMI\Message\Action\BridgeAction](#class-pamimessageactionbridgeaction)
-- [\PAMI\Message\Action\BridgeInfoAction](#class-pamimessageactionbridgeinfoaction)
-- [\PAMI\Message\Action\BridgeListAction](#class-pamimessageactionbridgelistaction)
-- [\PAMI\Message\Action\ChallengeAction](#class-pamimessageactionchallengeaction)
-- [\PAMI\Message\Action\ChangeMonitorAction](#class-pamimessageactionchangemonitoraction)
-- [\PAMI\Message\Action\CommandAction](#class-pamimessageactioncommandaction)
-- [\PAMI\Message\Action\ConfbridgeKickAction](#class-pamimessageactionconfbridgekickaction)
-- [\PAMI\Message\Action\ConfBridgeListAction](#class-pamimessageactionconfbridgelistaction)
-- [\PAMI\Message\Action\ConfbridgeListRoomsAction](#class-pamimessageactionconfbridgelistroomsaction)
-- [\PAMI\Message\Action\ConfbridgeLockAction](#class-pamimessageactionconfbridgelockaction)
-- [\PAMI\Message\Action\ConfbridgeMuteAction](#class-pamimessageactionconfbridgemuteaction)
-- [\PAMI\Message\Action\ConfbridgeStartRecordAction](#class-pamimessageactionconfbridgestartrecordaction)
-- [\PAMI\Message\Action\ConfbridgeStopRecordAction](#class-pamimessageactionconfbridgestoprecordaction)
-- [\PAMI\Message\Action\ConfbridgeUnlockAction](#class-pamimessageactionconfbridgeunlockaction)
-- [\PAMI\Message\Action\ConfbridgeUnmuteAction](#class-pamimessageactionconfbridgeunmuteaction)
-- [\PAMI\Message\Action\CoreSettingsAction](#class-pamimessageactioncoresettingsaction)
-- [\PAMI\Message\Action\CoreShowChannelsAction](#class-pamimessageactioncoreshowchannelsaction)
-- [\PAMI\Message\Action\CoreStatusAction](#class-pamimessageactioncorestatusaction)
-- [\PAMI\Message\Action\CreateConfigAction](#class-pamimessageactioncreateconfigaction)
-- [\PAMI\Message\Action\DAHDIDNDOffAction](#class-pamimessageactiondahdidndoffaction)
-- [\PAMI\Message\Action\DAHDIDNDOnAction](#class-pamimessageactiondahdidndonaction)
-- [\PAMI\Message\Action\DAHDIDialOffHookAction](#class-pamimessageactiondahdidialoffhookaction)
-- [\PAMI\Message\Action\DAHDIHangupAction](#class-pamimessageactiondahdihangupaction)
-- [\PAMI\Message\Action\DAHDIRestartAction](#class-pamimessageactiondahdirestartaction)
-- [\PAMI\Message\Action\DAHDIShowChannelsAction](#class-pamimessageactiondahdishowchannelsaction)
-- [\PAMI\Message\Action\DAHDITransferAction](#class-pamimessageactiondahditransferaction)
-- [\PAMI\Message\Action\DBDelAction](#class-pamimessageactiondbdelaction)
-- [\PAMI\Message\Action\DBDelTreeAction](#class-pamimessageactiondbdeltreeaction)
-- [\PAMI\Message\Action\DBGetAction](#class-pamimessageactiondbgetaction)
-- [\PAMI\Message\Action\DBPutAction](#class-pamimessageactiondbputaction)
 - [\PAMI\Message\Action\DongleReloadAction](#class-pamimessageactiondonglereloadaction)
 - [\PAMI\Message\Action\DongleResetAction](#class-pamimessageactiondongleresetaction)
 - [\PAMI\Message\Action\DongleRestartAction](#class-pamimessageactiondonglerestartaction)
@@ -62,61 +231,12 @@
 - [\PAMI\Message\Action\DongleShowDevicesAction](#class-pamimessageactiondongleshowdevicesaction)
 - [\PAMI\Message\Action\DongleStartAction](#class-pamimessageactiondonglestartaction)
 - [\PAMI\Message\Action\DongleStopAction](#class-pamimessageactiondonglestopaction)
-- [\PAMI\Message\Action\EventsAction](#class-pamimessageactioneventsaction)
-- [\PAMI\Message\Action\ExtensionStateAction](#class-pamimessageactionextensionstateaction)
-- [\PAMI\Message\Action\GetConfigAction](#class-pamimessageactiongetconfigaction)
-- [\PAMI\Message\Action\GetConfigJSONAction](#class-pamimessageactiongetconfigjsonaction)
 - [\PAMI\Message\Action\GetVarAction](#class-pamimessageactiongetvaraction)
-- [\PAMI\Message\Action\HangupAction](#class-pamimessageactionhangupaction)
-- [\PAMI\Message\Action\JabberSendAction](#class-pamimessageactionjabbersendaction)
-- [\PAMI\Message\Action\ListCategoriesAction](#class-pamimessageactionlistcategoriesaction)
-- [\PAMI\Message\Action\ListCommandsAction](#class-pamimessageactionlistcommandsaction)
-- [\PAMI\Message\Action\LocalOptimizeAwayAction](#class-pamimessageactionlocaloptimizeawayaction)
-- [\PAMI\Message\Action\LoginAction](#class-pamimessageactionloginaction)
-- [\PAMI\Message\Action\LogoffAction](#class-pamimessageactionlogoffaction)
-- [\PAMI\Message\Action\MailboxCountAction](#class-pamimessageactionmailboxcountaction)
-- [\PAMI\Message\Action\MailboxStatusAction](#class-pamimessageactionmailboxstatusaction)
-- [\PAMI\Message\Action\MeetmeListAction](#class-pamimessageactionmeetmelistaction)
-- [\PAMI\Message\Action\MeetmeMuteAction](#class-pamimessageactionmeetmemuteaction)
-- [\PAMI\Message\Action\MeetmeUnmuteAction](#class-pamimessageactionmeetmeunmuteaction)
-- [\PAMI\Message\Action\MixMonitorAction](#class-pamimessageactionmixmonitoraction)
-- [\PAMI\Message\Action\MixMonitorMuteAction](#class-pamimessageactionmixmonitormuteaction)
-- [\PAMI\Message\Action\ModuleCheckAction](#class-pamimessageactionmodulecheckaction)
-- [\PAMI\Message\Action\ModuleLoadAction](#class-pamimessageactionmoduleloadaction)
 - [\PAMI\Message\Action\ModuleReloadAction](#class-pamimessageactionmodulereloadaction)
 - [\PAMI\Message\Action\ModuleUnloadAction](#class-pamimessageactionmoduleunloadaction)
-- [\PAMI\Message\Action\MonitorAction](#class-pamimessageactionmonitoraction)
-- [\PAMI\Message\Action\OriginateAction](#class-pamimessageactionoriginateaction)
-- [\PAMI\Message\Action\PJSIPQualifyAction](#class-pamimessageactionpjsipqualifyaction)
-- [\PAMI\Message\Action\PJSIPRegisterAction](#class-pamimessageactionpjsipregisteraction)
-- [\PAMI\Message\Action\PJSIPShowEndpointAction](#class-pamimessageactionpjsipshowendpointaction)
-- [\PAMI\Message\Action\PJSIPShowEndpointsAction](#class-pamimessageactionpjsipshowendpointsaction)
-- [\PAMI\Message\Action\PJSIPShowRegistrationsInboundAction](#class-pamimessageactionpjsipshowregistrationsinboundaction)
-- [\PAMI\Message\Action\PJSIPShowRegistrationsOutboundAction](#class-pamimessageactionpjsipshowregistrationsoutboundaction)
-- [\PAMI\Message\Action\PJSIPShowResourceListsAction](#class-pamimessageactionpjsipshowresourcelistsaction)
-- [\PAMI\Message\Action\PJSIPShowSubscriptionsInboundAction](#class-pamimessageactionpjsipshowsubscriptionsinboundaction)
-- [\PAMI\Message\Action\PJSIPShowSubscriptionsOutboundAction](#class-pamimessageactionpjsipshowsubscriptionsoutboundaction)
-- [\PAMI\Message\Action\PJSIPUnregisterAction](#class-pamimessageactionpjsipunregisteraction)
-- [\PAMI\Message\Action\ParkAction](#class-pamimessageactionparkaction)
-- [\PAMI\Message\Action\ParkedCallsAction](#class-pamimessageactionparkedcallsaction)
-- [\PAMI\Message\Action\PauseMonitorAction](#class-pamimessageactionpausemonitoraction)
-- [\PAMI\Message\Action\PingAction](#class-pamimessageactionpingaction)
-- [\PAMI\Message\Action\PlayDTMFAction](#class-pamimessageactionplaydtmfaction)
-- [\PAMI\Message\Action\QueueAddAction](#class-pamimessageactionqueueaddaction)
-- [\PAMI\Message\Action\QueueLogAction](#class-pamimessageactionqueuelogaction)
 - [\PAMI\Message\Action\QueueMemberRingInUse](#class-pamimessageactionqueuememberringinuse)
-- [\PAMI\Message\Action\QueuePauseAction](#class-pamimessageactionqueuepauseaction)
-- [\PAMI\Message\Action\QueuePenaltyAction](#class-pamimessageactionqueuepenaltyaction)
-- [\PAMI\Message\Action\QueueReloadAction](#class-pamimessageactionqueuereloadaction)
-- [\PAMI\Message\Action\QueueRemoveAction](#class-pamimessageactionqueueremoveaction)
-- [\PAMI\Message\Action\QueueResetAction](#class-pamimessageactionqueueresetaction)
-- [\PAMI\Message\Action\QueueRuleAction](#class-pamimessageactionqueueruleaction)
-- [\PAMI\Message\Action\QueueStatusAction](#class-pamimessageactionqueuestatusaction)
-- [\PAMI\Message\Action\QueueSummaryAction](#class-pamimessageactionqueuesummaryaction)
 - [\PAMI\Message\Action\QueueUnpauseAction](#class-pamimessageactionqueueunpauseaction)
 - [\PAMI\Message\Action\QueuesAction](#class-pamimessageactionqueuesaction)
-- [\PAMI\Message\Action\RedirectAction](#class-pamimessageactionredirectaction)
-- [\PAMI\Message\Action\ReloadAction](#class-pamimessageactionreloadaction)
 - [\PAMI\Message\Action\SCCPAnswerCallAction](#class-pamimessageactionsccpanswercallaction)
 - [\PAMI\Message\Action\SCCPConferenceAction](#class-pamimessageactionsccpconferenceaction)
 - [\PAMI\Message\Action\SCCPConfigMetaDataAction](#class-pamimessageactionsccpconfigmetadataaction)
@@ -147,24 +267,11 @@
 - [\PAMI\Message\Action\SCCPSystemMessageAction](#class-pamimessageactionsccpsystemmessageaction)
 - [\PAMI\Message\Action\SCCPTokenAckAction](#class-pamimessageactionsccptokenackaction)
 - [\PAMI\Message\Action\SIPNotifyAction](#class-pamimessageactionsipnotifyaction)
-- [\PAMI\Message\Action\SIPPeersAction](#class-pamimessageactionsippeersaction)
 - [\PAMI\Message\Action\SIPQualifyPeerAction](#class-pamimessageactionsipqualifypeeraction)
 - [\PAMI\Message\Action\SIPShowPeerAction](#class-pamimessageactionsipshowpeeraction)
 - [\PAMI\Message\Action\SIPShowRegistryAction](#class-pamimessageactionsipshowregistryaction)
-- [\PAMI\Message\Action\SendTextAction](#class-pamimessageactionsendtextaction)
 - [\PAMI\Message\Action\SetVarAction](#class-pamimessageactionsetvaraction)
-- [\PAMI\Message\Action\ShowDialPlanAction](#class-pamimessageactionshowdialplanaction)
-- [\PAMI\Message\Action\StatusAction](#class-pamimessageactionstatusaction)
-- [\PAMI\Message\Action\StopMixMonitorAction](#class-pamimessageactionstopmixmonitoraction)
-- [\PAMI\Message\Action\StopMonitorAction](#class-pamimessageactionstopmonitoraction)
-- [\PAMI\Message\Action\UnpauseMonitorAction](#class-pamimessageactionunpausemonitoraction)
-- [\PAMI\Message\Action\UpdateConfigAction](#class-pamimessageactionupdateconfigaction)
-- [\PAMI\Message\Action\UserEventAction](#class-pamimessageactionusereventaction)
 - [\PAMI\Message\Action\VGSMSMSTxAction](#class-pamimessageactionvgsmsmstxaction)
-- [\PAMI\Message\Action\VoicemailUsersListAction](#class-pamimessageactionvoicemailuserslistaction)
-- [\PAMI\Message\Action\WaitEventAction](#class-pamimessageactionwaiteventaction)
-- [\PAMI\Message\Action\DialplanExtensionAddAction](#class-pamimessageactiondialplanextensionaddaction)
-- [\PAMI\Message\Action\DialplanExtensionRemoveAction](#class-pamimessageactiondialplanextensionremoveaction)
 - [\PAMI\Message\Action\DialplanExtensionAddAction](#class-pamimessageactiondialplanextensionaddaction)
 - [\PAMI\Message\Action\BridgeDestroyAction](#class-pamimessageactionbridgedestroyaction)
 - [\PAMI\Message\Action\BridgeKickAction](#class-pamimessageactionbridgekickaction)
@@ -217,62 +324,126 @@
 - [\PAMI\Message\Action\VoicemailRefreshAction](#class-pamimessageactionvoicemailrefreshaction)
 - [\PAMI\Message\Action\VoicemailUserStatusAction](#class-pamimessageactionvoicemailuserstatusaction)
 - [\PAMI\Message\Action\AttendedTransferAction](#class-pamimessageactionattendedtransferaction)
-- [\PAMI\Message\Event\AGIExecEndEvent](#class-pamimessageeventagiexecendevent)
+- [\PAMI\Message\Action\DAHDIDialOffhookAction](#class-pamimessageactiondahdidialoffhookaction)
+- [\PAMI\Message\Action\DAHDIDNDoffAction](#class-pamimessageactiondahdidndoffaction)
+- [\PAMI\Message\Action\DAHDIDNDonAction](#class-pamimessageactiondahdidndonaction)
+- [\PAMI\Message\Action\SIPPeersAction](#class-pamimessageactionsippeersaction)
+- [\PAMI\Message\Action\SIPPeersAction](#class-pamimessageactionsippeersaction)
+- [\PAMI\Message\Action\ConfbridgeStartRecordAction](#class-pamimessageactionconfbridgestartrecordaction)
+- [\PAMI\Message\Action\MixMonitorAction](#class-pamimessageactionmixmonitoraction)
+- [\PAMI\Message\Action\AGIAction](#class-pamimessageactionagiaction)
+- [\PAMI\Message\Action\AbsoluteTimeoutAction](#class-pamimessageactionabsolutetimeoutaction)
+- [\PAMI\Message\Action\AgentLogoffAction](#class-pamimessageactionagentlogoffaction)
+- [\PAMI\Message\Action\AgentsAction](#class-pamimessageactionagentsaction)
+- [\PAMI\Message\Action\BlindTransferAction](#class-pamimessageactionblindtransferaction)
+- [\PAMI\Message\Action\BridgeAction](#class-pamimessageactionbridgeaction)
+- [\PAMI\Message\Action\BridgeInfoAction](#class-pamimessageactionbridgeinfoaction)
+- [\PAMI\Message\Action\BridgeListAction](#class-pamimessageactionbridgelistaction)
+- [\PAMI\Message\Action\ChallengeAction](#class-pamimessageactionchallengeaction)
+- [\PAMI\Message\Action\ChangeMonitorAction](#class-pamimessageactionchangemonitoraction)
+- [\PAMI\Message\Action\CommandAction](#class-pamimessageactioncommandaction)
+- [\PAMI\Message\Action\ConfbridgeKickAction](#class-pamimessageactionconfbridgekickaction)
+- [\PAMI\Message\Action\ConfBridgeListAction](#class-pamimessageactionconfbridgelistaction)
+- [\PAMI\Message\Action\ConfbridgeListRoomsAction](#class-pamimessageactionconfbridgelistroomsaction)
+- [\PAMI\Message\Action\ConfbridgeLockAction](#class-pamimessageactionconfbridgelockaction)
+- [\PAMI\Message\Action\ConfbridgeMuteAction](#class-pamimessageactionconfbridgemuteaction)
+- [\PAMI\Message\Action\ConfbridgeStartRecordAction](#class-pamimessageactionconfbridgestartrecordaction)
+- [\PAMI\Message\Action\ConfbridgeStopRecordAction](#class-pamimessageactionconfbridgestoprecordaction)
+- [\PAMI\Message\Action\ConfbridgeUnlockAction](#class-pamimessageactionconfbridgeunlockaction)
+- [\PAMI\Message\Action\ConfbridgeUnmuteAction](#class-pamimessageactionconfbridgeunmuteaction)
+- [\PAMI\Message\Action\CoreSettingsAction](#class-pamimessageactioncoresettingsaction)
+- [\PAMI\Message\Action\CoreShowChannelsAction](#class-pamimessageactioncoreshowchannelsaction)
+- [\PAMI\Message\Action\CoreStatusAction](#class-pamimessageactioncorestatusaction)
+- [\PAMI\Message\Action\CreateConfigAction](#class-pamimessageactioncreateconfigaction)
+- [\PAMI\Message\Action\DAHDIHangupAction](#class-pamimessageactiondahdihangupaction)
+- [\PAMI\Message\Action\DAHDIRestartAction](#class-pamimessageactiondahdirestartaction)
+- [\PAMI\Message\Action\DAHDIShowChannelsAction](#class-pamimessageactiondahdishowchannelsaction)
+- [\PAMI\Message\Action\DAHDITransferAction](#class-pamimessageactiondahditransferaction)
+- [\PAMI\Message\Action\DBDelAction](#class-pamimessageactiondbdelaction)
+- [\PAMI\Message\Action\DBDelTreeAction](#class-pamimessageactiondbdeltreeaction)
+- [\PAMI\Message\Action\DBGetAction](#class-pamimessageactiondbgetaction)
+- [\PAMI\Message\Action\DBPutAction](#class-pamimessageactiondbputaction)
+- [\PAMI\Message\Action\DialplanExtensionAddAction](#class-pamimessageactiondialplanextensionaddaction)
+- [\PAMI\Message\Action\DialplanExtensionRemoveAction](#class-pamimessageactiondialplanextensionremoveaction)
+- [\PAMI\Message\Action\EventsAction](#class-pamimessageactioneventsaction)
+- [\PAMI\Message\Action\ExtensionStateAction](#class-pamimessageactionextensionstateaction)
+- [\PAMI\Message\Action\GetConfigAction](#class-pamimessageactiongetconfigaction)
+- [\PAMI\Message\Action\GetConfigJSONAction](#class-pamimessageactiongetconfigjsonaction)
+- [\PAMI\Message\Action\HangupAction](#class-pamimessageactionhangupaction)
+- [\PAMI\Message\Action\JabberSendAction](#class-pamimessageactionjabbersendaction)
+- [\PAMI\Message\Action\ListCategoriesAction](#class-pamimessageactionlistcategoriesaction)
+- [\PAMI\Message\Action\ListCommandsAction](#class-pamimessageactionlistcommandsaction)
+- [\PAMI\Message\Action\LocalOptimizeAwayAction](#class-pamimessageactionlocaloptimizeawayaction)
+- [\PAMI\Message\Action\LoginAction](#class-pamimessageactionloginaction)
+- [\PAMI\Message\Action\LogoffAction](#class-pamimessageactionlogoffaction)
+- [\PAMI\Message\Action\MailboxCountAction](#class-pamimessageactionmailboxcountaction)
+- [\PAMI\Message\Action\MailboxStatusAction](#class-pamimessageactionmailboxstatusaction)
+- [\PAMI\Message\Action\MeetmeListAction](#class-pamimessageactionmeetmelistaction)
+- [\PAMI\Message\Action\MeetmeMuteAction](#class-pamimessageactionmeetmemuteaction)
+- [\PAMI\Message\Action\MeetmeUnmuteAction](#class-pamimessageactionmeetmeunmuteaction)
+- [\PAMI\Message\Action\MixMonitorAction](#class-pamimessageactionmixmonitoraction)
+- [\PAMI\Message\Action\MixMonitorMuteAction](#class-pamimessageactionmixmonitormuteaction)
+- [\PAMI\Message\Action\ModuleCheckAction](#class-pamimessageactionmodulecheckaction)
+- [\PAMI\Message\Action\ModuleLoadAction](#class-pamimessageactionmoduleloadaction)
+- [\PAMI\Message\Action\MonitorAction](#class-pamimessageactionmonitoraction)
+- [\PAMI\Message\Action\OriginateAction](#class-pamimessageactionoriginateaction)
+- [\PAMI\Message\Action\PJSIPQualifyAction](#class-pamimessageactionpjsipqualifyaction)
+- [\PAMI\Message\Action\PJSIPRegisterAction](#class-pamimessageactionpjsipregisteraction)
+- [\PAMI\Message\Action\PJSIPShowEndpointAction](#class-pamimessageactionpjsipshowendpointaction)
+- [\PAMI\Message\Action\PJSIPShowEndpointsAction](#class-pamimessageactionpjsipshowendpointsaction)
+- [\PAMI\Message\Action\PJSIPShowRegistrationsInboundAction](#class-pamimessageactionpjsipshowregistrationsinboundaction)
+- [\PAMI\Message\Action\PJSIPShowRegistrationsOutboundAction](#class-pamimessageactionpjsipshowregistrationsoutboundaction)
+- [\PAMI\Message\Action\PJSIPShowResourceListsAction](#class-pamimessageactionpjsipshowresourcelistsaction)
+- [\PAMI\Message\Action\PJSIPShowSubscriptionsInboundAction](#class-pamimessageactionpjsipshowsubscriptionsinboundaction)
+- [\PAMI\Message\Action\PJSIPShowSubscriptionsOutboundAction](#class-pamimessageactionpjsipshowsubscriptionsoutboundaction)
+- [\PAMI\Message\Action\PJSIPUnregisterAction](#class-pamimessageactionpjsipunregisteraction)
+- [\PAMI\Message\Action\ParkAction](#class-pamimessageactionparkaction)
+- [\PAMI\Message\Action\ParkedCallsAction](#class-pamimessageactionparkedcallsaction)
+- [\PAMI\Message\Action\PauseMonitorAction](#class-pamimessageactionpausemonitoraction)
+- [\PAMI\Message\Action\PingAction](#class-pamimessageactionpingaction)
+- [\PAMI\Message\Action\PlayDTMFAction](#class-pamimessageactionplaydtmfaction)
+- [\PAMI\Message\Action\QueueAddAction](#class-pamimessageactionqueueaddaction)
+- [\PAMI\Message\Action\QueueLogAction](#class-pamimessageactionqueuelogaction)
+- [\PAMI\Message\Action\QueuePauseAction](#class-pamimessageactionqueuepauseaction)
+- [\PAMI\Message\Action\QueuePenaltyAction](#class-pamimessageactionqueuepenaltyaction)
+- [\PAMI\Message\Action\QueueReloadAction](#class-pamimessageactionqueuereloadaction)
+- [\PAMI\Message\Action\QueueRemoveAction](#class-pamimessageactionqueueremoveaction)
+- [\PAMI\Message\Action\QueueResetAction](#class-pamimessageactionqueueresetaction)
+- [\PAMI\Message\Action\QueueRuleAction](#class-pamimessageactionqueueruleaction)
+- [\PAMI\Message\Action\QueueStatusAction](#class-pamimessageactionqueuestatusaction)
+- [\PAMI\Message\Action\QueueSummaryAction](#class-pamimessageactionqueuesummaryaction)
+- [\PAMI\Message\Action\RedirectAction](#class-pamimessageactionredirectaction)
+- [\PAMI\Message\Action\ReloadAction](#class-pamimessageactionreloadaction)
+- [\PAMI\Message\Action\SendTextAction](#class-pamimessageactionsendtextaction)
+- [\PAMI\Message\Action\ShowDialPlanAction](#class-pamimessageactionshowdialplanaction)
+- [\PAMI\Message\Action\StatusAction](#class-pamimessageactionstatusaction)
+- [\PAMI\Message\Action\StopMixMonitorAction](#class-pamimessageactionstopmixmonitoraction)
+- [\PAMI\Message\Action\StopMonitorAction](#class-pamimessageactionstopmonitoraction)
+- [\PAMI\Message\Action\UnpauseMonitorAction](#class-pamimessageactionunpausemonitoraction)
+- [\PAMI\Message\Action\UpdateConfigAction](#class-pamimessageactionupdateconfigaction)
+- [\PAMI\Message\Action\UserEventAction](#class-pamimessageactionusereventaction)
+- [\PAMI\Message\Action\VoicemailUsersListAction](#class-pamimessageactionvoicemailuserslistaction)
+- [\PAMI\Message\Action\WaitEventAction](#class-pamimessageactionwaiteventaction)
+- [\PAMI\Message\Action\DAHDIShowChannelsAction](#class-pamimessageactiondahdishowchannelsaction)
 - [\PAMI\Message\Event\AGIExecEvent](#class-pamimessageeventagiexecevent)
-- [\PAMI\Message\Event\AGIExecStartEvent](#class-pamimessageeventagiexecstartevent)
-- [\PAMI\Message\Event\AgentConnectEvent](#class-pamimessageeventagentconnectevent)
-- [\PAMI\Message\Event\AgentloginEvent](#class-pamimessageeventagentloginevent)
-- [\PAMI\Message\Event\AgentlogoffEvent](#class-pamimessageeventagentlogoffevent)
-- [\PAMI\Message\Event\AgentsCompleteEvent](#class-pamimessageeventagentscompleteevent)
-- [\PAMI\Message\Event\AgentsEvent](#class-pamimessageeventagentsevent)
-- [\PAMI\Message\Event\AorDetailEvent](#class-pamimessageeventaordetailevent)
-- [\PAMI\Message\Event\AsyncAGIEndEvent](#class-pamimessageeventasyncagiendevent)
 - [\PAMI\Message\Event\AsyncAGIEvent](#class-pamimessageeventasyncagievent)
-- [\PAMI\Message\Event\AsyncAGIExecEvent](#class-pamimessageeventasyncagiexecevent)
-- [\PAMI\Message\Event\AsyncAGIStartEvent](#class-pamimessageeventasyncagistartevent)
-- [\PAMI\Message\Event\AttendedTransferEvent](#class-pamimessageeventattendedtransferevent)
-- [\PAMI\Message\Event\AuthDetailEvent](#class-pamimessageeventauthdetailevent)
-- [\PAMI\Message\Event\BlindTransferEvent](#class-pamimessageeventblindtransferevent)
-- [\PAMI\Message\Event\BridgeCreateEvent](#class-pamimessageeventbridgecreateevent)
-- [\PAMI\Message\Event\BridgeDestroyEvent](#class-pamimessageeventbridgedestroyevent)
-- [\PAMI\Message\Event\BridgeEnterEvent](#class-pamimessageeventbridgeenterevent)
 - [\PAMI\Message\Event\BridgeEvent](#class-pamimessageeventbridgeevent)
-- [\PAMI\Message\Event\BridgeInfoChannelEvent](#class-pamimessageeventbridgeinfochannelevent)
-- [\PAMI\Message\Event\BridgeInfoCompleteEvent](#class-pamimessageeventbridgeinfocompleteevent)
-- [\PAMI\Message\Event\BridgeLeaveEvent](#class-pamimessageeventbridgeleaveevent)
 - [\PAMI\Message\Event\BridgeListItemEvent](#class-pamimessageeventbridgelistitemevent)
-- [\PAMI\Message\Event\CELEvent](#class-pamimessageeventcelevent)
 - [\PAMI\Message\Event\CallAnsweredEvent](#class-pamimessageeventcallansweredevent)
 - [\PAMI\Message\Event\CallForwardEvent](#class-pamimessageeventcallforwardevent)
-- [\PAMI\Message\Event\CdrEvent](#class-pamimessageeventcdrevent)
 - [\PAMI\Message\Event\ChannelUpdateEvent](#class-pamimessageeventchannelupdateevent)
-- [\PAMI\Message\Event\ConfbridgeEndEvent](#class-pamimessageeventconfbridgeendevent)
-- [\PAMI\Message\Event\ConfbridgeJoinEvent](#class-pamimessageeventconfbridgejoinevent)
-- [\PAMI\Message\Event\ConfbridgeLeaveEvent](#class-pamimessageeventconfbridgeleaveevent)
 - [\PAMI\Message\Event\ConfbridgeListCompleteEvent](#class-pamimessageeventconfbridgelistcompleteevent)
-- [\PAMI\Message\Event\ConfbridgeListEvent](#class-pamimessageeventconfbridgelistevent)
 - [\PAMI\Message\Event\ConfbridgeListRoomsCompleteEvent](#class-pamimessageeventconfbridgelistroomscompleteevent)
 - [\PAMI\Message\Event\ConfbridgeListRoomsEvent](#class-pamimessageeventconfbridgelistroomsevent)
-- [\PAMI\Message\Event\ConfbridgeMuteEvent](#class-pamimessageeventconfbridgemuteevent)
-- [\PAMI\Message\Event\ConfbridgeStartEvent](#class-pamimessageeventconfbridgestartevent)
-- [\PAMI\Message\Event\ConfbridgeTalkingEvent](#class-pamimessageeventconfbridgetalkingevent)
-- [\PAMI\Message\Event\ConfbridgeUnmuteEvent](#class-pamimessageeventconfbridgeunmuteevent)
-- [\PAMI\Message\Event\ContactStatusDetailEvent](#class-pamimessageeventcontactstatusdetailevent)
-- [\PAMI\Message\Event\CoreShowChannelEvent](#class-pamimessageeventcoreshowchannelevent)
-- [\PAMI\Message\Event\CoreShowChannelsCompleteEvent](#class-pamimessageeventcoreshowchannelscompleteevent)
-- [\PAMI\Message\Event\DAHDIChannelEvent](#class-pamimessageeventdahdichannelevent)
 - [\PAMI\Message\Event\DAHDIShowChannelsCompleteEvent](#class-pamimessageeventdahdishowchannelscompleteevent)
 - [\PAMI\Message\Event\DAHDIShowChannelsEvent](#class-pamimessageeventdahdishowchannelsevent)
 - [\PAMI\Message\Event\DBGetResponseEvent](#class-pamimessageeventdbgetresponseevent)
 - [\PAMI\Message\Event\DNDEvent](#class-pamimessageeventdndevent)
-- [\PAMI\Message\Event\DNDStateEvent](#class-pamimessageeventdndstateevent)
 - [\PAMI\Message\Event\DTMFBeginEvent](#class-pamimessageeventdtmfbeginevent)
 - [\PAMI\Message\Event\DTMFEndEvent](#class-pamimessageeventdtmfendevent)
 - [\PAMI\Message\Event\DTMFEvent](#class-pamimessageeventdtmfevent)
 - [\PAMI\Message\Event\DeviceStateChangeEvent](#class-pamimessageeventdevicestatechangeevent)
 - [\PAMI\Message\Event\DeviceStatusEvent](#class-pamimessageeventdevicestatusevent)
-- [\PAMI\Message\Event\DialBeginEvent](#class-pamimessageeventdialbeginevent)
-- [\PAMI\Message\Event\DialEndEvent](#class-pamimessageeventdialendevent)
 - [\PAMI\Message\Event\DialEvent](#class-pamimessageeventdialevent)
 - [\PAMI\Message\Event\DongleDeviceEntryEvent](#class-pamimessageeventdongledeviceentryevent)
 - [\PAMI\Message\Event\DongleNewCUSDEvent](#class-pamimessageeventdonglenewcusdevent)
@@ -282,14 +453,7 @@
 - [\PAMI\Message\Event\DongleShowDevicesCompleteEvent](#class-pamimessageeventdongleshowdevicescompleteevent)
 - [\PAMI\Message\Event\DongleStatusEvent](#class-pamimessageeventdonglestatusevent)
 - [\PAMI\Message\Event\DongleUSSDStatusEvent](#class-pamimessageeventdongleussdstatusevent)
-- [\PAMI\Message\Event\EndpointDetailEvent](#class-pamimessageeventendpointdetailevent)
-- [\PAMI\Message\Event\EndpointListCompleteEvent](#class-pamimessageeventendpointlistcompleteevent)
-- [\PAMI\Message\Event\EndpointListEvent](#class-pamimessageeventendpointlistevent)
 - [\PAMI\Message\Event\EventMessage (abstract)](#class-pamimessageeventeventmessage-abstract)
-- [\PAMI\Message\Event\ExtensionStatusEvent](#class-pamimessageeventextensionstatusevent)
-- [\PAMI\Message\Event\FullyBootedEvent](#class-pamimessageeventfullybootedevent)
-- [\PAMI\Message\Event\HangupEvent](#class-pamimessageeventhangupevent)
-- [\PAMI\Message\Event\HoldEvent](#class-pamimessageeventholdevent)
 - [\PAMI\Message\Event\IdentifyDetailEvent](#class-pamimessageeventidentifydetailevent)
 - [\PAMI\Message\Event\InboundRegistrationDetailEvent](#class-pamimessageeventinboundregistrationdetailevent)
 - [\PAMI\Message\Event\JabberEventEvent](#class-pamimessageeventjabbereventevent)
@@ -300,46 +464,23 @@
 - [\PAMI\Message\Event\MasqueradeEvent](#class-pamimessageeventmasqueradeevent)
 - [\PAMI\Message\Event\MessageWaitingEvent](#class-pamimessageeventmessagewaitingevent)
 - [\PAMI\Message\Event\MusicOnHoldEvent](#class-pamimessageeventmusiconholdevent)
-- [\PAMI\Message\Event\MusicOnHoldStartEvent](#class-pamimessageeventmusiconholdstartevent)
-- [\PAMI\Message\Event\MusicOnHoldStopEvent](#class-pamimessageeventmusiconholdstopevent)
-- [\PAMI\Message\Event\NewAccountCodeEvent](#class-pamimessageeventnewaccountcodeevent)
-- [\PAMI\Message\Event\NewCalleridEvent](#class-pamimessageeventnewcalleridevent)
-- [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
-- [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
-- [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
-- [\PAMI\Message\Event\OriginateResponseEvent](#class-pamimessageeventoriginateresponseevent)
 - [\PAMI\Message\Event\OutboundRegistrationDetailEvent](#class-pamimessageeventoutboundregistrationdetailevent)
 - [\PAMI\Message\Event\OutboundSubscriptionDetailEvent](#class-pamimessageeventoutboundsubscriptiondetailevent)
-- [\PAMI\Message\Event\ParkedCallEvent](#class-pamimessageeventparkedcallevent)
-- [\PAMI\Message\Event\ParkedCallGiveUpEvent](#class-pamimessageeventparkedcallgiveupevent)
-- [\PAMI\Message\Event\ParkedCallTimeOutEvent](#class-pamimessageeventparkedcalltimeoutevent)
 - [\PAMI\Message\Event\ParkedCallsCompleteEvent](#class-pamimessageeventparkedcallscompleteevent)
 - [\PAMI\Message\Event\PeerEntryEvent](#class-pamimessageeventpeerentryevent)
-- [\PAMI\Message\Event\PeerStatusEvent](#class-pamimessageeventpeerstatusevent)
 - [\PAMI\Message\Event\PeerlistCompleteEvent](#class-pamimessageeventpeerlistcompleteevent)
-- [\PAMI\Message\Event\QueueCallerAbandonEvent](#class-pamimessageeventqueuecallerabandonevent)
-- [\PAMI\Message\Event\QueueCallerJoinEvent](#class-pamimessageeventqueuecallerjoinevent)
-- [\PAMI\Message\Event\QueueCallerLeaveEvent](#class-pamimessageeventqueuecallerleaveevent)
 - [\PAMI\Message\Event\QueueEntryEvent](#class-pamimessageeventqueueentryevent)
-- [\PAMI\Message\Event\QueueMemberAddedEvent](#class-pamimessageeventqueuememberaddedevent)
 - [\PAMI\Message\Event\QueueMemberEvent](#class-pamimessageeventqueuememberevent)
 - [\PAMI\Message\Event\QueueMemberPausedEvent](#class-pamimessageeventqueuememberpausedevent)
-- [\PAMI\Message\Event\QueueMemberRemovedEvent](#class-pamimessageeventqueuememberremovedevent)
-- [\PAMI\Message\Event\QueueMemberStatusEvent](#class-pamimessageeventqueuememberstatusevent)
 - [\PAMI\Message\Event\QueueParamsEvent](#class-pamimessageeventqueueparamsevent)
 - [\PAMI\Message\Event\QueueStatusCompleteEvent](#class-pamimessageeventqueuestatuscompleteevent)
 - [\PAMI\Message\Event\QueueSummaryCompleteEvent](#class-pamimessageeventqueuesummarycompleteevent)
 - [\PAMI\Message\Event\QueueSummaryEvent](#class-pamimessageeventqueuesummaryevent)
-- [\PAMI\Message\Event\RTCPReceivedEvent](#class-pamimessageeventrtcpreceivedevent)
 - [\PAMI\Message\Event\RTCPReceiverStatEvent](#class-pamimessageeventrtcpreceiverstatevent)
-- [\PAMI\Message\Event\RTCPSentEvent](#class-pamimessageeventrtcpsentevent)
 - [\PAMI\Message\Event\RTPReceiverStatEvent](#class-pamimessageeventrtpreceiverstatevent)
 - [\PAMI\Message\Event\RTPSenderStatEvent](#class-pamimessageeventrtpsenderstatevent)
 - [\PAMI\Message\Event\RegistrationsCompleteEvent](#class-pamimessageeventregistrationscompleteevent)
-- [\PAMI\Message\Event\RegistryEvent](#class-pamimessageeventregistryevent)
-- [\PAMI\Message\Event\ReloadEvent](#class-pamimessageeventreloadevent)
 - [\PAMI\Message\Event\RenameEvent](#class-pamimessageeventrenameevent)
-- [\PAMI\Message\Event\RequestBadFormatEvent](#class-pamimessageeventrequestbadformatevent)
 - [\PAMI\Message\Event\ResourceListDetailEvent](#class-pamimessageeventresourcelistdetailevent)
 - [\PAMI\Message\Event\SCCPAttachedDeviceEntryEvent](#class-pamimessageeventsccpattacheddeviceentryevent)
 - [\PAMI\Message\Event\SCCPChannelEntryEvent](#class-pamimessageeventsccpchannelentryevent)
@@ -382,19 +523,12 @@
 - [\PAMI\Message\Event\SCCPShowSoftKeySetsCompleteEvent](#class-pamimessageeventsccpshowsoftkeysetscompleteevent)
 - [\PAMI\Message\Event\SCCPSoftKeySetEntryEvent](#class-pamimessageeventsccpsoftkeysetentryevent)
 - [\PAMI\Message\Event\ShowDialPlanCompleteEvent](#class-pamimessageeventshowdialplancompleteevent)
-- [\PAMI\Message\Event\StatusCompleteEvent](#class-pamimessageeventstatuscompleteevent)
-- [\PAMI\Message\Event\StatusEvent](#class-pamimessageeventstatusevent)
 - [\PAMI\Message\Event\SuccessEvent](#class-pamimessageeventsuccessevent)
-- [\PAMI\Message\Event\SuccessfulAuthEvent](#class-pamimessageeventsuccessfulauthevent)
 - [\PAMI\Message\Event\TableEndEvent](#class-pamimessageeventtableendevent)
 - [\PAMI\Message\Event\TableStartEvent](#class-pamimessageeventtablestartevent)
 - [\PAMI\Message\Event\TransferEvent](#class-pamimessageeventtransferevent)
-- [\PAMI\Message\Event\TransportDetailEvent](#class-pamimessageeventtransportdetailevent)
-- [\PAMI\Message\Event\UnParkedCallEvent](#class-pamimessageeventunparkedcallevent)
 - [\PAMI\Message\Event\UnknownEvent](#class-pamimessageeventunknownevent)
 - [\PAMI\Message\Event\UnlinkEvent](#class-pamimessageeventunlinkevent)
-- [\PAMI\Message\Event\UserEventEvent](#class-pamimessageeventusereventevent)
-- [\PAMI\Message\Event\VarSetEvent](#class-pamimessageeventvarsetevent)
 - [\PAMI\Message\Event\VgsmMeStateEvent](#class-pamimessageeventvgsmmestateevent)
 - [\PAMI\Message\Event\VgsmNetStateEvent](#class-pamimessageeventvgsmnetstateevent)
 - [\PAMI\Message\Event\VgsmSmsRxEvent](#class-pamimessageeventvgsmsmsrxevent)
@@ -483,6 +617,83 @@
 - [\PAMI\Message\Event\UnexpectedAddressEvent](#class-pamimessageeventunexpectedaddressevent)
 - [\PAMI\Message\Event\UnholdEvent](#class-pamimessageeventunholdevent)
 - [\PAMI\Message\Event\UnloadEvent](#class-pamimessageeventunloadevent)
+- [\PAMI\Message\Event\AgentLoginEvent](#class-pamimessageeventagentloginevent)
+- [\PAMI\Message\Event\AgentLogoffEvent](#class-pamimessageeventagentlogoffevent)
+- [\PAMI\Message\Event\AGIExecEndEvent](#class-pamimessageeventagiexecendevent)
+- [\PAMI\Message\Event\AGIExecStartEvent](#class-pamimessageeventagiexecstartevent)
+- [\PAMI\Message\Event\AgentConnectEvent](#class-pamimessageeventagentconnectevent)
+- [\PAMI\Message\Event\AgentsCompleteEvent](#class-pamimessageeventagentscompleteevent)
+- [\PAMI\Message\Event\AgentsEvent](#class-pamimessageeventagentsevent)
+- [\PAMI\Message\Event\AorDetailEvent](#class-pamimessageeventaordetailevent)
+- [\PAMI\Message\Event\AsyncAGIEndEvent](#class-pamimessageeventasyncagiendevent)
+- [\PAMI\Message\Event\AsyncAGIExecEvent](#class-pamimessageeventasyncagiexecevent)
+- [\PAMI\Message\Event\AsyncAGIStartEvent](#class-pamimessageeventasyncagistartevent)
+- [\PAMI\Message\Event\AttendedTransferEvent](#class-pamimessageeventattendedtransferevent)
+- [\PAMI\Message\Event\AuthDetailEvent](#class-pamimessageeventauthdetailevent)
+- [\PAMI\Message\Event\BlindTransferEvent](#class-pamimessageeventblindtransferevent)
+- [\PAMI\Message\Event\BridgeCreateEvent](#class-pamimessageeventbridgecreateevent)
+- [\PAMI\Message\Event\BridgeDestroyEvent](#class-pamimessageeventbridgedestroyevent)
+- [\PAMI\Message\Event\BridgeEnterEvent](#class-pamimessageeventbridgeenterevent)
+- [\PAMI\Message\Event\BridgeInfoChannelEvent](#class-pamimessageeventbridgeinfochannelevent)
+- [\PAMI\Message\Event\BridgeInfoCompleteEvent](#class-pamimessageeventbridgeinfocompleteevent)
+- [\PAMI\Message\Event\BridgeLeaveEvent](#class-pamimessageeventbridgeleaveevent)
+- [\PAMI\Message\Event\CELEvent](#class-pamimessageeventcelevent)
+- [\PAMI\Message\Event\CdrEvent](#class-pamimessageeventcdrevent)
+- [\PAMI\Message\Event\ConfbridgeEndEvent](#class-pamimessageeventconfbridgeendevent)
+- [\PAMI\Message\Event\ConfbridgeJoinEvent](#class-pamimessageeventconfbridgejoinevent)
+- [\PAMI\Message\Event\ConfbridgeLeaveEvent](#class-pamimessageeventconfbridgeleaveevent)
+- [\PAMI\Message\Event\ConfbridgeListEvent](#class-pamimessageeventconfbridgelistevent)
+- [\PAMI\Message\Event\ConfbridgeMuteEvent](#class-pamimessageeventconfbridgemuteevent)
+- [\PAMI\Message\Event\ConfbridgeStartEvent](#class-pamimessageeventconfbridgestartevent)
+- [\PAMI\Message\Event\ConfbridgeTalkingEvent](#class-pamimessageeventconfbridgetalkingevent)
+- [\PAMI\Message\Event\ConfbridgeUnmuteEvent](#class-pamimessageeventconfbridgeunmuteevent)
+- [\PAMI\Message\Event\ContactStatusDetailEvent](#class-pamimessageeventcontactstatusdetailevent)
+- [\PAMI\Message\Event\CoreShowChannelEvent](#class-pamimessageeventcoreshowchannelevent)
+- [\PAMI\Message\Event\CoreShowChannelsCompleteEvent](#class-pamimessageeventcoreshowchannelscompleteevent)
+- [\PAMI\Message\Event\DAHDIChannelEvent](#class-pamimessageeventdahdichannelevent)
+- [\PAMI\Message\Event\DNDStateEvent](#class-pamimessageeventdndstateevent)
+- [\PAMI\Message\Event\DialBeginEvent](#class-pamimessageeventdialbeginevent)
+- [\PAMI\Message\Event\DialEndEvent](#class-pamimessageeventdialendevent)
+- [\PAMI\Message\Event\EndpointDetailEvent](#class-pamimessageeventendpointdetailevent)
+- [\PAMI\Message\Event\EndpointListCompleteEvent](#class-pamimessageeventendpointlistcompleteevent)
+- [\PAMI\Message\Event\EndpointListEvent](#class-pamimessageeventendpointlistevent)
+- [\PAMI\Message\Event\ExtensionStatusEvent](#class-pamimessageeventextensionstatusevent)
+- [\PAMI\Message\Event\FullyBootedEvent](#class-pamimessageeventfullybootedevent)
+- [\PAMI\Message\Event\HangupEvent](#class-pamimessageeventhangupevent)
+- [\PAMI\Message\Event\HoldEvent](#class-pamimessageeventholdevent)
+- [\PAMI\Message\Event\MusicOnHoldStartEvent](#class-pamimessageeventmusiconholdstartevent)
+- [\PAMI\Message\Event\MusicOnHoldStopEvent](#class-pamimessageeventmusiconholdstopevent)
+- [\PAMI\Message\Event\NewAccountCodeEvent](#class-pamimessageeventnewaccountcodeevent)
+- [\PAMI\Message\Event\NewCalleridEvent](#class-pamimessageeventnewcalleridevent)
+- [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
+- [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
+- [\PAMI\Message\Event\OriginateResponseEvent](#class-pamimessageeventoriginateresponseevent)
+- [\PAMI\Message\Event\ParkedCallEvent](#class-pamimessageeventparkedcallevent)
+- [\PAMI\Message\Event\ParkedCallGiveUpEvent](#class-pamimessageeventparkedcallgiveupevent)
+- [\PAMI\Message\Event\ParkedCallTimeOutEvent](#class-pamimessageeventparkedcalltimeoutevent)
+- [\PAMI\Message\Event\PeerStatusEvent](#class-pamimessageeventpeerstatusevent)
+- [\PAMI\Message\Event\QueueCallerAbandonEvent](#class-pamimessageeventqueuecallerabandonevent)
+- [\PAMI\Message\Event\QueueCallerJoinEvent](#class-pamimessageeventqueuecallerjoinevent)
+- [\PAMI\Message\Event\QueueCallerLeaveEvent](#class-pamimessageeventqueuecallerleaveevent)
+- [\PAMI\Message\Event\QueueMemberAddedEvent](#class-pamimessageeventqueuememberaddedevent)
+- [\PAMI\Message\Event\QueueMemberRemovedEvent](#class-pamimessageeventqueuememberremovedevent)
+- [\PAMI\Message\Event\QueueMemberStatusEvent](#class-pamimessageeventqueuememberstatusevent)
+- [\PAMI\Message\Event\RTCPReceivedEvent](#class-pamimessageeventrtcpreceivedevent)
+- [\PAMI\Message\Event\RTCPSentEvent](#class-pamimessageeventrtcpsentevent)
+- [\PAMI\Message\Event\RegistryEvent](#class-pamimessageeventregistryevent)
+- [\PAMI\Message\Event\ReloadEvent](#class-pamimessageeventreloadevent)
+- [\PAMI\Message\Event\RequestBadFormatEvent](#class-pamimessageeventrequestbadformatevent)
+- [\PAMI\Message\Event\StatusCompleteEvent](#class-pamimessageeventstatuscompleteevent)
+- [\PAMI\Message\Event\StatusEvent](#class-pamimessageeventstatusevent)
+- [\PAMI\Message\Event\SuccessfulAuthEvent](#class-pamimessageeventsuccessfulauthevent)
+- [\PAMI\Message\Event\TransportDetailEvent](#class-pamimessageeventtransportdetailevent)
+- [\PAMI\Message\Event\UnParkedCallEvent](#class-pamimessageeventunparkedcallevent)
+- [\PAMI\Message\Event\UserEventEvent](#class-pamimessageeventusereventevent)
+- [\PAMI\Message\Event\VarSetEvent](#class-pamimessageeventvarsetevent)
+- [\PAMI\Message\Event\AgentLoginEvent](#class-pamimessageeventagentloginevent)
+- [\PAMI\Message\Event\AgentLogoffEvent](#class-pamimessageeventagentlogoffevent)
+- [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
+- [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
 - [\PAMI\Message\Event\Factory\Impl\EventFactoryImpl](#class-pamimessageeventfactoryimpleventfactoryimpl)
 - [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
 - [\PAMI\Message\Response\ComplexResponse](#class-pamimessageresponsecomplexresponse)
@@ -768,30 +979,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\AGIAction
-
-> AGI action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$channel</strong>, <em>mixed</em> <strong>$command</strong>, <em>string</em> <strong>$commandId=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\AbsoluteTimeoutAction
-
-> AbsoluteTimeout action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>integer</em> <strong>$timeout</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\ActionMessage (abstract)
 
 > A generic action ami message. PHP Version 5
@@ -805,30 +992,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\AgentLogoffAction
-
-> AgentLogoff action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$agent</strong>, <em>bool/string</em> <strong>$soft=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\AgentsAction
-
-> Agents action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\AttendedTransferAction
 
 > AttendedTransfer action message. using 'Atxfer'
@@ -837,378 +1000,6 @@
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to.</em> |
 | public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>set Context Context to transfer to.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\BlindTransferAction
-
-> BlindTransfer action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$extension</strong>, <em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\BridgeAction
-
-> Bridge action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel1</strong>, <em>string</em> <strong>$channel2</strong>, <em>bool/boolean</em> <strong>$tone=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\BridgeInfoAction
-
-> Returns detailed information about a bridge and the channels in it. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$bridgeUniqueid</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\BridgeListAction
-
-> BridgeList action message. Get a list of bridges in the system. Returns a list of bridges, optionally filtering on a bridge type.
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string/bool</em> <strong>$bridgeType=false</strong>, <em>string</em> <strong>$actionId=`''`</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ChallengeAction
-
-> Challenge action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$authType=`'MD5'`</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ChangeMonitorAction
-
-> Changes the monitor filename. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\CommandAction
-
-> Command action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$command</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeKickAction
-
-> ConfbridgeKick action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>, <em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfBridgeListAction
-
-> Show sip peers. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeListRoomsAction
-
-> ConfbridgeListRooms action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeLockAction
-
-> ConfbridgeLock action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeMuteAction
-
-> ConfbridgeMute action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeStartRecordAction
-
-> ConfbridgeStartRecord action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeStopRecordAction
-
-> ConfbridgeStopRecord action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeUnlockAction
-
-> ConfbridgeUnlock action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ConfbridgeUnmuteAction
-
-> ConfbridgeUnmute action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\CoreSettingsAction
-
-> CoreSettings action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\CoreShowChannelsAction
-
-> Show channels. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\CoreStatusAction
-
-> CoreStatus action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\CreateConfigAction
-
-> CreateConfig action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDIDNDOffAction
-
-> DAHDIDNDoff action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDIDNDOnAction
-
-> DAHDIDNDon action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDIDialOffHookAction
-
-> DAHDIDiallOffhook action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$channel</strong>, <em>mixed</em> <strong>$number</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDIHangupAction
-
-> DAHDIHangup action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDIRestartAction
-
-> DAHDIRestart action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDIShowChannelsAction
-
-> DAHDIShowChannels action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DAHDITransferAction
-
-> DAHDITransfer action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DBDelAction
-
-> DBDel action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>string</em> <strong>$key</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DBDelTreeAction
-
-> DBDelTree action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>bool/string</em> <strong>$key=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DBGetAction
-
-> DBGet action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>string</em> <strong>$key</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DBPutAction
-
-> DBPut action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -1322,54 +1113,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\EventsAction
-
-> Events action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>array/string[]</em> <strong>$mask=array()</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ExtensionStateAction
-
-> ExtensionState action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$exten</strong>, <em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\GetConfigAction
-
-> GetConfig action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$filename</strong>, <em>bool/boolean</em> <strong>$category=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\GetConfigJSONAction
-
-> GetConfigJSON action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\GetVarAction
 
 > GetVar action message. PHP Version 5
@@ -1377,202 +1120,6 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>string</em> <strong>$name</strong>, <em>bool/string</em> <strong>$channel=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\HangupAction
-
-> Hangup action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>int</em> <strong>$cause=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\JabberSendAction
-
-> JabberSend action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$jabber</strong>, <em>string</em> <strong>$jid</strong>, <em>string</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ListCategoriesAction
-
-> ListCategories action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$file</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ListCommandsAction
-
-> Lists avaiable manager actions. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\LocalOptimizeAwayAction
-
-> LocalOptimizeAway action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\LoginAction
-
-> Login action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$user</strong>, <em>string</em> <strong>$password</strong>, <em>string/null</em> <strong>$eventMask=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\LogoffAction
-
-> Logoff action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MailboxCountAction
-
-> MailboxCount action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$mailbox</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MailboxStatusAction
-
-> MailboxStatus action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$mailbox</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MeetmeListAction
-
-> MeetmeList action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MeetmeMuteAction
-
-> MeetmeMute action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>, <em>string</em> <strong>$user</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MeetmeUnmuteAction
-
-> MeetmeUnmute action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>, <em>string</em> <strong>$user</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MixMonitorAction
-
-> MixMonitor action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setFile(</strong><em>string</em> <strong>$file</strong>)</strong> : <em>void</em><br /><em>Sets File key.</em> |
-| public | <strong>setOptions(</strong><em>string[]</em> <strong>$options</strong>)</strong> : <em>void</em><br /><em>Sets Options key.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\MixMonitorMuteAction
-
-> MixMonitorMute action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>bool</em> <strong>$state=true</strong>, <em>string</em> <strong>$direction=`'both'`</strong>)</strong> : <em>void</em><br /><em>Constructor. read, write or both (from channel, to channel or both channels).</em> |
-| public | <strong>setDirection(</strong><em>string</em> <strong>$direction</strong>)</strong> : <em>void</em><br /><em>Sets state key. read, write or both (from channel, to channel or both channels).</em> |
-| public | <strong>setState(</strong><em>bool</em> <strong>$state</strong>)</strong> : <em>void</em><br /><em>Sets state key.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ModuleCheckAction
-
-> ModuleCheck action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$module</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ModuleLoadAction
-
-> ModuleLoad action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$module</strong>)</strong> : <em>void</em><br /><em>Constructor. subsystem identifier: cdr enum dnsmgr extconfig manager rtp http Module name.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -1602,253 +1149,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\MonitorAction
-
-> Monitor action message. Will always record with .wav format and mixing the input and output channels. Also, the filename is mandatory: Mix: true Format: wav PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setFormat(</strong><em>string</em> <strong>$format</strong>)</strong> : <em>void</em><br /><em>Sets Format</em> |
-| public | <strong>setMix(</strong><em>mixed</em> <strong>$mix</strong>)</strong> : <em>void</em><br /><em>Sets mixing true/false</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\OriginateAction
-
-> Originate action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setAccount(</strong><em>mixed</em> <strong>$account</strong>)</strong> : <em>void</em><br /><em>Sets Account key.</em> |
-| public | <strong>setApplication(</strong><em>string</em> <strong>$application</strong>)</strong> : <em>void</em><br /><em>Sets Application key.</em> |
-| public | <strong>setAsync(</strong><em>boolean</em> <strong>$async</strong>)</strong> : <em>void</em><br /><em>Sets Async key.</em> |
-| public | <strong>setCallerId(</strong><em>string</em> <strong>$clid</strong>)</strong> : <em>void</em><br /><em>Sets CallerID key.</em> |
-| public | <strong>setCodecs(</strong><em>string[]</em> <strong>$codecs</strong>)</strong> : <em>void</em><br /><em>Sets Codecs key.</em> |
-| public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Sets Context key.</em> |
-| public | <strong>setData(</strong><em>string</em> <strong>$data</strong>)</strong> : <em>void</em><br /><em>Sets Data key.</em> |
-| public | <strong>setExtension(</strong><em>string</em> <strong>$extension</strong>)</strong> : <em>void</em><br /><em>Sets Exten key.</em> |
-| public | <strong>setPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Sets Priority key.</em> |
-| public | <strong>setTimeout(</strong><em>integer</em> <strong>$timeout</strong>)</strong> : <em>void</em><br /><em>Sets Timeout key.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPQualifyAction
-
-> PJSIPQualify action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$endpointName</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPRegisterAction
-
-> PJSIPRegister action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$registration</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowEndpointAction
-
-> PJSIPSipshowendpoint action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$endpointName</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowEndpointsAction
-
-> PJSIPShowEndpoints action message. Lists PJSIP endpoints. Provides a listing of all endpoints.  For each endpoint an 'EndpointList' event is raised that contains relevant attributes and status information. Once all endpoints have been listed an 'EndpointListComplete' event is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowRegistrationsInboundAction
-
-> PJSIPShowRegistrationsInbound action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowRegistrationsOutboundAction
-
-> PJSIPShowRegistrationsOutbound action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowResourceListsAction
-
-> PJSIPShowResourceLists action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowSubscriptionsInboundAction
-
-> PJSIPShowSubscriptionsInbound action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPShowSubscriptionsOutboundAction
-
-> PJSIPShowSubscriptionsOutbound action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PJSIPUnregisterAction
-
-> PJSIPUnregister action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$registration</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ParkAction
-
-> Park action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel1</strong>, <em>string</em> <strong>$channel2</strong>, <em>bool/integer</em> <strong>$timeout=false</strong>, <em>bool/string</em> <strong>$lot=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ParkedCallsAction
-
-> ParkedCalls action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PauseMonitorAction
-
-> Pauses the Monitor for a given channel. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PingAction
-
-> Ping action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\PlayDTMFAction
-
-> PlayDTMF action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$channel</strong>, <em>mixed</em> <strong>$digit</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueAddAction
-
-> QueueAdd action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$queue</strong>, <em>string</em> <strong>$interface</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setMemberName(</strong><em>string</em> <strong>$memberName</strong>)</strong> : <em>void</em><br /><em>Sets member name. Key: 'MemberName'.</em> |
-| public | <strong>setPaused(</strong><em>string</em> <strong>$paused</strong>)</strong> : <em>void</em><br /><em>Sets paused. Key: 'Paused'.</em> |
-| public | <strong>setPenalty(</strong><em>string</em> <strong>$penalty</strong>)</strong> : <em>void</em><br /><em>Sets penalty. Key: 'Penalty'.</em> |
-| public | <strong>setStateInterface(</strong><em>string</em> <strong>$stateInterface</strong>)</strong> : <em>void</em><br /><em>Sets state interface ... ? Key: 'StateInterface'.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueLogAction
-
-> QueueLog action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$queue</strong>, <em>string</em> <strong>$event</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setMemberName(</strong><em>string</em> <strong>$interface</strong>)</strong> : <em>void</em><br /><em>Sets member name. Key: 'Interface'.</em> |
-| public | <strong>setMessage(</strong><em>string</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Sets paused. Key: 'Message'.</em> |
-| public | <strong>setUniqueId(</strong><em>string</em> <strong>$uniqueId</strong>)</strong> : <em>void</em><br /><em>Sets penalty. Key: 'UniqueId'.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\QueueMemberRingInUse
 
 > QueueReset action message. PHP Version 5
@@ -1858,102 +1158,6 @@
 | public | <strong>__construct(</strong><em>string</em> <strong>$interface</strong>, <em>mixed</em> <strong>$ringinuse</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 | public | <strong>setQueue(</strong><em>mixed</em> <strong>$queue</strong>)</strong> : <em>void</em><br /><em>Set Queue.</em> |
 | public | <strong>setRingInUse(</strong><em>boolean</em> <strong>$ringinuse</strong>)</strong> : <em>void</em><br /><em>Set RingInuse.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueuePauseAction
-
-> Queue pause action. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$interface</strong>, <em>string</em> <strong>$queue=null</strong>, <em>string</em> <strong>$reason=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueuePenaltyAction
-
-> QueuePenalty action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$interface</strong>, <em>mixed</em> <strong>$penalty</strong>, <em>string</em> <strong>$queue=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueReloadAction
-
-> QueueReload action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$queue=false</strong>, <em>bool/boolean</em> <strong>$members=false</strong>, <em>bool/boolean</em> <strong>$rules=false</strong>, <em>bool/boolean</em> <strong>$parameters=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueRemoveAction
-
-> QueueRemove action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$queue</strong>, <em>string</em> <strong>$interface</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueResetAction
-
-> QueueReset action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$queue=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueRuleAction
-
-> QueueRule action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$rule=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueStatusAction
-
-> QueueStatus action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$queue=null</strong>, <em>string</em> <strong>$member=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\QueueSummaryAction
-
-> QueueSummary action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$queue=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -1978,34 +1182,6 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\RedirectAction
-
-> Redirect action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$extension</strong>, <em>string</em> <strong>$context</strong>, <em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setExtraChannel(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraChannel.</em> |
-| public | <strong>setExtraContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraContext.</em> |
-| public | <strong>setExtraExtension(</strong><em>string</em> <strong>$extension</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraExten.</em> |
-| public | <strong>setExtraPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraPriority.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ReloadAction
-
-> Reload action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$module=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -2371,18 +1547,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\SIPPeersAction
-
-> Show sip peers. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\SIPQualifyPeerAction
 
 > SipQualifyPeer action message. PHP Version 5
@@ -2419,18 +1583,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\SendTextAction
-
-> SendText action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\SetVarAction
 
 > SetVar action message. PHP Version 5
@@ -2438,103 +1590,6 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>string</em> <strong>$name</strong>, <em>string</em> <strong>$value</strong>, <em>bool/string</em> <strong>$channel=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\ShowDialPlanAction
-
-> ShowDialPlan action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$context=false</strong>, <em>bool/string</em> <strong>$extension=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\StatusAction
-
-> Queries for the status of a channel or all channels if none specified. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>bool/string</em> <strong>$channel=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setVariables(</strong><em>array</em> <strong>$variables=array()</strong>)</strong> : <em>void</em><br /><em>Sets Variables key.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\StopMixMonitorAction
-
-> StopMixMonitor action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setMixMonitorId(</strong><em>string</em> <strong>$mixMonitorId</strong>)</strong> : <em>void</em><br /><em>Sets MixMonitorID key.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\StopMonitorAction
-
-> Stops the Monitor for a given channel. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\UnpauseMonitorAction
-
-> Unpauses the Monitor for a given channel. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\UpdateConfigAction
-
-> UpdateConfig action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setAction(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Action-XXXXXX key.</em> |
-| public | <strong>setCat(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Cat-XXXXXX key.</em> |
-| public | <strong>setDstFilename(</strong><em>mixed</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Sets Dst Filename key.</em> |
-| public | <strong>setLine(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Line-XXXXXX key.</em> |
-| public | <strong>setMatch(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Match-XXXXXX key.</em> |
-| public | <strong>setOptions(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Options-XXXXXX key.</em> |
-| public | <strong>setReload(</strong><em>mixed</em> <strong>$reload</strong>)</strong> : <em>void</em><br /><em>Sets Reload key.</em> |
-| public | <strong>setSrcFilename(</strong><em>mixed</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Sets Src filename key.</em> |
-| public | <strong>setValue(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Value-XXXXXX key.</em> |
-| public | <strong>setVar(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Var-XXXXXX key.</em> |
-| protected | <strong>getPaddedCounter()</strong> : <em>string</em><br /><em>Returns the string representation for counter with leading zeroes in UpdateConfig action format.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\UserEventAction
-
-> UserEventAction action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$userevent</strong>, <em>mixed</em> <strong>$valuesArr=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -2557,57 +1612,6 @@
 | public | <strong>setMe(</strong><em>string</em> <strong>$chipId</strong>)</strong> : <em>void</em><br /><em>Sets Chip Id - It will use the chip_id provided.Optional</em> |
 | public | <strong>setSmsClass(</strong><em>string</em> <strong>$smsClass</strong>)</strong> : <em>void</em><br /><em>Sets X-SMS-Class  key. Optional</em> |
 | public | <strong>setTo(</strong><em>string</em> <strong>$target</strong>)</strong> : <em>void</em><br /><em>Sets CellPhone Number . Mandatory</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\VoicemailUsersListAction
-
-> VoicemailUsersList action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\WaitEventAction
-
-> WaitEvent action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>int</em> <strong>$timeout</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DialplanExtensionAddAction
-
-> GetConfig action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$context</strong>, <em>mixed</em> <strong>$extension</strong>, <em>mixed</em> <strong>$priority</strong>, <em>mixed</em> <strong>$application</strong>, <em>bool</em> <strong>$replace=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setApplicationData(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>set Optional ApplicationData.</em> |
-| public | <strong>setReplace(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>set Replace previous entry at this priority.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\DialplanExtensionRemoveAction
-
-> DialplanExtensionRemove Action Note: Auto Generated using xsltproc PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$context</strong>, <em>string</em> <strong>$extension</strong>)</strong> : <em>void</em><br /><em>Constructor. Context of the extension being removed Name of the extension being removed (may include callerid match by separating with '/')</em> |
-| public | <strong>setPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>set Priority If provided, only remove this priority from the extension instead of all priorities in the extension.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -3254,31 +2258,1262 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\AGIExecEndEvent
+### Class: \PAMI\Message\Action\DAHDIDialOffhookAction
 
-> Event triggered when a received AGI command completes processing. PHP Version 5
+> DAHDIDialOffhook Action Note: Auto Generated using xsltproc
 
 | Visibility | Function |
 |:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getCommand()</strong> : <em>string</em><br /><em>Returns key: 'Command'.</em> |
-| public | <strong>getCommandId()</strong> : <em>string</em><br /><em>Returns key: 'CommandId'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'.</em> |
-| public | <strong>getResultCode()</strong> : <em>string</em><br /><em>Returns key: 'ResultCode'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+| public | <strong>__construct(</strong><em>string</em> <strong>$dahdichannel</strong>, <em>string</em> <strong>$number</strong>)</strong> : <em>void</em><br /><em>Constructor. DAHDI channel number to dial digits. Digits to dial.</em> |
 
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDIDNDoffAction
+
+> DAHDIDNDoff Action Note: Auto Generated using xsltproc
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$dahdichannel</strong>)</strong> : <em>void</em><br /><em>Constructor. DAHDI channel number to set DND off.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDIDNDonAction
+
+> DAHDIDNDon Action Note: Auto Generated using xsltproc
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$dahdichannel</strong>)</strong> : <em>void</em><br /><em>Constructor. DAHDI channel number to set DND on.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\SIPPeersAction
+
+> Show sip peers. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\SIPPeersAction
+
+> Show sip peers. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeStartRecordAction
+
+> ConfbridgeStartRecord action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MixMonitorAction
+
+> MixMonitor action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setFile(</strong><em>string</em> <strong>$file</strong>)</strong> : <em>void</em><br /><em>Sets File key.</em> |
+| public | <strong>setOptions(</strong><em>string[]</em> <strong>$options</strong>)</strong> : <em>void</em><br /><em>Sets Options key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\AGIAction
+
+> AGI action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$channel</strong>, <em>mixed</em> <strong>$command</strong>, <em>string</em> <strong>$commandId=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\AbsoluteTimeoutAction
+
+> AbsoluteTimeout action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>integer</em> <strong>$timeout</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\AgentLogoffAction
+
+> AgentLogoff action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$agent</strong>, <em>bool/string</em> <strong>$soft=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\AgentsAction
+
+> Agents action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\BlindTransferAction
+
+> BlindTransfer action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$extension</strong>, <em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\BridgeAction
+
+> Bridge action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel1</strong>, <em>string</em> <strong>$channel2</strong>, <em>bool/boolean</em> <strong>$tone=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\BridgeInfoAction
+
+> Returns detailed information about a bridge and the channels in it. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$bridgeUniqueid</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\BridgeListAction
+
+> BridgeList action message. Get a list of bridges in the system. Returns a list of bridges, optionally filtering on a bridge type.
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string/bool</em> <strong>$bridgeType=false</strong>, <em>string</em> <strong>$actionId=`''`</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ChallengeAction
+
+> Challenge action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$authType=`'MD5'`</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ChangeMonitorAction
+
+> Changes the monitor filename. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\CommandAction
+
+> Command action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$command</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeKickAction
+
+> ConfbridgeKick action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>, <em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfBridgeListAction
+
+> Show sip peers. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeListRoomsAction
+
+> ConfbridgeListRooms action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeLockAction
+
+> ConfbridgeLock action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeMuteAction
+
+> ConfbridgeMute action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeStartRecordAction
+
+> ConfbridgeStartRecord action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeStopRecordAction
+
+> ConfbridgeStopRecord action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeUnlockAction
+
+> ConfbridgeUnlock action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ConfbridgeUnmuteAction
+
+> ConfbridgeUnmute action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\CoreSettingsAction
+
+> CoreSettings action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\CoreShowChannelsAction
+
+> Show channels. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\CoreStatusAction
+
+> CoreStatus action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\CreateConfigAction
+
+> CreateConfig action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDIHangupAction
+
+> DAHDIHangup action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDIRestartAction
+
+> DAHDIRestart action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDIShowChannelsAction
+
+> DAHDIShowChannels Action Note: Auto Generated using xsltproc
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setDAHDIChannel(</strong><em>string</em> <strong>$dahdichannel</strong>)</strong> : <em>void</em><br /><em>set DAHDIChannel Specify the specific channel number to show. Show all channels if zero or not present.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDITransferAction
+
+> DAHDITransfer action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DBDelAction
+
+> DBDel action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>string</em> <strong>$key</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DBDelTreeAction
+
+> DBDelTree action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>bool/string</em> <strong>$key=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DBGetAction
+
+> DBGet action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>string</em> <strong>$key</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DBPutAction
+
+> DBPut action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$family</strong>, <em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DialplanExtensionAddAction
+
+> GetConfig action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$context</strong>, <em>mixed</em> <strong>$extension</strong>, <em>mixed</em> <strong>$priority</strong>, <em>mixed</em> <strong>$application</strong>, <em>bool</em> <strong>$replace=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setApplicationData(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>set Optional ApplicationData.</em> |
+| public | <strong>setReplace(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>set Replace previous entry at this priority.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DialplanExtensionRemoveAction
+
+> DialplanExtensionRemove Action Note: Auto Generated using xsltproc PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$context</strong>, <em>string</em> <strong>$extension</strong>)</strong> : <em>void</em><br /><em>Constructor. Context of the extension being removed Name of the extension being removed (may include callerid match by separating with '/')</em> |
+| public | <strong>setPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>set Priority If provided, only remove this priority from the extension instead of all priorities in the extension.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\EventsAction
+
+> Events action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>array/string[]</em> <strong>$mask=array()</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ExtensionStateAction
+
+> ExtensionState action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$exten</strong>, <em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\GetConfigAction
+
+> GetConfig action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$filename</strong>, <em>bool/boolean</em> <strong>$category=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\GetConfigJSONAction
+
+> GetConfigJSON action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\HangupAction
+
+> Hangup action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>int</em> <strong>$cause=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\JabberSendAction
+
+> JabberSend action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$jabber</strong>, <em>string</em> <strong>$jid</strong>, <em>string</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ListCategoriesAction
+
+> ListCategories action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$file</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ListCommandsAction
+
+> Lists avaiable manager actions. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\LocalOptimizeAwayAction
+
+> LocalOptimizeAway action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\LoginAction
+
+> Login action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$user</strong>, <em>string</em> <strong>$password</strong>, <em>string/null</em> <strong>$eventMask=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\LogoffAction
+
+> Logoff action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MailboxCountAction
+
+> MailboxCount action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$mailbox</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MailboxStatusAction
+
+> MailboxStatus action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$mailbox</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MeetmeListAction
+
+> MeetmeList action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MeetmeMuteAction
+
+> MeetmeMute action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>, <em>string</em> <strong>$user</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MeetmeUnmuteAction
+
+> MeetmeUnmute action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$conference</strong>, <em>string</em> <strong>$user</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MixMonitorAction
+
+> MixMonitor action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setFile(</strong><em>string</em> <strong>$file</strong>)</strong> : <em>void</em><br /><em>Sets File key.</em> |
+| public | <strong>setOptions(</strong><em>string[]</em> <strong>$options</strong>)</strong> : <em>void</em><br /><em>Sets Options key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MixMonitorMuteAction
+
+> MixMonitorMute action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>bool</em> <strong>$state=true</strong>, <em>string</em> <strong>$direction=`'both'`</strong>)</strong> : <em>void</em><br /><em>Constructor. read, write or both (from channel, to channel or both channels).</em> |
+| public | <strong>setDirection(</strong><em>string</em> <strong>$direction</strong>)</strong> : <em>void</em><br /><em>Sets state key. read, write or both (from channel, to channel or both channels).</em> |
+| public | <strong>setState(</strong><em>bool</em> <strong>$state</strong>)</strong> : <em>void</em><br /><em>Sets state key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ModuleCheckAction
+
+> ModuleCheck action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$module</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ModuleLoadAction
+
+> ModuleLoad action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$module</strong>)</strong> : <em>void</em><br /><em>Constructor. subsystem identifier: cdr enum dnsmgr extconfig manager rtp http Module name.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\MonitorAction
+
+> Monitor action message. Will always record with .wav format and mixing the input and output channels. Also, the filename is mandatory: Mix: true Format: wav PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setFormat(</strong><em>string</em> <strong>$format</strong>)</strong> : <em>void</em><br /><em>Sets Format</em> |
+| public | <strong>setMix(</strong><em>mixed</em> <strong>$mix</strong>)</strong> : <em>void</em><br /><em>Sets mixing true/false</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\OriginateAction
+
+> Originate action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setAccount(</strong><em>mixed</em> <strong>$account</strong>)</strong> : <em>void</em><br /><em>Sets Account key.</em> |
+| public | <strong>setApplication(</strong><em>string</em> <strong>$application</strong>)</strong> : <em>void</em><br /><em>Sets Application key.</em> |
+| public | <strong>setAsync(</strong><em>boolean</em> <strong>$async</strong>)</strong> : <em>void</em><br /><em>Sets Async key.</em> |
+| public | <strong>setCallerId(</strong><em>string</em> <strong>$clid</strong>)</strong> : <em>void</em><br /><em>Sets CallerID key.</em> |
+| public | <strong>setCodecs(</strong><em>string[]</em> <strong>$codecs</strong>)</strong> : <em>void</em><br /><em>Sets Codecs key.</em> |
+| public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Sets Context key.</em> |
+| public | <strong>setData(</strong><em>string</em> <strong>$data</strong>)</strong> : <em>void</em><br /><em>Sets Data key.</em> |
+| public | <strong>setExtension(</strong><em>string</em> <strong>$extension</strong>)</strong> : <em>void</em><br /><em>Sets Exten key.</em> |
+| public | <strong>setPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Sets Priority key.</em> |
+| public | <strong>setTimeout(</strong><em>integer</em> <strong>$timeout</strong>)</strong> : <em>void</em><br /><em>Sets Timeout key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPQualifyAction
+
+> PJSIPQualify action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$endpointName</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPRegisterAction
+
+> PJSIPRegister action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$registration</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowEndpointAction
+
+> PJSIPSipshowendpoint action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$endpointName</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowEndpointsAction
+
+> PJSIPShowEndpoints action message. Lists PJSIP endpoints. Provides a listing of all endpoints.  For each endpoint an 'EndpointList' event is raised that contains relevant attributes and status information. Once all endpoints have been listed an 'EndpointListComplete' event is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowRegistrationsInboundAction
+
+> PJSIPShowRegistrationsInbound action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowRegistrationsOutboundAction
+
+> PJSIPShowRegistrationsOutbound action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowResourceListsAction
+
+> PJSIPShowResourceLists action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowSubscriptionsInboundAction
+
+> PJSIPShowSubscriptionsInbound action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPShowSubscriptionsOutboundAction
+
+> PJSIPShowSubscriptionsOutbound action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PJSIPUnregisterAction
+
+> PJSIPUnregister action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$registration</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ParkAction
+
+> Park action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel1</strong>, <em>string</em> <strong>$channel2</strong>, <em>bool/integer</em> <strong>$timeout=false</strong>, <em>bool/string</em> <strong>$lot=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ParkedCallsAction
+
+> ParkedCalls action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PauseMonitorAction
+
+> Pauses the Monitor for a given channel. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PingAction
+
+> Ping action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\PlayDTMFAction
+
+> PlayDTMF action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$channel</strong>, <em>mixed</em> <strong>$digit</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueAddAction
+
+> QueueAdd action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$queue</strong>, <em>string</em> <strong>$interface</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setMemberName(</strong><em>string</em> <strong>$memberName</strong>)</strong> : <em>void</em><br /><em>Sets member name. Key: 'MemberName'.</em> |
+| public | <strong>setPaused(</strong><em>string</em> <strong>$paused</strong>)</strong> : <em>void</em><br /><em>Sets paused. Key: 'Paused'.</em> |
+| public | <strong>setPenalty(</strong><em>string</em> <strong>$penalty</strong>)</strong> : <em>void</em><br /><em>Sets penalty. Key: 'Penalty'.</em> |
+| public | <strong>setStateInterface(</strong><em>string</em> <strong>$stateInterface</strong>)</strong> : <em>void</em><br /><em>Sets state interface ... ? Key: 'StateInterface'.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueLogAction
+
+> QueueLog action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$queue</strong>, <em>string</em> <strong>$event</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setMemberName(</strong><em>string</em> <strong>$interface</strong>)</strong> : <em>void</em><br /><em>Sets member name. Key: 'Interface'.</em> |
+| public | <strong>setMessage(</strong><em>string</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Sets paused. Key: 'Message'.</em> |
+| public | <strong>setUniqueId(</strong><em>string</em> <strong>$uniqueId</strong>)</strong> : <em>void</em><br /><em>Sets penalty. Key: 'UniqueId'.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueuePauseAction
+
+> Queue pause action. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$interface</strong>, <em>string</em> <strong>$queue=null</strong>, <em>string</em> <strong>$reason=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueuePenaltyAction
+
+> QueuePenalty action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$interface</strong>, <em>mixed</em> <strong>$penalty</strong>, <em>string</em> <strong>$queue=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueReloadAction
+
+> QueueReload action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$queue=false</strong>, <em>bool/boolean</em> <strong>$members=false</strong>, <em>bool/boolean</em> <strong>$rules=false</strong>, <em>bool/boolean</em> <strong>$parameters=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueRemoveAction
+
+> QueueRemove action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$queue</strong>, <em>string</em> <strong>$interface</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueResetAction
+
+> QueueReset action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$queue=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueRuleAction
+
+> QueueRule action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$rule=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueStatusAction
+
+> QueueStatus action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$queue=null</strong>, <em>string</em> <strong>$member=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\QueueSummaryAction
+
+> QueueSummary action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$queue=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\RedirectAction
+
+> Redirect action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$extension</strong>, <em>string</em> <strong>$context</strong>, <em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setExtraChannel(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraChannel.</em> |
+| public | <strong>setExtraContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraContext.</em> |
+| public | <strong>setExtraExtension(</strong><em>string</em> <strong>$extension</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraExten.</em> |
+| public | <strong>setExtraPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Sets key ExtraPriority.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ReloadAction
+
+> Reload action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$module=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\SendTextAction
+
+> SendText action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$message</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\ShowDialPlanAction
+
+> ShowDialPlan action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$context=false</strong>, <em>bool/string</em> <strong>$extension=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\StatusAction
+
+> Queries for the status of a channel or all channels if none specified. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$channel=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setVariables(</strong><em>array</em> <strong>$variables=array()</strong>)</strong> : <em>void</em><br /><em>Sets Variables key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\StopMixMonitorAction
+
+> StopMixMonitor action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setMixMonitorId(</strong><em>string</em> <strong>$mixMonitorId</strong>)</strong> : <em>void</em><br /><em>Sets MixMonitorID key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\StopMonitorAction
+
+> Stops the Monitor for a given channel. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\UnpauseMonitorAction
+
+> Unpauses the Monitor for a given channel. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\UpdateConfigAction
+
+> UpdateConfig action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setAction(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Action-XXXXXX key.</em> |
+| public | <strong>setCat(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Cat-XXXXXX key.</em> |
+| public | <strong>setDstFilename(</strong><em>mixed</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Sets Dst Filename key.</em> |
+| public | <strong>setLine(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Line-XXXXXX key.</em> |
+| public | <strong>setMatch(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Match-XXXXXX key.</em> |
+| public | <strong>setOptions(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Options-XXXXXX key.</em> |
+| public | <strong>setReload(</strong><em>mixed</em> <strong>$reload</strong>)</strong> : <em>void</em><br /><em>Sets Reload key.</em> |
+| public | <strong>setSrcFilename(</strong><em>mixed</em> <strong>$filename</strong>)</strong> : <em>void</em><br /><em>Sets Src filename key.</em> |
+| public | <strong>setValue(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Value-XXXXXX key.</em> |
+| public | <strong>setVar(</strong><em>mixed</em> <strong>$input</strong>)</strong> : <em>void</em><br /><em>Sets Var-XXXXXX key.</em> |
+| protected | <strong>getPaddedCounter()</strong> : <em>string</em><br /><em>Returns the string representation for counter with leading zeroes in UpdateConfig action format.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\UserEventAction
+
+> UserEventAction action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>mixed</em> <strong>$userevent</strong>, <em>mixed</em> <strong>$valuesArr=null</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\VoicemailUsersListAction
+
+> VoicemailUsersList action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\WaitEventAction
+
+> WaitEvent action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>int</em> <strong>$timeout</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\DAHDIShowChannelsAction
+
+> DAHDIShowChannels Action Note: Auto Generated using xsltproc
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setDAHDIChannel(</strong><em>string</em> <strong>$dahdichannel</strong>)</strong> : <em>void</em><br /><em>set DAHDIChannel Specify the specific channel number to show. Show all channels if zero or not present.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
 <hr />
 
@@ -3295,163 +3530,6 @@
 | public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'.</em> |
 | public | <strong>getResultCode()</strong> : <em>string</em><br /><em>Returns key: 'ResultCode'.</em> |
 | public | <strong>getSubEvent()</strong> : <em>string</em><br /><em>Returns key: 'SubEvent'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AGIExecStartEvent
-
-> Event triggered when a received AGI command starts processing. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getCommand()</strong> : <em>string</em><br /><em>Returns key: 'Command'.</em> |
-| public | <strong>getCommandId()</strong> : <em>string</em><br /><em>Returns key: 'CommandId'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentConnectEvent
-
-> Event triggered when an agent connects. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgedChannel()</strong> : <em>string</em><br /><em>Returns key: 'BridgedChannel'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getHoldTime()</strong> : <em>string</em><br /><em>Returns key: 'HoldTime'.</em> |
-| public | <strong>getMember()</strong> : <em>string</em><br /><em>Returns key: 'Member'.</em> |
-| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-| public | <strong>getRingTime()</strong> : <em>string</em><br /><em>Returns key: 'RingTime'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentloginEvent
-
-> Event triggered when an agent logs in. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAgent()</strong> : <em>string</em><br /><em>Returns key: 'Agent'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentlogoffEvent
-
-> Event triggered when an agent logs off. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAgent()</strong> : <em>string</em><br /><em>Returns key: 'Agent'.</em> |
-| public | <strong>getLogintime()</strong> : <em>integer</em><br /><em>Returns key: 'Logintime'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentsCompleteEvent
-
-> Event triggered for the end of the list when an action Agents is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentsEvent
-
-> Event triggered for agents. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAgent()</strong> : <em>string</em><br /><em>Returns key: 'Agent'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'LoggedInChan'.</em> |
-| public | <strong>getLoggedInTime()</strong> : <em>integer</em><br /><em>Returns key: 'LoggedInTime'.</em> |
-| public | <strong>getName()</strong> : <em>string</em><br /><em>Returns key: 'Name'.</em> |
-| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
-| public | <strong>getTalkingTo()</strong> : <em>integer</em><br /><em>Returns key: 'TalkingTo'.</em> |
-| public | <strong>getTalkingToChannel()</strong> : <em>integer</em><br /><em>Returns key: 'TalkingToChannel'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AorDetailEvent
-
-> Event from PJSIPShowEndpoint PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAuthenticateQualify()</strong> : <em>string</em><br /><em>Returns key: 'AuthenticateQualify'. Authenticates a qualify request if needed</em> |
-| public | <strong>getContact()</strong> : <em>string</em><br /><em>Returns key: 'Contact'.</em> |
-| public | <strong>getContacts()</strong> : <em>string</em><br /><em>Returns key: 'Contacts'.</em> |
-| public | <strong>getContactsRegistered()</strong> : <em>string</em><br /><em>Returns key: 'ContactsRegistered'. The number of non-permanent contacts associated with this AoR.</em> |
-| public | <strong>getDefaultExpiration()</strong> : <em>string</em><br /><em>Returns key: 'DefaultExpiration'. Default expiration time in seconds for contacts that are dynamicallybound to an AoR.</em> |
-| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
-| public | <strong>getMailboxes()</strong> : <em>string</em><br /><em>Returns key: 'Mailboxes'. Allow subscriptions for the specified mailbox(es)</em> |
-| public | <strong>getMaxContacts()</strong> : <em>string</em><br /><em>Returns key: 'MaxContacts'. Maximum number of contacts that can bind to an AoR</em> |
-| public | <strong>getMaximumExpiration()</strong> : <em>string</em><br /><em>Returns key: 'MaximumExpiration'. Maximum time to keep an AoR</em> |
-| public | <strong>getMinimumExpiration()</strong> : <em>string</em><br /><em>Returns key: 'MinimumExpiration'. Minimum keep alive time for an AoR</em> |
-| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
-| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'aor'.</em> |
-| public | <strong>getOutboundProxy()</strong> : <em>string</em><br /><em>Returns key: 'OutboundProxy'. Outbound proxy used when sending OPTIONS request</em> |
-| public | <strong>getQualifyFrequency()</strong> : <em>string</em><br /><em>Returns key: 'QualifyFrequency'. Interval at which to qualify an AoR</em> |
-| public | <strong>getRemoveExisting()</strong> : <em>string</em><br /><em>Returns key: 'RemoveExisting'. Determines whether new contacts replace existing ones.</em> |
-| public | <strong>getSupportPath()</strong> : <em>string</em><br /><em>Returns key: 'SupportPath'. Enables Path support for REGISTER requests and Route support forother requests.</em> |
-| public | <strong>getTotalContacts()</strong> : <em>string</em><br /><em>Returns key: 'TotalContacts'. The total number of contacts associated with this AoR.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AsyncAGIEndEvent
-
-> Event triggered when a channel stops AsyncAGI command processing. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -3477,286 +3555,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\AsyncAGIExecEvent
-
-> Event triggered when AsyncAGI completes an AGI command. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getCommandID()</strong> : <em>string</em><br /><em>Returns key: 'CommandID'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-*This class implements [\PAMI\AsyncAgi\Event\IAsyncAgiExecEvent](#interface-pamiasyncagieventiasyncagiexecevent)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AsyncAGIStartEvent
-
-> Event triggered when a channel starts AsyncAGI command processing. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getEnv()</strong> : <em>string</em> |
-| public | <strong>getEnvironment()</strong> : <em>string</em><br /><em>Returns key: 'Env'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-*This class implements [\PAMI\AsyncAgi\Event\IAsyncAgiStartEvent](#interface-pamiasyncagieventiasyncagistartevent)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AttendedTransferEvent
-
-> Event triggered when an attended transfer is complete. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getDestApp()</strong> : <em>string</em><br /><em>Returns key: 'DestApp'.</em> |
-| public | <strong>getDestBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'DestBridgeUniqueid'.</em> |
-| public | <strong>getDestTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestTransfererChannel'.</em> |
-| public | <strong>getDestType()</strong> : <em>string</em><br /><em>Returns key: 'DestType'. DestType - Indicates the method by which the attended transfer completed. Bridge - The transfer was accomplished by merging two bridges into one. App - The transfer was accomplished by having a channel or bridge run a dialplan application. Link - The transfer was accomplished by linking two bridges together using a local channel pair. Threeway - The transfer was accomplished by placing all parties into a threeway call. Fail - The transfer failed.</em> |
-| public | <strong>getLocalOneAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneAccountCode'.</em> |
-| public | <strong>getLocalOneCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneCallerIDName'.</em> |
-| public | <strong>getLocalOneCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneCallerIDNum'.</em> |
-| public | <strong>getLocalOneChannel()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneChannel'.</em> |
-| public | <strong>getLocalOneChannelState()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneChannelState'.</em> |
-| public | <strong>getLocalOneChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneChannelStateDesc'.</em> |
-| public | <strong>getLocalOneConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneConnectedLineName'.</em> |
-| public | <strong>getLocalOneConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneConnectedLineNum'.</em> |
-| public | <strong>getLocalOneContext()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneContext'.</em> |
-| public | <strong>getLocalOneExten()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneExten'.</em> |
-| public | <strong>getLocalOnePriority()</strong> : <em>string</em><br /><em>Returns key: 'LocalOnePriority'.</em> |
-| public | <strong>getLocalOneUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneUniqueid'.</em> |
-| public | <strong>getLocalTwoAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoAccountCode'.</em> |
-| public | <strong>getLocalTwoCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoCallerIDName'.</em> |
-| public | <strong>getLocalTwoCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoCallerIDNum'.</em> |
-| public | <strong>getLocalTwoChannel()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoChannel'.</em> |
-| public | <strong>getLocalTwoChannelState()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoChannelState'.</em> |
-| public | <strong>getLocalTwoChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoChannelStateDesc'.</em> |
-| public | <strong>getLocalTwoConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoConnectedLineName'.</em> |
-| public | <strong>getLocalTwoConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoConnectedLineNum'.</em> |
-| public | <strong>getLocalTwoContext()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoContext'.</em> |
-| public | <strong>getLocalTwoExten()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoExten'.</em> |
-| public | <strong>getLocalTwoPriority()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoPriority'.</em> |
-| public | <strong>getLocalTwoUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoUniqueid'.</em> |
-| public | <strong>getOrigBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeCreator'.</em> |
-| public | <strong>getOrigBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeName'.</em> |
-| public | <strong>getOrigBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeNumChannels'.</em> |
-| public | <strong>getOrigBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeTechnology'.</em> |
-| public | <strong>getOrigBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeType'.</em> |
-| public | <strong>getOrigBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeUniqueid'.</em> |
-| public | <strong>getOrigTransfererAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererAccountCode'.</em> |
-| public | <strong>getOrigTransfererCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererCallerIDName'.</em> |
-| public | <strong>getOrigTransfererCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererCallerIDNum'.</em> |
-| public | <strong>getOrigTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererChannel'.</em> |
-| public | <strong>getOrigTransfererChannelState()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererChannelState'.</em> |
-| public | <strong>getOrigTransfererChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
-| public | <strong>getOrigTransfererConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererConnectedLineName'.</em> |
-| public | <strong>getOrigTransfererConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererConnectedLineNum'.</em> |
-| public | <strong>getOrigTransfererContext()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererContext'.</em> |
-| public | <strong>getOrigTransfererExten()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererExten'.</em> |
-| public | <strong>getOrigTransfererPriority()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererPriority'.</em> |
-| public | <strong>getOrigTransfererUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererUniqueid'.</em> |
-| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'. Result - Indicates if the transfer was successful or if it failed. - Fail - An internal error occurred. - Invalid - Invalid configuration for transfer (e.g. Not bridged) - Not Permitted - Bridge does not permit transfers - Success - Transfer completed successfully</em> |
-| public | <strong>getSecondBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeCreator'.</em> |
-| public | <strong>getSecondBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeName'.</em> |
-| public | <strong>getSecondBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeNumChannels'.</em> |
-| public | <strong>getSecondBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeTechnology'.</em> |
-| public | <strong>getSecondBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeType'.</em> |
-| public | <strong>getSecondBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeUniqueid'.</em> |
-| public | <strong>getSecondTransfererAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererAccountCode'.</em> |
-| public | <strong>getSecondTransfererCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererCallerIDName'.</em> |
-| public | <strong>getSecondTransfererCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererCallerIDNum'.</em> |
-| public | <strong>getSecondTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererChannel'.</em> |
-| public | <strong>getSecondTransfererChannelState()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererChannelState'.</em> |
-| public | <strong>getSecondTransfererChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
-| public | <strong>getSecondTransfererConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererConnectedLineName'.</em> |
-| public | <strong>getSecondTransfererConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererConnectedLineNum'.</em> |
-| public | <strong>getSecondTransfererContext()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererContext'.</em> |
-| public | <strong>getSecondTransfererExten()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererExten'.</em> |
-| public | <strong>getSecondTransfererPriority()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererPriority'.</em> |
-| public | <strong>getSecondTransfererUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererUniqueid'.</em> |
-| public | <strong>getTransfereeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeAccountCode'.</em> |
-| public | <strong>getTransfereeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDName'.</em> |
-| public | <strong>getTransfereeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDNum'.</em> |
-| public | <strong>getTransfereeChannel()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannel'.</em> |
-| public | <strong>getTransfereeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelState'.</em> |
-| public | <strong>getTransfereeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelStateDesc'.</em> |
-| public | <strong>getTransfereeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineName'.</em> |
-| public | <strong>getTransfereeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineNum'.</em> |
-| public | <strong>getTransfereeContext()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeContext'.</em> |
-| public | <strong>getTransfereeExten()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeExten'.</em> |
-| public | <strong>getTransfereePriority()</strong> : <em>string</em><br /><em>Returns key: 'TransfereePriority'.</em> |
-| public | <strong>getTransfereeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeUniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AuthDetailEvent
-
-> Event from PJSIPShowEndpoint PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAuthType()</strong> : <em>string</em><br /><em>Returns key: 'AuthType'. Authentication type</em> |
-| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
-| public | <strong>getMd5Cred()</strong> : <em>string</em><br /><em>Returns key: 'Md5Cred'. MD5 Hash used for authentication.</em> |
-| public | <strong>getNonceLifetime()</strong> : <em>string</em><br /><em>Returns key: 'NonceLifetime'. Lifetime of a nonce associated with this authentication config.</em> |
-| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
-| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'auth'.</em> |
-| public | <strong>getPassword()</strong> : <em>string</em><br /><em>Returns key: 'Password'. Username to use for account</em> |
-| public | <strong>getRealm()</strong> : <em>string</em><br /><em>Returns key: 'Realm'. SIP realm for endpoint</em> |
-| public | <strong>getUsername()</strong> : <em>string</em><br /><em>Returns key: 'Username'. Username to use for account</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\BlindTransferEvent
-
-> Event triggered when a blind transfer is complete. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'. BridgeCreator - Entity that created the bridge if applicable</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'. BridgeName - Name used to refer to the bridge by its BridgeCreator if applicable</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'. BridgeNumChannels - Number of channels in the bridge</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'. BridgeTechnology - Technology in use by the bridge</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'. BridgeType - The type of bridge</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'. Context - Destination context for the blind transfer.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'. Extension - Destination extension for the blind transfer.</em> |
-| public | <strong>getIsExternal()</strong> : <em>string</em><br /><em>Returns key: 'IsExternal'. IsExternal - Indicates if the transfer was performed outside of Asterisk. For instance, a channel protocol native transfer is external. A DTMF transfer is internal. Yes No</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'. Result - Indicates if the transfer was successful or if it failed. - Fail - An internal error occurred. - Invalid - Invalid configuration for transfer (e.g. Not bridged) - Not Permitted - Bridge does not permit transfers - Success - Transfer completed successfully</em> |
-| public | <strong>getTransfereeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeAccountCode'.</em> |
-| public | <strong>getTransfereeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDName'.</em> |
-| public | <strong>getTransfereeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDNum'.</em> |
-| public | <strong>getTransfereeChannel()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannel'.</em> |
-| public | <strong>getTransfereeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelState'. TransfereeChannelState - A numeric code for the channel's current state, related to TransfereeChannelStateDesc</em> |
-| public | <strong>getTransfereeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
-| public | <strong>getTransfereeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineName'.</em> |
-| public | <strong>getTransfereeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineNum'.</em> |
-| public | <strong>getTransfereeContext()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeContext'.</em> |
-| public | <strong>getTransfereeExten()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeExten'.</em> |
-| public | <strong>getTransfereePriority()</strong> : <em>string</em><br /><em>Returns key: 'TransfereePriority'.</em> |
-| public | <strong>getTransfereeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeUniqueid'.</em> |
-| public | <strong>getTransfererAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'TransfererAccountCode'.</em> |
-| public | <strong>getTransfererCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'TransfererCallerIDName'.</em> |
-| public | <strong>getTransfererCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfererCallerIDNum'.</em> |
-| public | <strong>getTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'TransfererChannel'.</em> |
-| public | <strong>getTransfererChannelState()</strong> : <em>string</em><br /><em>Returns key: 'TransfererChannelState'. TransfererChannelState - A numeric code for the channel's current state, related to TransfererChannelStateDesc</em> |
-| public | <strong>getTransfererChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'TransfererChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
-| public | <strong>getTransfererConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'TransfererConnectedLineName'.</em> |
-| public | <strong>getTransfererConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfererConnectedLineNum'.</em> |
-| public | <strong>getTransfererContext()</strong> : <em>string</em><br /><em>Returns key: 'TransfererContext'.</em> |
-| public | <strong>getTransfererExten()</strong> : <em>string</em><br /><em>Returns key: 'TransfererExten'.</em> |
-| public | <strong>getTransfererPriority()</strong> : <em>string</em><br /><em>Returns key: 'TransfererPriority'.</em> |
-| public | <strong>getTransfererUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'TransfererUniqueid'.</em> |
-| public | <strong>isExternal()</strong> : <em>bool</em><br /><em>Indicates if the transfer was performed outside of Asterisk. For instance, a channel protocol native transfer is external. A DTMF transfer is internal.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\BridgeCreateEvent
-
-> Event triggered when a bridge is created. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\BridgeDestroyEvent
-
-> Event triggered when a bridge is destroyed. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\BridgeEnterEvent
-
-> Event triggered when a channel enters a bridge. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getSwapUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'SwapUniqueid'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\BridgeEvent
 
 > Event triggered when bridging (connecting) two channels. PHP Version 5
@@ -3777,79 +3575,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\BridgeInfoChannelEvent
-
-> Event triggered when an action BridgeInfo is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\BridgeInfoCompleteEvent
-
-> Event triggered for the end of the list when an action BridgeInfo is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getBridgeVideoSource()</strong> : <em>string</em><br /><em>Returns key: 'BridgeVideoSource'.</em> |
-| public | <strong>getBridgeVideoSourceMode()</strong> : <em>string</em><br /><em>Returns key: 'BridgeVideoSourceMode'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\BridgeLeaveEvent
-
-> Event triggered when a channel leaves a bridge. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\BridgeListItemEvent
 
 > Event triggered when an action BridgeList was issued. PHP Version 5
@@ -3863,40 +3588,6 @@
 | public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
 | public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
 | public | <strong>getBridgeVideoSourceMode()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\CELEvent
-
-> Event triggered when a CEL log message is generated PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAMAFlags()</strong> : <em>string</em><br /><em>Returns key: 'AMAFlags'.</em> |
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAppData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getCallerIDani()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDani'.</em> |
-| public | <strong>getCallerIDdnid()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDdnid'.</em> |
-| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
-| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
-| public | <strong>getCallerIDrdnis()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDrdnis'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getEvent()</strong> : <em>string</em><br /><em>Returns key: 'Event'.</em> |
-| public | <strong>getEventName()</strong> : <em>string</em><br /><em>Returns key: 'EventName'.</em> |
-| public | <strong>getEventTime()</strong> : <em>string</em><br /><em>Returns key: 'EventTime'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getExtra()</strong> : <em>string</em><br /><em>Returns key: 'Extra'.</em> |
-| public | <strong>getLinkedID()</strong> : <em>string</em><br /><em>Returns key: 'LinkedID'.</em> |
-| public | <strong>getPeer()</strong> : <em>string</em><br /><em>Returns key: 'Peer'.</em> |
-| public | <strong>getPeerAccount()</strong> : <em>string</em><br /><em>Returns key: 'PeerAccount'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getTimestamp()</strong> : <em>string</em><br /><em>Returns key: 'Timestamp'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-| public | <strong>getUserfield()</strong> : <em>string</em><br /><em>Returns key: 'Userfield'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -3939,35 +3630,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\CdrEvent
-
-> Event triggered when a channel changes its status. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAMAFlags()</strong> : <em>string</em><br /><em>Returns key: 'AMAFlags'.</em> |
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAnswerTime()</strong> : <em>string</em><br /><em>Returns key: 'AnswerTime'.</em> |
-| public | <strong>getBillableSeconds()</strong> : <em>string</em><br /><em>Returns key: 'BillableSeconds'.</em> |
-| public | <strong>getCallerID()</strong> : <em>string</em><br /><em>Returns key: 'CallerID'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getDestination()</strong> : <em>string</em><br /><em>Returns key: 'Destination'.</em> |
-| public | <strong>getDestinationChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestinationChannel'.</em> |
-| public | <strong>getDestinationContext()</strong> : <em>string</em><br /><em>Returns key: 'DestinationContext'.</em> |
-| public | <strong>getDisposition()</strong> : <em>string</em><br /><em>Returns key: 'Disposition'.</em> |
-| public | <strong>getDuration()</strong> : <em>string</em><br /><em>Returns key: 'Duration'.</em> |
-| public | <strong>getEndTime()</strong> : <em>string</em><br /><em>Returns key: 'EndTime'.</em> |
-| public | <strong>getLastApplication()</strong> : <em>string</em><br /><em>Returns key: 'LastApplication'.</em> |
-| public | <strong>getLastData()</strong> : <em>string</em><br /><em>Returns key: 'LastData'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getSource()</strong> : <em>string</em><br /><em>Returns key: 'Source'.</em> |
-| public | <strong>getStartTime()</strong> : <em>string</em><br /><em>Returns key: 'StartTime'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\ChannelUpdateEvent
 
 > Event triggered when a channel updated its status. PHP Version 5
@@ -3985,91 +3647,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\ConfbridgeEndEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeJoinEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
-| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeLeaveEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
-| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\ConfbridgeListCompleteEvent
 
 > Event triggered when .. ? PHP Version 5
@@ -4077,28 +3654,6 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>getListItems()</strong> : <em>key: 'ListItems'.</em><br /><em>Shows count of returned items.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeListEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
-| public | <strong>getAnsweredTime()</strong> : <em>string</em><br /><em>Returns key: 'AnsweredTime'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getEndMarked()</strong> : <em>string</em><br /><em>Returns key: 'EndMarked'.</em> |
-| public | <strong>getMarkedUser()</strong> : <em>string</em><br /><em>Returns key: 'MarkedUser'.</em> |
-| public | <strong>getMuted()</strong> : <em>string</em><br /><em>Returns key: 'Muted'.</em> |
-| public | <strong>getWaitMarked()</strong> : <em>string</em><br /><em>Returns key: 'WaitMarked'.</em> |
-| public | <strong>getWaiting()</strong> : <em>string</em><br /><em>Returns key: 'Waiting'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -4126,194 +3681,6 @@
 | public | <strong>getLocked()</strong> : <em>string</em><br /><em>Returns key: 'Locked'.</em> |
 | public | <strong>getMarked()</strong> : <em>string</em><br /><em>Returns key: 'Marked'.</em> |
 | public | <strong>getParties()</strong> : <em>string</em><br /><em>Returns key: 'Parties'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeMuteEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
-| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeStartEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeTalkingEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getTalkingStatus()</strong> : <em>string</em><br /><em>Returns key: 'TalkingStatus'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ConfbridgeUnmuteEvent
-
-> Event triggered when .. ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
-| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
-| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
-| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
-| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
-| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
-| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
-| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
-| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ContactStatusDetailEvent
-
-> Event from PJSIPShowEndpoint PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAOR()</strong> : <em>string</em><br /><em>Returns key: 'AOR'. The AoR that owns this contact.</em> |
-| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
-| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'.</em> |
-| public | <strong>getRoundtripUsec()</strong> : <em>string</em><br /><em>Returns key: 'RoundtripUsec'. The round trip time in microseconds.</em> |
-| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'. This contact's status. Reachable Unreachable</em> |
-| public | <strong>getURI()</strong> : <em>string</em><br /><em>Returns key: 'URI'. This contact's URI.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\CoreShowChannelEvent
-
-> Event triggered when an action CoreShowChannel is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'ApplicationData'.</em> |
-| public | <strong>getBridgedChannel()</strong> : <em>string</em><br /><em>Returns key: 'BridgedChannel'.</em> |
-| public | <strong>getBridgedUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'BridgedUniqueID'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getDuration()</strong> : <em>string</em><br /><em>Returns key: 'Duration'.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\CoreShowChannelsCompleteEvent
-
-> Event triggered for the end of the list when an action CoreShowChannels is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getListItems()</strong> : <em>string</em><br /><em>Returns key: 'ListItems'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\DAHDIChannelEvent
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getDAHDIChannel()</strong> : <em>string</em><br /><em>Returns key: 'DAHDIChannel'.</em> |
-| public | <strong>getDAHDISpan()</strong> : <em>string</em><br /><em>Returns key: 'DAHDISpan'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -4372,21 +3739,6 @@
 | public | <strong>getChannelType()</strong> : <em>string</em><br /><em>Returns key: 'ChannelType'.</em> |
 | public | <strong>getFeature()</strong> : <em>string</em><br /><em>Returns key: 'Feature'.</em> |
 | public | <strong>getSCCPDevice()</strong> : <em>string</em><br /><em>Returns key: 'SCCPDevice'.</em> |
-| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\DNDStateEvent
-
-> Event triggered when the Do Not Disturb state is changed on a DAHDI channel. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strike><strong>getChannel()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getDAHDIChannel()}.</em> |
-| public | <strong>getDAHDIChannel()</strong> : <em>string</em><br /><em>Returns key: 'DAHDIChannel'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
 | public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
@@ -4487,81 +3839,6 @@
 | public | <strong>getChannelType()</strong> : <em>string</em><br /><em>Returns key: 'ChannelType'.</em> |
 | public | <strong>getDeviceStatus()</strong> : <em>string</em><br /><em>Returns key: 'DeviceStatus'.</em> |
 | public | <strong>getSCCPDevice()</strong> : <em>string</em><br /><em>Returns key: 'SCCPDevice'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\DialBeginEvent
-
-> Event triggered when a dial action has started. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getDestAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'DestAccountCode'.</em> |
-| public | <strong>getDestCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDName'.</em> |
-| public | <strong>getDestCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDNum'.</em> |
-| public | <strong>getDestChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestChannel'.</em> |
-| public | <strong>getDestChannelState()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelState'.</em> |
-| public | <strong>getDestChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelStateDesc'.</em> |
-| public | <strong>getDestConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineName'.</em> |
-| public | <strong>getDestConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineNum'.</em> |
-| public | <strong>getDestContext()</strong> : <em>string</em><br /><em>Returns key: 'DestContext'.</em> |
-| public | <strong>getDestExten()</strong> : <em>string</em><br /><em>Returns key: 'DestExten'.</em> |
-| public | <strong>getDestPriority()</strong> : <em>string</em><br /><em>Returns key: 'DestPriority'.</em> |
-| public | <strong>getDestUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'DestUniqueid'.</em> |
-| public | <strong>getDialStatus()</strong> : <em>string</em><br /><em>Returns key: 'DialStatus'.</em> |
-| public | <strong>getDialString()</strong> : <em>string</em><br /><em>Returns key: 'DialString'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\DialEndEvent
-
-> Event triggered when a dial action has completed. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getDestAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'DestAccountCode'.</em> |
-| public | <strong>getDestCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDName'.</em> |
-| public | <strong>getDestCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDNum'.</em> |
-| public | <strong>getDestChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestChannel'.</em> |
-| public | <strong>getDestChannelState()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelState'.</em> |
-| public | <strong>getDestChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelStateDesc'.</em> |
-| public | <strong>getDestConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineName'.</em> |
-| public | <strong>getDestConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineNum'.</em> |
-| public | <strong>getDestContext()</strong> : <em>string</em><br /><em>Returns key: 'DestContext'.</em> |
-| public | <strong>getDestExten()</strong> : <em>string</em><br /><em>Returns key: 'DestExten'.</em> |
-| public | <strong>getDestPriority()</strong> : <em>string</em><br /><em>Returns key: 'DestPriority'.</em> |
-| public | <strong>getDestUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'DestUniqueid'.</em> |
-| public | <strong>getDialStatus()</strong> : <em>string</em><br /><em>Returns key: 'DialStatus'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -4756,139 +4033,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\EndpointDetailEvent
-
-> Event from PJSIPShowEndpoint PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>get100rel()</strong> : <em>string</em><br /><em>Returns key: '100rel'. Allow support for RFC3262 provisional ACK tags</em> |
-| public | <strong>getAccountcode()</strong> : <em>string</em><br /><em>Returns key: 'Accountcode'. An accountcode to set automatically on any channels created for this endpoint.</em> |
-| public | <strong>getActiveChannels()</strong> : <em>string</em><br /><em>Returns key: 'ActiveChannels'. The number of active channels associated with this endpoint.</em> |
-| public | <strong>getAggregateMwi()</strong> : <em>string</em><br /><em>Returns key: 'AggregateMwi'. Condense MWI notifications into a single NOTIFY.</em> |
-| public | <strong>getAllow()</strong> : <em>string</em><br /><em>Returns key: 'Allow'. Media Codec(s) to allow</em> |
-| public | <strong>getAllowSubscribe()</strong> : <em>string</em><br /><em>Returns key: 'AllowSubscribe'. Determines if endpoint is allowed to initiate subscriptions with Asterisk.</em> |
-| public | <strong>getAllowTransfer()</strong> : <em>string</em><br /><em>Returns key: 'AllowTransfer'. Determines whether SIP REFER transfers are allowed for this endpoint</em> |
-| public | <strong>getAors()</strong> : <em>string</em><br /><em>Returns key: 'Aors'. AoR(s) to be used with the endpoint</em> |
-| public | <strong>getAuth()</strong> : <em>string</em><br /><em>Returns key: 'Auth'. Authentication Object(s) associated with the endpoint</em> |
-| public | <strong>getCallGroup()</strong> : <em>string</em><br /><em>Returns key: 'CallGroup'. The numeric pickup groups for a channel.</em> |
-| public | <strong>getCallerid()</strong> : <em>string</em><br /><em>Returns key: 'Callerid'. CallerID information for the endpoint</em> |
-| public | <strong>getCalleridPrivacy()</strong> : <em>string</em><br /><em>Returns key: 'CalleridPrivacy'. Default privacy level</em> |
-| public | <strong>getCalleridTag()</strong> : <em>string</em><br /><em>Returns key: 'CalleridTag'. Internal id_tag for the endpoint</em> |
-| public | <strong>getConnectedLineMethod()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineMethod'. Connected line method type</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'. Dialplan context for inbound sessions</em> |
-| public | <strong>getCosAudio()</strong> : <em>string</em><br /><em>Returns key: 'CosAudio'. Priority for audio streams</em> |
-| public | <strong>getCosVideo()</strong> : <em>string</em><br /><em>Returns key: 'CosVideo'. Priority for video streams</em> |
-| public | <strong>getDeviceState()</strong> : <em>string</em><br /><em>Returns key: 'DeviceState'. The aggregate device state for this endpoint.</em> |
-| public | <strong>getDeviceStateBusyAt()</strong> : <em>string</em><br /><em>Returns key: 'DeviceStateBusyAt'. The number of in-use channels which will cause busy to be returned as device state</em> |
-| public | <strong>getDirectMedia()</strong> : <em>string</em><br /><em>Returns key: 'DirectMedia'. Determines whether media may flow directly between endpoints.</em> |
-| public | <strong>getDirectMediaGlareMitigation()</strong> : <em>string</em><br /><em>Returns key: 'DirectMediaGlareMitigation'. Mitigation of direct media (re)INVITE glare</em> |
-| public | <strong>getDirectMediaMethod()</strong> : <em>string</em><br /><em>Returns key: 'DirectMediaMethod'. Direct Media method type</em> |
-| public | <strong>getDisableDirectMediaOnNat()</strong> : <em>string</em><br /><em>Returns key: 'DisableDirectMediaOnNat'. Disable direct media session refreshes when NAT obstructs the media session</em> |
-| public | <strong>getDisallow()</strong> : <em>string</em><br /><em>Returns key: 'Disallow'. Media Codec(s) to disallow</em> |
-| public | <strong>getDtlsCaFile()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCaFile'. Path to certificate authority certificate</em> |
-| public | <strong>getDtlsCaPath()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCaPath'. Path to a directory containing certificate authority certificates</em> |
-| public | <strong>getDtlsCertFile()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCertFile'. Path to certificate file to present to peer</em> |
-| public | <strong>getDtlsCipher()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCipher'. Cipher to use for DTLS negotiation</em> |
-| public | <strong>getDtlsPrivateKey()</strong> : <em>string</em><br /><em>Returns key: 'DtlsPrivateKey'. Path to private key for certificate file</em> |
-| public | <strong>getDtlsRekey()</strong> : <em>string</em><br /><em>Returns key: 'DtlsRekey'. Interval at which to renegotiate the TLS session and rekey the SRTP session</em> |
-| public | <strong>getDtlsSetup()</strong> : <em>string</em><br /><em>Returns key: 'DtlsSetup'. Whether we are willing to accept connections, connect to the other party, or both.</em> |
-| public | <strong>getDtlsVerify()</strong> : <em>string</em><br /><em>Returns key: 'DtlsVerify'. Verify that the provided peer certificate is valid</em> |
-| public | <strong>getDtmfMode()</strong> : <em>string</em><br /><em>Returns key: 'DtmfMode'. DTMF mode</em> |
-| public | <strong>getFaxDetect()</strong> : <em>string</em><br /><em>Returns key: 'FaxDetect'. Whether CNG tone detection is enabled</em> |
-| public | <strong>getForceAvp()</strong> : <em>string</em><br /><em>Returns key: 'ForceAvp'. Determines whether res_pjsip will use and enforce usage of AVP, regardless of the RTP profile in use for this endpoint.</em> |
-| public | <strong>getForceRport()</strong> : <em>string</em><br /><em>Returns key: 'ForceRport'. Force use of return port</em> |
-| public | <strong>getFromDomain()</strong> : <em>string</em><br /><em>Returns key: 'FromDomain'. Domain to user in From header for requests to this endpoint.</em> |
-| public | <strong>getFromUser()</strong> : <em>string</em><br /><em>Returns key: 'FromUser'. Username to use in From header for requests to this endpoint.</em> |
-| public | <strong>getIceSupport()</strong> : <em>string</em><br /><em>Returns key: 'IceSupport'. Enable the ICE mechanism to help traverse NAT</em> |
-| public | <strong>getIdentifyBy()</strong> : <em>string</em><br /><em>Returns key: 'IdentifyBy'. Way(s) for Endpoint to be identified</em> |
-| public | <strong>getInbandProgress()</strong> : <em>string</em><br /><em>Returns key: 'InbandProgress'. Determines whether chan_pjsip will indicate ringing using inband progress.</em> |
-| public | <strong>getLanguage()</strong> : <em>string</em><br /><em>Returns key: 'Language'. Set the default language to use for channels created for this endpoint.</em> |
-| public | <strong>getMailboxes()</strong> : <em>string</em><br /><em>Returns key: 'Mailboxes'. NOTIFY the endpoint when state changes for any of the specified mailboxes</em> |
-| public | <strong>getMediaAddress()</strong> : <em>string</em><br /><em>Returns key: 'MediaAddress'. IP address used in SDP for media handling</em> |
-| public | <strong>getMediaEncryption()</strong> : <em>string</em><br /><em>Returns key: 'MediaEncryption'. Determines whether res_pjsip will use and enforce usage of media encryption for this endpoint.</em> |
-| public | <strong>getMediaEncryptionOptimistic()</strong> : <em>string</em><br /><em>Returns key: 'MediaEncryptionOptimistic'. Determines whether encryption should be used if possible but does not terminate the session if not achieved.</em> |
-| public | <strong>getMediaUseReceivedTransport()</strong> : <em>string</em><br /><em>Returns key: 'MediaUseReceivedTransport'. Determines whether res_pjsip will use the media transport received in the offer SDP in the corresponding answer SDP.</em> |
-| public | <strong>getMessageContext()</strong> : <em>string</em><br /><em>Returns key: 'MessageContext'. Context to route incoming MESSAGE requests to.</em> |
-| public | <strong>getMohSuggest()</strong> : <em>string</em><br /><em>Returns key: 'MohSuggest'. Default Music On Hold class</em> |
-| public | <strong>getMwiFromUser()</strong> : <em>string</em><br /><em>Returns key: 'MwiFromUser'. Username to use in From header for unsolicited MWI NOTIFYs to this endpoint.</em> |
-| public | <strong>getNamedCallGroup()</strong> : <em>string</em><br /><em>Returns key: 'NamedCallGroup'. The named pickup groups for a channel.</em> |
-| public | <strong>getNamedPickupGroup()</strong> : <em>string</em><br /><em>Returns key: 'NamedPickupGroup'. The named pickup groups that a channel can pickup.</em> |
-| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
-| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'endpoint'.</em> |
-| public | <strong>getOneTouchRecording()</strong> : <em>string</em><br /><em>Returns key: 'OneTouchRecording'. Determines whether one-touch recording is allowed for this endpoint.</em> |
-| public | <strong>getOutboundAuth()</strong> : <em>string</em><br /><em>Returns key: 'OutboundAuth'. Authentication object used for outbound requests</em> |
-| public | <strong>getOutboundProxy()</strong> : <em>string</em><br /><em>Returns key: 'OutboundProxy'. Proxy through which to send requests, a full SIP URI must be provided</em> |
-| public | <strong>getPickupGroup()</strong> : <em>string</em><br /><em>Returns key: 'PickupGroup'. The numeric pickup groups that a channel can pickup.</em> |
-| public | <strong>getRecordOffFeature()</strong> : <em>string</em><br /><em>Returns key: 'RecordOffFeature'. The feature to enact when one-touch recording is turned off.</em> |
-| public | <strong>getRecordOnFeature()</strong> : <em>string</em><br /><em>Returns key: 'RecordOnFeature'. The feature to enact when one-touch recording is turned on.</em> |
-| public | <strong>getRedirectMethod()</strong> : <em>string</em><br /><em>Returns key: 'RedirectMethod'. How redirects received from an endpoint are handled</em> |
-| public | <strong>getRewriteContact()</strong> : <em>string</em><br /><em>Returns key: 'RewriteContact'. Allow Contact header to be rewritten with the source IP address-port</em> |
-| public | <strong>getRtpEngine()</strong> : <em>string</em><br /><em>Returns key: 'RtpEngine'. Name of the RTP engine to use for channels created for this endpoint</em> |
-| public | <strong>getRtpIpv6()</strong> : <em>string</em><br /><em>Returns key: 'RtpIpv6'. Allow use of IPv6 for RTP traffic</em> |
-| public | <strong>getRtpSymmetric()</strong> : <em>string</em><br /><em>Returns key: 'RtpSymmetric'. Enforce that RTP must be symmetric</em> |
-| public | <strong>getSdpOwner()</strong> : <em>string</em><br /><em>Returns key: 'SdpOwner'. String placed as the username portion of an SDP origin (o=) line.</em> |
-| public | <strong>getSdpSession()</strong> : <em>string</em><br /><em>Returns key: 'SdpSession'. String used for the SDP session (s=) line.</em> |
-| public | <strong>getSendDiversion()</strong> : <em>string</em><br /><em>Returns key: 'SendDiversion'. Send the Diversion header, conveying the diversion information to the called user agent</em> |
-| public | <strong>getSendPai()</strong> : <em>string</em><br /><em>Returns key: 'SendPai'. Send the P-Asserted-Identity header</em> |
-| public | <strong>getSendRpid()</strong> : <em>string</em><br /><em>Returns key: 'SendRpid'. Send the Remote-Party-ID header</em> |
-| public | <strong>getSetVar()</strong> : <em>string</em><br /><em>Returns key: 'SetVar'. Variable set on a channel involving the endpoint.</em> |
-| public | <strong>getSrtpTag32()</strong> : <em>string</em><br /><em>Returns key: 'SrtpTag32'. Determines whether 32 byte tags should be used instead of 80 byte tags.</em> |
-| public | <strong>getSubMinExpiry()</strong> : <em>string</em><br /><em>Returns key: 'SubMinExpiry'. The minimum allowed expiry time for subscriptions initiated by the endpoint.</em> |
-| public | <strong>getT38Udptl()</strong> : <em>string</em><br /><em>Returns key: 'T38Udptl'. Whether T.38 UDPTL support is enabled or not</em> |
-| public | <strong>getT38UdptlEc()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlEc'. T.38 UDPTL error correction method</em> |
-| public | <strong>getT38UdptlIpv6()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlIpv6'. Whether IPv6 is used for UDPTL Sessions</em> |
-| public | <strong>getT38UdptlMaxdatagram()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlMaxdatagram'. T.38 UDPTL maximum datagram size</em> |
-| public | <strong>getT38UdptlNat()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlNat'. Whether NAT support is enabled on UDPTL sessions</em> |
-| public | <strong>getTimers()</strong> : <em>string</em><br /><em>Returns key: 'Timers'. Session timers for SIP packets</em> |
-| public | <strong>getTimersMinSe()</strong> : <em>string</em><br /><em>Returns key: 'TimersMinSe'. Minimum session timers expiration period</em> |
-| public | <strong>getTimersSessExpires()</strong> : <em>string</em><br /><em>Returns key: 'TimersSessExpires'. Maximum session timer expiration period</em> |
-| public | <strong>getToneZone()</strong> : <em>string</em><br /><em>Returns key: 'ToneZone'. Set which country's indications to use for channels created for this endpoint.</em> |
-| public | <strong>getTosAudio()</strong> : <em>string</em><br /><em>Returns key: 'TosAudio'. DSCP TOS bits for audio streams</em> |
-| public | <strong>getTosVideo()</strong> : <em>string</em><br /><em>Returns key: 'TosVideo'. DSCP TOS bits for video streams</em> |
-| public | <strong>getTransport()</strong> : <em>string</em><br /><em>Returns key: 'Transport'. Desired transport configuration</em> |
-| public | <strong>getTrustIdInbound()</strong> : <em>string</em><br /><em>Returns key: 'TrustIdInbound'. Accept identification information received from this endpoint</em> |
-| public | <strong>getTrustIdOutbound()</strong> : <em>string</em><br /><em>Returns key: 'TrustIdOutbound'. Send private identification details to the endpoint.</em> |
-| public | <strong>getUseAvpf()</strong> : <em>string</em><br /><em>Returns key: 'UseAvpf'. Determines whether res_pjsip will use and enforce usage of AVPF for this endpoint.</em> |
-| public | <strong>getUsePtime()</strong> : <em>string</em><br /><em>Returns key: 'UsePtime'. Use Endpoint's requested packetisation interval</em> |
-| public | <strong>getUserEqPhone()</strong> : <em>string</em><br /><em>Returns key: 'UserEqPhone'. Determines whether a user=phone parameter is placed into the request URI if the user is determined to be a phone number</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\EndpointListCompleteEvent
-
-> Provide final information about an endpoint list. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getListItems()</strong> : <em>key: 'ListItems'.</em><br /><em>Shows count of returned items.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\EndpointListEvent
-
-> Event from PJSIPShowEndpoints PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getActiveChannels()</strong> : <em>integer for key: 'ActiveChannels'.</em><br /><em>The number of active channels associated with this endpoint.</em> |
-| public | <strong>getAor()</strong> : <em>string key: 'Aor'.</em><br /><em>The aor configurations associated with this endpoint.</em> |
-| public | <strong>getAuths()</strong> : <em>string key: 'Auths'.</em><br /><em>The inbound authentication configurations associated with this endpoint.</em> |
-| public | <strong>getContacts()</strong> : <em>string</em><br /><em>Returns key: 'Contacts'.</em> |
-| public | <strong>getDeviceState()</strong> : <em>string key: 'DeviceState'.</em><br /><em>The aggregate device state for this endpoint.</em> |
-| public | <strong>getObjectName()</strong> : <em>string key: 'ObjectName'.</em><br /><em>The name of this object.</em> |
-| public | <strong>getObjectType()</strong> : <em>string key: 'ObjectType'</em><br /><em>The object's type. This will always be 'endpoint'.</em> |
-| public | <strong>getOutboundAuths()</strong> : <em>string key: 'OutboundAuths'.</em><br /><em>The outbound authentication configurations associated with this endpoint.</em> |
-| public | <strong>getTransport()</strong> : <em>string key: 'Transport'.</em><br /><em>The transport configurations associated with this endpoint.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\EventMessage (abstract)
 
 > This is a generic event received from ami. PHP Version 5
@@ -4898,66 +4042,6 @@
 | public | <strong>getName()</strong> : <em>string</em><br /><em>Returns key 'Event'.</em> |
 
 *This class extends [\PAMI\Message\IncomingMessage](#class-pamimessageincomingmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ExtensionStatusEvent
-
-> Triggered when an extension changes its status. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getHint()</strong> : <em>string</em><br /><em>Returns key: 'Hint'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\FullyBootedEvent
-
-> Event triggered when ? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\HangupEvent
-
-> Triggered when a hangup is detected. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getCause()</strong> : <em>string</em><br /><em>Returns key: 'Cause'.</em> |
-| public | <strong>getCauseText()</strong> : <em>string</em><br /><em>Returns key: 'Cause-txt'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\HoldEvent
-
-> Event triggered when an extension is put on hold. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
 <hr />
 
@@ -5137,170 +4221,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\MusicOnHoldStartEvent
-
-> Event triggered when music on hold has started on a channel. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getClass()</strong> : <em>string</em><br /><em>Returns key: 'Class'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\MusicOnHoldStopEvent
-
-> Event triggered when music on hold has stopped on a channel. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewAccountCodeEvent
-
-> Triggered when? PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getOldAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'OldAccountCode'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewCalleridEvent
-
-> Event triggered when a caller id is used. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getCallerIdPres()</strong> : <em>string</em><br /><em>Returns key: 'CID-CallingPres'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewchannelEvent
-
-> Event triggered when a new channel is created. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewextenEvent
-
-> Event triggered when a new extension is accessed. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getExten()}.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewstateEvent
-
-> Event triggered when a channel changes its status. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'. Asterisk < 1.8.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'. Asterisk < 1.8.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'. Asterisk >= 1.8.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'. Asterisk >= 1.8.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\OriginateResponseEvent
-
-> Response from an async originate. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getActionID()</strong> : <em>string</em><br /><em>Returns key: 'ActionID'.</em> |
-| public | <strong>getCallerIdName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdName'.</em> |
-| public | <strong>getCallerIdNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getReason()</strong> : <em>string</em><br /><em>Returns key: 'Reason'.</em> |
-| public | <strong>getResponse()</strong> : <em>string</em><br /><em>Returns key: 'Response'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\OutboundRegistrationDetailEvent
 
 > Event from PJSIPShowRegistrationsOutbound PHP Version 5
@@ -5341,126 +4261,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\ParkedCallEvent
-
-> Event triggered when a call is parked. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strike><strong>getCallerIDName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDName()}.</em> |
-| public | <strike><strong>getCallerIDNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDNum()}.</em> |
-| public | <strike><strong>getChannel()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeChannel()}.</em> |
-| public | <strike><strong>getConnectedLineName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineName()}.</em> |
-| public | <strike><strong>getConnectedLineNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineNum()}.</em> |
-| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkingSpace()}.</em> |
-| public | <strong>getFrom()</strong> : <em>string</em><br /><em>Returns key: 'From'.</em> |
-| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
-| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
-| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
-| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
-| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
-| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
-| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
-| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
-| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
-| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
-| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
-| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
-| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
-| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
-| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
-| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
-| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strike><strong>getTimeout()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use ParkingTimeout()}.</em> |
-| public | <strike><strong>getUniqueID()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeUniqueid()}.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ParkedCallGiveUpEvent
-
-> Event triggered when a channel leaves a parking lot because it hung up without being answered. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
-| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
-| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
-| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
-| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
-| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
-| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
-| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
-| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
-| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
-| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
-| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
-| public | <strong>getParkerAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkerAccountCode'.</em> |
-| public | <strong>getParkerCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDName'.</em> |
-| public | <strong>getParkerCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDNum'.</em> |
-| public | <strong>getParkerChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannel'.</em> |
-| public | <strong>getParkerChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelState'.</em> |
-| public | <strong>getParkerChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelStateDesc'.</em> |
-| public | <strong>getParkerConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineName'.</em> |
-| public | <strong>getParkerConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineNum'.</em> |
-| public | <strong>getParkerContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkerContext'.</em> |
-| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
-| public | <strong>getParkerExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkerExten'.</em> |
-| public | <strong>getParkerPriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkerPriority'.</em> |
-| public | <strong>getParkerUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkerUniqueid'.</em> |
-| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
-| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
-| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
-| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ParkedCallTimeOutEvent
-
-> Event triggered when a channel leaves a parking lot due to reaching the time limit of being parked. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
-| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
-| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
-| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
-| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
-| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
-| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
-| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
-| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
-| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
-| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
-| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
-| public | <strong>getParkerAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkerAccountCode'.</em> |
-| public | <strong>getParkerCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDName'.</em> |
-| public | <strong>getParkerCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDNum'.</em> |
-| public | <strong>getParkerChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannel'.</em> |
-| public | <strong>getParkerChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelState'.</em> |
-| public | <strong>getParkerChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelStateDesc'.</em> |
-| public | <strong>getParkerConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineName'.</em> |
-| public | <strong>getParkerConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineNum'.</em> |
-| public | <strong>getParkerContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkerContext'.</em> |
-| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
-| public | <strong>getParkerExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkerExten'.</em> |
-| public | <strong>getParkerPriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkerPriority'.</em> |
-| public | <strong>getParkerUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkerUniqueid'.</em> |
-| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
-| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
-| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
-| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\ParkedCallsCompleteEvent
 
 > Event triggered for the end of the list when an action ParkedCalls is issued. PHP Version 5
@@ -5495,21 +4295,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\PeerStatusEvent
-
-> Event triggered when a peer changes its status. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getChannelType()</strong> : <em>string</em><br /><em>Returns key: 'ChannelType'.</em> |
-| public | <strong>getPeer()</strong> : <em>string</em><br /><em>Returns key: 'Peer'.</em> |
-| public | <strong>getPeerStatus()</strong> : <em>string</em><br /><em>Returns key: 'PeerStatus'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\PeerlistCompleteEvent
 
 > Event triggered for the end of the list when an action Sippeers is issued. PHP Version 5
@@ -5517,88 +4302,6 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>getListItems()</strong> : <em>string</em><br /><em>Returns key: 'ListItems'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\QueueCallerAbandonEvent
-
-> Event triggered when a caller abandons the queue. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getHoldTime()</strong> : <em>string</em><br /><em>Returns key: 'HoldTime'.</em> |
-| public | <strong>getOriginalPosition()</strong> : <em>string</em><br /><em>Returns key: 'OriginalPosition'.</em> |
-| public | <strong>getPosition()</strong> : <em>string</em><br /><em>Returns key: 'Position'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\QueueCallerJoinEvent
-
-> Event triggered when a caller joins a Queue. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIdName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdName'.</em> |
-| public | <strong>getCallerIdNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getCount()</strong> : <em>string</em><br /><em>Returns key: 'Count'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPosition()</strong> : <em>string</em><br /><em>Returns key: 'Position'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\QueueCallerLeaveEvent
-
-> Event triggered when a caller leaves a Queue. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIdName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdName'.</em> |
-| public | <strong>getCallerIdNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getCount()</strong> : <em>string</em><br /><em>Returns key: 'Count'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPosition()</strong> : <em>string</em><br /><em>Returns key: 'Position'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -5619,27 +4322,6 @@
 | public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
 | public | <strong>getUniqueid()</strong> : <em>integer</em><br /><em>Returns key: 'Uniqueid'.</em> |
 | public | <strong>getWait()</strong> : <em>float</em><br /><em>Returns key: 'Wait'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\QueueMemberAddedEvent
-
-> Event triggered for a QueueMemberAdd action. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallsTaken()</strong> : <em>integer</em><br /><em>Returns key: 'CallsTaken'.</em> |
-| public | <strong>getLastCall()</strong> : <em>integer</em><br /><em>Returns key: 'LastCall'.</em> |
-| public | <strong>getLocation()</strong> : <em>string</em><br /><em>Returns key: 'Location'.</em> |
-| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
-| public | <strong>getMembership()</strong> : <em>string</em><br /><em>Returns key: 'Membership'.</em> |
-| public | <strong>getPaused()</strong> : <em>boolean</em><br /><em>Returns key: 'Pause'.</em> |
-| public | <strong>getPenalty()</strong> : <em>integer</em><br /><em>Returns key: 'Penalty'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-| public | <strong>getStatus()</strong> : <em>integer</em><br /><em>Returns key: 'Status'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -5678,41 +4360,6 @@
 | public | <strong>getPaused()</strong> : <em>boolean</em><br /><em>Returns key: 'Paused'.</em> |
 | public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
 | public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\QueueMemberRemovedEvent
-
-> Event triggered for a QueueMemberRemove action. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getLocation()</strong> : <em>string</em><br /><em>Returns key: 'Location'.</em> |
-| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\QueueMemberStatusEvent
-
-> Event triggered for a status change in a queue. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallsTaken()</strong> : <em>integer</em><br /><em>Returns key: 'CallsTaken'.</em> |
-| public | <strong>getLocation()</strong> : <em>string</em><br /><em>Returns key: 'Location'.</em> |
-| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
-| public | <strong>getMembership()</strong> : <em>string</em><br /><em>Returns key: 'Membership'.</em> |
-| public | <strong>getPause()</strong> : <em>boolean</em><br /><em>Returns key: 'Paused'.</em> |
-| public | <strong>getPenalty()</strong> : <em>integer</em><br /><em>Returns key: 'Penalty'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
-| public | <strong>getStatus()</strong> : <em>integer</em><br /><em>Returns key: 'Status'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -5779,30 +4426,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\RTCPReceivedEvent
-
-> Event triggered when exchanging rtp stats. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getDLSR()</strong> : <em>string</em><br /><em>Returns key: 'DLSR'.</em> |
-| public | <strong>getFractionLost()</strong> : <em>string</em><br /><em>Returns key: 'FractionLost'.</em> |
-| public | <strong>getFrom()</strong> : <em>string</em><br /><em>Returns key: 'From'.</em> |
-| public | <strong>getHighestSequence()</strong> : <em>string</em><br /><em>Returns key: 'HighestSequence'.</em> |
-| public | <strong>getIAJitter()</strong> : <em>string</em><br /><em>Returns key: 'IAJitter'.</em> |
-| public | <strong>getLastSR()</strong> : <em>string</em><br /><em>Returns key: 'LastSR'.</em> |
-| public | <strong>getPT()</strong> : <em>string</em><br /><em>Returns key: 'PT'.</em> |
-| public | <strong>getPacketsLost()</strong> : <em>string</em><br /><em>Returns key: 'PacketsLost'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getRTT()</strong> : <em>string</em><br /><em>Returns key: 'RTT'.</em> |
-| public | <strong>getReceptionReports()</strong> : <em>string</em><br /><em>Returns key: 'ReceptionReports'.</em> |
-| public | <strong>getSenderSSRC()</strong> : <em>string</em><br /><em>Returns key: 'SenderSSRC'.</em> |
-| public | <strong>getSequenceNumberCycles()</strong> : <em>string</em><br /><em>Returns key: 'SequenceNumberCycles'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\RTCPReceiverStatEvent
 
 > Event triggered when exchanging rtp stats. PHP Version 5
@@ -5816,30 +4439,6 @@
 | public | <strong>getReceivedPackets()</strong> : <em>string</em><br /><em>Returns key: 'ReceivedPackets'.</em> |
 | public | <strong>getSSRC()</strong> : <em>string</em><br /><em>Returns key: 'SSRC'.</em> |
 | public | <strong>getTransit()</strong> : <em>string</em><br /><em>Returns key: 'Transit'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\RTCPSentEvent
-
-> Event triggered when exchanging rtp stats. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCumulativeLoss()</strong> : <em>string</em><br /><em>Returns key: 'CumulativeLoss'.</em> |
-| public | <strong>getDLSR()</strong> : <em>string</em><br /><em>Returns key: 'DLSR'.</em> |
-| public | <strong>getFractionLost()</strong> : <em>string</em><br /><em>Returns key: 'FractionLost'.</em> |
-| public | <strong>getIAJitter()</strong> : <em>string</em><br /><em>Returns key: 'IAJitter'.</em> |
-| public | <strong>getOurSSRC()</strong> : <em>string</em><br /><em>Returns key: 'OurSSRC'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getReportBlock()</strong> : <em>string</em><br /><em>Returns key: 'ReportBlock'.</em> |
-| public | <strong>getSentNTP()</strong> : <em>string</em><br /><em>Returns key: 'SentNTP'.</em> |
-| public | <strong>getSentOctets()</strong> : <em>string</em><br /><em>Returns key: 'SentOctets'.</em> |
-| public | <strong>getSentPackets()</strong> : <em>string</em><br /><em>Returns key: 'SentPackets'.</em> |
-| public | <strong>getSentRTP()</strong> : <em>string</em><br /><em>Returns key: 'SentRTP'.</em> |
-| public | <strong>getTheirLastSR()</strong> : <em>string</em><br /><em>Returns key: 'TheirLastSR'.</em> |
-| public | <strong>getTo()</strong> : <em>string</em><br /><em>Returns key: 'To'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -5893,30 +4492,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\RegistryEvent
-
-> Registry event. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getDomain()</strong> : <em>string</em><br /><em>Returns key: 'Domain'.</em> |
-| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ReloadEvent
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getRawContent()</strong> : <em>string</em><br /><em>Returns key: 'RawContent'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\RenameEvent
 
 > Event triggered when renaming a channel. PHP Version 5
@@ -5928,32 +4503,6 @@
 | public | <strong>getOldname()</strong> : <em>string</em><br /><em>Returns key: 'Oldname'.</em> |
 | public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
 | public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\RequestBadFormatEvent
-
-> Event triggered when an agent logs in. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountID()</strong> : <em>string</em><br /><em>Returns key: 'AccountID'.</em> |
-| public | <strong>getEventTV()</strong> : <em>string</em><br /><em>Returns key: 'EventTV'.</em> |
-| public | <strong>getEventVersion()</strong> : <em>int</em><br /><em>Returns key: 'EventVersion'.</em> |
-| public | <strong>getFile()</strong> : <em>string</em><br /><em>Returns key: 'File'.</em> |
-| public | <strong>getFunc()</strong> : <em>string</em><br /><em>Returns key: 'Func'.</em> |
-| public | <strong>getLine()</strong> : <em>int</em><br /><em>Returns key: 'Line'.</em> |
-| public | <strong>getLocalAddress()</strong> : <em>string</em><br /><em>Returns key: 'LocalAddress'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getRemoteAddress()</strong> : <em>string</em><br /><em>Returns key: 'RemoteAddress'.</em> |
-| public | <strong>getSequenceNumber()</strong> : <em>int</em><br /><em>Returns key: 'SequenceNumber'.</em> |
-| public | <strong>getService()</strong> : <em>string</em><br /><em>Returns key: 'Service'.</em> |
-| public | <strong>getSessionID()</strong> : <em>string</em><br /><em>Returns key: 'SessionID'.</em> |
-| public | <strong>getSessionTV()</strong> : <em>string</em><br /><em>Returns key: 'SessionTV'.</em> |
-| public | <strong>getSeverity()</strong> : <em>string</em><br /><em>Returns key: 'Severity'.</em> |
-| public | <strong>getUsingPassword()</strong> : <em>boolean</em><br /><em>Returns key: 'UsingPassword'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -6713,76 +5262,11 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\StatusCompleteEvent
-
-> Event triggered for the end of the list when an action Status is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getListItems()</strong> : <em>string</em><br /><em>Returns key: 'Items'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\StatusEvent
-
-> Event triggered when an action Status is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'ApplicationData'.</em> |
-| public | <strong>getBridgedChannel()</strong> : <em>string</em><br /><em>Returns key: 'BridgedChannel'.</em> |
-| public | <strong>getBridgedUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'BridgedUniqueID'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getDuration()</strong> : <em>string</em><br /><em>Returns key: 'Duration'.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getSeconds()</strong> : <em>string</em><br /><em>Returns key: 'Seconds'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\SuccessEvent
 
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>getRawContent()</strong> : <em>string</em><br /><em>Returns key: 'RawContent'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\SuccessfulAuthEvent
-
-> Event triggered when an agent logs in. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountID()</strong> : <em>string</em><br /><em>Returns key: 'AccountID'.</em> |
-| public | <strong>getEventTV()</strong> : <em>string</em><br /><em>Returns key: 'EventTV'.</em> |
-| public | <strong>getEventVersion()</strong> : <em>int</em><br /><em>Returns key: 'EventVersion'.</em> |
-| public | <strong>getFile()</strong> : <em>string</em><br /><em>Returns key: 'File'.</em> |
-| public | <strong>getFunc()</strong> : <em>string</em><br /><em>Returns key: 'Func'.</em> |
-| public | <strong>getLine()</strong> : <em>int</em><br /><em>Returns key: 'Line'.</em> |
-| public | <strong>getLocalAddress()</strong> : <em>string</em><br /><em>Returns key: 'LocalAddress'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getRemoteAddress()</strong> : <em>string</em><br /><em>Returns key: 'RemoteAddress'.</em> |
-| public | <strong>getSequenceNumber()</strong> : <em>int</em><br /><em>Returns key: 'SequenceNumber'.</em> |
-| public | <strong>getService()</strong> : <em>string</em><br /><em>Returns key: 'Service'.</em> |
-| public | <strong>getSessionID()</strong> : <em>string</em><br /><em>Returns key: 'SessionID'.</em> |
-| public | <strong>getSessionTV()</strong> : <em>string</em><br /><em>Returns key: 'SessionTV'.</em> |
-| public | <strong>getSeverity()</strong> : <em>string</em><br /><em>Returns key: 'Severity'.</em> |
-| public | <strong>getUsingPassword()</strong> : <em>boolean</em><br /><em>Returns key: 'UsingPassword'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -6833,103 +5317,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\TransportDetailEvent
-
-> Event triggered when an agent logs in. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAsycOperations()</strong> : <em>string</em><br /><em>Returns key: 'AsycOperations'. Number of simultaneous Asynchronous Operations</em> |
-| public | <strong>getBind()</strong> : <em>string</em><br /><em>Returns key: 'Bind'. IP Address and optional port to bind to for this transport</em> |
-| public | <strong>getCaListFile()</strong> : <em>string</em><br /><em>Returns key: 'CaListFile'. File containing a list of certificates to read (TLS ONLY)</em> |
-| public | <strong>getCaListPath()</strong> : <em>string</em><br /><em>Returns key: 'CaListPath'. Path to directory containing a list of certificates to read (TLSONLY)</em> |
-| public | <strong>getCertFile()</strong> : <em>string</em><br /><em>Returns key: 'CertFile'. Certificate file for endpoint (TLS ONLY)</em> |
-| public | <strong>getCipher()</strong> : <em>string</em><br /><em>Returns key: 'Cipher'. Preferred cryptography cipher names (TLS ONLY)</em> |
-| public | <strong>getCos()</strong> : <em>string</em><br /><em>Returns key: 'Cos'. Enable COS for the signalling sent over this transport</em> |
-| public | <strong>getDomain()</strong> : <em>string</em><br /><em>Returns key: 'Domain'. Domain the transport comes from</em> |
-| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
-| public | <strong>getExternalMediaAddress()</strong> : <em>string</em><br /><em>Returns key: 'ExternalMediaAddress'. External IP address to use in RTP handling</em> |
-| public | <strong>getExternalSignalingAddress()</strong> : <em>string</em><br /><em>Returns key: 'ExternalSignalingAddress'. External address for SIP signalling</em> |
-| public | <strong>getExternalSignalingPort()</strong> : <em>string</em><br /><em>Returns key: 'ExternalSignalingPort'. External port for SIP signalling</em> |
-| public | <strong>getLocalNet()</strong> : <em>string</em><br /><em>Returns key: 'LocalNet'. Network to consider local (used for NAT purposes).</em> |
-| public | <strong>getMethod()</strong> : <em>string</em><br /><em>Returns key: 'Method'. Method of SSL transport (TLS ONLY)</em> |
-| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
-| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'transport'.</em> |
-| public | <strong>getPassword()</strong> : <em>string</em><br /><em>Returns key: 'Password'. Password required for transport</em> |
-| public | <strong>getPrivKeyFile()</strong> : <em>string</em><br /><em>Returns key: 'PrivKeyFile'. Private key file (TLS ONLY)</em> |
-| public | <strong>getProtocol()</strong> : <em>string</em><br /><em>Returns key: 'Protocol'. Protocol to use for SIP traffic</em> |
-| public | <strong>getRequireClientCert()</strong> : <em>string</em><br /><em>Returns key: 'RequireClientCert'. Require client certificate (TLS ONLY)</em> |
-| public | <strong>getTos()</strong> : <em>string</em><br /><em>Returns key: 'Tos'. Enable TOS for the signalling sent over this transport</em> |
-| public | <strong>getVerifyClient()</strong> : <em>string</em><br /><em>Returns key: 'VerifyClient'. Require verification of client certificate (TLS ONLY)</em> |
-| public | <strong>getVerifyServer()</strong> : <em>string</em><br /><em>Returns key: 'VerifyServer'. Require verification of server certificate (TLS ONLY)</em> |
-| public | <strong>getWebsocketWriteTimeout()</strong> : <em>string</em><br /><em>Returns key: 'WebsocketWriteTimeout'. The timeout (in milliseconds) to set on WebSocket connections.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\UnParkedCallEvent
-
-> Event triggered when a call is unparked. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strike><strong>getCallerIDName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDName()}.</em> |
-| public | <strike><strong>getCallerIDNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDNum()}.</em> |
-| public | <strike><strong>getChannel()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeChannel()}.</em> |
-| public | <strike><strong>getConnectedLineName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineName()}.</em> |
-| public | <strike><strong>getConnectedLineNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineNum()}.</em> |
-| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkingSpace()}.</em> |
-| public | <strike><strong>getFrom()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getRetrieverChannel()}.</em> |
-| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
-| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
-| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
-| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
-| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
-| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
-| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
-| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
-| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
-| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
-| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
-| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
-| public | <strong>getParkerAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkerAccountCode'.</em> |
-| public | <strong>getParkerCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDName'.</em> |
-| public | <strong>getParkerCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDNum'.</em> |
-| public | <strong>getParkerChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannel'.</em> |
-| public | <strong>getParkerChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelState'.</em> |
-| public | <strong>getParkerChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelStateDesc'.</em> |
-| public | <strong>getParkerConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineName'.</em> |
-| public | <strong>getParkerConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineNum'.</em> |
-| public | <strong>getParkerContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkerContext'.</em> |
-| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
-| public | <strong>getParkerExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkerExten'.</em> |
-| public | <strong>getParkerPriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkerPriority'.</em> |
-| public | <strong>getParkerUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkerUniqueid'.</em> |
-| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
-| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
-| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
-| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getRetrieverAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverAccountCode'.</em> |
-| public | <strong>getRetrieverCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverCallerIDName'.</em> |
-| public | <strong>getRetrieverCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverCallerIDNum'.</em> |
-| public | <strong>getRetrieverChannel()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverChannel'.</em> |
-| public | <strong>getRetrieverChannelState()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverChannelState'.</em> |
-| public | <strong>getRetrieverChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverChannelStateDesc'.</em> |
-| public | <strong>getRetrieverConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverConnectedLineName'.</em> |
-| public | <strong>getRetrieverConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverConnectedLineNum'.</em> |
-| public | <strong>getRetrieverContext()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverContext'.</em> |
-| public | <strong>getRetrieverExten()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverExten'.</em> |
-| public | <strong>getRetrieverPriority()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverPriority'.</em> |
-| public | <strong>getRetrieverUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverUniqueid'.</em> |
-| public | <strike><strong>getTimeout()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use ParkingTimeout()}.</em> |
-| public | <strike><strong>getUniqueID()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeUniqueid()}.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\UnknownEvent
 
 > This is an unknown (not implemented yet) event received from ami. PHP Version 5
@@ -6954,42 +5341,6 @@
 | public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
 | public | <strong>getUniqueID1()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID1'.</em> |
 | public | <strong>getUniqueID2()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID2'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\UserEventEvent
-
-> Custom user events. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-| public | <strong>getUserEventName()</strong> : <em>string</em><br /><em>Returns key: 'UserEvent'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\VarSetEvent
-
-> Event triggered when a variable is set via agi or dialplan. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-| public | <strong>getValue()</strong> : <em>string</em><br /><em>Returns key: 'Value'.</em> |
-| public | <strong>getVariableName()</strong> : <em>string</em><br /><em>Returns key: 'Variable'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -9129,6 +7480,1992 @@
 |:-----------|:---------|
 | public | <strong>getModule()</strong> : <em>string</em><br /><em>get Module Returns:The name of the module that was unloaded</em> |
 | public | <strong>getStatus()</strong> : <em>string</em><br /><em>get Status Returns:The result of the unload request.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentLoginEvent
+
+> AgentLogin Event Note: Auto Generated using xsltproc PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>get AccountCode Returns key: 'AccountCode'</em> |
+| public | <strong>getAgent()</strong> : <em>string</em><br /><em>get Agent Returns:Agent ID of the agent.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>get CallerIDName Returns key: 'CallerIDName'</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>get CallerIDNum Returns key: 'CallerIDNum'</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>get Channel Returns key: 'Channel'</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>get ChannelState Returns:A numeric code for the channel's current state, related to ChannelStateDesc</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>get ChannelStateDesc Returns key: 'ChannelStateDesc'</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>get ConnectedLineName Returns key: 'ConnectedLineName'</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>get ConnectedLineNum Returns key: 'ConnectedLineNum'</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>get Context Returns key: 'Context'</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>get Exten Returns key: 'Exten'</em> |
+| public | <strong>getLanguage()</strong> : <em>string</em><br /><em>get Language Returns key: 'Language'</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>get Linkedid Returns:Uniqueid of the oldest channel associated with this channel.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>get Priority Returns key: 'Priority'</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>get Agent Privilege</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>get Uniqueid Returns key: 'Uniqueid'</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentLogoffEvent
+
+> AgentLogoff Event Note: Auto Generated using xsltproc PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAgent()</strong> : <em>string</em><br /><em>get Agent Returns:Agent ID of the agent.</em> |
+| public | <strong>getLogintime()</strong> : <em>string</em><br /><em>get Logintime Returns:The number of seconds the agent was logged in.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>get Agent Privilege</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>get Uniqueid Returns key: 'Uniqueid'</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AGIExecEndEvent
+
+> Event triggered when a received AGI command completes processing. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getCommand()</strong> : <em>string</em><br /><em>Returns key: 'Command'.</em> |
+| public | <strong>getCommandId()</strong> : <em>string</em><br /><em>Returns key: 'CommandId'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'.</em> |
+| public | <strong>getResultCode()</strong> : <em>string</em><br /><em>Returns key: 'ResultCode'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AGIExecStartEvent
+
+> Event triggered when a received AGI command starts processing. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getCommand()</strong> : <em>string</em><br /><em>Returns key: 'Command'.</em> |
+| public | <strong>getCommandId()</strong> : <em>string</em><br /><em>Returns key: 'CommandId'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentConnectEvent
+
+> Event triggered when an agent connects. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgedChannel()</strong> : <em>string</em><br /><em>Returns key: 'BridgedChannel'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getHoldTime()</strong> : <em>string</em><br /><em>Returns key: 'HoldTime'.</em> |
+| public | <strong>getMember()</strong> : <em>string</em><br /><em>Returns key: 'Member'.</em> |
+| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+| public | <strong>getRingTime()</strong> : <em>string</em><br /><em>Returns key: 'RingTime'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentsCompleteEvent
+
+> Event triggered for the end of the list when an action Agents is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentsEvent
+
+> Event triggered for agents. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAgent()</strong> : <em>string</em><br /><em>Returns key: 'Agent'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'LoggedInChan'.</em> |
+| public | <strong>getLoggedInTime()</strong> : <em>integer</em><br /><em>Returns key: 'LoggedInTime'.</em> |
+| public | <strong>getName()</strong> : <em>string</em><br /><em>Returns key: 'Name'.</em> |
+| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
+| public | <strong>getTalkingTo()</strong> : <em>integer</em><br /><em>Returns key: 'TalkingTo'.</em> |
+| public | <strong>getTalkingToChannel()</strong> : <em>integer</em><br /><em>Returns key: 'TalkingToChannel'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AorDetailEvent
+
+> Event from PJSIPShowEndpoint PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAuthenticateQualify()</strong> : <em>string</em><br /><em>Returns key: 'AuthenticateQualify'. Authenticates a qualify request if needed</em> |
+| public | <strong>getContact()</strong> : <em>string</em><br /><em>Returns key: 'Contact'.</em> |
+| public | <strong>getContacts()</strong> : <em>string</em><br /><em>Returns key: 'Contacts'.</em> |
+| public | <strong>getContactsRegistered()</strong> : <em>string</em><br /><em>Returns key: 'ContactsRegistered'. The number of non-permanent contacts associated with this AoR.</em> |
+| public | <strong>getDefaultExpiration()</strong> : <em>string</em><br /><em>Returns key: 'DefaultExpiration'. Default expiration time in seconds for contacts that are dynamicallybound to an AoR.</em> |
+| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
+| public | <strong>getMailboxes()</strong> : <em>string</em><br /><em>Returns key: 'Mailboxes'. Allow subscriptions for the specified mailbox(es)</em> |
+| public | <strong>getMaxContacts()</strong> : <em>string</em><br /><em>Returns key: 'MaxContacts'. Maximum number of contacts that can bind to an AoR</em> |
+| public | <strong>getMaximumExpiration()</strong> : <em>string</em><br /><em>Returns key: 'MaximumExpiration'. Maximum time to keep an AoR</em> |
+| public | <strong>getMinimumExpiration()</strong> : <em>string</em><br /><em>Returns key: 'MinimumExpiration'. Minimum keep alive time for an AoR</em> |
+| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
+| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'aor'.</em> |
+| public | <strong>getOutboundProxy()</strong> : <em>string</em><br /><em>Returns key: 'OutboundProxy'. Outbound proxy used when sending OPTIONS request</em> |
+| public | <strong>getQualifyFrequency()</strong> : <em>string</em><br /><em>Returns key: 'QualifyFrequency'. Interval at which to qualify an AoR</em> |
+| public | <strong>getRemoveExisting()</strong> : <em>string</em><br /><em>Returns key: 'RemoveExisting'. Determines whether new contacts replace existing ones.</em> |
+| public | <strong>getSupportPath()</strong> : <em>string</em><br /><em>Returns key: 'SupportPath'. Enables Path support for REGISTER requests and Route support forother requests.</em> |
+| public | <strong>getTotalContacts()</strong> : <em>string</em><br /><em>Returns key: 'TotalContacts'. The total number of contacts associated with this AoR.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AsyncAGIEndEvent
+
+> Event triggered when a channel stops AsyncAGI command processing. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AsyncAGIExecEvent
+
+> Event triggered when AsyncAGI completes an AGI command. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getCommandID()</strong> : <em>string</em><br /><em>Returns key: 'CommandID'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+*This class implements [\PAMI\AsyncAgi\Event\IAsyncAgiExecEvent](#interface-pamiasyncagieventiasyncagiexecevent)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AsyncAGIStartEvent
+
+> Event triggered when a channel starts AsyncAGI command processing. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getEnv()</strong> : <em>string</em> |
+| public | <strong>getEnvironment()</strong> : <em>string</em><br /><em>Returns key: 'Env'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+*This class implements [\PAMI\AsyncAgi\Event\IAsyncAgiStartEvent](#interface-pamiasyncagieventiasyncagistartevent)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AttendedTransferEvent
+
+> Event triggered when an attended transfer is complete. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getDestApp()</strong> : <em>string</em><br /><em>Returns key: 'DestApp'.</em> |
+| public | <strong>getDestBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'DestBridgeUniqueid'.</em> |
+| public | <strong>getDestTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestTransfererChannel'.</em> |
+| public | <strong>getDestType()</strong> : <em>string</em><br /><em>Returns key: 'DestType'. DestType - Indicates the method by which the attended transfer completed. Bridge - The transfer was accomplished by merging two bridges into one. App - The transfer was accomplished by having a channel or bridge run a dialplan application. Link - The transfer was accomplished by linking two bridges together using a local channel pair. Threeway - The transfer was accomplished by placing all parties into a threeway call. Fail - The transfer failed.</em> |
+| public | <strong>getLocalOneAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneAccountCode'.</em> |
+| public | <strong>getLocalOneCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneCallerIDName'.</em> |
+| public | <strong>getLocalOneCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneCallerIDNum'.</em> |
+| public | <strong>getLocalOneChannel()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneChannel'.</em> |
+| public | <strong>getLocalOneChannelState()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneChannelState'.</em> |
+| public | <strong>getLocalOneChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneChannelStateDesc'.</em> |
+| public | <strong>getLocalOneConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneConnectedLineName'.</em> |
+| public | <strong>getLocalOneConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneConnectedLineNum'.</em> |
+| public | <strong>getLocalOneContext()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneContext'.</em> |
+| public | <strong>getLocalOneExten()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneExten'.</em> |
+| public | <strong>getLocalOnePriority()</strong> : <em>string</em><br /><em>Returns key: 'LocalOnePriority'.</em> |
+| public | <strong>getLocalOneUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'LocalOneUniqueid'.</em> |
+| public | <strong>getLocalTwoAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoAccountCode'.</em> |
+| public | <strong>getLocalTwoCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoCallerIDName'.</em> |
+| public | <strong>getLocalTwoCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoCallerIDNum'.</em> |
+| public | <strong>getLocalTwoChannel()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoChannel'.</em> |
+| public | <strong>getLocalTwoChannelState()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoChannelState'.</em> |
+| public | <strong>getLocalTwoChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoChannelStateDesc'.</em> |
+| public | <strong>getLocalTwoConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoConnectedLineName'.</em> |
+| public | <strong>getLocalTwoConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoConnectedLineNum'.</em> |
+| public | <strong>getLocalTwoContext()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoContext'.</em> |
+| public | <strong>getLocalTwoExten()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoExten'.</em> |
+| public | <strong>getLocalTwoPriority()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoPriority'.</em> |
+| public | <strong>getLocalTwoUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'LocalTwoUniqueid'.</em> |
+| public | <strong>getOrigBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeCreator'.</em> |
+| public | <strong>getOrigBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeName'.</em> |
+| public | <strong>getOrigBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeNumChannels'.</em> |
+| public | <strong>getOrigBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeTechnology'.</em> |
+| public | <strong>getOrigBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeType'.</em> |
+| public | <strong>getOrigBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'OrigBridgeUniqueid'.</em> |
+| public | <strong>getOrigTransfererAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererAccountCode'.</em> |
+| public | <strong>getOrigTransfererCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererCallerIDName'.</em> |
+| public | <strong>getOrigTransfererCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererCallerIDNum'.</em> |
+| public | <strong>getOrigTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererChannel'.</em> |
+| public | <strong>getOrigTransfererChannelState()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererChannelState'.</em> |
+| public | <strong>getOrigTransfererChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
+| public | <strong>getOrigTransfererConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererConnectedLineName'.</em> |
+| public | <strong>getOrigTransfererConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererConnectedLineNum'.</em> |
+| public | <strong>getOrigTransfererContext()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererContext'.</em> |
+| public | <strong>getOrigTransfererExten()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererExten'.</em> |
+| public | <strong>getOrigTransfererPriority()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererPriority'.</em> |
+| public | <strong>getOrigTransfererUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'OrigTransfererUniqueid'.</em> |
+| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'. Result - Indicates if the transfer was successful or if it failed. - Fail - An internal error occurred. - Invalid - Invalid configuration for transfer (e.g. Not bridged) - Not Permitted - Bridge does not permit transfers - Success - Transfer completed successfully</em> |
+| public | <strong>getSecondBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeCreator'.</em> |
+| public | <strong>getSecondBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeName'.</em> |
+| public | <strong>getSecondBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeNumChannels'.</em> |
+| public | <strong>getSecondBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeTechnology'.</em> |
+| public | <strong>getSecondBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeType'.</em> |
+| public | <strong>getSecondBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'SecondBridgeUniqueid'.</em> |
+| public | <strong>getSecondTransfererAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererAccountCode'.</em> |
+| public | <strong>getSecondTransfererCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererCallerIDName'.</em> |
+| public | <strong>getSecondTransfererCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererCallerIDNum'.</em> |
+| public | <strong>getSecondTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererChannel'.</em> |
+| public | <strong>getSecondTransfererChannelState()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererChannelState'.</em> |
+| public | <strong>getSecondTransfererChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
+| public | <strong>getSecondTransfererConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererConnectedLineName'.</em> |
+| public | <strong>getSecondTransfererConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererConnectedLineNum'.</em> |
+| public | <strong>getSecondTransfererContext()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererContext'.</em> |
+| public | <strong>getSecondTransfererExten()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererExten'.</em> |
+| public | <strong>getSecondTransfererPriority()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererPriority'.</em> |
+| public | <strong>getSecondTransfererUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'SecondTransfererUniqueid'.</em> |
+| public | <strong>getTransfereeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeAccountCode'.</em> |
+| public | <strong>getTransfereeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDName'.</em> |
+| public | <strong>getTransfereeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDNum'.</em> |
+| public | <strong>getTransfereeChannel()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannel'.</em> |
+| public | <strong>getTransfereeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelState'.</em> |
+| public | <strong>getTransfereeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelStateDesc'.</em> |
+| public | <strong>getTransfereeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineName'.</em> |
+| public | <strong>getTransfereeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineNum'.</em> |
+| public | <strong>getTransfereeContext()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeContext'.</em> |
+| public | <strong>getTransfereeExten()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeExten'.</em> |
+| public | <strong>getTransfereePriority()</strong> : <em>string</em><br /><em>Returns key: 'TransfereePriority'.</em> |
+| public | <strong>getTransfereeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeUniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AuthDetailEvent
+
+> Event from PJSIPShowEndpoint PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAuthType()</strong> : <em>string</em><br /><em>Returns key: 'AuthType'. Authentication type</em> |
+| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
+| public | <strong>getMd5Cred()</strong> : <em>string</em><br /><em>Returns key: 'Md5Cred'. MD5 Hash used for authentication.</em> |
+| public | <strong>getNonceLifetime()</strong> : <em>string</em><br /><em>Returns key: 'NonceLifetime'. Lifetime of a nonce associated with this authentication config.</em> |
+| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
+| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'auth'.</em> |
+| public | <strong>getPassword()</strong> : <em>string</em><br /><em>Returns key: 'Password'. Username to use for account</em> |
+| public | <strong>getRealm()</strong> : <em>string</em><br /><em>Returns key: 'Realm'. SIP realm for endpoint</em> |
+| public | <strong>getUsername()</strong> : <em>string</em><br /><em>Returns key: 'Username'. Username to use for account</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BlindTransferEvent
+
+> Event triggered when a blind transfer is complete. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'. BridgeCreator - Entity that created the bridge if applicable</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'. BridgeName - Name used to refer to the bridge by its BridgeCreator if applicable</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'. BridgeNumChannels - Number of channels in the bridge</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'. BridgeTechnology - Technology in use by the bridge</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'. BridgeType - The type of bridge</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'. Context - Destination context for the blind transfer.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'. Extension - Destination extension for the blind transfer.</em> |
+| public | <strong>getIsExternal()</strong> : <em>string</em><br /><em>Returns key: 'IsExternal'. IsExternal - Indicates if the transfer was performed outside of Asterisk. For instance, a channel protocol native transfer is external. A DTMF transfer is internal. Yes No</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getResult()</strong> : <em>string</em><br /><em>Returns key: 'Result'. Result - Indicates if the transfer was successful or if it failed. - Fail - An internal error occurred. - Invalid - Invalid configuration for transfer (e.g. Not bridged) - Not Permitted - Bridge does not permit transfers - Success - Transfer completed successfully</em> |
+| public | <strong>getTransfereeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeAccountCode'.</em> |
+| public | <strong>getTransfereeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDName'.</em> |
+| public | <strong>getTransfereeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeCallerIDNum'.</em> |
+| public | <strong>getTransfereeChannel()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannel'.</em> |
+| public | <strong>getTransfereeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelState'. TransfereeChannelState - A numeric code for the channel's current state, related to TransfereeChannelStateDesc</em> |
+| public | <strong>getTransfereeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
+| public | <strong>getTransfereeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineName'.</em> |
+| public | <strong>getTransfereeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeConnectedLineNum'.</em> |
+| public | <strong>getTransfereeContext()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeContext'.</em> |
+| public | <strong>getTransfereeExten()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeExten'.</em> |
+| public | <strong>getTransfereePriority()</strong> : <em>string</em><br /><em>Returns key: 'TransfereePriority'.</em> |
+| public | <strong>getTransfereeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'TransfereeUniqueid'.</em> |
+| public | <strong>getTransfererAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'TransfererAccountCode'.</em> |
+| public | <strong>getTransfererCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'TransfererCallerIDName'.</em> |
+| public | <strong>getTransfererCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfererCallerIDNum'.</em> |
+| public | <strong>getTransfererChannel()</strong> : <em>string</em><br /><em>Returns key: 'TransfererChannel'.</em> |
+| public | <strong>getTransfererChannelState()</strong> : <em>string</em><br /><em>Returns key: 'TransfererChannelState'. TransfererChannelState - A numeric code for the channel's current state, related to TransfererChannelStateDesc</em> |
+| public | <strong>getTransfererChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'TransfererChannelStateDesc'. Down Rsrvd OffHook Dialing Ring Ringing Up Busy Dialing Offhook Pre-ring Unknown</em> |
+| public | <strong>getTransfererConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'TransfererConnectedLineName'.</em> |
+| public | <strong>getTransfererConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'TransfererConnectedLineNum'.</em> |
+| public | <strong>getTransfererContext()</strong> : <em>string</em><br /><em>Returns key: 'TransfererContext'.</em> |
+| public | <strong>getTransfererExten()</strong> : <em>string</em><br /><em>Returns key: 'TransfererExten'.</em> |
+| public | <strong>getTransfererPriority()</strong> : <em>string</em><br /><em>Returns key: 'TransfererPriority'.</em> |
+| public | <strong>getTransfererUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'TransfererUniqueid'.</em> |
+| public | <strong>isExternal()</strong> : <em>bool</em><br /><em>Indicates if the transfer was performed outside of Asterisk. For instance, a channel protocol native transfer is external. A DTMF transfer is internal.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BridgeCreateEvent
+
+> Event triggered when a bridge is created. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BridgeDestroyEvent
+
+> Event triggered when a bridge is destroyed. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BridgeEnterEvent
+
+> Event triggered when a channel enters a bridge. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getSwapUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'SwapUniqueid'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BridgeInfoChannelEvent
+
+> Event triggered when an action BridgeInfo is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BridgeInfoCompleteEvent
+
+> Event triggered for the end of the list when an action BridgeInfo is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getBridgeVideoSource()</strong> : <em>string</em><br /><em>Returns key: 'BridgeVideoSource'.</em> |
+| public | <strong>getBridgeVideoSourceMode()</strong> : <em>string</em><br /><em>Returns key: 'BridgeVideoSourceMode'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\BridgeLeaveEvent
+
+> Event triggered when a channel leaves a bridge. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\CELEvent
+
+> Event triggered when a CEL log message is generated PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAMAFlags()</strong> : <em>string</em><br /><em>Returns key: 'AMAFlags'.</em> |
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAppData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
+| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
+| public | <strong>getCallerIDani()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDani'.</em> |
+| public | <strong>getCallerIDdnid()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDdnid'.</em> |
+| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
+| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
+| public | <strong>getCallerIDrdnis()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDrdnis'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getEvent()</strong> : <em>string</em><br /><em>Returns key: 'Event'.</em> |
+| public | <strong>getEventName()</strong> : <em>string</em><br /><em>Returns key: 'EventName'.</em> |
+| public | <strong>getEventTime()</strong> : <em>string</em><br /><em>Returns key: 'EventTime'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getExtra()</strong> : <em>string</em><br /><em>Returns key: 'Extra'.</em> |
+| public | <strong>getLinkedID()</strong> : <em>string</em><br /><em>Returns key: 'LinkedID'.</em> |
+| public | <strong>getPeer()</strong> : <em>string</em><br /><em>Returns key: 'Peer'.</em> |
+| public | <strong>getPeerAccount()</strong> : <em>string</em><br /><em>Returns key: 'PeerAccount'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getTimestamp()</strong> : <em>string</em><br /><em>Returns key: 'Timestamp'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+| public | <strong>getUserfield()</strong> : <em>string</em><br /><em>Returns key: 'Userfield'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\CdrEvent
+
+> Event triggered when a channel changes its status. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAMAFlags()</strong> : <em>string</em><br /><em>Returns key: 'AMAFlags'.</em> |
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAnswerTime()</strong> : <em>string</em><br /><em>Returns key: 'AnswerTime'.</em> |
+| public | <strong>getBillableSeconds()</strong> : <em>string</em><br /><em>Returns key: 'BillableSeconds'.</em> |
+| public | <strong>getCallerID()</strong> : <em>string</em><br /><em>Returns key: 'CallerID'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getDestination()</strong> : <em>string</em><br /><em>Returns key: 'Destination'.</em> |
+| public | <strong>getDestinationChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestinationChannel'.</em> |
+| public | <strong>getDestinationContext()</strong> : <em>string</em><br /><em>Returns key: 'DestinationContext'.</em> |
+| public | <strong>getDisposition()</strong> : <em>string</em><br /><em>Returns key: 'Disposition'.</em> |
+| public | <strong>getDuration()</strong> : <em>string</em><br /><em>Returns key: 'Duration'.</em> |
+| public | <strong>getEndTime()</strong> : <em>string</em><br /><em>Returns key: 'EndTime'.</em> |
+| public | <strong>getLastApplication()</strong> : <em>string</em><br /><em>Returns key: 'LastApplication'.</em> |
+| public | <strong>getLastData()</strong> : <em>string</em><br /><em>Returns key: 'LastData'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getSource()</strong> : <em>string</em><br /><em>Returns key: 'Source'.</em> |
+| public | <strong>getStartTime()</strong> : <em>string</em><br /><em>Returns key: 'StartTime'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeEndEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeJoinEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
+| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeLeaveEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
+| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeListEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
+| public | <strong>getAnsweredTime()</strong> : <em>string</em><br /><em>Returns key: 'AnsweredTime'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getEndMarked()</strong> : <em>string</em><br /><em>Returns key: 'EndMarked'.</em> |
+| public | <strong>getMarkedUser()</strong> : <em>string</em><br /><em>Returns key: 'MarkedUser'.</em> |
+| public | <strong>getMuted()</strong> : <em>string</em><br /><em>Returns key: 'Muted'.</em> |
+| public | <strong>getWaitMarked()</strong> : <em>string</em><br /><em>Returns key: 'WaitMarked'.</em> |
+| public | <strong>getWaiting()</strong> : <em>string</em><br /><em>Returns key: 'Waiting'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeMuteEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
+| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeStartEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeTalkingEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getTalkingStatus()</strong> : <em>string</em><br /><em>Returns key: 'TalkingStatus'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ConfbridgeUnmuteEvent
+
+> Event triggered when .. ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getAdmin()</strong> : <em>string</em><br /><em>Returns key: 'Admin'.</em> |
+| public | <strong>getBridgeCreator()</strong> : <em>string</em><br /><em>Returns key: 'BridgeCreator'.</em> |
+| public | <strong>getBridgeName()</strong> : <em>string</em><br /><em>Returns key: 'BridgeName'.</em> |
+| public | <strong>getBridgeNumChannels()</strong> : <em>string</em><br /><em>Returns key: 'BridgeNumChannels'.</em> |
+| public | <strong>getBridgeTechnology()</strong> : <em>string</em><br /><em>Returns key: 'BridgeTechnology'.</em> |
+| public | <strong>getBridgeType()</strong> : <em>string</em><br /><em>Returns key: 'BridgeType'.</em> |
+| public | <strong>getBridgeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'BridgeUniqueid'.</em> |
+| public | <strong>getCallerIDname()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDname'.</em> |
+| public | <strong>getCallerIDnum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDnum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConference()</strong> : <em>string</em><br /><em>Returns key: 'Conference'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>Returns key: 'Linkedid'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ContactStatusDetailEvent
+
+> Event from PJSIPShowEndpoint PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAOR()</strong> : <em>string</em><br /><em>Returns key: 'AOR'. The AoR that owns this contact.</em> |
+| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
+| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'.</em> |
+| public | <strong>getRoundtripUsec()</strong> : <em>string</em><br /><em>Returns key: 'RoundtripUsec'. The round trip time in microseconds.</em> |
+| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'. This contact's status. Reachable Unreachable</em> |
+| public | <strong>getURI()</strong> : <em>string</em><br /><em>Returns key: 'URI'. This contact's URI.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\CoreShowChannelEvent
+
+> Event triggered when an action CoreShowChannel is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
+| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'ApplicationData'.</em> |
+| public | <strong>getBridgedChannel()</strong> : <em>string</em><br /><em>Returns key: 'BridgedChannel'.</em> |
+| public | <strong>getBridgedUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'BridgedUniqueID'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getDuration()</strong> : <em>string</em><br /><em>Returns key: 'Duration'.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\CoreShowChannelsCompleteEvent
+
+> Event triggered for the end of the list when an action CoreShowChannels is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getListItems()</strong> : <em>string</em><br /><em>Returns key: 'ListItems'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\DAHDIChannelEvent
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getDAHDIChannel()</strong> : <em>string</em><br /><em>Returns key: 'DAHDIChannel'.</em> |
+| public | <strong>getDAHDISpan()</strong> : <em>string</em><br /><em>Returns key: 'DAHDISpan'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\DNDStateEvent
+
+> Event triggered when the Do Not Disturb state is changed on a DAHDI channel. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strike><strong>getChannel()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getDAHDIChannel()}.</em> |
+| public | <strong>getDAHDIChannel()</strong> : <em>string</em><br /><em>Returns key: 'DAHDIChannel'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\DialBeginEvent
+
+> Event triggered when a dial action has started. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getDestAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'DestAccountCode'.</em> |
+| public | <strong>getDestCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDName'.</em> |
+| public | <strong>getDestCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDNum'.</em> |
+| public | <strong>getDestChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestChannel'.</em> |
+| public | <strong>getDestChannelState()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelState'.</em> |
+| public | <strong>getDestChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelStateDesc'.</em> |
+| public | <strong>getDestConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineName'.</em> |
+| public | <strong>getDestConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineNum'.</em> |
+| public | <strong>getDestContext()</strong> : <em>string</em><br /><em>Returns key: 'DestContext'.</em> |
+| public | <strong>getDestExten()</strong> : <em>string</em><br /><em>Returns key: 'DestExten'.</em> |
+| public | <strong>getDestPriority()</strong> : <em>string</em><br /><em>Returns key: 'DestPriority'.</em> |
+| public | <strong>getDestUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'DestUniqueid'.</em> |
+| public | <strong>getDialStatus()</strong> : <em>string</em><br /><em>Returns key: 'DialStatus'.</em> |
+| public | <strong>getDialString()</strong> : <em>string</em><br /><em>Returns key: 'DialString'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\DialEndEvent
+
+> Event triggered when a dial action has completed. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getDestAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'DestAccountCode'.</em> |
+| public | <strong>getDestCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDName'.</em> |
+| public | <strong>getDestCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'DestCallerIDNum'.</em> |
+| public | <strong>getDestChannel()</strong> : <em>string</em><br /><em>Returns key: 'DestChannel'.</em> |
+| public | <strong>getDestChannelState()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelState'.</em> |
+| public | <strong>getDestChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'DestChannelStateDesc'.</em> |
+| public | <strong>getDestConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineName'.</em> |
+| public | <strong>getDestConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'DestConnectedLineNum'.</em> |
+| public | <strong>getDestContext()</strong> : <em>string</em><br /><em>Returns key: 'DestContext'.</em> |
+| public | <strong>getDestExten()</strong> : <em>string</em><br /><em>Returns key: 'DestExten'.</em> |
+| public | <strong>getDestPriority()</strong> : <em>string</em><br /><em>Returns key: 'DestPriority'.</em> |
+| public | <strong>getDestUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'DestUniqueid'.</em> |
+| public | <strong>getDialStatus()</strong> : <em>string</em><br /><em>Returns key: 'DialStatus'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\EndpointDetailEvent
+
+> Event from PJSIPShowEndpoint PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>get100rel()</strong> : <em>string</em><br /><em>Returns key: '100rel'. Allow support for RFC3262 provisional ACK tags</em> |
+| public | <strong>getAccountcode()</strong> : <em>string</em><br /><em>Returns key: 'Accountcode'. An accountcode to set automatically on any channels created for this endpoint.</em> |
+| public | <strong>getActiveChannels()</strong> : <em>string</em><br /><em>Returns key: 'ActiveChannels'. The number of active channels associated with this endpoint.</em> |
+| public | <strong>getAggregateMwi()</strong> : <em>string</em><br /><em>Returns key: 'AggregateMwi'. Condense MWI notifications into a single NOTIFY.</em> |
+| public | <strong>getAllow()</strong> : <em>string</em><br /><em>Returns key: 'Allow'. Media Codec(s) to allow</em> |
+| public | <strong>getAllowSubscribe()</strong> : <em>string</em><br /><em>Returns key: 'AllowSubscribe'. Determines if endpoint is allowed to initiate subscriptions with Asterisk.</em> |
+| public | <strong>getAllowTransfer()</strong> : <em>string</em><br /><em>Returns key: 'AllowTransfer'. Determines whether SIP REFER transfers are allowed for this endpoint</em> |
+| public | <strong>getAors()</strong> : <em>string</em><br /><em>Returns key: 'Aors'. AoR(s) to be used with the endpoint</em> |
+| public | <strong>getAuth()</strong> : <em>string</em><br /><em>Returns key: 'Auth'. Authentication Object(s) associated with the endpoint</em> |
+| public | <strong>getCallGroup()</strong> : <em>string</em><br /><em>Returns key: 'CallGroup'. The numeric pickup groups for a channel.</em> |
+| public | <strong>getCallerid()</strong> : <em>string</em><br /><em>Returns key: 'Callerid'. CallerID information for the endpoint</em> |
+| public | <strong>getCalleridPrivacy()</strong> : <em>string</em><br /><em>Returns key: 'CalleridPrivacy'. Default privacy level</em> |
+| public | <strong>getCalleridTag()</strong> : <em>string</em><br /><em>Returns key: 'CalleridTag'. Internal id_tag for the endpoint</em> |
+| public | <strong>getConnectedLineMethod()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineMethod'. Connected line method type</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'. Dialplan context for inbound sessions</em> |
+| public | <strong>getCosAudio()</strong> : <em>string</em><br /><em>Returns key: 'CosAudio'. Priority for audio streams</em> |
+| public | <strong>getCosVideo()</strong> : <em>string</em><br /><em>Returns key: 'CosVideo'. Priority for video streams</em> |
+| public | <strong>getDeviceState()</strong> : <em>string</em><br /><em>Returns key: 'DeviceState'. The aggregate device state for this endpoint.</em> |
+| public | <strong>getDeviceStateBusyAt()</strong> : <em>string</em><br /><em>Returns key: 'DeviceStateBusyAt'. The number of in-use channels which will cause busy to be returned as device state</em> |
+| public | <strong>getDirectMedia()</strong> : <em>string</em><br /><em>Returns key: 'DirectMedia'. Determines whether media may flow directly between endpoints.</em> |
+| public | <strong>getDirectMediaGlareMitigation()</strong> : <em>string</em><br /><em>Returns key: 'DirectMediaGlareMitigation'. Mitigation of direct media (re)INVITE glare</em> |
+| public | <strong>getDirectMediaMethod()</strong> : <em>string</em><br /><em>Returns key: 'DirectMediaMethod'. Direct Media method type</em> |
+| public | <strong>getDisableDirectMediaOnNat()</strong> : <em>string</em><br /><em>Returns key: 'DisableDirectMediaOnNat'. Disable direct media session refreshes when NAT obstructs the media session</em> |
+| public | <strong>getDisallow()</strong> : <em>string</em><br /><em>Returns key: 'Disallow'. Media Codec(s) to disallow</em> |
+| public | <strong>getDtlsCaFile()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCaFile'. Path to certificate authority certificate</em> |
+| public | <strong>getDtlsCaPath()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCaPath'. Path to a directory containing certificate authority certificates</em> |
+| public | <strong>getDtlsCertFile()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCertFile'. Path to certificate file to present to peer</em> |
+| public | <strong>getDtlsCipher()</strong> : <em>string</em><br /><em>Returns key: 'DtlsCipher'. Cipher to use for DTLS negotiation</em> |
+| public | <strong>getDtlsPrivateKey()</strong> : <em>string</em><br /><em>Returns key: 'DtlsPrivateKey'. Path to private key for certificate file</em> |
+| public | <strong>getDtlsRekey()</strong> : <em>string</em><br /><em>Returns key: 'DtlsRekey'. Interval at which to renegotiate the TLS session and rekey the SRTP session</em> |
+| public | <strong>getDtlsSetup()</strong> : <em>string</em><br /><em>Returns key: 'DtlsSetup'. Whether we are willing to accept connections, connect to the other party, or both.</em> |
+| public | <strong>getDtlsVerify()</strong> : <em>string</em><br /><em>Returns key: 'DtlsVerify'. Verify that the provided peer certificate is valid</em> |
+| public | <strong>getDtmfMode()</strong> : <em>string</em><br /><em>Returns key: 'DtmfMode'. DTMF mode</em> |
+| public | <strong>getFaxDetect()</strong> : <em>string</em><br /><em>Returns key: 'FaxDetect'. Whether CNG tone detection is enabled</em> |
+| public | <strong>getForceAvp()</strong> : <em>string</em><br /><em>Returns key: 'ForceAvp'. Determines whether res_pjsip will use and enforce usage of AVP, regardless of the RTP profile in use for this endpoint.</em> |
+| public | <strong>getForceRport()</strong> : <em>string</em><br /><em>Returns key: 'ForceRport'. Force use of return port</em> |
+| public | <strong>getFromDomain()</strong> : <em>string</em><br /><em>Returns key: 'FromDomain'. Domain to user in From header for requests to this endpoint.</em> |
+| public | <strong>getFromUser()</strong> : <em>string</em><br /><em>Returns key: 'FromUser'. Username to use in From header for requests to this endpoint.</em> |
+| public | <strong>getIceSupport()</strong> : <em>string</em><br /><em>Returns key: 'IceSupport'. Enable the ICE mechanism to help traverse NAT</em> |
+| public | <strong>getIdentifyBy()</strong> : <em>string</em><br /><em>Returns key: 'IdentifyBy'. Way(s) for Endpoint to be identified</em> |
+| public | <strong>getInbandProgress()</strong> : <em>string</em><br /><em>Returns key: 'InbandProgress'. Determines whether chan_pjsip will indicate ringing using inband progress.</em> |
+| public | <strong>getLanguage()</strong> : <em>string</em><br /><em>Returns key: 'Language'. Set the default language to use for channels created for this endpoint.</em> |
+| public | <strong>getMailboxes()</strong> : <em>string</em><br /><em>Returns key: 'Mailboxes'. NOTIFY the endpoint when state changes for any of the specified mailboxes</em> |
+| public | <strong>getMediaAddress()</strong> : <em>string</em><br /><em>Returns key: 'MediaAddress'. IP address used in SDP for media handling</em> |
+| public | <strong>getMediaEncryption()</strong> : <em>string</em><br /><em>Returns key: 'MediaEncryption'. Determines whether res_pjsip will use and enforce usage of media encryption for this endpoint.</em> |
+| public | <strong>getMediaEncryptionOptimistic()</strong> : <em>string</em><br /><em>Returns key: 'MediaEncryptionOptimistic'. Determines whether encryption should be used if possible but does not terminate the session if not achieved.</em> |
+| public | <strong>getMediaUseReceivedTransport()</strong> : <em>string</em><br /><em>Returns key: 'MediaUseReceivedTransport'. Determines whether res_pjsip will use the media transport received in the offer SDP in the corresponding answer SDP.</em> |
+| public | <strong>getMessageContext()</strong> : <em>string</em><br /><em>Returns key: 'MessageContext'. Context to route incoming MESSAGE requests to.</em> |
+| public | <strong>getMohSuggest()</strong> : <em>string</em><br /><em>Returns key: 'MohSuggest'. Default Music On Hold class</em> |
+| public | <strong>getMwiFromUser()</strong> : <em>string</em><br /><em>Returns key: 'MwiFromUser'. Username to use in From header for unsolicited MWI NOTIFYs to this endpoint.</em> |
+| public | <strong>getNamedCallGroup()</strong> : <em>string</em><br /><em>Returns key: 'NamedCallGroup'. The named pickup groups for a channel.</em> |
+| public | <strong>getNamedPickupGroup()</strong> : <em>string</em><br /><em>Returns key: 'NamedPickupGroup'. The named pickup groups that a channel can pickup.</em> |
+| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
+| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'endpoint'.</em> |
+| public | <strong>getOneTouchRecording()</strong> : <em>string</em><br /><em>Returns key: 'OneTouchRecording'. Determines whether one-touch recording is allowed for this endpoint.</em> |
+| public | <strong>getOutboundAuth()</strong> : <em>string</em><br /><em>Returns key: 'OutboundAuth'. Authentication object used for outbound requests</em> |
+| public | <strong>getOutboundProxy()</strong> : <em>string</em><br /><em>Returns key: 'OutboundProxy'. Proxy through which to send requests, a full SIP URI must be provided</em> |
+| public | <strong>getPickupGroup()</strong> : <em>string</em><br /><em>Returns key: 'PickupGroup'. The numeric pickup groups that a channel can pickup.</em> |
+| public | <strong>getRecordOffFeature()</strong> : <em>string</em><br /><em>Returns key: 'RecordOffFeature'. The feature to enact when one-touch recording is turned off.</em> |
+| public | <strong>getRecordOnFeature()</strong> : <em>string</em><br /><em>Returns key: 'RecordOnFeature'. The feature to enact when one-touch recording is turned on.</em> |
+| public | <strong>getRedirectMethod()</strong> : <em>string</em><br /><em>Returns key: 'RedirectMethod'. How redirects received from an endpoint are handled</em> |
+| public | <strong>getRewriteContact()</strong> : <em>string</em><br /><em>Returns key: 'RewriteContact'. Allow Contact header to be rewritten with the source IP address-port</em> |
+| public | <strong>getRtpEngine()</strong> : <em>string</em><br /><em>Returns key: 'RtpEngine'. Name of the RTP engine to use for channels created for this endpoint</em> |
+| public | <strong>getRtpIpv6()</strong> : <em>string</em><br /><em>Returns key: 'RtpIpv6'. Allow use of IPv6 for RTP traffic</em> |
+| public | <strong>getRtpSymmetric()</strong> : <em>string</em><br /><em>Returns key: 'RtpSymmetric'. Enforce that RTP must be symmetric</em> |
+| public | <strong>getSdpOwner()</strong> : <em>string</em><br /><em>Returns key: 'SdpOwner'. String placed as the username portion of an SDP origin (o=) line.</em> |
+| public | <strong>getSdpSession()</strong> : <em>string</em><br /><em>Returns key: 'SdpSession'. String used for the SDP session (s=) line.</em> |
+| public | <strong>getSendDiversion()</strong> : <em>string</em><br /><em>Returns key: 'SendDiversion'. Send the Diversion header, conveying the diversion information to the called user agent</em> |
+| public | <strong>getSendPai()</strong> : <em>string</em><br /><em>Returns key: 'SendPai'. Send the P-Asserted-Identity header</em> |
+| public | <strong>getSendRpid()</strong> : <em>string</em><br /><em>Returns key: 'SendRpid'. Send the Remote-Party-ID header</em> |
+| public | <strong>getSetVar()</strong> : <em>string</em><br /><em>Returns key: 'SetVar'. Variable set on a channel involving the endpoint.</em> |
+| public | <strong>getSrtpTag32()</strong> : <em>string</em><br /><em>Returns key: 'SrtpTag32'. Determines whether 32 byte tags should be used instead of 80 byte tags.</em> |
+| public | <strong>getSubMinExpiry()</strong> : <em>string</em><br /><em>Returns key: 'SubMinExpiry'. The minimum allowed expiry time for subscriptions initiated by the endpoint.</em> |
+| public | <strong>getT38Udptl()</strong> : <em>string</em><br /><em>Returns key: 'T38Udptl'. Whether T.38 UDPTL support is enabled or not</em> |
+| public | <strong>getT38UdptlEc()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlEc'. T.38 UDPTL error correction method</em> |
+| public | <strong>getT38UdptlIpv6()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlIpv6'. Whether IPv6 is used for UDPTL Sessions</em> |
+| public | <strong>getT38UdptlMaxdatagram()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlMaxdatagram'. T.38 UDPTL maximum datagram size</em> |
+| public | <strong>getT38UdptlNat()</strong> : <em>string</em><br /><em>Returns key: 'T38UdptlNat'. Whether NAT support is enabled on UDPTL sessions</em> |
+| public | <strong>getTimers()</strong> : <em>string</em><br /><em>Returns key: 'Timers'. Session timers for SIP packets</em> |
+| public | <strong>getTimersMinSe()</strong> : <em>string</em><br /><em>Returns key: 'TimersMinSe'. Minimum session timers expiration period</em> |
+| public | <strong>getTimersSessExpires()</strong> : <em>string</em><br /><em>Returns key: 'TimersSessExpires'. Maximum session timer expiration period</em> |
+| public | <strong>getToneZone()</strong> : <em>string</em><br /><em>Returns key: 'ToneZone'. Set which country's indications to use for channels created for this endpoint.</em> |
+| public | <strong>getTosAudio()</strong> : <em>string</em><br /><em>Returns key: 'TosAudio'. DSCP TOS bits for audio streams</em> |
+| public | <strong>getTosVideo()</strong> : <em>string</em><br /><em>Returns key: 'TosVideo'. DSCP TOS bits for video streams</em> |
+| public | <strong>getTransport()</strong> : <em>string</em><br /><em>Returns key: 'Transport'. Desired transport configuration</em> |
+| public | <strong>getTrustIdInbound()</strong> : <em>string</em><br /><em>Returns key: 'TrustIdInbound'. Accept identification information received from this endpoint</em> |
+| public | <strong>getTrustIdOutbound()</strong> : <em>string</em><br /><em>Returns key: 'TrustIdOutbound'. Send private identification details to the endpoint.</em> |
+| public | <strong>getUseAvpf()</strong> : <em>string</em><br /><em>Returns key: 'UseAvpf'. Determines whether res_pjsip will use and enforce usage of AVPF for this endpoint.</em> |
+| public | <strong>getUsePtime()</strong> : <em>string</em><br /><em>Returns key: 'UsePtime'. Use Endpoint's requested packetisation interval</em> |
+| public | <strong>getUserEqPhone()</strong> : <em>string</em><br /><em>Returns key: 'UserEqPhone'. Determines whether a user=phone parameter is placed into the request URI if the user is determined to be a phone number</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\EndpointListCompleteEvent
+
+> Provide final information about an endpoint list. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getListItems()</strong> : <em>key: 'ListItems'.</em><br /><em>Shows count of returned items.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\EndpointListEvent
+
+> Event from PJSIPShowEndpoints PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getActiveChannels()</strong> : <em>integer for key: 'ActiveChannels'.</em><br /><em>The number of active channels associated with this endpoint.</em> |
+| public | <strong>getAor()</strong> : <em>string key: 'Aor'.</em><br /><em>The aor configurations associated with this endpoint.</em> |
+| public | <strong>getAuths()</strong> : <em>string key: 'Auths'.</em><br /><em>The inbound authentication configurations associated with this endpoint.</em> |
+| public | <strong>getContacts()</strong> : <em>string</em><br /><em>Returns key: 'Contacts'.</em> |
+| public | <strong>getDeviceState()</strong> : <em>string key: 'DeviceState'.</em><br /><em>The aggregate device state for this endpoint.</em> |
+| public | <strong>getObjectName()</strong> : <em>string key: 'ObjectName'.</em><br /><em>The name of this object.</em> |
+| public | <strong>getObjectType()</strong> : <em>string key: 'ObjectType'</em><br /><em>The object's type. This will always be 'endpoint'.</em> |
+| public | <strong>getOutboundAuths()</strong> : <em>string key: 'OutboundAuths'.</em><br /><em>The outbound authentication configurations associated with this endpoint.</em> |
+| public | <strong>getTransport()</strong> : <em>string key: 'Transport'.</em><br /><em>The transport configurations associated with this endpoint.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ExtensionStatusEvent
+
+> Triggered when an extension changes its status. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getHint()</strong> : <em>string</em><br /><em>Returns key: 'Hint'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\FullyBootedEvent
+
+> Event triggered when ? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\HangupEvent
+
+> Triggered when a hangup is detected. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getCause()</strong> : <em>string</em><br /><em>Returns key: 'Cause'.</em> |
+| public | <strong>getCauseText()</strong> : <em>string</em><br /><em>Returns key: 'Cause-txt'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\HoldEvent
+
+> Event triggered when an extension is put on hold. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\MusicOnHoldStartEvent
+
+> Event triggered when music on hold has started on a channel. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getClass()</strong> : <em>string</em><br /><em>Returns key: 'Class'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\MusicOnHoldStopEvent
+
+> Event triggered when music on hold has stopped on a channel. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'Uniqueid'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewAccountCodeEvent
+
+> Triggered when? PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getOldAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'OldAccountCode'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewCalleridEvent
+
+> Event triggered when a caller id is used. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getCallerIdPres()</strong> : <em>string</em><br /><em>Returns key: 'CID-CallingPres'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewchannelEvent
+
+> Event triggered when a new channel is created. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewstateEvent
+
+> Event triggered when a channel changes its status. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'. Asterisk < 1.8.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'. Asterisk < 1.8.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'. Asterisk >= 1.8.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'. Asterisk >= 1.8.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\OriginateResponseEvent
+
+> Response from an async originate. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getActionID()</strong> : <em>string</em><br /><em>Returns key: 'ActionID'.</em> |
+| public | <strong>getCallerIdName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdName'.</em> |
+| public | <strong>getCallerIdNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getReason()</strong> : <em>string</em><br /><em>Returns key: 'Reason'.</em> |
+| public | <strong>getResponse()</strong> : <em>string</em><br /><em>Returns key: 'Response'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ParkedCallEvent
+
+> Event triggered when a call is parked. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strike><strong>getCallerIDName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDName()}.</em> |
+| public | <strike><strong>getCallerIDNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDNum()}.</em> |
+| public | <strike><strong>getChannel()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeChannel()}.</em> |
+| public | <strike><strong>getConnectedLineName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineName()}.</em> |
+| public | <strike><strong>getConnectedLineNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineNum()}.</em> |
+| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkingSpace()}.</em> |
+| public | <strong>getFrom()</strong> : <em>string</em><br /><em>Returns key: 'From'.</em> |
+| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
+| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
+| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
+| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
+| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
+| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
+| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
+| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
+| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
+| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
+| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
+| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
+| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
+| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
+| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
+| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
+| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strike><strong>getTimeout()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use ParkingTimeout()}.</em> |
+| public | <strike><strong>getUniqueID()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeUniqueid()}.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ParkedCallGiveUpEvent
+
+> Event triggered when a channel leaves a parking lot because it hung up without being answered. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
+| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
+| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
+| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
+| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
+| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
+| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
+| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
+| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
+| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
+| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
+| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
+| public | <strong>getParkerAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkerAccountCode'.</em> |
+| public | <strong>getParkerCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDName'.</em> |
+| public | <strong>getParkerCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDNum'.</em> |
+| public | <strong>getParkerChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannel'.</em> |
+| public | <strong>getParkerChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelState'.</em> |
+| public | <strong>getParkerChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelStateDesc'.</em> |
+| public | <strong>getParkerConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineName'.</em> |
+| public | <strong>getParkerConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineNum'.</em> |
+| public | <strong>getParkerContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkerContext'.</em> |
+| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
+| public | <strong>getParkerExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkerExten'.</em> |
+| public | <strong>getParkerPriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkerPriority'.</em> |
+| public | <strong>getParkerUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkerUniqueid'.</em> |
+| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
+| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
+| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
+| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ParkedCallTimeOutEvent
+
+> Event triggered when a channel leaves a parking lot due to reaching the time limit of being parked. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
+| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
+| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
+| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
+| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
+| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
+| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
+| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
+| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
+| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
+| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
+| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
+| public | <strong>getParkerAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkerAccountCode'.</em> |
+| public | <strong>getParkerCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDName'.</em> |
+| public | <strong>getParkerCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDNum'.</em> |
+| public | <strong>getParkerChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannel'.</em> |
+| public | <strong>getParkerChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelState'.</em> |
+| public | <strong>getParkerChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelStateDesc'.</em> |
+| public | <strong>getParkerConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineName'.</em> |
+| public | <strong>getParkerConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineNum'.</em> |
+| public | <strong>getParkerContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkerContext'.</em> |
+| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
+| public | <strong>getParkerExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkerExten'.</em> |
+| public | <strong>getParkerPriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkerPriority'.</em> |
+| public | <strong>getParkerUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkerUniqueid'.</em> |
+| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
+| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
+| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
+| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\PeerStatusEvent
+
+> Event triggered when a peer changes its status. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getChannelType()</strong> : <em>string</em><br /><em>Returns key: 'ChannelType'.</em> |
+| public | <strong>getPeer()</strong> : <em>string</em><br /><em>Returns key: 'Peer'.</em> |
+| public | <strong>getPeerStatus()</strong> : <em>string</em><br /><em>Returns key: 'PeerStatus'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\QueueCallerAbandonEvent
+
+> Event triggered when a caller abandons the queue. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getHoldTime()</strong> : <em>string</em><br /><em>Returns key: 'HoldTime'.</em> |
+| public | <strong>getOriginalPosition()</strong> : <em>string</em><br /><em>Returns key: 'OriginalPosition'.</em> |
+| public | <strong>getPosition()</strong> : <em>string</em><br /><em>Returns key: 'Position'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\QueueCallerJoinEvent
+
+> Event triggered when a caller joins a Queue. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIdName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdName'.</em> |
+| public | <strong>getCallerIdNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getCount()</strong> : <em>string</em><br /><em>Returns key: 'Count'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPosition()</strong> : <em>string</em><br /><em>Returns key: 'Position'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\QueueCallerLeaveEvent
+
+> Event triggered when a caller leaves a Queue. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIdName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdName'.</em> |
+| public | <strong>getCallerIdNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIdNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getCount()</strong> : <em>string</em><br /><em>Returns key: 'Count'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getPosition()</strong> : <em>string</em><br /><em>Returns key: 'Position'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\QueueMemberAddedEvent
+
+> Event triggered for a QueueMemberAdd action. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallsTaken()</strong> : <em>integer</em><br /><em>Returns key: 'CallsTaken'.</em> |
+| public | <strong>getLastCall()</strong> : <em>integer</em><br /><em>Returns key: 'LastCall'.</em> |
+| public | <strong>getLocation()</strong> : <em>string</em><br /><em>Returns key: 'Location'.</em> |
+| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
+| public | <strong>getMembership()</strong> : <em>string</em><br /><em>Returns key: 'Membership'.</em> |
+| public | <strong>getPaused()</strong> : <em>boolean</em><br /><em>Returns key: 'Pause'.</em> |
+| public | <strong>getPenalty()</strong> : <em>integer</em><br /><em>Returns key: 'Penalty'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+| public | <strong>getStatus()</strong> : <em>integer</em><br /><em>Returns key: 'Status'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\QueueMemberRemovedEvent
+
+> Event triggered for a QueueMemberRemove action. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getLocation()</strong> : <em>string</em><br /><em>Returns key: 'Location'.</em> |
+| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\QueueMemberStatusEvent
+
+> Event triggered for a status change in a queue. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallsTaken()</strong> : <em>integer</em><br /><em>Returns key: 'CallsTaken'.</em> |
+| public | <strong>getLocation()</strong> : <em>string</em><br /><em>Returns key: 'Location'.</em> |
+| public | <strong>getMemberName()</strong> : <em>string</em><br /><em>Returns key: 'MemberName'.</em> |
+| public | <strong>getMembership()</strong> : <em>string</em><br /><em>Returns key: 'Membership'.</em> |
+| public | <strong>getPause()</strong> : <em>boolean</em><br /><em>Returns key: 'Paused'.</em> |
+| public | <strong>getPenalty()</strong> : <em>integer</em><br /><em>Returns key: 'Penalty'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getQueue()</strong> : <em>string</em><br /><em>Returns key: 'Queue'.</em> |
+| public | <strong>getStatus()</strong> : <em>integer</em><br /><em>Returns key: 'Status'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\RTCPReceivedEvent
+
+> Event triggered when exchanging rtp stats. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getDLSR()</strong> : <em>string</em><br /><em>Returns key: 'DLSR'.</em> |
+| public | <strong>getFractionLost()</strong> : <em>string</em><br /><em>Returns key: 'FractionLost'.</em> |
+| public | <strong>getFrom()</strong> : <em>string</em><br /><em>Returns key: 'From'.</em> |
+| public | <strong>getHighestSequence()</strong> : <em>string</em><br /><em>Returns key: 'HighestSequence'.</em> |
+| public | <strong>getIAJitter()</strong> : <em>string</em><br /><em>Returns key: 'IAJitter'.</em> |
+| public | <strong>getLastSR()</strong> : <em>string</em><br /><em>Returns key: 'LastSR'.</em> |
+| public | <strong>getPT()</strong> : <em>string</em><br /><em>Returns key: 'PT'.</em> |
+| public | <strong>getPacketsLost()</strong> : <em>string</em><br /><em>Returns key: 'PacketsLost'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getRTT()</strong> : <em>string</em><br /><em>Returns key: 'RTT'.</em> |
+| public | <strong>getReceptionReports()</strong> : <em>string</em><br /><em>Returns key: 'ReceptionReports'.</em> |
+| public | <strong>getSenderSSRC()</strong> : <em>string</em><br /><em>Returns key: 'SenderSSRC'.</em> |
+| public | <strong>getSequenceNumberCycles()</strong> : <em>string</em><br /><em>Returns key: 'SequenceNumberCycles'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\RTCPSentEvent
+
+> Event triggered when exchanging rtp stats. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCumulativeLoss()</strong> : <em>string</em><br /><em>Returns key: 'CumulativeLoss'.</em> |
+| public | <strong>getDLSR()</strong> : <em>string</em><br /><em>Returns key: 'DLSR'.</em> |
+| public | <strong>getFractionLost()</strong> : <em>string</em><br /><em>Returns key: 'FractionLost'.</em> |
+| public | <strong>getIAJitter()</strong> : <em>string</em><br /><em>Returns key: 'IAJitter'.</em> |
+| public | <strong>getOurSSRC()</strong> : <em>string</em><br /><em>Returns key: 'OurSSRC'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getReportBlock()</strong> : <em>string</em><br /><em>Returns key: 'ReportBlock'.</em> |
+| public | <strong>getSentNTP()</strong> : <em>string</em><br /><em>Returns key: 'SentNTP'.</em> |
+| public | <strong>getSentOctets()</strong> : <em>string</em><br /><em>Returns key: 'SentOctets'.</em> |
+| public | <strong>getSentPackets()</strong> : <em>string</em><br /><em>Returns key: 'SentPackets'.</em> |
+| public | <strong>getSentRTP()</strong> : <em>string</em><br /><em>Returns key: 'SentRTP'.</em> |
+| public | <strong>getTheirLastSR()</strong> : <em>string</em><br /><em>Returns key: 'TheirLastSR'.</em> |
+| public | <strong>getTo()</strong> : <em>string</em><br /><em>Returns key: 'To'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\RegistryEvent
+
+> Registry event. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getDomain()</strong> : <em>string</em><br /><em>Returns key: 'Domain'.</em> |
+| public | <strong>getStatus()</strong> : <em>string</em><br /><em>Returns key: 'Status'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\ReloadEvent
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getRawContent()</strong> : <em>string</em><br /><em>Returns key: 'RawContent'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\RequestBadFormatEvent
+
+> Event triggered when an agent logs in. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountID()</strong> : <em>string</em><br /><em>Returns key: 'AccountID'.</em> |
+| public | <strong>getEventTV()</strong> : <em>string</em><br /><em>Returns key: 'EventTV'.</em> |
+| public | <strong>getEventVersion()</strong> : <em>int</em><br /><em>Returns key: 'EventVersion'.</em> |
+| public | <strong>getFile()</strong> : <em>string</em><br /><em>Returns key: 'File'.</em> |
+| public | <strong>getFunc()</strong> : <em>string</em><br /><em>Returns key: 'Func'.</em> |
+| public | <strong>getLine()</strong> : <em>int</em><br /><em>Returns key: 'Line'.</em> |
+| public | <strong>getLocalAddress()</strong> : <em>string</em><br /><em>Returns key: 'LocalAddress'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getRemoteAddress()</strong> : <em>string</em><br /><em>Returns key: 'RemoteAddress'.</em> |
+| public | <strong>getSequenceNumber()</strong> : <em>int</em><br /><em>Returns key: 'SequenceNumber'.</em> |
+| public | <strong>getService()</strong> : <em>string</em><br /><em>Returns key: 'Service'.</em> |
+| public | <strong>getSessionID()</strong> : <em>string</em><br /><em>Returns key: 'SessionID'.</em> |
+| public | <strong>getSessionTV()</strong> : <em>string</em><br /><em>Returns key: 'SessionTV'.</em> |
+| public | <strong>getSeverity()</strong> : <em>string</em><br /><em>Returns key: 'Severity'.</em> |
+| public | <strong>getUsingPassword()</strong> : <em>boolean</em><br /><em>Returns key: 'UsingPassword'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\StatusCompleteEvent
+
+> Event triggered for the end of the list when an action Status is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getListItems()</strong> : <em>string</em><br /><em>Returns key: 'Items'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\StatusEvent
+
+> Event triggered when an action Status is issued. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
+| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'ApplicationData'.</em> |
+| public | <strong>getBridgedChannel()</strong> : <em>string</em><br /><em>Returns key: 'BridgedChannel'.</em> |
+| public | <strong>getBridgedUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'BridgedUniqueID'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getDuration()</strong> : <em>string</em><br /><em>Returns key: 'Duration'.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getSeconds()</strong> : <em>string</em><br /><em>Returns key: 'Seconds'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\SuccessfulAuthEvent
+
+> Event triggered when an agent logs in. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountID()</strong> : <em>string</em><br /><em>Returns key: 'AccountID'.</em> |
+| public | <strong>getEventTV()</strong> : <em>string</em><br /><em>Returns key: 'EventTV'.</em> |
+| public | <strong>getEventVersion()</strong> : <em>int</em><br /><em>Returns key: 'EventVersion'.</em> |
+| public | <strong>getFile()</strong> : <em>string</em><br /><em>Returns key: 'File'.</em> |
+| public | <strong>getFunc()</strong> : <em>string</em><br /><em>Returns key: 'Func'.</em> |
+| public | <strong>getLine()</strong> : <em>int</em><br /><em>Returns key: 'Line'.</em> |
+| public | <strong>getLocalAddress()</strong> : <em>string</em><br /><em>Returns key: 'LocalAddress'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getRemoteAddress()</strong> : <em>string</em><br /><em>Returns key: 'RemoteAddress'.</em> |
+| public | <strong>getSequenceNumber()</strong> : <em>int</em><br /><em>Returns key: 'SequenceNumber'.</em> |
+| public | <strong>getService()</strong> : <em>string</em><br /><em>Returns key: 'Service'.</em> |
+| public | <strong>getSessionID()</strong> : <em>string</em><br /><em>Returns key: 'SessionID'.</em> |
+| public | <strong>getSessionTV()</strong> : <em>string</em><br /><em>Returns key: 'SessionTV'.</em> |
+| public | <strong>getSeverity()</strong> : <em>string</em><br /><em>Returns key: 'Severity'.</em> |
+| public | <strong>getUsingPassword()</strong> : <em>boolean</em><br /><em>Returns key: 'UsingPassword'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\TransportDetailEvent
+
+> Event triggered when an agent logs in. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAsycOperations()</strong> : <em>string</em><br /><em>Returns key: 'AsycOperations'. Number of simultaneous Asynchronous Operations</em> |
+| public | <strong>getBind()</strong> : <em>string</em><br /><em>Returns key: 'Bind'. IP Address and optional port to bind to for this transport</em> |
+| public | <strong>getCaListFile()</strong> : <em>string</em><br /><em>Returns key: 'CaListFile'. File containing a list of certificates to read (TLS ONLY)</em> |
+| public | <strong>getCaListPath()</strong> : <em>string</em><br /><em>Returns key: 'CaListPath'. Path to directory containing a list of certificates to read (TLSONLY)</em> |
+| public | <strong>getCertFile()</strong> : <em>string</em><br /><em>Returns key: 'CertFile'. Certificate file for endpoint (TLS ONLY)</em> |
+| public | <strong>getCipher()</strong> : <em>string</em><br /><em>Returns key: 'Cipher'. Preferred cryptography cipher names (TLS ONLY)</em> |
+| public | <strong>getCos()</strong> : <em>string</em><br /><em>Returns key: 'Cos'. Enable COS for the signalling sent over this transport</em> |
+| public | <strong>getDomain()</strong> : <em>string</em><br /><em>Returns key: 'Domain'. Domain the transport comes from</em> |
+| public | <strong>getEndpointName()</strong> : <em>string</em><br /><em>Returns key: 'EndpointName'. The name of the endpoint associated with this information.</em> |
+| public | <strong>getExternalMediaAddress()</strong> : <em>string</em><br /><em>Returns key: 'ExternalMediaAddress'. External IP address to use in RTP handling</em> |
+| public | <strong>getExternalSignalingAddress()</strong> : <em>string</em><br /><em>Returns key: 'ExternalSignalingAddress'. External address for SIP signalling</em> |
+| public | <strong>getExternalSignalingPort()</strong> : <em>string</em><br /><em>Returns key: 'ExternalSignalingPort'. External port for SIP signalling</em> |
+| public | <strong>getLocalNet()</strong> : <em>string</em><br /><em>Returns key: 'LocalNet'. Network to consider local (used for NAT purposes).</em> |
+| public | <strong>getMethod()</strong> : <em>string</em><br /><em>Returns key: 'Method'. Method of SSL transport (TLS ONLY)</em> |
+| public | <strong>getObjectName()</strong> : <em>string</em><br /><em>Returns key: 'ObjectName'. The name of this object.</em> |
+| public | <strong>getObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ObjectType'. The object's type. This will always be 'transport'.</em> |
+| public | <strong>getPassword()</strong> : <em>string</em><br /><em>Returns key: 'Password'. Password required for transport</em> |
+| public | <strong>getPrivKeyFile()</strong> : <em>string</em><br /><em>Returns key: 'PrivKeyFile'. Private key file (TLS ONLY)</em> |
+| public | <strong>getProtocol()</strong> : <em>string</em><br /><em>Returns key: 'Protocol'. Protocol to use for SIP traffic</em> |
+| public | <strong>getRequireClientCert()</strong> : <em>string</em><br /><em>Returns key: 'RequireClientCert'. Require client certificate (TLS ONLY)</em> |
+| public | <strong>getTos()</strong> : <em>string</em><br /><em>Returns key: 'Tos'. Enable TOS for the signalling sent over this transport</em> |
+| public | <strong>getVerifyClient()</strong> : <em>string</em><br /><em>Returns key: 'VerifyClient'. Require verification of client certificate (TLS ONLY)</em> |
+| public | <strong>getVerifyServer()</strong> : <em>string</em><br /><em>Returns key: 'VerifyServer'. Require verification of server certificate (TLS ONLY)</em> |
+| public | <strong>getWebsocketWriteTimeout()</strong> : <em>string</em><br /><em>Returns key: 'WebsocketWriteTimeout'. The timeout (in milliseconds) to set on WebSocket connections.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\UnParkedCallEvent
+
+> Event triggered when a call is unparked. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strike><strong>getCallerIDName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDName()}.</em> |
+| public | <strike><strong>getCallerIDNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeCallerIDNum()}.</em> |
+| public | <strike><strong>getChannel()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeChannel()}.</em> |
+| public | <strike><strong>getConnectedLineName()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineName()}.</em> |
+| public | <strike><strong>getConnectedLineNum()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeConnectedLineNum()}.</em> |
+| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkingSpace()}.</em> |
+| public | <strike><strong>getFrom()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getRetrieverChannel()}.</em> |
+| public | <strong>getParkeeAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeAccountCode'.</em> |
+| public | <strong>getParkeeCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDName'.</em> |
+| public | <strong>getParkeeCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeCallerIDNum'.</em> |
+| public | <strong>getParkeeChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannel'.</em> |
+| public | <strong>getParkeeChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelState'.</em> |
+| public | <strong>getParkeeChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeChannelStateDesc'.</em> |
+| public | <strong>getParkeeConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineName'.</em> |
+| public | <strong>getParkeeConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeConnectedLineNum'.</em> |
+| public | <strong>getParkeeContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeContext'.</em> |
+| public | <strong>getParkeeExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeExten'.</em> |
+| public | <strong>getParkeePriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkeePriority'.</em> |
+| public | <strong>getParkeeUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkeeUniqueid'.</em> |
+| public | <strong>getParkerAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'ParkerAccountCode'.</em> |
+| public | <strong>getParkerCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDName'.</em> |
+| public | <strong>getParkerCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerCallerIDNum'.</em> |
+| public | <strong>getParkerChannel()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannel'.</em> |
+| public | <strong>getParkerChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelState'.</em> |
+| public | <strong>getParkerChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ParkerChannelStateDesc'.</em> |
+| public | <strong>getParkerConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineName'.</em> |
+| public | <strong>getParkerConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ParkerConnectedLineNum'.</em> |
+| public | <strong>getParkerContext()</strong> : <em>string</em><br /><em>Returns key: 'ParkerContext'.</em> |
+| public | <strong>getParkerDialString()</strong> : <em>string</em><br /><em>Returns key: 'ParkerDialString'.</em> |
+| public | <strong>getParkerExten()</strong> : <em>string</em><br /><em>Returns key: 'ParkerExten'.</em> |
+| public | <strong>getParkerPriority()</strong> : <em>string</em><br /><em>Returns key: 'ParkerPriority'.</em> |
+| public | <strong>getParkerUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'ParkerUniqueid'.</em> |
+| public | <strong>getParkingDuration()</strong> : <em>string</em><br /><em>Returns key: 'ParkingDuration'.</em> |
+| public | <strong>getParkingSpace()</strong> : <em>string</em><br /><em>Returns key: 'ParkingSpace'.</em> |
+| public | <strong>getParkingTimeout()</strong> : <em>string</em><br /><em>Returns key: 'ParkingTimeout'.</em> |
+| public | <strong>getParkinglot()</strong> : <em>string</em><br /><em>Returns key: 'Parkinglot'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getRetrieverAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverAccountCode'.</em> |
+| public | <strong>getRetrieverCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverCallerIDName'.</em> |
+| public | <strong>getRetrieverCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverCallerIDNum'.</em> |
+| public | <strong>getRetrieverChannel()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverChannel'.</em> |
+| public | <strong>getRetrieverChannelState()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverChannelState'.</em> |
+| public | <strong>getRetrieverChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverChannelStateDesc'.</em> |
+| public | <strong>getRetrieverConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverConnectedLineName'.</em> |
+| public | <strong>getRetrieverConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverConnectedLineNum'.</em> |
+| public | <strong>getRetrieverContext()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverContext'.</em> |
+| public | <strong>getRetrieverExten()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverExten'.</em> |
+| public | <strong>getRetrieverPriority()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverPriority'.</em> |
+| public | <strong>getRetrieverUniqueid()</strong> : <em>string</em><br /><em>Returns key: 'RetrieverUniqueid'.</em> |
+| public | <strike><strong>getTimeout()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use ParkingTimeout()}.</em> |
+| public | <strike><strong>getUniqueID()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Deprecated since Asterisk 12. {@use getParkeeUniqueid()}.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\UserEventEvent
+
+> Custom user events. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+| public | <strong>getUserEventName()</strong> : <em>string</em><br /><em>Returns key: 'UserEvent'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\VarSetEvent
+
+> Event triggered when a variable is set via agi or dialplan. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+| public | <strong>getValue()</strong> : <em>string</em><br /><em>Returns key: 'Value'.</em> |
+| public | <strong>getVariableName()</strong> : <em>string</em><br /><em>Returns key: 'Variable'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentLoginEvent
+
+> AgentLogin Event Note: Auto Generated using xsltproc PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>get AccountCode Returns key: 'AccountCode'</em> |
+| public | <strong>getAgent()</strong> : <em>string</em><br /><em>get Agent Returns:Agent ID of the agent.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>get CallerIDName Returns key: 'CallerIDName'</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>get CallerIDNum Returns key: 'CallerIDNum'</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>get Channel Returns key: 'Channel'</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>get ChannelState Returns:A numeric code for the channel's current state, related to ChannelStateDesc</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>get ChannelStateDesc Returns key: 'ChannelStateDesc'</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>get ConnectedLineName Returns key: 'ConnectedLineName'</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>get ConnectedLineNum Returns key: 'ConnectedLineNum'</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>get Context Returns key: 'Context'</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>get Exten Returns key: 'Exten'</em> |
+| public | <strong>getLanguage()</strong> : <em>string</em><br /><em>get Language Returns key: 'Language'</em> |
+| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>get Linkedid Returns:Uniqueid of the oldest channel associated with this channel.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>get Priority Returns key: 'Priority'</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>get Agent Privilege</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>get Uniqueid Returns key: 'Uniqueid'</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\AgentLogoffEvent
+
+> AgentLogoff Event Note: Auto Generated using xsltproc PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAgent()</strong> : <em>string</em><br /><em>get Agent Returns:Agent ID of the agent.</em> |
+| public | <strong>getLogintime()</strong> : <em>string</em><br /><em>get Logintime Returns:The number of seconds the agent was logged in.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>get Agent Privilege</em> |
+| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>get Uniqueid Returns key: 'Uniqueid'</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewextenEvent
+
+> Event triggered when a new extension is accessed. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
+| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getExten()}.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewextenEvent
+
+> Event triggered when a new extension is accessed. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
+| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getExten()}.</em> |
+| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
