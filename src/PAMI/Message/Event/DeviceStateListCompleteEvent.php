@@ -12,7 +12,7 @@
  * @subpackage Event
  * @author     Marcelo Gornstein <marcelog@gmail.com>
  * @author     Diederik de Groot <ddegroot@gmail.com>
- * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
+ * @license    http://github.com/chan-sccp/PAMI/LICENSE
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/PAMI/
  *
@@ -47,8 +47,8 @@ use PAMI\Message\Event\EventMessage;
  * @package    Message
  * @subpackage Event
  * @author     Diederik de Groot <ddegroot@gmail.com>
- * @license    http://dkgroot.github.com/PAMI/ Apache License 2.0
- * @link       http://github.com/dkgroot/PAMI/
+ * @license    http://chan-sccp.github.com/PAMI/ Apache License 2.0
+ * @link       http://github.com/chan-sccp/PAMI/
  */
 class DeviceStateListCompleteEvent extends EventMessage
 {

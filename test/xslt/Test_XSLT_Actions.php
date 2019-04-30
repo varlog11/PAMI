@@ -9,7 +9,7 @@
  * @subpackage Action
  * @author     Marcelo Gornstein <marcelog@gmail.com>
  * @author     Diederik de Groot <ddegroot@gmail.com>
- * @license    http://marcelog.github.com/ Apache License 2.0
+ * @license    http://github.com/chan-sccp/PAMI/LICENSE
  * @version    SVN: $Id$
  * @link       http://marcelog.github.com/
  *
@@ -41,8 +41,8 @@ namespace PAMI\Client\Impl {
      * @package    Test
      * @subpackage Action
      * @author     Diederik de Groot <ddegroot@gmail.com>
-     * @license    http://dkgroot.github.com/PAMI/ Apache License 2.0
-     * @link       http://github.com/dkgroot/PAMI/
+     * @license    http://chan-sccp.github.com/PAMI/ Apache License 2.0
+     * @link       http://github.com/chan-scc/PAMI/
      */
     class Test_XSLT_Actions extends BaseTestCase
     {
