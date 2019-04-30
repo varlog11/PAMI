@@ -4,7 +4,7 @@
     "description": "Asterisk Manager Interface (AMI) client for PHP, event driven, object oriented (Fork)",
     "keywords": ["asterisk","ami","client","telephony","voip","event","action","manager","monitor", "chan-sccp"],
     "homepage": "http://github.com/chan-sccp/PAMI",
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Diederik de Groot",
@@ -46,5 +46,8 @@
         "phploc/phploc": "*",
         "theseer/phpdox": "0.11.*",
         "victorjonsson/markdowndocs": "*"
+    },
+    "replace": {
+        "dkgroot/pami": ">=2.0.1"
     }
 }
