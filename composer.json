@@ -1,5 +1,5 @@
 {
-    "name": "dkgroot/pami",
+    "name": "chan-sccp/pami",
     "type": "library",
     "description": "Asterisk Manager Interface (AMI) client for PHP, event driven, object oriented (Fork)",
     "keywords": ["asterisk","ami","client","telephony","voip","event","action","manager","monitor", "chan-sccp"],
