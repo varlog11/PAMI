@@ -107,7 +107,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_iaxpeers()
         {
-        
             $write = array(implode("\r\n", array(
             'action: IAXpeers',
             'actionid: 1432.123',
@@ -116,7 +115,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\IAXpeersAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test IAXpeerlist
@@ -124,7 +123,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_iaxpeerlist()
         {
-        
             $write = array(implode("\r\n", array(
             'action: IAXpeerlist',
             'actionid: 1432.123',
@@ -133,7 +131,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\IAXpeerlistAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test IAXnetstats
@@ -141,7 +139,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_iaxnetstats()
         {
-        
             $write = array(implode("\r\n", array(
             'action: IAXnetstats',
             'actionid: 1432.123',
@@ -150,7 +147,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\IAXnetstatsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test IAXregistry
@@ -158,7 +155,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_iaxregistry()
         {
-        
             $write = array(implode("\r\n", array(
             'action: IAXregistry',
             'actionid: 1432.123',
@@ -167,7 +163,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\IAXregistryAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SKINNYdevices
@@ -175,7 +171,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_skinnydevices()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SKINNYdevices',
             'actionid: 1432.123',
@@ -184,7 +179,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SKINNYdevicesAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SKINNYshowdevice
@@ -192,7 +187,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_skinnyshowdevice()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SKINNYshowdevice',
             'actionid: 1432.123',
@@ -202,7 +196,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SKINNYshowdeviceAction('Device');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SKINNYlines
@@ -210,7 +204,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_skinnylines()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SKINNYlines',
             'actionid: 1432.123',
@@ -219,7 +212,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SKINNYlinesAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SKINNYshowline
@@ -227,7 +220,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_skinnyshowline()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SKINNYshowline',
             'actionid: 1432.123',
@@ -237,7 +229,25 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SKINNYshowlineAction('Line');
             $result = $this->start($write, $action);
         }
-    
+
+
+    /**
+     * @test DAHDIShowChannels
+     *
+     */
+        public function can_dahdishowchannels()
+        {
+            $write = array(implode("\r\n", array(
+            'action: DAHDIShowChannels',
+            'actionid: 1432.123',
+            'dahdichannel: DAHDIChannel',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\DAHDIShowChannelsAction();
+            $action->setDAHDIChannel('DAHDIChannel');
+            $result = $this->start($write, $action);
+        }
+
 
     /**
      * @test PRIShowSpans
@@ -245,7 +255,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_prishowspans()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PRIShowSpans',
             'actionid: 1432.123',
@@ -256,7 +265,7 @@ namespace PAMI\Client\Impl {
             $action->setSpan('Span');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PRIDebugSet
@@ -264,7 +273,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pridebugset()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PRIDebugSet',
             'actionid: 1432.123',
@@ -275,7 +283,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PRIDebugSetAction('Span', 'Level');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PRIDebugFileSet
@@ -283,7 +291,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pridebugfileset()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PRIDebugFileSet',
             'actionid: 1432.123',
@@ -293,7 +300,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PRIDebugFileSetAction('File');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PRIDebugFileUnset
@@ -301,7 +308,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pridebugfileunset()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PRIDebugFileUnset',
             'actionid: 1432.123',
@@ -310,7 +316,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PRIDebugFileUnsetAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SIPpeerstatus
@@ -318,7 +324,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_sippeerstatus()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SIPpeerstatus',
             'actionid: 1432.123',
@@ -329,7 +334,7 @@ namespace PAMI\Client\Impl {
             $action->setPeer('Peer');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test ConfbridgeSetSingleVideoSrc
@@ -337,7 +342,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_confbridgesetsinglevideosrc()
         {
-        
             $write = array(implode("\r\n", array(
             'action: ConfbridgeSetSingleVideoSrc',
             'actionid: 1432.123',
@@ -348,7 +352,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\ConfbridgeSetSingleVideoSrcAction('Conference', 'Channel');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test ControlPlayback
@@ -356,7 +360,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_controlplayback()
         {
-        
             $write = array(implode("\r\n", array(
             'action: ControlPlayback',
             'actionid: 1432.123',
@@ -367,7 +370,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\ControlPlaybackAction('Channel', 'Control');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test MeetmeListRooms
@@ -375,7 +378,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_meetmelistrooms()
         {
-        
             $write = array(implode("\r\n", array(
             'action: MeetmeListRooms',
             'actionid: 1432.123',
@@ -384,7 +386,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MeetmeListRoomsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test VoicemailUserStatus
@@ -392,7 +394,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_voicemailuserstatus()
         {
-        
             $write = array(implode("\r\n", array(
             'action: VoicemailUserStatus',
             'actionid: 1432.123',
@@ -403,7 +404,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\VoicemailUserStatusAction('Context', 'Mailbox');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test VoicemailRefresh
@@ -411,7 +412,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_voicemailrefresh()
         {
-        
             $write = array(implode("\r\n", array(
             'action: VoicemailRefresh',
             'actionid: 1432.123',
@@ -424,7 +424,7 @@ namespace PAMI\Client\Impl {
             $action->setMailbox('Mailbox');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test QueueMemberRingInUse
@@ -432,7 +432,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_queuememberringinuse()
         {
-        
             $write = array(implode("\r\n", array(
             'action: QueueMemberRingInUse',
             'actionid: 1432.123',
@@ -445,7 +444,7 @@ namespace PAMI\Client\Impl {
             $action->setQueue('Queue');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test QueueChangePriorityCaller
@@ -453,7 +452,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_queuechangeprioritycaller()
         {
-        
             $write = array(implode("\r\n", array(
             'action: QueueChangePriorityCaller',
             'actionid: 1432.123',
@@ -465,7 +463,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\QueueChangePriorityCallerAction('Queue', 'Caller', 'Priority');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test BridgeDestroy
@@ -473,7 +471,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_bridgedestroy()
         {
-        
             $write = array(implode("\r\n", array(
             'action: BridgeDestroy',
             'actionid: 1432.123',
@@ -483,7 +480,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\BridgeDestroyAction('BridgeUniqueid');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test BridgeKick
@@ -491,7 +488,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_bridgekick()
         {
-        
             $write = array(implode("\r\n", array(
             'action: BridgeKick',
             'actionid: 1432.123',
@@ -503,7 +499,7 @@ namespace PAMI\Client\Impl {
             $action->setBridgeUniqueid('BridgeUniqueid');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test BridgeTechnologyList
@@ -511,7 +507,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_bridgetechnologylist()
         {
-        
             $write = array(implode("\r\n", array(
             'action: BridgeTechnologyList',
             'actionid: 1432.123',
@@ -520,7 +515,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\BridgeTechnologyListAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test BridgeTechnologySuspend
@@ -528,7 +523,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_bridgetechnologysuspend()
         {
-        
             $write = array(implode("\r\n", array(
             'action: BridgeTechnologySuspend',
             'actionid: 1432.123',
@@ -538,7 +532,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\BridgeTechnologySuspendAction('BridgeTechnology');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test BridgeTechnologyUnsuspend
@@ -546,7 +540,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_bridgetechnologyunsuspend()
         {
-        
             $write = array(implode("\r\n", array(
             'action: BridgeTechnologyUnsuspend',
             'actionid: 1432.123',
@@ -556,7 +549,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\BridgeTechnologyUnsuspendAction('BridgeTechnology');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test ExtensionStateList
@@ -564,7 +557,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_extensionstatelist()
         {
-        
             $write = array(implode("\r\n", array(
             'action: ExtensionStateList',
             'actionid: 1432.123',
@@ -573,7 +565,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\ExtensionStateListAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test CancelAtxfer
@@ -581,7 +573,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_cancelatxfer()
         {
-        
             $write = array(implode("\r\n", array(
             'action: CancelAtxfer',
             'actionid: 1432.123',
@@ -591,7 +582,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\CancelAtxferAction('Channel');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PresenceState
@@ -599,7 +590,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_presencestate()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PresenceState',
             'actionid: 1432.123',
@@ -609,7 +599,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PresenceStateAction('Provider');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test LoggerRotate
@@ -617,7 +607,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_loggerrotate()
         {
-        
             $write = array(implode("\r\n", array(
             'action: LoggerRotate',
             'actionid: 1432.123',
@@ -626,7 +615,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\LoggerRotateAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test Filter
@@ -634,7 +623,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_filter()
         {
-        
             $write = array(implode("\r\n", array(
             'action: Filter',
             'actionid: 1432.123',
@@ -647,7 +635,7 @@ namespace PAMI\Client\Impl {
             $action->setFilter('Filter');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test Parkinglots
@@ -655,7 +643,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_parkinglots()
         {
-        
             $write = array(implode("\r\n", array(
             'action: Parkinglots',
             'actionid: 1432.123',
@@ -664,7 +651,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\ParkinglotsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test DeviceStateList
@@ -672,7 +659,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_devicestatelist()
         {
-        
             $write = array(implode("\r\n", array(
             'action: DeviceStateList',
             'actionid: 1432.123',
@@ -681,7 +667,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\DeviceStateListAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PresenceStateList
@@ -689,7 +675,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_presencestatelist()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PresenceStateList',
             'actionid: 1432.123',
@@ -698,7 +683,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PresenceStateListAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test MuteAudio
@@ -706,7 +691,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_muteaudio()
         {
-        
             $write = array(implode("\r\n", array(
             'action: MuteAudio',
             'actionid: 1432.123',
@@ -718,7 +702,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MuteAudioAction('Channel', 'Direction', 'State');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test MWIGet
@@ -726,7 +710,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_mwiget()
         {
-        
             $write = array(implode("\r\n", array(
             'action: MWIGet',
             'actionid: 1432.123',
@@ -736,7 +719,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MWIGetAction('Mailbox');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test MWIDelete
@@ -744,7 +727,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_mwidelete()
         {
-        
             $write = array(implode("\r\n", array(
             'action: MWIDelete',
             'actionid: 1432.123',
@@ -754,7 +736,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\MWIDeleteAction('Mailbox');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test MWIUpdate
@@ -762,7 +744,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_mwiupdate()
         {
-        
             $write = array(implode("\r\n", array(
             'action: MWIUpdate',
             'actionid: 1432.123',
@@ -776,7 +757,7 @@ namespace PAMI\Client\Impl {
             $action->setNewMessages('NewMessages');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PJSIPNotify
@@ -784,7 +765,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pjsipnotify()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PJSIPNotify',
             'actionid: 1432.123',
@@ -800,7 +780,7 @@ namespace PAMI\Client\Impl {
             $action->setchannel('channel');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SorceryMemoryCacheExpireObject
@@ -808,7 +788,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_sorcerymemorycacheexpireobject()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SorceryMemoryCacheExpireObject',
             'actionid: 1432.123',
@@ -819,7 +798,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SorceryMemoryCacheExpireObjectAction('Cache', 'Object');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SorceryMemoryCacheExpire
@@ -827,7 +806,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_sorcerymemorycacheexpire()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SorceryMemoryCacheExpire',
             'actionid: 1432.123',
@@ -837,7 +815,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SorceryMemoryCacheExpireAction('Cache');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SorceryMemoryCacheStaleObject
@@ -845,7 +823,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_sorcerymemorycachestaleobject()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SorceryMemoryCacheStaleObject',
             'actionid: 1432.123',
@@ -858,7 +835,7 @@ namespace PAMI\Client\Impl {
             $action->setReload('Reload');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SorceryMemoryCacheStale
@@ -866,7 +843,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_sorcerymemorycachestale()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SorceryMemoryCacheStale',
             'actionid: 1432.123',
@@ -876,7 +852,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SorceryMemoryCacheStaleAction('Cache');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test SorceryMemoryCachePopulate
@@ -884,7 +860,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_sorcerymemorycachepopulate()
         {
-        
             $write = array(implode("\r\n", array(
             'action: SorceryMemoryCachePopulate',
             'actionid: 1432.123',
@@ -894,7 +869,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\SorceryMemoryCachePopulateAction('Cache');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test FAXSessions
@@ -902,7 +877,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_faxsessions()
         {
-        
             $write = array(implode("\r\n", array(
             'action: FAXSessions',
             'actionid: 1432.123',
@@ -911,7 +885,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\FAXSessionsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test FAXSession
@@ -919,7 +893,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_faxsession()
         {
-        
             $write = array(implode("\r\n", array(
             'action: FAXSession',
             'actionid: 1432.123',
@@ -929,7 +902,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\FAXSessionAction('SessionNumber');
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test FAXStats
@@ -937,7 +910,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_faxstats()
         {
-        
             $write = array(implode("\r\n", array(
             'action: FAXStats',
             'actionid: 1432.123',
@@ -946,7 +918,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\FAXStatsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PJSIPShowAors
@@ -954,7 +926,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pjsipshowaors()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PJSIPShowAors',
             'actionid: 1432.123',
@@ -963,7 +934,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PJSIPShowAorsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PJSIPShowAuths
@@ -971,7 +942,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pjsipshowauths()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PJSIPShowAuths',
             'actionid: 1432.123',
@@ -980,7 +950,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PJSIPShowAuthsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PJSIPShowContacts
@@ -988,7 +958,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pjsipshowcontacts()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PJSIPShowContacts',
             'actionid: 1432.123',
@@ -997,7 +966,7 @@ namespace PAMI\Client\Impl {
             $action = new \PAMI\Message\Action\PJSIPShowContactsAction();
             $result = $this->start($write, $action);
         }
-    
+
 
     /**
      * @test PJSIPShowRegistrationInboundContactStatuses
@@ -1005,7 +974,6 @@ namespace PAMI\Client\Impl {
      */
         public function can_pjsipshowregistrationinboundcontactstatuses()
         {
-        
             $write = array(implode("\r\n", array(
             'action: PJSIPShowRegistrationInboundContactStatuses',
             'actionid: 1432.123',

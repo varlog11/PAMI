@@ -627,7 +627,7 @@ namespace PAMI\Client\Impl {
         public function can_dahdi_dndoff()
         {
             $write = array(implode("\r\n", array(
-            'action: DAHDIDNDOff',
+            'action: DAHDIDNDoff',
             'actionid: 1432.123',
             'dahdichannel: channel',
             ''
@@ -641,7 +641,7 @@ namespace PAMI\Client\Impl {
         public function can_dahdi_dndon()
         {
             $write = array(implode("\r\n", array(
-            'action: DAHDIDNDOn',
+            'action: DAHDIDNDon',
             'actionid: 1432.123',
             'dahdichannel: channel',
             ''
