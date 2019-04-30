@@ -5,11 +5,11 @@
 [![Latest Stable Version](https://poser.pugx.org/marcelog/PAMI/v/stable)](https://packagist.org/packages/marcelog/PAMI)
 [![Documentation Status](https://readthedocs.org/projects/pami/badge/?version=latest)](http://pami.readthedocs.org/en/latest/?badge=latest)
 -->
-[![Build Status](https://travis-ci.org/dkgroot/PAMI.svg)](https://travis-ci.org/dkgroot/PAMI)
-[![Coverage Status](https://coveralls.io/repos/github/dkgroot/PAMI/badge.svg?branch=master)](https://coveralls.io/github/dkgroot/PAMI?branch=master)
-[![Code Climate](https://codeclimate.com/github/dkgroot/PAMI/badges/gpa.svg)](https://codeclimate.com/github/dkgroot/PAMI)
+[![Build Status](https://travis-ci.org/chan-sccp/PAMI.svg)](https://travis-ci.org/chan-sccp/PAMI)
+[![Coverage Status](https://coveralls.io/repos/github/chan-sccp/PAMI/badge.svg?branch=master)](https://coveralls.io/github/chan-sccp/PAMI?branch=master)
+[![Code Climate](https://codeclimate.com/github/chan-sccp/PAMI/badges/gpa.svg)](https://codeclimate.com/github/chan-sccp/PAMI)
 <!--
-[![Issue Count](https://codeclimate.com/github/dkgroot/PAMI/badges/issue_count.svg)](https://codeclimate.com/github/dkgroot/PAMI)
+[![Issue Count](https://codeclimate.com/github/chan-sccp/PAMI/badges/issue_count.svg)](https://codeclimate.com/github/chan-sccp/PAMI)
 [![Click here to lend your support to: PAMI and make a donation at pledgie.com !](https://pledgie.com/campaigns/30944.png?skin_name=chrome' border='0')](https://pledgie.com/campaigns/30944)
 -->
 
@@ -31,7 +31,7 @@ A port for erlang is available at: https://github.com/marcelog/erlami
 # Resources
 
  * [API](doc/api.md) in Markdown
- * [API](https://dkgroot.github.io/PAMI) in html
+ * [API](https://chan-sccp.github.io/PAMI) in html
  * Collection of [Examples](doc/examples/)
  * [Complete PAGI/PAMI talk for the PHP Conference Argentina 2013](http://www.slideshare.net/mgornstein/phpconf-2013). Check the slide notes for the complete text :)
 
