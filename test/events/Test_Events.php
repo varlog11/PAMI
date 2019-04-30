@@ -143,6 +143,7 @@ namespace PAMI\Client\Impl {
                 'Newstate',
                 'OriginateResponse',
                 'OutboundRegistrationDetail',
+                'OutboundSubscriptionDetail',
                 'ParkedCall',
                 'ParkedCallGiveUp','ParkedCallTimeOut',
                 'ParkedCallsComplete',
@@ -227,6 +228,9 @@ namespace PAMI\Client\Impl {
             ),
             'EndpointList' => array(
                 'ActiveChannels' => 0
+            ),
+            'ContactStatusDetail' => array(
+                'ObjectType' => 'contactstatus',
             ),
             );
             $eventValues = array(
@@ -594,6 +598,10 @@ namespace PAMI\Client\Impl {
                 'Expiration' => 'Expiration',
                 'Status' => 'Status',
                 'NextReg' => 'NextReg',
+            ),
+            'OutboundSubscriptionDetail' => array(
+                'ObjectType' => 'ObjectType',
+                'ObjectName' => 'ObjectName',
             ),
             'PeerEntry' => array(
                 'RealtimeDevice' => 'RealtimeDevice',
@@ -1509,11 +1517,6 @@ namespace PAMI\Client\Impl {
                 'DAHDIChannel' => 'DAHDIChannel',
                 'Status' => 'Status',
             ),
-            'DNDState1' => array(
-                'Privilege' => 'Privilege',
-                'Channel' => 'Channel',     /* deprecated */
-                'Status' => 'Status',
-            ),
             'DTMFBegin' => array(
                 'Privilege' => 'Privilege',
                 'Channel' => 'Channel',
@@ -1850,6 +1853,7 @@ namespace PAMI\Client\Impl {
                 'Status' => 'Status',
                 'RoundtripUsec' => 'RoundtripUsec',
                 'EndpointName' => 'EndpointName',
+                'ObjectType' => 'contactstatus',
             ),
             'DAHDIChannel' => array(
                 'Privilege' => 'Privilege',
