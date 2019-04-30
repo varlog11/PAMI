@@ -70,14 +70,10 @@ abstract class OutgoingMessage extends Message
      */
     public function setResponseHandler($newResponseHandler)
     {
-        if (0 == strlen($newResponseHandler)) {
-            throw new PAMIException('ResponseHandler cannot be empty.');
-        }
-
-        if (class_exists($newResponseHandler) && is_a($newResponseHandler, '\PAMI\Message\Response\Response', true)) {
+        /*if (class_exists($newResponseHandler) && is_a($newResponseHandler, '\PAMI\Message\Response\Response', true)) {
             $this->responseHandler = $newResponseHandler;
             return;
-        }
+        }*/
 
         $className = '\\PAMI\\Message\\Response\\' . $newResponseHandler . 'Response';
         if (class_exists($className, true) && is_a($className, '\PAMI\Message\Response\Response', true)) {

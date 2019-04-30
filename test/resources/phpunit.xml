@@ -48,6 +48,9 @@
         <testsuite name="Events">
             <directory suffix=".php">../events</directory>
         </testsuite>
+        <testsuite name="Factories">
+            <directory suffix=".php">../factories</directory>
+        </testsuite>
         <testsuite name="SCCP_Actions">
             <directory suffix=".php">../sccp_actions</directory>
         </testsuite>

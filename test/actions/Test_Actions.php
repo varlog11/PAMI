@@ -186,13 +186,13 @@ namespace PAMI\Client\Impl {
             $write = array(implode("\r\n", array(
             'action: Atxfer',
             'actionid: 1432.123',
-            'channel: channel',
-            'exten: exten',
-            'context: context',
-            'priority: priority',
+            'channel: Channel',
+            'exten: Exten',
+            'context: Context',
             ''
             )));
-            $action = new \PAMI\Message\Action\AttendedTransferAction('channel', 'exten', 'context', 'priority');
+            $action = new \PAMI\Message\Action\AttendedTransferAction('Channel', 'Exten');
+            $action->setContext('Context');
             $result = $this->_start($write, $action);
         }
         /**
@@ -2100,6 +2100,21 @@ namespace PAMI\Client\Impl {
             ''
             )));
             $action = new \PAMI\Message\Action\PJSIPShowSubscriptionsOutboundAction();
+            $result = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_pjsip_unregister_action()
+        {
+            $write = array(implode("\r\n", array(
+            'action: PJSIPUnregister',
+            'actionid: 1432.123',
+            'registration: Registration',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\PJSIPUnregisterAction('Registration');
             $result = $this->_start($write, $action);
         }
     }

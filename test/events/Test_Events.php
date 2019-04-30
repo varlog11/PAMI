@@ -168,6 +168,7 @@ namespace PAMI\Client\Impl {
                 'Registry',
                 'Reload',
                 'Rename',
+                'ResourceListDetail',
                 'RTCPReceived',
                 'RTCPReceiverStat',
                 'RTCPSent',
@@ -762,6 +763,10 @@ namespace PAMI\Client\Impl {
                 'Newname' => 'Newname',
                 'Channel' => 'Channel',
                 'Privilege' => 'Privilege'
+            ),
+            'ResourceListDetail' => array(
+                'ObjectType' => 'ObjectType',
+                'ObjectName' => 'ObjectName'
             ),
             'ShowDialPlanComplete' => array(
                 'listcontexts' => 'listcontexts',
@@ -1502,6 +1507,11 @@ namespace PAMI\Client\Impl {
             'DNDState' => array(
                 'Privilege' => 'Privilege',
                 'DAHDIChannel' => 'DAHDIChannel',
+                'Status' => 'Status',
+            ),
+            'DNDState1' => array(
+                'Privilege' => 'Privilege',
+                'Channel' => 'Channel',     /* deprecated */
                 'Status' => 'Status',
             ),
             'DTMFBegin' => array(

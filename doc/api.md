@@ -15,6 +15,7 @@
 - [\PAMI\Message\IncomingMessage (abstract)](#class-pamimessageincomingmessage-abstract)
 - [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
 - [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
+- [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
 - [\PAMI\Message\Action\AGIAction](#class-pamimessageactionagiaction)
 - [\PAMI\Message\Action\AbsoluteTimeoutAction](#class-pamimessageactionabsolutetimeoutaction)
 - [\PAMI\Message\Action\ActionMessage (abstract)](#class-pamimessageactionactionmessage-abstract)
@@ -215,6 +216,7 @@
 - [\PAMI\Message\Action\SorceryMemoryCacheStaleObjectAction](#class-pamimessageactionsorcerymemorycachestaleobjectaction)
 - [\PAMI\Message\Action\VoicemailRefreshAction](#class-pamimessageactionvoicemailrefreshaction)
 - [\PAMI\Message\Action\VoicemailUserStatusAction](#class-pamimessageactionvoicemailuserstatusaction)
+- [\PAMI\Message\Action\AttendedTransferAction](#class-pamimessageactionattendedtransferaction)
 - [\PAMI\Message\Event\AGIExecEndEvent](#class-pamimessageeventagiexecendevent)
 - [\PAMI\Message\Event\AGIExecEvent](#class-pamimessageeventagiexecevent)
 - [\PAMI\Message\Event\AGIExecStartEvent](#class-pamimessageeventagiexecstartevent)
@@ -753,6 +755,19 @@
 
 <hr />
 
+### Class: \PAMI\Message\OutgoingMessage (abstract)
+
+> A generic outgoing message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getResponseHandler()</strong> : <em>string/null</em><br /><em>Returns the class name of the response handler.</em> |
+| public | <strong>setResponseHandler(</strong><em>mixed</em> <strong>$newResponseHandler</strong>)</strong> : <em>void</em><br /><em>Set the response handler.</em> |
+
+*This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
+
+<hr />
+
 ### Class: \PAMI\Message\Action\AGIAction
 
 > AGI action message. PHP Version 5
@@ -816,11 +831,12 @@
 
 ### Class: \PAMI\Message\Action\AttendedTransferAction
 
-> Atxfer action message. PHP Version 5
+> AttendedTransfer action message. using 'Atxfer'
 
 | Visibility | Function |
 |:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$extension</strong>, <em>string</em> <strong>$context</strong>, <em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to.</em> |
+| public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>set Context Context to transfer to.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -3220,6 +3236,19 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>string</em> <strong>$context</strong>, <em>string</em> <strong>$mailbox</strong>)</strong> : <em>void</em><br /><em>Constructor. The context you want to check. The mailbox you want to check.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\AttendedTransferAction
+
+> AttendedTransfer action message. using 'Atxfer'
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to.</em> |
+| public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>set Context Context to transfer to.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
