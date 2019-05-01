@@ -44,7 +44,7 @@ Add this library to your [Composer](https://packagist.org/) configuration. In
 composer.json:
 ```json
   "require": {
-    "marcelog/pami": "2.*"
+    "chan-sccp/pami": "2.*"
   }
 ```
 
