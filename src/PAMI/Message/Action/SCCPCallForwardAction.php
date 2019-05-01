@@ -34,11 +34,6 @@ use PAMI\Exception\PAMIException;
 /**
  * SCCP Set Callforward on a line/device action message.
  *
- * PHP Version 5
- *
- * @category   Pami
- * @package    Message
- * @subpackage Action
  * @author     Diederik de Groot <ddegroot@users.sf.net>
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
@@ -48,8 +43,10 @@ class SCCPCallforwardAction extends ActionMessage
     /**
      * Constructor.
      *
-     * @param string $DeviceId DeviceId
-     * @param string $State State on of ['off', 'reject', 'silent']
+     * @param string $lineName LineName
+     * @param string $deviceId DeviceId
+     * @param string $destination
+     * @param string $type ['none', 'all', 'busy']
      *
      * @return void
      */
