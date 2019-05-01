@@ -1254,9 +1254,11 @@ namespace PAMI\Client\Impl {
             'action: Status',
             'actionid: 1432.123',
             'channel: channel',
+            'variables: a,b,c',
             ''
             )));
             $action = new \PAMI\Message\Action\StatusAction('channel');
+            $action->setVariables(['a', 'b', 'c']);
             $result = $this->_start($write, $action);
         }
         /**
