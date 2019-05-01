@@ -221,6 +221,7 @@
 - [\PAMI\Message\Action\VoicemailUsersListAction](#class-pamimessageactionvoicemailuserslistaction)
 - [\PAMI\Message\Action\WaitEventAction](#class-pamimessageactionwaiteventaction)
 - [\PAMI\Message\Action\DAHDIShowChannelsAction](#class-pamimessageactiondahdishowchannelsaction)
+- [\PAMI\Message\Action\StatusAction](#class-pamimessageactionstatusaction)
 - [\PAMI\Message\Event\AGIExecEvent](#class-pamimessageeventagiexecevent)
 - [\PAMI\Message\Event\AsyncAGIEvent](#class-pamimessageeventasyncagievent)
 - [\PAMI\Message\Event\BridgeEvent](#class-pamimessageeventbridgeevent)
@@ -375,7 +376,6 @@
 - [\PAMI\Message\Event\LoadAverageLimitEvent](#class-pamimessageeventloadaveragelimitevent)
 - [\PAMI\Message\Event\LoadEvent](#class-pamimessageeventloadevent)
 - [\PAMI\Message\Event\LocalBridgeEvent](#class-pamimessageeventlocalbridgeevent)
-- [\PAMI\Message\Event\LocalBridgeEvent](#class-pamimessageeventlocalbridgeevent)
 - [\PAMI\Message\Event\LocalOptimizationBeginEvent](#class-pamimessageeventlocaloptimizationbeginevent)
 - [\PAMI\Message\Event\LocalOptimizationEndEvent](#class-pamimessageeventlocaloptimizationendevent)
 - [\PAMI\Message\Event\MeetmeEndEvent](#class-pamimessageeventmeetmeendevent)
@@ -486,9 +486,6 @@
 - [\PAMI\Message\Event\UnParkedCallEvent](#class-pamimessageeventunparkedcallevent)
 - [\PAMI\Message\Event\UserEventEvent](#class-pamimessageeventusereventevent)
 - [\PAMI\Message\Event\VarSetEvent](#class-pamimessageeventvarsetevent)
-- [\PAMI\Message\Event\AgentLoginEvent](#class-pamimessageeventagentloginevent)
-- [\PAMI\Message\Event\AgentLogoffEvent](#class-pamimessageeventagentlogoffevent)
-- [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
 - [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
 - [\PAMI\Message\Event\Factory\Impl\EventFactoryImpl](#class-pamimessageeventfactoryimpleventfactoryimpl)
 - [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
@@ -3306,6 +3303,19 @@
 |:-----------|:---------|
 | public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
 | public | <strong>setDAHDIChannel(</strong><em>string</em> <strong>$dahdichannel</strong>)</strong> : <em>void</em><br /><em>set DAHDIChannel Specify the specific channel number to show. Show all channels if zero or not present.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\StatusAction
+
+> Queries for the status of a channel or all channels if none specified. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>bool/string</em> <strong>$channel=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setVariables(</strong><em>array</em> <strong>$variables=array()</strong>)</strong> : <em>void</em><br /><em>Sets Variables key.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -6339,48 +6349,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\LocalBridgeEvent
-
-> LocalBridge Event Note: Auto Generated using xsltproc PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>get Context Returns:The context in the dialplan that Channel2 starts in.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>get Exten Returns:The extension in the dialplan that Channel2 starts in.</em> |
-| public | <strong>getLocalOneAccountCode()</strong> : <em>string</em><br /><em>get LocalOneAccountCode Returns key: 'LocalOneAccountCode'</em> |
-| public | <strong>getLocalOneCallerIDName()</strong> : <em>string</em><br /><em>get LocalOneCallerIDName Returns key: 'LocalOneCallerIDName'</em> |
-| public | <strong>getLocalOneCallerIDNum()</strong> : <em>string</em><br /><em>get LocalOneCallerIDNum Returns key: 'LocalOneCallerIDNum'</em> |
-| public | <strong>getLocalOneChannel()</strong> : <em>string</em><br /><em>get LocalOneChannel Returns key: 'LocalOneChannel'</em> |
-| public | <strong>getLocalOneChannelState()</strong> : <em>string</em><br /><em>get LocalOneChannelState Returns:A numeric code for the channel's current state, related to LocalOneChannelStateDesc</em> |
-| public | <strong>getLocalOneChannelStateDesc()</strong> : <em>string</em><br /><em>get LocalOneChannelStateDesc Returns key: 'LocalOneChannelStateDesc'</em> |
-| public | <strong>getLocalOneConnectedLineName()</strong> : <em>string</em><br /><em>get LocalOneConnectedLineName Returns key: 'LocalOneConnectedLineName'</em> |
-| public | <strong>getLocalOneConnectedLineNum()</strong> : <em>string</em><br /><em>get LocalOneConnectedLineNum Returns key: 'LocalOneConnectedLineNum'</em> |
-| public | <strong>getLocalOneContext()</strong> : <em>string</em><br /><em>get LocalOneContext Returns key: 'LocalOneContext'</em> |
-| public | <strong>getLocalOneExten()</strong> : <em>string</em><br /><em>get LocalOneExten Returns key: 'LocalOneExten'</em> |
-| public | <strong>getLocalOneLanguage()</strong> : <em>string</em><br /><em>get LocalOneLanguage Returns key: 'LocalOneLanguage'</em> |
-| public | <strong>getLocalOneLinkedid()</strong> : <em>string</em><br /><em>get LocalOneLinkedid Returns:Uniqueid of the oldest channel associated with this channel.</em> |
-| public | <strong>getLocalOnePriority()</strong> : <em>string</em><br /><em>get LocalOnePriority Returns key: 'LocalOnePriority'</em> |
-| public | <strong>getLocalOneUniqueid()</strong> : <em>string</em><br /><em>get LocalOneUniqueid Returns key: 'LocalOneUniqueid'</em> |
-| public | <strong>getLocalOptimization()</strong> : <em>string</em><br /><em>get LocalOptimization Returns key: 'LocalOptimization'</em> |
-| public | <strong>getLocalTwoAccountCode()</strong> : <em>string</em><br /><em>get LocalTwoAccountCode Returns key: 'LocalTwoAccountCode'</em> |
-| public | <strong>getLocalTwoCallerIDName()</strong> : <em>string</em><br /><em>get LocalTwoCallerIDName Returns key: 'LocalTwoCallerIDName'</em> |
-| public | <strong>getLocalTwoCallerIDNum()</strong> : <em>string</em><br /><em>get LocalTwoCallerIDNum Returns key: 'LocalTwoCallerIDNum'</em> |
-| public | <strong>getLocalTwoChannel()</strong> : <em>string</em><br /><em>get LocalTwoChannel Returns key: 'LocalTwoChannel'</em> |
-| public | <strong>getLocalTwoChannelState()</strong> : <em>string</em><br /><em>get LocalTwoChannelState Returns:A numeric code for the channel's current state, related to LocalTwoChannelStateDesc</em> |
-| public | <strong>getLocalTwoChannelStateDesc()</strong> : <em>string</em><br /><em>get LocalTwoChannelStateDesc Returns key: 'LocalTwoChannelStateDesc'</em> |
-| public | <strong>getLocalTwoConnectedLineName()</strong> : <em>string</em><br /><em>get LocalTwoConnectedLineName Returns key: 'LocalTwoConnectedLineName'</em> |
-| public | <strong>getLocalTwoConnectedLineNum()</strong> : <em>string</em><br /><em>get LocalTwoConnectedLineNum Returns key: 'LocalTwoConnectedLineNum'</em> |
-| public | <strong>getLocalTwoContext()</strong> : <em>string</em><br /><em>get LocalTwoContext Returns key: 'LocalTwoContext'</em> |
-| public | <strong>getLocalTwoExten()</strong> : <em>string</em><br /><em>get LocalTwoExten Returns key: 'LocalTwoExten'</em> |
-| public | <strong>getLocalTwoLanguage()</strong> : <em>string</em><br /><em>get LocalTwoLanguage Returns key: 'LocalTwoLanguage'</em> |
-| public | <strong>getLocalTwoLinkedid()</strong> : <em>string</em><br /><em>get LocalTwoLinkedid Returns:Uniqueid of the oldest channel associated with this channel.</em> |
-| public | <strong>getLocalTwoPriority()</strong> : <em>string</em><br /><em>get LocalTwoPriority Returns key: 'LocalTwoPriority'</em> |
-| public | <strong>getLocalTwoUniqueid()</strong> : <em>string</em><br /><em>get LocalTwoUniqueid Returns key: 'LocalTwoUniqueid'</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\LocalOptimizationBeginEvent
 
 > LocalOptimizationBegin Event Note: Auto Generated using xsltproc PHP Version 5
@@ -9178,68 +9146,6 @@
 | public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
 | public | <strong>getValue()</strong> : <em>string</em><br /><em>Returns key: 'Value'.</em> |
 | public | <strong>getVariableName()</strong> : <em>string</em><br /><em>Returns key: 'Variable'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentLoginEvent
-
-> AgentLogin Event Note: Auto Generated using xsltproc PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>get AccountCode Returns key: 'AccountCode'</em> |
-| public | <strong>getAgent()</strong> : <em>string</em><br /><em>get Agent Returns:Agent ID of the agent.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>get CallerIDName Returns key: 'CallerIDName'</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>get CallerIDNum Returns key: 'CallerIDNum'</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>get Channel Returns key: 'Channel'</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>get ChannelState Returns:A numeric code for the channel's current state, related to ChannelStateDesc</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>get ChannelStateDesc Returns key: 'ChannelStateDesc'</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>get ConnectedLineName Returns key: 'ConnectedLineName'</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>get ConnectedLineNum Returns key: 'ConnectedLineNum'</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>get Context Returns key: 'Context'</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>get Exten Returns key: 'Exten'</em> |
-| public | <strong>getLanguage()</strong> : <em>string</em><br /><em>get Language Returns key: 'Language'</em> |
-| public | <strong>getLinkedid()</strong> : <em>string</em><br /><em>get Linkedid Returns:Uniqueid of the oldest channel associated with this channel.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>get Priority Returns key: 'Priority'</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>get Agent Privilege</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>get Uniqueid Returns key: 'Uniqueid'</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\AgentLogoffEvent
-
-> AgentLogoff Event Note: Auto Generated using xsltproc PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAgent()</strong> : <em>string</em><br /><em>get Agent Returns:Agent ID of the agent.</em> |
-| public | <strong>getLogintime()</strong> : <em>string</em><br /><em>get Logintime Returns:The number of seconds the agent was logged in.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>get Agent Privilege</em> |
-| public | <strong>getUniqueid()</strong> : <em>string</em><br /><em>get Uniqueid Returns key: 'Uniqueid'</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewextenEvent
-
-> Event triggered when a new extension is accessed. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getExten()}.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 

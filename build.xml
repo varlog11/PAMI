@@ -57,6 +57,12 @@
       passthru="false"/>
   </target>
 
+  <target name="fixstyle">
+    <exec command="phpcbf --tab-width=4 --standard=PSR2 src test"
+      checkreturn="true"
+      passthru="false"/>
+  </target>
+
   <target name="test">
     <exec command="vendor/bin/phpunit -v --debug -c test/resources/phpunit.xml"
       checkreturn="true"

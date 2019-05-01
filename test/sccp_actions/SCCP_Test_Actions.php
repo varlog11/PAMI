@@ -2044,5 +2044,98 @@ namespace PAMI\Client\Impl {
             }
             return $result;
         }
+        
+        /**
+         * @test
+         */
+        public function can_get_SCCPCallforwardNone()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPCallforward',
+            'actionid: 1432.123',
+            'linename: 1122',
+            'deviceid: SEP001122334455',
+            'type: none',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\SCCPCallforwardAction('1122', 'SEP001122334455');
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_get_SCCPCallforwardAll()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPCallforward',
+            'actionid: 1432.123',
+            'linename: 1122',
+            'deviceid: SEP001122334455',
+            'type: all',
+            'destination: 2211',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\SCCPCallforwardAction('1122', 'SEP001122334455', '2211', 'all');
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_get_SCCPCallforwardBusy()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPCallforward',
+            'actionid: 1432.123',
+            'linename: 1122',
+            'deviceid: SEP001122334455',
+            'type: busy',
+            'destination: 2211',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\SCCPCallforwardAction('1122', 'SEP001122334455', '2211', 'busy');
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         * expectedException \PAMI\Exception\PAMIException
+         */
+        public function can_get_SCCPCallforwardWrongType()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPCallforward',
+            'actionid: 1432.123',
+            'linename: 1122',
+            'deviceid: SEP001122334455',
+            'type: busy',
+            'destination: 2211',
+            ''
+            )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
+            $action = new \PAMI\Message\Action\SCCPCallforwardAction('1122', 'SEP001122334455', '2211', 'wrong');
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         * expectedException \PAMI\Exception\PAMIException
+         */
+        public function can_get_SCCPCallforwardNoDestination()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPCallforward',
+            'actionid: 1432.123',
+            'linename: 1122',
+            'deviceid: SEP001122334455',
+            'type: busy',
+            'destination: 2211',
+            ''
+            )));
+            $this->expectException(\PAMI\Exception\PAMIException::class);
+            $action = new \PAMI\Message\Action\SCCPCallforwardAction('1122', 'SEP001122334455', null, 'all');
+            $client = $this->_start($write, $action);
+        }
     }
 }
