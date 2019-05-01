@@ -660,6 +660,7 @@ namespace PAMI\Client\Impl {
                 'PeerStatus' => 'PeerStatus'
             ),
             'QueueEntry' => array(
+                'Queue' => 'Queue',
                 'Position' => 'Position',
                 'Channel' => 'Channel',
                 'Uniqueid' => 'Uniqueid',
@@ -1929,6 +1930,7 @@ namespace PAMI\Client\Impl {
                 'OutboundAuths' => 'OutboundAuths',
                 'DeviceState' => 'DeviceState',
                 'ActiveChannels' => 0,
+                'Contacts' => 'Contacts'
             ),
             'EndpointListComplete' => array('ListItems' => 'ListItems'),
             'Cdr' => array(
