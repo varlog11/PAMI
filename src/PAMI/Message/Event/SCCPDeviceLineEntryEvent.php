@@ -88,11 +88,25 @@ class SCCPDeviceLineEntryEvent extends EventMessage
     /**
      * Returns key: 'Suffix'.
      *
+     * @deprecated Please use getSubscriptionId() instead
      * @return integer
      */
     public function getSuffix()
     {
         return intval($this->getKey('Suffix'));
+    }
+
+    /**
+     * Returns key: 'SubscriptionId'.
+     *
+     * @return integer
+     */
+    public function getSubscriptionId()
+    {
+        if (array_key_exists('subcid', $this->getKeys())) {
+            return $this->getKey('subcid');         // cover for typo in chan-sccp
+        }
+        return $this->getKey('SubId');
     }
 
     /**

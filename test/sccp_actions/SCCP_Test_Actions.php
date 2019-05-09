@@ -637,10 +637,22 @@ namespace PAMI\Client\Impl {
             'pendDel: No',
             'Default: No',
             '',
+            'Event: SCCPDeviceButtonEntry',
+            'ActionId: 1432.123',
+            'ChannelType: SCCP',
+            'ChannelObjectType: DeviceButton',
+            'Id: 3',
+            'Inst: 3',
+            'TypeStr: Line',
+            'Type: 0',
+            'pendUpdt: No',
+            'pendDel: No',
+            'Default: No',
+            '',
             'Event: TableEnd',
             'ActionId: 1432.123',
             'TableName: Buttons',
-            'TableEntries: 2',
+            'TableEntries: 3',
             '',
             'Event: TableStart',
             'ActionId: 1432.123',
@@ -652,7 +664,7 @@ namespace PAMI\Client\Impl {
             'ChannelObjectType: DeviceLine',
             'Id: 1',
             'Name: 98041',
-            'Suffix: ',
+            'Suffix: 3',            /* deprecated */
             'Label: Phone 4 Line 1',
             'CfwdType: None',
             'CfwdNumber: ',
@@ -663,7 +675,18 @@ namespace PAMI\Client\Impl {
             'ChannelObjectType: DeviceLine',
             'Id: 2',
             'Name: 98099',
-            'Suffix: 4',
+            'SubCid: 4',        /* typo in chan-sccp */
+            'Label: Shared',
+            'CfwdType: None',
+            'CfwdNumber: ',
+            '',
+            'Event: SCCPDeviceLineEntry',
+            'ActionId: 1432.123',
+            'ChannelType: SCCP',
+            'ChannelObjectType: DeviceLine',
+            'Id: 3',
+            'Name: 98099',
+            'SubId: (+)02:',
             'Label: Shared',
             'CfwdType: None',
             'CfwdNumber: ',
@@ -671,7 +694,7 @@ namespace PAMI\Client\Impl {
             'Event: TableEnd',
             'ActionId: 1432.123',
             'TableName: LineButtons',
-            'TableEntries: 2',
+            'TableEntries: 3',
             '',
             'Event: TableStart',
             'ActionId: 1432.123',
@@ -892,6 +915,9 @@ namespace PAMI\Client\Impl {
             }
             $this->assertEquals($result->getButtons()[0]->getTypeStr(), "Line");
             $this->assertEquals($result->getLineButtons()[0]->getName(), "98041");
+            $this->assertEquals($result->getLineButtons()[0]->getSuffix(), "3");
+            $this->assertEquals($result->getLineButtons()[1]->getSubscriptionId(), "4");
+            $this->assertEquals($result->getLineButtons()[2]->getSubscriptionId(), "(+)02:");
             $this->assertEquals($result->getSpeeddialButtons()[0]->getName(), "98011");
             $this->assertEquals($result->getFeatureButtons()[0]->getName(), "call forward");
             $this->assertEquals($result->getVariables()[1]->getValue(), "myval2");

@@ -487,6 +487,7 @@
 - [\PAMI\Message\Event\UserEventEvent](#class-pamimessageeventusereventevent)
 - [\PAMI\Message\Event\VarSetEvent](#class-pamimessageeventvarsetevent)
 - [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
+- [\PAMI\Message\Event\SCCPDeviceLineEntryEvent](#class-pamimessageeventsccpdevicelineentryevent)
 - [\PAMI\Message\Event\Factory\Impl\EventFactoryImpl](#class-pamimessageeventfactoryimpleventfactoryimpl)
 - [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
 - [\PAMI\Message\Response\ComplexResponse](#class-pamimessageresponsecomplexresponse)
@@ -4592,7 +4593,8 @@
 | public | <strong>getId()</strong> : <em>integer</em><br /><em>Returns key: 'Id'.</em> |
 | public | <strong>getLabel()</strong> : <em>string</em><br /><em>Returns key: 'Label'.</em> |
 | public | <strong>getName()</strong> : <em>string</em><br /><em>Returns key: 'Name'.</em> |
-| public | <strong>getSuffix()</strong> : <em>integer</em><br /><em>Returns key: 'Suffix'.</em> |
+| public | <strong>getSubscriptionId()</strong> : <em>integer</em><br /><em>Returns key: 'SubscriptionId'.</em> |
+| public | <strike><strong>getSuffix()</strong> : <em>integer</em></strike><br /><em>DEPRECATED - Please use getSubscriptionId() instead</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -9166,6 +9168,26 @@
 | public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
 | public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
 | public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\SCCPDeviceLineEntryEvent
+
+> Event triggered by SCCPShowDevice Line Entries. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCfwdNumber()</strong> : <em>string</em><br /><em>Returns key: 'CfwdNumber'.</em> |
+| public | <strong>getCfwdType()</strong> : <em>string</em><br /><em>Returns key: 'CfwdType'.</em> |
+| public | <strong>getChannelObjectType()</strong> : <em>string</em><br /><em>Returns key: 'ChannelObjectType'.</em> |
+| public | <strong>getChannelType()</strong> : <em>string</em><br /><em>Returns key: 'ChannelType'.</em> |
+| public | <strong>getId()</strong> : <em>integer</em><br /><em>Returns key: 'Id'.</em> |
+| public | <strong>getLabel()</strong> : <em>string</em><br /><em>Returns key: 'Label'.</em> |
+| public | <strong>getName()</strong> : <em>string</em><br /><em>Returns key: 'Name'.</em> |
+| public | <strong>getSubscriptionId()</strong> : <em>integer</em><br /><em>Returns key: 'SubscriptionId'.</em> |
+| public | <strike><strong>getSuffix()</strong> : <em>integer</em></strike><br /><em>DEPRECATED - Please use getSubscriptionId() instead</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
