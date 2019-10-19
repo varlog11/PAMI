@@ -13,9 +13,10 @@
 - [\PAMI\Exception\PAMIException](#class-pamiexceptionpamiexception)
 - [\PAMI\Listener\IEventListener (interface)](#interface-pamilistenerieventlistener)
 - [\PAMI\Message\IncomingMessage (abstract)](#class-pamimessageincomingmessage-abstract)
+- [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
+- [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
 - [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
-- [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
-- [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
+- [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
 - [\PAMI\Message\Action\ActionMessage (abstract)](#class-pamimessageactionactionmessage-abstract)
 - [\PAMI\Message\Action\AttendedTransferAction](#class-pamimessageactionattendedtransferaction)
 - [\PAMI\Message\Action\DongleReloadAction](#class-pamimessageactiondonglereloadaction)
@@ -221,6 +222,7 @@
 - [\PAMI\Message\Action\DAHDIShowChannelsAction](#class-pamimessageactiondahdishowchannelsaction)
 - [\PAMI\Message\Action\StatusAction](#class-pamimessageactionstatusaction)
 - [\PAMI\Message\Action\SCCPHoldCallAction](#class-pamimessageactionsccpholdcallaction)
+- [\PAMI\Message\Action\SCCPStartCallAction](#class-pamimessageactionsccpstartcallaction)
 - [\PAMI\Message\Action\SCCPStartCallAction](#class-pamimessageactionsccpstartcallaction)
 - [\PAMI\Message\Event\AGIExecEvent](#class-pamimessageeventagiexecevent)
 - [\PAMI\Message\Event\AsyncAGIEvent](#class-pamimessageeventasyncagievent)
@@ -461,8 +463,6 @@
 - [\PAMI\Message\Event\MusicOnHoldStopEvent](#class-pamimessageeventmusiconholdstopevent)
 - [\PAMI\Message\Event\NewAccountCodeEvent](#class-pamimessageeventnewaccountcodeevent)
 - [\PAMI\Message\Event\NewCalleridEvent](#class-pamimessageeventnewcalleridevent)
-- [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
-- [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
 - [\PAMI\Message\Event\OriginateResponseEvent](#class-pamimessageeventoriginateresponseevent)
 - [\PAMI\Message\Event\ParkedCallEvent](#class-pamimessageeventparkedcallevent)
 - [\PAMI\Message\Event\ParkedCallGiveUpEvent](#class-pamimessageeventparkedcallgiveupevent)
@@ -488,6 +488,10 @@
 - [\PAMI\Message\Event\VarSetEvent](#class-pamimessageeventvarsetevent)
 - [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
 - [\PAMI\Message\Event\SCCPDeviceLineEntryEvent](#class-pamimessageeventsccpdevicelineentryevent)
+- [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
+- [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
+- [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
+- [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
 - [\PAMI\Message\Event\Factory\Impl\EventFactoryImpl](#class-pamimessageeventfactoryimpleventfactoryimpl)
 - [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
 - [\PAMI\Message\Response\ComplexResponse](#class-pamimessageresponsecomplexresponse)
@@ -721,6 +725,32 @@
 
 <hr />
 
+### Class: \PAMI\Message\OutgoingMessage (abstract)
+
+> A generic outgoing message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getResponseHandler()</strong> : <em>string/null</em><br /><em>Returns the class name of the response handler.</em> |
+| public | <strong>setResponseHandler(</strong><em>mixed</em> <strong>$newResponseHandler</strong>)</strong> : <em>void</em><br /><em>Set the response handler.</em> |
+
+*This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\OutgoingMessage (abstract)
+
+> A generic outgoing message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getResponseHandler()</strong> : <em>string/null</em><br /><em>Returns the class name of the response handler.</em> |
+| public | <strong>setResponseHandler(</strong><em>mixed</em> <strong>$newResponseHandler</strong>)</strong> : <em>void</em><br /><em>Set the response handler.</em> |
+
+*This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
+
+<hr />
+
 ### Class: \PAMI\Message\Message (abstract)
 
 > A generic ami message, in-or-outbound. PHP Version 5
@@ -745,29 +775,27 @@
 
 <hr />
 
-### Class: \PAMI\Message\OutgoingMessage (abstract)
+### Class: \PAMI\Message\Message (abstract)
 
-> A generic outgoing message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getResponseHandler()</strong> : <em>string/null</em><br /><em>Returns the class name of the response handler.</em> |
-| public | <strong>setResponseHandler(</strong><em>mixed</em> <strong>$newResponseHandler</strong>)</strong> : <em>void</em><br /><em>Set the response handler.</em> |
-
-*This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\OutgoingMessage (abstract)
-
-> A generic outgoing message. PHP Version 5
+> A generic ami message, in-or-outbound. PHP Version 5
 
 | Visibility | Function |
 |:-----------|:---------|
-| public | <strong>getResponseHandler()</strong> : <em>string/null</em><br /><em>Returns the class name of the response handler.</em> |
-| public | <strong>setResponseHandler(</strong><em>mixed</em> <strong>$newResponseHandler</strong>)</strong> : <em>void</em><br /><em>Set the response handler.</em> |
-
-*This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
+| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>__sleep()</strong> : <em>string[]</em><br /><em>Serialize function.</em> |
+| public | <strong>getActionID()</strong> : <em>string</em><br /><em>Returns key: 'ActionID'.</em> |
+| public | <strong>getBoolKey(</strong><em>string</em> <strong>$key</strong>)</strong> : <em>string</em><br /><em>Returns a key by name.</em> |
+| public | <strong>getCreatedDate()</strong> : <em>integer</em><br /><em>Returns created date.</em> |
+| public | <strong>getKey(</strong><em>string</em> <strong>$key</strong>)</strong> : <em>string</em><br /><em>Returns a key by name.</em> |
+| public | <strong>getKeys()</strong> : <em>string[]</em><br /><em>Returns all keys for this message.</em> |
+| public | <strong>getVariable(</strong><em>string</em> <strong>$key</strong>)</strong> : <em>string</em><br /><em>Returns a variable by name.</em> |
+| public | <strong>getVariables()</strong> : <em>string[]</em><br /><em>Returns all variabels for this message.</em> |
+| public | <strong>serialize()</strong> : <em>string</em><br /><em>Gives a string representation for this message, ready to be sent to ami.</em> |
+| public | <strong>setVariable(</strong><em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Adds a variable to this message.</em> |
+| protected | <strong>finishMessage(</strong><em>mixed</em> <strong>$message</strong>)</strong> : <em>string</em><br /><em>Returns the end of message token appended to the end of a given message.</em> |
+| protected | <strong>sanitizeInput(</strong><em>string</em> <strong>$value</strong>)</strong> : <em>typed and sanitized value</em><br /><em>Sanitize incoming value</em> |
+| protected | <strong>setKey(</strong><em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Adds a variable to this message.</em> |
+| protected | <strong>setSanitizedKey(</strong><em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Adds a variable to this message after sanitizing it first.</em> |
 
 <hr />
 
@@ -3317,7 +3345,22 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>string</em> <strong>$DeviceName</strong>, <em>string</em> <strong>$LineName</strong>, <em>string</em> <strong>$Number</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>setChannelId(</strong><em>mixed</em> <strong>$ChannelId</strong>)</strong> : <em>void</em> |
+| public | <strike><strong>setChannelId(</strong><em>mixed</em> <strong>$ChannelId</strong>)</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getLinkeId()}.</em> |
+| public | <strong>setLinkedId(</strong><em>mixed</em> <strong>$LinkedId</strong>)</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\SCCPStartCallAction
+
+> SCCP Start Call action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$DeviceName</strong>, <em>string</em> <strong>$LineName</strong>, <em>string</em> <strong>$Number</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strike><strong>setChannelId(</strong><em>mixed</em> <strong>$ChannelId</strong>)</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getLinkeId()}.</em> |
+| public | <strong>setLinkedId(</strong><em>mixed</em> <strong>$LinkedId</strong>)</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -8523,47 +8566,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\NewchannelEvent
-
-> Event triggered when a new channel is created. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\NewstateEvent
-
-> Event triggered when a channel changes its status. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'. Asterisk < 1.8.</em> |
-| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'. Asterisk < 1.8.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
-| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
-| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'. Asterisk >= 1.8.</em> |
-| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'. Asterisk >= 1.8.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\OriginateResponseEvent
 
 > Response from an async originate. PHP Version 5
@@ -9189,6 +9191,94 @@
 | public | <strong>getName()</strong> : <em>string</em><br /><em>Returns key: 'Name'.</em> |
 | public | <strong>getSubscriptionId()</strong> : <em>integer</em><br /><em>Returns key: 'SubscriptionId'.</em> |
 | public | <strike><strong>getSuffix()</strong> : <em>integer</em></strike><br /><em>DEPRECATED - Please use getSubscriptionId() instead</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewchannelEvent
+
+> Event triggered when a new channel is created. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedId()</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewstateEvent
+
+> Event triggered when a channel changes its status. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'. Asterisk < 1.8.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'. Asterisk < 1.8.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'. Asterisk >= 1.8.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'. Asterisk >= 1.8.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedId()</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewchannelEvent
+
+> Event triggered when a new channel is created. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getAccountCode()</strong> : <em>string</em><br /><em>Returns key: 'AccountCode'.</em> |
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
+| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedId()</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
+
+*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Event\NewstateEvent
+
+> Event triggered when a channel changes its status. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>getCallerIDName()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDName'. Asterisk < 1.8.</em> |
+| public | <strong>getCallerIDNum()</strong> : <em>string</em><br /><em>Returns key: 'CallerIDNum'. Asterisk < 1.8.</em> |
+| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
+| public | <strong>getChannelState()</strong> : <em>string</em><br /><em>Returns key: 'ChannelState'.</em> |
+| public | <strong>getChannelStateDesc()</strong> : <em>string</em><br /><em>Returns key: 'ChannelStateDesc'.</em> |
+| public | <strong>getConnectedLineName()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineName'. Asterisk >= 1.8.</em> |
+| public | <strong>getConnectedLineNum()</strong> : <em>string</em><br /><em>Returns key: 'ConnectedLineNum'. Asterisk >= 1.8.</em> |
+| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
+| public | <strong>getLinkedId()</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
+| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
+| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
