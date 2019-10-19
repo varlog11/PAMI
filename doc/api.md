@@ -42,7 +42,6 @@
 - [\PAMI\Message\Action\SCCPDeviceUpdateAction](#class-pamimessageactionsccpdeviceupdateaction)
 - [\PAMI\Message\Action\SCCPDndDeviceAction](#class-pamimessageactionsccpdnddeviceaction)
 - [\PAMI\Message\Action\SCCPHangupCallAction](#class-pamimessageactionsccphangupcallaction)
-- [\PAMI\Message\Action\SCCPHoldCallAction](#class-pamimessageactionsccpholdcallaction)
 - [\PAMI\Message\Action\SCCPLineForwardUpdateAction](#class-pamimessageactionsccplineforwardupdateaction)
 - [\PAMI\Message\Action\SCCPMessageDeviceAction](#class-pamimessageactionsccpmessagedeviceaction)
 - [\PAMI\Message\Action\SCCPMessageDevicesAction](#class-pamimessageactionsccpmessagedevicesaction)
@@ -59,7 +58,6 @@
 - [\PAMI\Message\Action\SCCPShowMWISubscriptionsAction](#class-pamimessageactionsccpshowmwisubscriptionsaction)
 - [\PAMI\Message\Action\SCCPShowSessionsAction](#class-pamimessageactionsccpshowsessionsaction)
 - [\PAMI\Message\Action\SCCPShowSoftkeySetsAction](#class-pamimessageactionsccpshowsoftkeysetsaction)
-- [\PAMI\Message\Action\SCCPStartCallAction](#class-pamimessageactionsccpstartcallaction)
 - [\PAMI\Message\Action\SCCPSystemMessageAction](#class-pamimessageactionsccpsystemmessageaction)
 - [\PAMI\Message\Action\SCCPTokenAckAction](#class-pamimessageactionsccptokenackaction)
 - [\PAMI\Message\Action\SIPNotifyAction](#class-pamimessageactionsipnotifyaction)
@@ -222,6 +220,8 @@
 - [\PAMI\Message\Action\WaitEventAction](#class-pamimessageactionwaiteventaction)
 - [\PAMI\Message\Action\DAHDIShowChannelsAction](#class-pamimessageactiondahdishowchannelsaction)
 - [\PAMI\Message\Action\StatusAction](#class-pamimessageactionstatusaction)
+- [\PAMI\Message\Action\SCCPHoldCallAction](#class-pamimessageactionsccpholdcallaction)
+- [\PAMI\Message\Action\SCCPStartCallAction](#class-pamimessageactionsccpstartcallaction)
 - [\PAMI\Message\Event\AGIExecEvent](#class-pamimessageeventagiexecevent)
 - [\PAMI\Message\Event\AsyncAGIEvent](#class-pamimessageeventasyncagievent)
 - [\PAMI\Message\Event\BridgeEvent](#class-pamimessageeventbridgeevent)
@@ -1087,18 +1087,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\SCCPHoldCallAction
-
-> Hold/Resume SCCP Sevice action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$ChannelId</strong>, <em>string</em> <strong>$DeviceName</strong>, <em>bool/boolean</em> <strong>$Hold=true</strong>, <em>bool/boolean</em> <strong>$SwapChannels=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\SCCPLineForwardUpdateAction
 
 > SCCP Forward Line action message. PHP Version 5
@@ -1286,18 +1274,6 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\SCCPStartCallAction
-
-> SCCP Start Call action message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$DeviceName</strong>, <em>string</em> <strong>$LineName</strong>, <em>string</em> <strong>$Number</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -3317,6 +3293,31 @@
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>bool/string</em> <strong>$channel=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 | public | <strong>setVariables(</strong><em>array</em> <strong>$variables=array()</strong>)</strong> : <em>void</em><br /><em>Sets Variables key.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\SCCPHoldCallAction
+
+> Hold/Resume SCCP Sevice action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$ChannelId</strong>, <em>string</em> <strong>$DeviceName</strong>, <em>bool/boolean</em> <strong>$Hold=true</strong>, <em>bool/boolean</em> <strong>$SwapChannels=false</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\SCCPStartCallAction
+
+> SCCP Start Call action message. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$DeviceName</strong>, <em>string</em> <strong>$LineName</strong>, <em>string</em> <strong>$Number</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>setChannelId(</strong><em>mixed</em> <strong>$ChannelId</strong>)</strong> : <em>void</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
