@@ -48,7 +48,7 @@ class SCCPHoldCallAction extends ActionMessage
     /**
      * Constructor.
      *
-     * @param string $CHannelId ChannelId
+     * @param string $ChannelId ChannelId
      * @param boolean $Hold Hold or Resume
      * @param string $DeviceName Required for SharedLine
      * @param boolean $SwapChannels If we are resuming and have an active channel, should it be put on hold

@@ -1,6 +1,6 @@
 <?php
 /**
- * SCCPStartCall action message.
+ * SCCPMicrophone action message.
  *
  * PHP Version 5
  *
@@ -30,7 +30,7 @@
 namespace PAMI\Message\Action;
 
 /**
- * SCCP Start Call action message.
+ * SCCP Switch device microphone on or off
  *
  * PHP Version 5
  *
@@ -41,28 +41,25 @@ namespace PAMI\Message\Action;
  * @license    http://marcelog.github.com/PAMI/ Apache License 2.0
  * @link       http://marcelog.github.com/PAMI/
  */
-class SCCPStartCallAction extends ActionMessage
+class SCCPMicrophoneAction extends ActionMessage
 {
     /**
      * Constructor.
      *
-     * @param string $DeviceName Device Name
-     * @param string $LineName Line Name
-     * @param string $Number Extension to Ring
+     * @param string $DeviceId DeviceId
+     * @param boolean $OnOff On / Off
      *
      * @return void
      */
-    public function __construct($DeviceName, $LineName, $Number)
+    public function __construct($DeviceId, $OnOff)
     {
-        parent::__construct('SCCPStartCall');
-        
-        $this->setKey('DeviceName', $DeviceName);
-        $this->setKey('LineName', $LineName);
-        $this->setKey('Number', $Number);
-    }
-
-    public function setChannelId($ChannelId)
-    {
-        $this->setKey('ChannelId', $ChannelId);
+        parent::__construct('SCCPMicrophone');
+        $this->setKey('DeviceId', $DeviceId);
+        $this->setKey('OnOff', $DeviceId);
+        if ($OnOff == true) {
+            $this->setKey('OnOff', 'on');
+        } else {
+            $this->setKey('OnOff', 'off');
+        }
     }
 }

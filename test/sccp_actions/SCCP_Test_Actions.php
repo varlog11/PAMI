@@ -2009,6 +2009,25 @@ namespace PAMI\Client\Impl {
         /**
          * @test
          */
+        public function can_get_SCCPStartCallandChannelId()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPStartCall',
+            'actionid: 1432.123',
+            'devicename: SEP001122334455',
+            'linename: 98011',
+            'number: 666',
+            'channelid: 123456',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\SCCPStartCallAction('SEP001122334455', '98011', '666');
+            $action->setChannelId("123456");
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
         public function can_get_SCCPTokenAck()
         {
             $write = array(implode("\r\n", array(
@@ -2161,6 +2180,22 @@ namespace PAMI\Client\Impl {
             )));
             $this->expectException(\PAMI\Exception\PAMIException::class);
             $action = new \PAMI\Message\Action\SCCPCallforwardAction('1122', 'SEP001122334455', null, 'all');
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test
+         */
+        public function can_get_SCCPMicrophone()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPMicrophone',
+            'actionid: 1432.123',
+            'deviceid: SEP001122334455',
+            'onoff: on',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\SCCPMicrophoneAction('SEP001122334455', true);
             $client = $this->_start($write, $action);
         }
     }
