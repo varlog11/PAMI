@@ -492,6 +492,7 @@ can still catch them. If you catch one of these, please report it!
  * SCCPLineForwardUpdate
  * SCCPMessageDevice
  * SCCPMessageDevices
+ * SCCPMicrophone
  * SCCPShowChannels
  * SCCPShowConference
  * SCCPShowConferences
