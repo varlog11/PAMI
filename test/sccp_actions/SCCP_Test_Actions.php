@@ -2007,7 +2007,7 @@ namespace PAMI\Client\Impl {
         }
 
         /**
-         * @test
+         * @test misnamed ChannelId
          */
         public function can_get_SCCPStartCallandChannelId()
         {
@@ -2022,6 +2022,25 @@ namespace PAMI\Client\Impl {
             )));
             $action = new \PAMI\Message\Action\SCCPStartCallAction('SEP001122334455', '98011', '666');
             $action->setChannelId("123456");
+            $client = $this->_start($write, $action);
+        }
+
+        /**
+         * @test replacement implementation
+         */
+        public function can_get_SCCPStartCallandLinkedId()
+        {
+            $write = array(implode("\r\n", array(
+            'action: SCCPStartCall',
+            'actionid: 1432.123',
+            'devicename: SEP001122334455',
+            'linename: 98011',
+            'number: 666',
+            'channelid: 123456',
+            ''
+            )));
+            $action = new \PAMI\Message\Action\SCCPStartCallAction('SEP001122334455', '98011', '666');
+            $action->setLinkedId("123456");
             $client = $this->_start($write, $action);
         }
 

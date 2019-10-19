@@ -61,8 +61,24 @@ class SCCPStartCallAction extends ActionMessage
         $this->setKey('Number', $Number);
     }
 
+    /**
+     * Returns key: 'LinkedId'.
+     *
+     * @return string
+     * @deprecated Please use {@see getLinkeId()}.
+     */
     public function setChannelId($ChannelId)
     {
         $this->setKey('ChannelId', $ChannelId);
+    }
+
+    /**
+     * Returns key: 'LinkedId'.
+     *
+     * @return string
+     */
+    public function setLinkedId($LinkedId)
+    {
+        $this->setKey('ChannelId', $LinkedId);
     }
 }
