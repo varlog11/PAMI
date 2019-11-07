@@ -79,11 +79,11 @@ abstract class Message
     protected $createdDate;
 
     /**
-     * Serialize function.
+     * Serialize helper function.
      *
      * @return string[]
      */
-    public function __sleep()
+    protected function __sleep()
     {
         return array('lines', 'variables', 'keys', 'createdDate');
     }
