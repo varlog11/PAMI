@@ -14,7 +14,7 @@
 -->
 
 # Fork !
-Note that this is a fork of the official release by [Marcelo Gornstein](https://github.com/marcelog/PAMI).
+Note that this is a fork of the official release by [Marcelo Gornstein](https://github.com/marcelog/PAMI), which has not been maintained for a while (hence the fork).
 
 # Introduction
 
@@ -25,8 +25,8 @@ events, using an observer-listener pattern.
 The idea behind this, is to easily implement operator consoles, monitors, etc.
 either via SOA or ajax.
 
-A port for nodejs is available at: http://marcelog.github.com/Nami
-A port for erlang is available at: https://github.com/marcelog/erlami
+ * A port for nodejs is available at: http://marcelog.github.com/Nami
+ * A port for erlang is available at: https://github.com/marcelog/erlami
 
 # Resources
 
