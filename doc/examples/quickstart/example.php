@@ -268,6 +268,11 @@ try {
     //$sms->setCellPhone($phone);
     //$a->send($sms);
 
+    $ca = new CommandAction('sip show peers');
+    $cr = $a->send($ca);
+    var_dump($cr);
+    echo($cr->getCommandOutput());
+
     $time = time();
     while (true) {//(time() - $time) < 60) // Wait for events.
         usleep(1000); // 1ms delay

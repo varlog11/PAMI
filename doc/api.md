@@ -138,7 +138,6 @@
 - [\PAMI\Message\Action\ChangeMonitorAction](#class-pamimessageactionchangemonitoraction)
 - [\PAMI\Message\Action\CommandAction](#class-pamimessageactioncommandaction)
 - [\PAMI\Message\Action\ConfbridgeKickAction](#class-pamimessageactionconfbridgekickaction)
-- [\PAMI\Message\Action\ConfBridgeListAction](#class-pamimessageactionconfbridgelistaction)
 - [\PAMI\Message\Action\ConfbridgeListRoomsAction](#class-pamimessageactionconfbridgelistroomsaction)
 - [\PAMI\Message\Action\ConfbridgeLockAction](#class-pamimessageactionconfbridgelockaction)
 - [\PAMI\Message\Action\ConfbridgeMuteAction](#class-pamimessageactionconfbridgemuteaction)
@@ -259,7 +258,6 @@
 - [\PAMI\Message\Event\JoinEvent](#class-pamimessageeventjoinevent)
 - [\PAMI\Message\Event\LeaveEvent](#class-pamimessageeventleaveevent)
 - [\PAMI\Message\Event\LinkEvent](#class-pamimessageeventlinkevent)
-- [\PAMI\Message\Event\ListDialPlanEvent](#class-pamimessageeventlistdialplanevent)
 - [\PAMI\Message\Event\MasqueradeEvent](#class-pamimessageeventmasqueradeevent)
 - [\PAMI\Message\Event\MessageWaitingEvent](#class-pamimessageeventmessagewaitingevent)
 - [\PAMI\Message\Event\MusicOnHoldEvent](#class-pamimessageeventmusiconholdevent)
@@ -486,20 +484,20 @@
 - [\PAMI\Message\Event\UnParkedCallEvent](#class-pamimessageeventunparkedcallevent)
 - [\PAMI\Message\Event\UserEventEvent](#class-pamimessageeventusereventevent)
 - [\PAMI\Message\Event\VarSetEvent](#class-pamimessageeventvarsetevent)
-- [\PAMI\Message\Event\NewextenEvent](#class-pamimessageeventnewextenevent)
 - [\PAMI\Message\Event\SCCPDeviceLineEntryEvent](#class-pamimessageeventsccpdevicelineentryevent)
 - [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
 - [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
 - [\PAMI\Message\Event\NewchannelEvent](#class-pamimessageeventnewchannelevent)
 - [\PAMI\Message\Event\NewstateEvent](#class-pamimessageeventnewstateevent)
 - [\PAMI\Message\Event\Factory\Impl\EventFactoryImpl](#class-pamimessageeventfactoryimpleventfactoryimpl)
-- [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
 - [\PAMI\Message\Response\ComplexResponse](#class-pamimessageresponsecomplexresponse)
 - [\PAMI\Message\Response\GenericResponse](#class-pamimessageresponsegenericresponse)
 - [\PAMI\Message\Response\Response (abstract)](#class-pamimessageresponseresponse-abstract)
 - [\PAMI\Message\Response\SCCPShowDeviceResponse](#class-pamimessageresponsesccpshowdeviceresponse)
 - [\PAMI\Message\Response\SCCPShowGlobalsResponse](#class-pamimessageresponsesccpshowglobalsresponse)
 - [\PAMI\Message\Response\SCCPShowLineResponse](#class-pamimessageresponsesccpshowlineresponse)
+- [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
+- [\PAMI\Message\Response\CommandResponse](#class-pamimessageresponsecommandresponse)
 - [\PAMI\Message\Response\Factory\IResponseFactory (interface)](#interface-pamimessageresponsefactoryiresponsefactory)
 - [\PAMI\Message\Response\Factory\Impl\ResponseFactoryImpl](#class-pamimessageresponsefactoryimplresponsefactoryimpl)
 
@@ -2284,18 +2282,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Action\ConfBridgeListAction
-
-> Show sip peers. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>mixed</em> <strong>$conference</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Action\ConfbridgeListRoomsAction
 
 > ConfbridgeListRooms action message. PHP Version 5
@@ -4002,24 +3988,6 @@
 | public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
 | public | <strong>getUniqueID1()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID1'.</em> |
 | public | <strong>getUniqueID2()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID2'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Event\ListDialPlanEvent
-
-> Event triggered when an action ShowDialPlan is issued. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExtension()</strong> : <em>string</em><br /><em>Returns key: 'Extension'.</em> |
-| public | <strong>getIncludeContext()</strong> : <em>string</em><br /><em>Returns key: 'IncludeContext'.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getRegistrar()</strong> : <em>string</em><br /><em>Returns key: 'Registrar'.</em> |
 
 *This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
 
@@ -9156,26 +9124,6 @@
 
 <hr />
 
-### Class: \PAMI\Message\Event\NewextenEvent
-
-> Event triggered when a new extension is accessed. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getApplication()</strong> : <em>string</em><br /><em>Returns key: 'Application'.</em> |
-| public | <strong>getApplicationData()</strong> : <em>string</em><br /><em>Returns key: 'AppData'.</em> |
-| public | <strong>getChannel()</strong> : <em>string</em><br /><em>Returns key: 'Channel'.</em> |
-| public | <strong>getContext()</strong> : <em>string</em><br /><em>Returns key: 'Context'.</em> |
-| public | <strong>getExten()</strong> : <em>string</em><br /><em>Returns key: 'Exten'.</em> |
-| public | <strike><strong>getExtension()</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getExten()}.</em> |
-| public | <strong>getPriority()</strong> : <em>string</em><br /><em>Returns key: 'Priority'.</em> |
-| public | <strong>getPrivilege()</strong> : <em>string</em><br /><em>Returns key: 'Privilege'.</em> |
-| public | <strong>getUniqueID()</strong> : <em>string</em><br /><em>Returns key: 'UniqueID'.</em> |
-
-*This class extends [\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)*
-
-<hr />
-
 ### Class: \PAMI\Message\Event\SCCPDeviceLineEntryEvent
 
 > Event triggered by SCCPShowDevice Line Entries. PHP Version 5
@@ -9292,20 +9240,6 @@
 |:-----------|:---------|
 | public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor. Nothing to see here, move along.</em> |
 | public | <strong>createFromRaw(</strong><em>string</em> <strong>$message</strong>)</strong> : <em>[\PAMI\Message\Event\EventMessage](#class-pamimessageeventeventmessage-abstract)</em><br /><em>This is our factory method.</em> |
-
-<hr />
-
-### Class: \PAMI\Message\Response\CommandResponse
-
-> A generic SCCP response message from ami. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>getCommandOutput()</strong> : <em>string</em><br /><em>Returns Command output result</em> |
-| public | <strong>isCommandFinished()</strong> : <em>boolean</em><br /><em>Returns true if this response contains the Message: command output follow</em> |
-
-*This class extends [\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)*
 
 <hr />
 
@@ -9563,6 +9497,38 @@
 | public | <strong>getVoiceMailNumber()</strong> : <em>string</em><br /><em>Returns key: 'VoiceMailNumber'.</em> |
 
 *This class extends [\PAMI\Message\Response\ComplexResponse](#class-pamimessageresponsecomplexresponse)*
+
+<hr />
+
+### Class: \PAMI\Message\Response\CommandResponse
+
+> A generic SCCP response message from ami. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>getCommandOutput()</strong> : <em>string</em><br /><em>Returns Command output result</em> |
+| public | <strong>getCommandOutputArray()</strong> : <em>array of string</em><br /><em>Returns Command output result array</em> |
+| public | <strong>isCommandFinished()</strong> : <em>boolean</em><br /><em>Returns true if this response contains the Message: command output follow</em> |
+| protected | <strong>setSanitizedKey(</strong><em>mixed</em> <strong>$key</strong>, <em>mixed</em> <strong>$value</strong>)</strong> : <em>array of string</em><br /><em>Override Message.php setSanitizedKey implementation to parse Output strings generated by CommandAction</em> |
+
+*This class extends [\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Response\CommandResponse
+
+> A generic SCCP response message from ami. PHP Version 5
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$rawContent</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
+| public | <strong>getCommandOutput()</strong> : <em>string</em><br /><em>Returns Command output result</em> |
+| public | <strong>getCommandOutputArray()</strong> : <em>array of string</em><br /><em>Returns Command output result array</em> |
+| public | <strong>isCommandFinished()</strong> : <em>boolean</em><br /><em>Returns true if this response contains the Message: command output follow</em> |
+| protected | <strong>setSanitizedKey(</strong><em>mixed</em> <strong>$key</strong>, <em>mixed</em> <strong>$value</strong>)</strong> : <em>array of string</em><br /><em>Override Message.php setSanitizedKey implementation to parse Output strings generated by CommandAction</em> |
+
+*This class extends [\PAMI\Message\Response\Response](#class-pamimessageresponseresponse-abstract)*
 
 <hr />
 
