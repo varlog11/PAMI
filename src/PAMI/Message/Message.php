@@ -196,8 +196,8 @@ abstract class Message
     protected function setSanitizedKey($key, $value)
     {
         $key = strtolower((string)$key);
-        if ($key === 'actionid') {
-            $this->keys[$key] = (string)$this->sanitizeInput($value);
+        if ($key === 'actionid' or $key === 'uniqueid' or $key === 'linkedid') {
+            $this->keys[$key] = $value;
         } else {
             $this->keys[$key] = $this->sanitizeInput($value);
         }
