@@ -59,12 +59,12 @@ class AttendedTransferAction extends ActionMessage
         $this->setKey('Exten', $exten);
 
         if ($context !== null) {
-            trigger_error('Argument $context is deprecated and will be remove at next major version', E_USER_DEPRECATED);
+            trigger_error('Argument $context will be remove at next major version', E_USER_DEPRECATED);
             $this->setContext($context);
         }
 
         if ($priority !== null) {
-            trigger_error('Argument $priority is deprecated and will be remove at next major version', E_USER_DEPRECATED);
+            trigger_error('Argument $priority will be remove at next major version', E_USER_DEPRECATED);
             $this->setPriority($priority);
         }
     }
