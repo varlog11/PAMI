@@ -18,7 +18,6 @@
 - [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
 - [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
 - [\PAMI\Message\Action\ActionMessage (abstract)](#class-pamimessageactionactionmessage-abstract)
-- [\PAMI\Message\Action\AttendedTransferAction](#class-pamimessageactionattendedtransferaction)
 - [\PAMI\Message\Action\DongleReloadAction](#class-pamimessageactiondonglereloadaction)
 - [\PAMI\Message\Action\DongleResetAction](#class-pamimessageactiondongleresetaction)
 - [\PAMI\Message\Action\DongleRestartAction](#class-pamimessageactiondonglerestartaction)
@@ -223,6 +222,7 @@
 - [\PAMI\Message\Action\SCCPHoldCallAction](#class-pamimessageactionsccpholdcallaction)
 - [\PAMI\Message\Action\SCCPStartCallAction](#class-pamimessageactionsccpstartcallaction)
 - [\PAMI\Message\Action\SCCPStartCallAction](#class-pamimessageactionsccpstartcallaction)
+- [\PAMI\Message\Action\AttendedTransferAction](#class-pamimessageactionattendedtransferaction)
 - [\PAMI\Message\Event\AGIExecEvent](#class-pamimessageeventagiexecevent)
 - [\PAMI\Message\Event\AsyncAGIEvent](#class-pamimessageeventasyncagievent)
 - [\PAMI\Message\Event\BridgeEvent](#class-pamimessageeventbridgeevent)
@@ -807,19 +807,6 @@
 | public | <strong>setActionID(</strong><em>mixed</em> <strong>$actionID</strong>)</strong> : <em>void</em><br /><em>Sets Action ID. The ActionID can be at most 69 characters long, according to</em> |
 
 *This class extends [\PAMI\Message\OutgoingMessage](#class-pamimessageoutgoingmessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Action\AttendedTransferAction
-
-> AttendedTransfer action message. using 'Atxfer'
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to.</em> |
-| public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>set Context Context to transfer to.</em> |
-
-*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
 <hr />
 
@@ -2045,8 +2032,9 @@
 
 | Visibility | Function |
 |:-----------|:---------|
-| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to.</em> |
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>, <em>string</em> <strong>$context=null</strong>, <em>string</em> <strong>$priority=null</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to. Context to transfer to. Priority to transfer to.</em> |
 | public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>set Context Context to transfer to.</em> |
+| public | <strong>setPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>set Priority Priority to transfer to.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
@@ -3347,6 +3335,20 @@
 | public | <strong>__construct(</strong><em>string</em> <strong>$DeviceName</strong>, <em>string</em> <strong>$LineName</strong>, <em>string</em> <strong>$Number</strong>)</strong> : <em>void</em><br /><em>Constructor.</em> |
 | public | <strike><strong>setChannelId(</strong><em>mixed</em> <strong>$ChannelId</strong>)</strong> : <em>string</em></strike><br /><em>DEPRECATED - Please use {@see getLinkeId()}.</em> |
 | public | <strong>setLinkedId(</strong><em>mixed</em> <strong>$LinkedId</strong>)</strong> : <em>string</em><br /><em>Returns key: 'LinkedId'.</em> |
+
+*This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
+
+<hr />
+
+### Class: \PAMI\Message\Action\AttendedTransferAction
+
+> AttendedTransfer action message. using 'Atxfer'
+
+| Visibility | Function |
+|:-----------|:---------|
+| public | <strong>__construct(</strong><em>string</em> <strong>$channel</strong>, <em>string</em> <strong>$exten</strong>, <em>string</em> <strong>$context=null</strong>, <em>string</em> <strong>$priority=null</strong>)</strong> : <em>void</em><br /><em>Constructor. Transferer's channel. Extension to transfer to. Context to transfer to. Priority to transfer to.</em> |
+| public | <strong>setContext(</strong><em>string</em> <strong>$context</strong>)</strong> : <em>void</em><br /><em>set Context Context to transfer to.</em> |
+| public | <strong>setPriority(</strong><em>string</em> <strong>$priority</strong>)</strong> : <em>void</em><br /><em>set Priority Priority to transfer to.</em> |
 
 *This class extends [\PAMI\Message\Action\ActionMessage](#class-pamimessageactionactionmessage-abstract)*
 
