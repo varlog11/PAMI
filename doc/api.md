@@ -15,8 +15,6 @@
 - [\PAMI\Message\IncomingMessage (abstract)](#class-pamimessageincomingmessage-abstract)
 - [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
 - [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
-- [\PAMI\Message\OutgoingMessage (abstract)](#class-pamimessageoutgoingmessage-abstract)
-- [\PAMI\Message\Message (abstract)](#class-pamimessagemessage-abstract)
 - [\PAMI\Message\Action\ActionMessage (abstract)](#class-pamimessageactionactionmessage-abstract)
 - [\PAMI\Message\Action\DongleReloadAction](#class-pamimessageactiondonglereloadaction)
 - [\PAMI\Message\Action\DongleResetAction](#class-pamimessageactiondongleresetaction)
@@ -720,43 +718,6 @@
 | public | <strong>getStatusVariables(</strong><em>string</em> <strong>$channel=null</strong>)</strong> : <em>array</em><br /><em>Returns the channel variables for the given channel. https://github.com/marcelog/PAMI/issues/85 for the "current" channel.</em> |
 
 *This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\OutgoingMessage (abstract)
-
-> A generic outgoing message. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getResponseHandler()</strong> : <em>string/null</em><br /><em>Returns the class name of the response handler.</em> |
-| public | <strong>setResponseHandler(</strong><em>mixed</em> <strong>$newResponseHandler</strong>)</strong> : <em>void</em><br /><em>Set the response handler.</em> |
-
-*This class extends [\PAMI\Message\Message](#class-pamimessagemessage-abstract)*
-
-<hr />
-
-### Class: \PAMI\Message\Message (abstract)
-
-> A generic ami message, in-or-outbound. PHP Version 5
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>__construct()</strong> : <em>void</em><br /><em>Constructor.</em> |
-| public | <strong>getActionID()</strong> : <em>string</em><br /><em>Returns key: 'ActionID'.</em> |
-| public | <strong>getBoolKey(</strong><em>string</em> <strong>$key</strong>)</strong> : <em>string</em><br /><em>Returns a key by name.</em> |
-| public | <strong>getCreatedDate()</strong> : <em>integer</em><br /><em>Returns created date.</em> |
-| public | <strong>getKey(</strong><em>string</em> <strong>$key</strong>)</strong> : <em>string</em><br /><em>Returns a key by name.</em> |
-| public | <strong>getKeys()</strong> : <em>string[]</em><br /><em>Returns all keys for this message.</em> |
-| public | <strong>getVariable(</strong><em>string</em> <strong>$key</strong>)</strong> : <em>string</em><br /><em>Returns a variable by name.</em> |
-| public | <strong>getVariables()</strong> : <em>string[]</em><br /><em>Returns all variabels for this message.</em> |
-| public | <strong>serialize()</strong> : <em>string</em><br /><em>Gives a string representation for this message, ready to be sent to ami.</em> |
-| public | <strong>setVariable(</strong><em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Adds a variable to this message.</em> |
-| protected | <strong>__sleep()</strong> : <em>string[]</em><br /><em>Serialize helper function.</em> |
-| protected | <strong>finishMessage(</strong><em>mixed</em> <strong>$message</strong>)</strong> : <em>string</em><br /><em>Returns the end of message token appended to the end of a given message.</em> |
-| protected | <strong>sanitizeInput(</strong><em>string</em> <strong>$value</strong>)</strong> : <em>typed and sanitized value</em><br /><em>Sanitize incoming value</em> |
-| protected | <strong>setKey(</strong><em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Adds a variable to this message.</em> |
-| protected | <strong>setSanitizedKey(</strong><em>string</em> <strong>$key</strong>, <em>string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>Adds a variable to this message after sanitizing it first.</em> |
 
 <hr />
 
