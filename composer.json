@@ -36,7 +36,7 @@
     },
     "require-dev": {
         "phing/phing": "*",
-        "phpunit/phpunit": ">=6.5.14",
+        "phpunit/phpunit": ">=5.7.27",
         "marcelog/pagi": "*",
         "codeclimate/php-test-reporter": ">=0.3.2",
         "php-coveralls/php-coveralls": ">=1.0.2",
@@ -45,7 +45,7 @@
         "sebastian/phpcpd": ">=3.0.1",
         "phploc/phploc": "*",
         "theseer/phpdox": "0.11.*",
-        "victorjonsson/markdowndocs": "*"
+        "evert/phpdoc-md": "^0.2.0"
     },
     "replace": {
         "dkgroot/pami": ">=2.0.1"
