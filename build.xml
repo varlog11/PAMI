@@ -47,7 +47,9 @@
 
   <target name="docmd">
     <!--<exec command="vendor/bin/phpdoc-md generate src > doc/api.md" checkreturn="true" passthru="false"/>-->
-    <exec command="vendor/bin/phpmd generate src > doc/api.md" checkreturn="true" passthru="false"/>
+    <!--<exec command="vendor/bin/phpmd generate src > doc/api.md" checkreturn="true" passthru="false"/>-->
+    <!--<exec command="vendor/bin/phpdoc -d src -t doc/ \-\-template='xml'" checkreturn="true" passthru="false"/>-->
+    <!--<exec command="vendor/bin/phpdocmd docs/structure.xml doc/" checkreturn="true" passthru="false"/>-->
   </target>
 
   <target name="fixstyle">

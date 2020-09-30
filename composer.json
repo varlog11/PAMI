@@ -45,7 +45,8 @@
         "sebastian/phpcpd": ">=3.0.1",
         "phploc/phploc": "*",
         "theseer/phpdox": "0.11.*",
-        "evert/phpdoc-md": "^0.2.0"
+        "phpdocumentor/phpdocumentor": "*",
+        "evert/phpdoc-md" : "~0.2.0"
     },
     "replace": {
         "dkgroot/pami": ">=2.0.1"
