@@ -328,7 +328,11 @@ class ClientImpl implements IClient
             } elseif ($evePos !== false) {
                 $event = $this->messageToEvent($aMsg);
                 $response = $this->findResponse($event);
-                if (!($response instanceof ResponseMessage) || $response->isComplete()) {
+                if (gettype($response) == "boolean" && $response === false) {
+                    $this->dispatch($event);
+                } elseif (!($response instanceof Response)) {
+                    $this->dispatch($event);
+                } elseif ($response->isComplete()) {
                     $this->dispatch($event);
                 } else {
                     $response->addEvent($event);
@@ -340,7 +344,7 @@ class ClientImpl implements IClient
                 $bMsg .= 'ActionId: ' . $this->lastActionId . "\r\n" . $aMsg;
                 $event = $this->messageToEvent($bMsg);
                 $response = $this->findResponse($event);
-                if ($response instanceof ResponseMessage) {
+                if ($response instanceof Response) {
                     $response->addEvent($event);
                 }
             }
