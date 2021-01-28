@@ -213,7 +213,9 @@ namespace PAMI\Client\Impl {
             ''
             )));
             /* skip over the error generation because of old function implementation deprecation warning */
-            set_error_handler(function ($errno, $errstr, $errfile, $errline, $errcontext) { /*echo("\ndeprecation error caught\n");*/ });
+            set_error_handler(function ($errno, $errstr, $errfile, $errline, $errcontext) {
+ /*echo("\ndeprecation error caught\n");*/
+            });
             $action = new \PAMI\Message\Action\AttendedTransferAction('Channel', 'Exten', 'Context', 1);
             $result = $this->_start($write, $action);
         }
