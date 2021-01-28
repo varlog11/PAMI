@@ -112,7 +112,7 @@ class ClientImpl implements IClient
     private $responseFactory;
 
     /**
-     * R/W timeout, in milliseconds.
+     * R/W timeout, in seconds.
      * @var integer
      */
     private $rTimeout;
